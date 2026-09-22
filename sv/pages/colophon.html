@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {{> head }}
+  <title>Kolofon — Sixteen Tracks</title>
+  <meta name="description" content="Vem som gjort Sixteen Tracks, vart man rapporterar ett fel, vad de tre märkena på ett steg betyder, och hur mycket av kursen som har kontrollerats på ett Tonverk med OS 1.4.0.">
+  <link rel="canonical" href="{{PAGE_URL}}">
+  <meta property="og:title" content="Kolofon — Sixteen Tracks">
+  <meta property="og:description" content="Vem som gjort den, vart man skriver, och hur mycket som är kontrollerat på enheten.">
+  <meta property="og:url" content="{{PAGE_URL}}">
+  <meta property="og:image" content="{{SITE_URL}}/og.png">
+  <link rel="stylesheet" href="/styles/tokens.css">
+  <link rel="stylesheet" href="/styles/scales.css">
+  <link rel="stylesheet" href="/styles/chrome.css">
+  <link rel="stylesheet" href="/styles/kbd.css">
+  <link rel="stylesheet" href="/styles/doc.css">
+  <link rel="stylesheet" href="/styles/session.css">
+  <link rel="stylesheet" href="/styles/reduced-motion.css">
+  <link rel="stylesheet" href="/styles/print.css">
+</head>
+<body class="doc on-colophon">
+  {{> nav }}
+<main class="wrap">
+  <h1>Kolofon</h1>
+  <p class="lede">Vem som gjort det här, vart man skriver när ett steg är fel, och hur mycket av det som har kontrollerats på ett Tonverk.</p>
+
+  <h2 id="contact">Gjord av</h2>
+  <p>Sixteen Tracks är skriven av en Tonverk-ägare och utgiven av {{ site.privacy.controller }} Gör ett steg inte det som står på din enhet, eller har en tangent fel namn, skriv till <a href="mailto:{{ site.privacy.contact }}">{{ site.privacy.contact }}</a> med session och stegnummer. Rättelser listas nedan allteftersom de kommer in.</p>
+
+  <h2 id="marks">Märket vid foten av varje steg</h2>
+  <ul class="mark-list">
+    <li><span class="step-source" data-source="manual"><svg class="src-glyph" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1.5 3.2c2.2-.9 4.4-.9 6.5.6 2.1-1.5 4.3-1.5 6.5-.6v9.6c-2.2-.9-4.4-.9-6.5.6-2.1-1.5-4.3-1.5-6.5-.6z"/><path d="M8 3.8v9.6"/></svg>10.3</span> Steget är skrivet ur det avsnittet i Tonverks användarmanual för OS {{ OS }}.</li>
+    <li><span class="step-source" data-source="community">&#x2197; community</span> Steget vilar på något manualen inte säger: en forumtråd, en video, ett svar från en utvecklare. Länken är källan.</li>
+    <li><span class="step-source" data-source="device"><svg class="src-glyph" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2.5 8.5l3.5 3.5 7.5-8"/></svg>kontrollerat på enheten</span> Steget har gjorts på ett Tonverk med OS {{ OS }} och det betedde sig som det står.</li>
+  </ul>
+  <p>Tills ett steg är kontrollerat är manualen auktoriteten och din enhet kan skilja sig. Så långt har kontrollen kommit:</p>
+  {{> provenance }}
+
+  <h2 id="unit">Där enheten sade emot</h2>
+  <p>Ingenstans ännu: ingen session har gått genom en enhet. En sak på den ritade panelen är känd som okontrollerad snarare än fel: den mintgröna texten under ARP, CHORD och SONG säger <em>On/Off</em> eftersom manualen beskriver dem så, och trycket på enheten har inte kontrollerats.</p>
+
+  <h2 id="drawings">Bilderna</h2>
+  <p>Panelen och displayerna är ritade efter manualens figurer och beskrivningar, inte fotograferade. De visar vad ett steg behöver och lämnar resten utanför. Vad varje tangentfärg betyder, läge för läge, står på <a href="/key-colours/">Tangentfärger</a>.</p>
+
+  <h2 id="measured">Mätning</h2>
+  {{#if TRACK}}
+  <p>Sajten räknar sina läsare med en Matomo på vår egen server, utan cookies och utan personuppgifter; <a href="/privacy/">integritetssidan</a> säger exakt vad.</p>
+  {{else}}
+  <p>Sajten räknar ingenting och gör ingen förfrågan till någon server. <a href="/privacy/">Integritetssidan</a> säger vad som skulle ändras om den gjorde det.</p>
+  {{/if}}
+</main>
+  {{> foot }}
+</body>
+</html>

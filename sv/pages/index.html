@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {{> head }}
+  <title>Sixteen Tracks — ett stycke på Elektron Tonverk, sexton minuter i taget</title>
+  <meta name="description" content="En praktisk kurs för Elektron Tonverk, OS 1.4.0, skriven av en ägare som ville lära sig köra den och ha någonstans att komma tillbaka till. Ett stycke, byggt från ett tomt projekt till en sparad låt, en session i taget; den ritade panelen visar tangenterna varje session lär ut.">
+  <link rel="canonical" href="{{PAGE_URL}}">
+  <meta property="og:title" content="Sixteen Tracks — ett stycke på Elektron Tonverk, sexton minuter i taget">
+  <meta property="og:description" content="Lär dig köra Tonverk genom att bygga ett stycke från ett tomt projekt till en sparad låt, en session i taget. Skriven av en ägare, för ägare.">
+  <meta property="og:url" content="{{PAGE_URL}}">
+  <meta property="og:image" content="{{SITE_URL}}/og.png">
+  <link rel="stylesheet" href="/styles/tokens.css">
+  <link rel="stylesheet" href="/styles/scales.css">
+  <link rel="stylesheet" href="/styles/chrome.css">
+  <link rel="stylesheet" href="/styles/kbd.css">
+  <link rel="stylesheet" href="/styles/checkpoint.css">
+  <link rel="stylesheet" href="/styles/crop.css">
+  <link rel="stylesheet" href="/styles/hub.css">
+  <link rel="stylesheet" href="/styles/chapters/rhythm.css">
+  <link rel="stylesheet" href="/styles/reduced-motion.css">
+  <link rel="stylesheet" href="/styles/print.css">
+</head>
+<body class="hub on-hub">
+  {{> nav }}
+<header class="mast">
+  <div class="mast-inner">
+    <div class="mast-text">
+      <p class="eyebrow">{{{ S.site.tagline }}}</p>
+      <h1>Sexton spår,<br>ett stycke,<br>sexton minuter i taget.</h1>
+      <p class="goal">Jag är musikälskare, inte musikproffs, och jag fortsatte ge den här fiffiga maskinen alldeles för lite tid. Jag ville ha en kurs som börjar i ett tomt projekt och slutar med en låt jag kunde spela upp; någon sådan fanns inte, så nu finns den, för att lära sig köra Tonverk eller för att lära sig det igen efter ett uppehåll. Varje session lägger en sak i stycket: du hör den, du sparar, du slutar. Hyllan nedanför samlar det som stegen lär ut, för dagen då minnet har bleknat och du inte vill spela om lektionen.</p>
+      <p class="hero-cta"><a class="start" href="/session-01/">Börja på session 1 →</a><a class="start-alt" href="/session-01/" hidden>eller börja på session 1</a></p>
+    </div>
+    {{> hero }}
+  </div>
+</header>
+<main class="wrap hub-main">
+  <section class="block" id="course">
+    <h2>Sessionerna</h2>
+    {{> course }}
+  </section>
+  <section class="block" id="tasks">
+    <h2>Efter uppgift</h2>
+    <ul class="tasklist">
+      <li><a href="/session-01/#step-5">Ladda ett preset på ett spår</a><span class="where">session 1 · steg 5</span></li>
+      <li><a href="/session-01/#step-8">Ställ tempot</a><span class="where">session 1 · steg 8</span></li>
+      <li><a href="/session-01/#step-11">Spara projektet</a><span class="where">session 1 · steg 11</span></li>
+      <li><a href="/session-02/#step-6">Skriv ett beat i GRID RECORDING</a><span class="where">session 2 · steg 6</span></li>
+      <li><a href="/session-02/#step-13">Mutea ett spår, globalt eller per pattern</a><span class="where">session 2 · steg 13</span></li>
+      <li><a href="/session-02/#step-14">Kopiera ett pattern till en annan plats</a><span class="where">session 2 · steg 14</span></li>
+      <li><a href="/session-03/#step-4">Lägg ett Subtracks-kit på ett spår</a><span class="where">session 3 · steg 4</span></li>
+      <li><a href="/session-03/#step-10">Byt ut ett sample i ett kit</a><span class="where">session 3 · steg 10</span></li>
+      <li><a href="/session-04/#step-2">Ghost notes: velocity-lockar</a><span class="where">session 4 · steg 2</span></li>
+      <li><a href="/session-04/#step-6">En snare-roll: retrigs</a><span class="where">session 4 · steg 6</span></li>
+      <li><a href="/session-04/#step-9">Kvantisera det du spelade</a><span class="where">session 4 · steg 9</span></li>
+      <li><a href="/session-05/#step-2">En trig som spelar varannan loop</a><span class="where">session 5 · steg 2</span></li>
+      <li><a href="/session-05/#step-6">En fill-takt</a><span class="where">session 5 · steg 6</span></li>
+    </ul>
+  </section>
+  <section class="block" id="shelf">
+    <h2>Hyllan</h2>
+    <ul class="shelflist">
+      <li><a href="/before-you-start/">Innan du börjar</a> — de fyra sorternas spår, de fem behållarna och kartan över vad en sparning sparar.</li>
+      <li><a href="/key-colours/">Tangentfärger</a> — vad en tänd tangent betyder, läge för läge.</li>
+      <li><a href="/colophon/">Kolofon</a> — vem som gjort den, vart man skriver, vad som är kontrollerat på enheten.</li>
+    </ul>
+  </section>
+</main>
+  {{> foot }}
+  <script type="module" src="/pages/index.js"></script>
+</body>
+</html>

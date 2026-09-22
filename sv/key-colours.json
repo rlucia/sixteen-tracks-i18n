@@ -1,0 +1,23 @@
+[
+  {"key":"TRIG 1-16","colour":"red","blink":"steady","mode":"GRID RECORDING","meaning":"En note-trig på det här steget.","source":"manual §10.2.1","example":{"1":"red","5":"red","9":"red","13":"red"}},
+  {"key":"TRIG 1-16","colour":"yellow","blink":"steady","mode":"GRID RECORDING","meaning":"En lock-trig: parameterlockar, ingen ton.","source":"manual §10.2.1","example":{"8":"yellow"}},
+  {"key":"TRIG 1-16","colour":"red","blink":"blinking","mode":"GRID RECORDING","meaning":"En note-trig som bär en parameterlock.","source":"manual §10.10.1","example":{"3":"red","7":"red"}},
+  {"key":"TRIG 1-16","colour":"yellow","blink":"blinking","mode":"GRID RECORDING","meaning":"En lock-trig som bär en parameterlock.","source":"manual §10.10.1","example":{"8":"yellow"}},
+  {"key":"TRIG 1-16","colour":"white","blink":"steady","mode":"GRID RECORDING","meaning":"Det aktiva spåret, medan TRK hålls nere eller efter att ett spår har valts.","source":"manual §10.3","example":{"1":"white"}},
+  {"key":"TRIG 1-16","colour":"white","blink":"steady","mode":"pattern select","meaning":"En plats som innehåller ett pattern, medan PTN hålls nere.","source":"manual §10.1.1","example":{"1":"white","2":"white"}},
+  {"key":"TRIG 1-16","colour":"red","blink":"steady","mode":"pattern select","meaning":"Patternet som är aktivt just nu; en vit tangent innehåller bara ett.","source":"manual §10.1.1","example":{"3":"red"}},
+  {"key":"TRIG 1-16","colour":"green","blink":"steady","mode":"GLOBAL MUTE","meaning":"Ett spår som inte är mutat; en släckt tangent är mutad.","source":"manual §8.6","example":{"1":"green","2":"green","3":"green","4":"green"}},
+  {"key":"TRIG 1-16","colour":"magenta","blink":"steady","mode":"PATTERN MUTE","meaning":"Ett spår som inte är mutat i det här patternet; en släckt tangent är mutad bara här.","source":"manual §8.6","example":{"1":"magenta","2":"magenta","3":"magenta","4":"magenta"}},
+  {"key":"TRIG 1-16","colour":"green","blink":"dim","mode":"GLOBAL MUTE, Subtracks","meaning":"Ett subtrack på det här spåret är mutat medan spårets egen tangent annars inte vore mutad.","source":"manual §8.6","example":{"4":"green"}},
+  {"key":"TRIG 1-16","colour":"magenta","blink":"dim","mode":"PATTERN MUTE, Subtracks","meaning":"Ett subtrack på det här spåret är mutat i det här patternet medan spårets egen tangent annars inte vore mutad.","source":"manual §8.6","example":{"4":"magenta"}},
+  {"key":"TRIG 1-16","colour":"green","blink":"steady","mode":"GRID RECORDING: LOOP PAGES","meaning":"Den här patternsidan är köad för att spelas och loopas; en släckt sida hoppas över.","source":"manual §10.3","example":{"1":"green","2":"green"}},
+  {"key":"TRIG 1-16","colour":"green","blink":"steady","mode":"STEP EDIT","meaning":"Steget som KEYBOARD lägger till eller tar bort toner på.","source":"manual §10.3.1","example":{"7":"green"}},
+  {"key":"TRIG 1-16","colour":"yellow","blink":"dim","mode":"GRID RECORDING: SEQUENCE LANE (NOTES)","meaning":"En lock-trig, visad svagt eftersom NOTES-lanen bara är till för note-trigs.","source":"manual §10.3.2","example":{"2":"yellow"}},
+  {"key":"TRIG 1-16","colour":"red","blink":"dim","mode":"GRID RECORDING: SEQUENCE LANE (P-LOCKS)","meaning":"En note-trig, visad svagt eftersom P-LOCKS-lanen bara är till för lock-trigs.","source":"manual §10.3.2","example":{"2":"red"}},
+  {"key":"RECORD","colour":"red","blink":"steady","mode":"GRID RECORDING","meaning":"GRID RECORDING är på.","source":"manual §10.3"},
+  {"key":"RECORD","colour":"red","blink":"blinking","mode":"LIVE RECORDING","meaning":"LIVE RECORDING är på.","source":"manual §10.4"},
+  {"key":"TRK","colour":"green","blink":"steady","mode":"PERFORM","meaning":"PERFORM-läget: ändringarna lever i tillfälligt minne.","source":"manual §10.12"},
+  {"key":"MUTE","colour":"green","blink":"dim","mode":"playback","meaning":"Ett spår är mutat i GLOBAL MUTE-läget medan du själv inte är i mute-läget.","source":"manual §8.6"},
+  {"key":"MUTE","colour":"magenta","blink":"dim","mode":"playback","meaning":"Ett spår är mutat i PATTERN MUTE-läget medan du själv inte är i mute-läget.","source":"manual §8.6"},
+  {"key":"CHORD","colour":"cyan","blink":"steady","mode":"KEYBOARD mode","meaning":"CHORD-läget är på.","source":"manual §8.5.1"}
+]

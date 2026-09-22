@@ -1,0 +1,23 @@
+[
+  { "key": "TRIG 1-16", "colour": "red",     "blink": "steady",   "mode": "GRID RECORDING", "meaning": "A note trig on this step.", "source": "manual §10.2.1", "example": { "1": "red", "5": "red", "9": "red", "13": "red" } },
+  { "key": "TRIG 1-16", "colour": "yellow",  "blink": "steady",   "mode": "GRID RECORDING", "meaning": "A lock trig: parameter locks, no note.", "source": "manual §10.2.1", "example": { "8": "yellow" } },
+  { "key": "TRIG 1-16", "colour": "red",     "blink": "blinking", "mode": "GRID RECORDING", "meaning": "A note trig that carries a parameter lock.", "source": "manual §10.10.1", "example": { "3": "red", "7": "red" } },
+  { "key": "TRIG 1-16", "colour": "yellow",  "blink": "blinking", "mode": "GRID RECORDING", "meaning": "A lock trig that carries a parameter lock.", "source": "manual §10.10.1", "example": { "8": "yellow" } },
+  { "key": "TRIG 1-16", "colour": "white",   "blink": "steady",   "mode": "GRID RECORDING", "meaning": "The active track, while TRK is held or after a track was selected.", "source": "manual §10.3", "example": { "1": "white" } },
+  { "key": "TRIG 1-16", "colour": "white",   "blink": "steady",   "mode": "pattern select", "meaning": "A slot that holds a pattern, while PTN is held.", "source": "manual §10.1.1", "example": { "1": "white", "2": "white" } },
+  { "key": "TRIG 1-16", "colour": "red",     "blink": "steady",   "mode": "pattern select", "meaning": "The pattern that is currently active; a white key merely holds one.", "source": "manual §10.1.1", "example": { "3": "red" } },
+  { "key": "TRIG 1-16", "colour": "green",   "blink": "steady",   "mode": "GLOBAL MUTE",    "meaning": "An unmuted track; an unlit key is muted.", "source": "manual §8.6", "example": { "1": "green", "2": "green", "3": "green", "4": "green" } },
+  { "key": "TRIG 1-16", "colour": "magenta", "blink": "steady",   "mode": "PATTERN MUTE",   "meaning": "An unmuted track in this pattern; an unlit key is muted here only.", "source": "manual §8.6", "example": { "1": "magenta", "2": "magenta", "3": "magenta", "4": "magenta" } },
+  { "key": "TRIG 1-16", "colour": "green",   "blink": "dim",      "mode": "GLOBAL MUTE, Subtracks", "meaning": "A subtrack of this track is muted while the track's own key would otherwise be unmuted.", "source": "manual §8.6", "example": { "4": "green" } },
+  { "key": "TRIG 1-16", "colour": "magenta", "blink": "dim",      "mode": "PATTERN MUTE, Subtracks", "meaning": "A subtrack of this track is muted in this pattern while the track's own key would otherwise be unmuted.", "source": "manual §8.6", "example": { "4": "magenta" } },
+  { "key": "TRIG 1-16", "colour": "green",   "blink": "steady",   "mode": "GRID RECORDING: LOOP PAGES", "meaning": "This pattern page is queued to play and loop; an unlit page is skipped.", "source": "manual §10.3", "example": { "1": "green", "2": "green" } },
+  { "key": "TRIG 1-16", "colour": "green",   "blink": "steady",   "mode": "STEP EDIT", "meaning": "The step the KEYBOARD is adding or removing notes on.", "source": "manual §10.3.1", "example": { "7": "green" } },
+  { "key": "TRIG 1-16", "colour": "yellow",  "blink": "dim",      "mode": "GRID RECORDING: SEQUENCE LANE (NOTES)", "meaning": "A lock trig, shown faint because the NOTES lane is for note trigs only.", "source": "manual §10.3.2", "example": { "2": "yellow" } },
+  { "key": "TRIG 1-16", "colour": "red",     "blink": "dim",      "mode": "GRID RECORDING: SEQUENCE LANE (P-LOCKS)", "meaning": "A note trig, shown faint because the P-LOCKS lane is for lock trigs only.", "source": "manual §10.3.2", "example": { "2": "red" } },
+  { "key": "RECORD",    "colour": "red",     "blink": "steady",   "mode": "GRID RECORDING", "meaning": "GRID RECORDING is on.", "source": "manual §10.3" },
+  { "key": "RECORD",    "colour": "red",     "blink": "blinking", "mode": "LIVE RECORDING", "meaning": "LIVE RECORDING is on.", "source": "manual §10.4" },
+  { "key": "TRK",       "colour": "green",   "blink": "steady",   "mode": "PERFORM",        "meaning": "PERFORM mode: tweaks live in temporary memory.", "source": "manual §10.12" },
+  { "key": "MUTE",      "colour": "green",   "blink": "dim",      "mode": "playback",       "meaning": "A track is muted in GLOBAL MUTE mode while you are not in mute mode.", "source": "manual §8.6" },
+  { "key": "MUTE",      "colour": "magenta", "blink": "dim",      "mode": "playback",       "meaning": "A track is muted in PATTERN MUTE mode while you are not in mute mode.", "source": "manual §8.6" },
+  { "key": "CHORD",     "colour": "cyan",    "blink": "steady",   "mode": "KEYBOARD mode",  "meaning": "CHORD mode is on.", "source": "manual §8.5.1" }
+]

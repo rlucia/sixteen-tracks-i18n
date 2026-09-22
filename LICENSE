@@ -1,0 +1,14 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+The translations in this repository, and the English text under en/, are
+licensed under CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+Full legal text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Attribution: "Sixteen Tracks" by Rocco Lucia and the translators named in each
+language's TRANSLATORS file.
+
+The code under lib/ and lint.mjs is exported from the Sixteen Tracks site and
+is MIT licensed, as that site's code is.
+
+Tonverk, Elektron, Overbridge and Outbox 8 are trademarks of Elektron Music
+Machines MAV AB; nothing here is licensed under them or endorsed by Elektron.

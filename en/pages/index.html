@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {{> head }}
+  <title>Sixteen Tracks — one piece on the Elektron Tonverk, sixteen minutes at a time</title>
+  <meta name="description" content="A hands-on course for the Elektron Tonverk, OS 1.4.0, written by an owner who wanted to learn to drive it and have somewhere to come back to. One piece, built from an empty project into a saved song, a session at a time; the drawn panel shows the keys each session teaches.">
+  <link rel="canonical" href="{{PAGE_URL}}">
+  <meta property="og:title" content="Sixteen Tracks — one piece on the Elektron Tonverk, sixteen minutes at a time">
+  <meta property="og:description" content="Learn to drive the Tonverk by building one piece from an empty project into a saved song, a session at a time. Written by an owner, for owners.">
+  <meta property="og:url" content="{{PAGE_URL}}">
+  <meta property="og:image" content="{{SITE_URL}}/og.png">
+  <link rel="stylesheet" href="/styles/tokens.css">
+  <link rel="stylesheet" href="/styles/scales.css">
+  <link rel="stylesheet" href="/styles/chrome.css">
+  <link rel="stylesheet" href="/styles/kbd.css">
+  <link rel="stylesheet" href="/styles/checkpoint.css">
+  <link rel="stylesheet" href="/styles/crop.css">
+  <link rel="stylesheet" href="/styles/hub.css">
+  <link rel="stylesheet" href="/styles/chapters/rhythm.css">
+  <link rel="stylesheet" href="/styles/reduced-motion.css">
+  <link rel="stylesheet" href="/styles/print.css">
+</head>
+<body class="hub on-hub">
+  {{> nav }}
+<header class="mast">
+  <div class="mast-inner">
+    <div class="mast-text">
+      <p class="eyebrow">{{{ S.site.tagline }}}</p>
+      <h1>Sixteen tracks,<br>one piece,<br>sixteen minutes at a time.</h1>
+      <p class="goal">I'm a music lover, not a music professional, and I kept giving this nifty machine too little of my time. I wanted a course that starts from an empty project and ends with a song I could play back; there wasn't one, so this is it, for learning to drive the Tonverk or for learning it again after a gap. Each session puts one thing into the piece: you hear it, you save, you stop. The shelf below holds what the steps teach, for the day the memory has faded and you don't want to replay the lesson.</p>
+      <p class="hero-cta"><a class="start" href="/session-01/">Start at session 1 →</a><a class="start-alt" href="/session-01/" hidden>or start at session 1</a></p>
+    </div>
+    {{> hero }}
+  </div>
+</header>
+<main class="wrap hub-main">
+  <section class="block" id="course">
+    <h2>The sessions</h2>
+    {{> course }}
+  </section>
+  <section class="block" id="tasks">
+    <h2>By task</h2>
+    <ul class="tasklist">
+      <li><a href="/session-01/#step-5">Load a preset onto a track</a><span class="where">session 1 · step 5</span></li>
+      <li><a href="/session-01/#step-8">Set the tempo</a><span class="where">session 1 · step 8</span></li>
+      <li><a href="/session-01/#step-11">Save the project</a><span class="where">session 1 · step 11</span></li>
+      <li><a href="/session-02/#step-6">Write a beat in GRID RECORDING</a><span class="where">session 2 · step 6</span></li>
+      <li><a href="/session-02/#step-13">Mute a track, globally or per pattern</a><span class="where">session 2 · step 13</span></li>
+      <li><a href="/session-02/#step-14">Copy a pattern to another slot</a><span class="where">session 2 · step 14</span></li>
+      <li><a href="/session-03/#step-4">Put a Subtracks kit on a track</a><span class="where">session 3 · step 4</span></li>
+      <li><a href="/session-03/#step-10">Swap one sample in a kit</a><span class="where">session 3 · step 10</span></li>
+      <li><a href="/session-04/#step-2">Ghost notes: velocity locks</a><span class="where">session 4 · step 2</span></li>
+      <li><a href="/session-04/#step-6">A snare roll: retrigs</a><span class="where">session 4 · step 6</span></li>
+      <li><a href="/session-04/#step-9">Quantise what you played</a><span class="where">session 4 · step 9</span></li>
+      <li><a href="/session-05/#step-2">A trig that plays every other loop</a><span class="where">session 5 · step 2</span></li>
+      <li><a href="/session-05/#step-6">A fill bar</a><span class="where">session 5 · step 6</span></li>
+    </ul>
+  </section>
+  <section class="block" id="shelf">
+    <h2>The shelf</h2>
+    <ul class="shelflist">
+      <li><a href="/before-you-start/">Before you start</a> — the four kinds of track, the five containers and the map of what a save saves.</li>
+      <li><a href="/key-colours/">Key colours</a> — what a lit key means, mode by mode.</li>
+      <li><a href="/colophon/">Colophon</a> — who made it, where to write, what is checked on the unit.</li>
+    </ul>
+  </section>
+</main>
+  {{> foot }}
+  <script type="module" src="/pages/index.js"></script>
+</body>
+</html>

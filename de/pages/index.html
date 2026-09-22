@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {{> head }}
+  <title>Sixteen Tracks — ein Stück auf dem Elektron Tonverk, immer sechzehn Minuten</title>
+  <meta name="description" content="Ein Praxiskurs für den Elektron Tonverk, OS 1.4.0, geschrieben von einem Besitzer, der lernen wollte, damit umzugehen, und einen Ort brauchte, an den er zurückkommen kann. Ein Stück, aus einem leeren Projekt zu einem gespeicherten Song gebaut, Session für Session; das gezeichnete Bedienfeld zeigt die Tasten, die jede Session beibringt.">
+  <link rel="canonical" href="{{PAGE_URL}}">
+  <meta property="og:title" content="Sixteen Tracks — ein Stück auf dem Elektron Tonverk, immer sechzehn Minuten">
+  <meta property="og:description" content="Lerne den Tonverk, indem du ein Stück von einem leeren Projekt zu einem gespeicherten Song baust, Session für Session. Von einem Besitzer geschrieben, für Besitzer.">
+  <meta property="og:url" content="{{PAGE_URL}}">
+  <meta property="og:image" content="{{SITE_URL}}/og.png">
+  <link rel="stylesheet" href="/styles/tokens.css">
+  <link rel="stylesheet" href="/styles/scales.css">
+  <link rel="stylesheet" href="/styles/chrome.css">
+  <link rel="stylesheet" href="/styles/kbd.css">
+  <link rel="stylesheet" href="/styles/checkpoint.css">
+  <link rel="stylesheet" href="/styles/crop.css">
+  <link rel="stylesheet" href="/styles/hub.css">
+  <link rel="stylesheet" href="/styles/chapters/rhythm.css">
+  <link rel="stylesheet" href="/styles/reduced-motion.css">
+  <link rel="stylesheet" href="/styles/print.css">
+</head>
+<body class="hub on-hub">
+  {{> nav }}
+<header class="mast">
+  <div class="mast-inner">
+    <div class="mast-text">
+      <p class="eyebrow">{{{ S.site.tagline }}}</p>
+      <h1>Sechzehn Spuren,<br>ein Stück,<br>immer sechzehn Minuten.</h1>
+      <p class="goal">Ich bin Musikliebhaber, kein Musikprofi, und ich habe diesem pfiffigen Gerät immer wieder zu wenig von meiner Zeit gegeben. Ich wollte einen Kurs, der mit einem leeren Projekt beginnt und mit einem Song endet, den ich abspielen kann; den gab es nicht, also ist es jetzt dieser hier, zum Lernen des Tonverk oder zum Wiederlernen nach einer Pause. Jede Session legt eine Sache ins Stück: du hörst sie, du speicherst, du hörst auf. Das Regal unten hält, was die Schritte lehren, für den Tag, an dem die Erinnerung verblasst ist und du die Lektion nicht noch einmal durchspielen willst.</p>
+      <p class="hero-cta"><a class="start" href="/session-01/">Bei Session 1 beginnen →</a><a class="start-alt" href="/session-01/" hidden>oder bei Session 1 beginnen</a></p>
+    </div>
+    {{> hero }}
+  </div>
+</header>
+<main class="wrap hub-main">
+  <section class="block" id="course">
+    <h2>Die Sessions</h2>
+    {{> course }}
+  </section>
+  <section class="block" id="tasks">
+    <h2>Nach Aufgabe</h2>
+    <ul class="tasklist">
+      <li><a href="/session-01/#step-5">Ein Preset auf eine Spur laden</a><span class="where">Session 1 · Schritt 5</span></li>
+      <li><a href="/session-01/#step-8">Das Tempo setzen</a><span class="where">Session 1 · Schritt 8</span></li>
+      <li><a href="/session-01/#step-11">Das Projekt speichern</a><span class="where">Session 1 · Schritt 11</span></li>
+      <li><a href="/session-02/#step-6">Einen Beat im GRID RECORDING schreiben</a><span class="where">Session 2 · Schritt 6</span></li>
+      <li><a href="/session-02/#step-13">Eine Spur stummschalten, global oder pro Pattern</a><span class="where">Session 2 · Schritt 13</span></li>
+      <li><a href="/session-02/#step-14">Ein Pattern auf einen anderen Platz kopieren</a><span class="where">Session 2 · Schritt 14</span></li>
+      <li><a href="/session-03/#step-4">Ein Subtracks-Kit auf eine Spur legen</a><span class="where">Session 3 · Schritt 4</span></li>
+      <li><a href="/session-03/#step-10">Ein Sample in einem Kit tauschen</a><span class="where">Session 3 · Schritt 10</span></li>
+      <li><a href="/session-04/#step-2">Ghost Notes: Velocity-Locks</a><span class="where">Session 4 · Schritt 2</span></li>
+      <li><a href="/session-04/#step-6">Ein Snare-Roll: Retrigs</a><span class="where">Session 4 · Schritt 6</span></li>
+      <li><a href="/session-04/#step-9">Quantisieren, was du gespielt hast</a><span class="where">Session 4 · Schritt 9</span></li>
+      <li><a href="/session-05/#step-2">Ein Trig, der jeden zweiten Loop spielt</a><span class="where">Session 5 · Schritt 2</span></li>
+      <li><a href="/session-05/#step-6">Ein Fill-Takt</a><span class="where">Session 5 · Schritt 6</span></li>
+    </ul>
+  </section>
+  <section class="block" id="shelf">
+    <h2>Das Regal</h2>
+    <ul class="shelflist">
+      <li><a href="/before-you-start/">Bevor du beginnst</a> — die vier Arten von Spuren, die fünf Behälter und die Karte dessen, was ein Speichern speichert.</li>
+      <li><a href="/key-colours/">Tastenfarben</a> — was eine leuchtende Taste bedeutet, Modus für Modus.</li>
+      <li><a href="/colophon/">Kolophon</a> — wer es gemacht hat, wohin man schreibt, was am Gerät geprüft ist.</li>
+    </ul>
+  </section>
+</main>
+  {{> foot }}
+  <script type="module" src="/pages/index.js"></script>
+</body>
+</html>

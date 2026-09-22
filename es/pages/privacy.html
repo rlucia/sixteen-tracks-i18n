@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {{> head }}
+  <title>Privacidad — Sixteen Tracks</title>
+  <meta name="description" content="{{#if TRACK}}Qué mide Sixteen Tracks, qué deliberadamente no mide, y por qué no hay un aviso de cookies: Matomo en un servidor propio, sin cookies, IP anonimizada, Do Not Track respetado.{{else}}Sixteen Tracks no mide nada: sin analítica, sin cookies, sin peticiones a ningún servidor salvo el que lo sirve.{{/if}}">
+  <link rel="canonical" href="{{PAGE_URL}}">
+  <meta property="og:title" content="Privacidad — Sixteen Tracks">
+  <meta property="og:description" content="{{#if TRACK}}Qué mide Sixteen Tracks, qué deliberadamente no mide, y por qué no hay un aviso de cookies.{{else}}Sixteen Tracks no mide nada: sin analítica, sin cookies, sin peticiones a ningún servidor salvo el que lo sirve.{{/if}}">
+  <meta property="og:url" content="{{PAGE_URL}}">
+  <meta property="og:image" content="{{SITE_URL}}/og.png">
+  <link rel="stylesheet" href="/styles/tokens.css">
+  <link rel="stylesheet" href="/styles/scales.css">
+  <link rel="stylesheet" href="/styles/chrome.css">
+  <link rel="stylesheet" href="/styles/kbd.css">
+  <link rel="stylesheet" href="/styles/doc.css">
+  <link rel="stylesheet" href="/styles/reduced-motion.css">
+  <link rel="stylesheet" href="/styles/print.css">
+</head>
+<body class="doc on-privacy">
+  {{> nav }}
+
+<main class="wrap">
+  <h1>Privacidad</h1>
+  <!-- La entradilla sigue la configuración, como la description y el resto de la página. Antes
+       estaba fuera del condicional, así que en un build con la medición apagada la frase de
+       apertura prometía un recuento que el "Qué se recoge: Nada" de dos pantallas más abajo
+       desmentía. Las dos gemelas viven aquí; solo se muestra una. -->
+  {{#if TRACK}}
+  <p class="lede">
+    Este sitio cuenta cuántas personas lo leen. Lo hace con una sola herramienta en un
+    servidor propio, sin cookies y sin terceros. Esta página dice exactamente qué se recoge, y
+    la lista más corta de lo que no.
+  </p>
+  {{else}}
+  <p class="lede">
+    Este sitio no cuenta nada. No corre ninguna medición en él, no se establece ninguna
+    cookie, y ninguna petición sale hacia ningún servidor salvo el que sirve estas páginas.
+    Esta página dice qué significa eso, y las dos cosas que tu propio navegador conserva.
+  </p>
+  {{/if}}
+
+  <h2>Quién es responsable</h2>
+  <p>
+    Sixteen Tracks está publicado por {{ site.privacy.controller }}, que también opera
+    <a href="{{ site.privacy.controllerUrl }}">{{ site.privacy.controllerUrl }}</a>, y es
+    el responsable del tratamiento a los efectos del RGPD. Las preguntas, o una solicitud
+    sobre tus propios datos, van a <a href="mailto:{{ site.privacy.contact }}">{{ site.privacy.contact }}</a>.
+  </p>
+
+  {{#if TRACK}}
+  <h2>Qué se recoge</h2>
+  <p>
+    La medición de audiencia corre en <strong>Matomo</strong>, instalado en nuestro propio servidor en
+    <code>{{ site.analytics.matomo.url }}</code>. No se envía nada a Google, a una red
+    publicitaria ni a ninguna empresa de analítica. Por cada página que abres registra:
+  </p>
+  <ul>
+    <li>la dirección de la página, y la página o el motor de búsqueda desde el que llegaste;</li>
+    <li>una dirección IP <strong>anonimizada</strong>, de la que solo se deriva una región aproximada;</li>
+    <li>el tipo de navegador, el sistema operativo y el tamaño de la pantalla;</li>
+    <li>la hora de la visita, y qué enlaces seguiste desde ahí;</li>
+    <li>si saltaste a un paso, abriste un punto de control o usaste un simulador. Estos eventos llevan solo un nombre fijo y un número de paso.</li>
+  </ul>
+  <p>
+    La finalidad es ver qué sesiones se leen y si los puntos de control y los simuladores se
+    usan. La base jurídica es el interés legítimo del artículo&nbsp;6, apartado 1, letra f) del RGPD —
+    medir una audiencia de forma agregada, que no puede hacerse sin contar.
+  </p>
+
+  <h2>Qué no se recoge</h2>
+  <ul>
+    <li><strong>Ninguna cookie.</strong> Matomo corre aquí en su modo sin cookies. Las dos cosas que el sitio guarda en tu dispositivo son el número de la última sesión que abriste y, si elegiste uno desde el globo, el idioma que elegiste, en el almacenamiento local de tu propio navegador, para que la página de inicio pueda ofrecer un enlace de "continuar" y cada página pueda abrirse en tu idioma; nunca salen de tu dispositivo y nada los lee salvo estas páginas.</li>
+    <li><strong>Ningún rastreo entre sitios</strong>, ningún identificador publicitario, ningún perfilado, ningún dato vendido o compartido.</li>
+    <li><strong>Nada de lo que haces en un simulador</strong> — qué pasos pusiste, qué condiciones, qué probaste. Un evento de simulador dice solo que se usó un simulador. El sitio no tiene cuentas ni formularios, así que no hay nada que escribir y nada que almacenar.</li>
+  </ul>
+
+  <h2>Cuándo no se recoge nada en absoluto</h2>
+  <p>
+    En estos casos el script de medición no se carga en absoluto:
+  </p>
+  <ul>
+    <li>si tu navegador envía <strong>Do Not Track</strong> o <strong>Global Privacy Control</strong>;</li>
+    <li>en cualquier copia del sitio que no esté en esta dirección: una página guardada, una copia sin conexión.</li>
+  </ul>
+
+  <h2>Cuánto tiempo se conserva</h2>
+  <p>{{{ S.privacy.retention }}}</p>
+
+  <h2>Tus derechos</h2>
+  <p>
+    Con arreglo al RGPD puedes preguntar qué datos te conciernen, pedir que se rectifiquen o
+    se supriman, oponerte a su tratamiento, o pedir una copia. Escribe a
+    <a href="mailto:{{ site.privacy.contact }}">{{ site.privacy.contact }}</a>. Ten en cuenta que,
+    como los datos se recogen sin cookies y con la IP anonimizada, normalmente no hay manera
+    de vincular ningún registro almacenado a una persona concreta, así que una solicitud
+    puede ser imposible de atender por falta de algo con lo que identificarte.
+  </p>
+  <p>
+    Si estás en Italia o en cualquier otro lugar de la UE y crees que este sitio trata los
+    datos de forma indebida, puedes reclamar ante tu autoridad de control nacional — en Italia, el
+    <a href="https://www.garanteprivacy.it/">Garante per la protezione dei dati personali</a>.
+  </p>
+
+  <h2>Por qué no hay un aviso de cookies</h2>
+  <p>
+    Nada en este sitio te identifica ni te sigue: la medición no establece ninguna cookie, y
+    lo único que se guarda en tu navegador son preferencias tuyas, la última sesión que
+    abriste y el idioma que elegiste, que ningún servidor ve nunca. No hay nada a lo que consentir, así que nada lo pide.
+  </p>
+
+  <h2>Si esto cambia</h2>
+  <p>Si cambia lo que se recoge, esta página cambia con ello.</p>
+  {{else}}
+  <h2>Qué se recoge</h2>
+  <p>Nada. Este sitio se publica con la medición de audiencia apagada. No se incluye ningún script de analítica en ninguna página, no se establece ninguna cookie, y el sitio no hace ninguna petición a ningún servidor que no sea el que sirve sus páginas. No hay formulario, ni cuenta, ni nada que escribir.</p>
+  <h2>Qué se guarda en tu dispositivo</h2>
+  <p>Si tu navegador lo permite, el sitio recuerda qué sesión abriste por última vez, y el idioma que elegiste desde el globo si elegiste uno, en el almacenamiento local de tu propio navegador, para que la página de inicio pueda ofrecer un enlace de "continuar" y cada página pueda abrirse en tu idioma. Nunca salen de tu dispositivo, nadie los lee, y el sitio funciona exactamente igual sin ellos.</p>
+  <h2>Si esto cambia</h2>
+  <p>Si el sitio empieza alguna vez a contar a sus lectores, esta página lo dirá primero, y lo que diga será todo.</p>
+  {{/if}}
+</main>
+
+  {{> foot }}
+</body>
+</html>

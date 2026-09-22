@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {{> head }}
+  <title>Antes de empezar — Sixteen Tracks</title>
+  <meta name="description" content="Los cuatro tipos de pista, los cinco contenedores que toca un guardado, la actualización al OS 1.4.0 y hacer una copia de seguridad antes. Léelo una vez antes de la sesión 1 de Sixteen Tracks.">
+  <link rel="canonical" href="{{PAGE_URL}}">
+  <meta property="og:title" content="Antes de empezar — Sixteen Tracks">
+  <meta property="og:description" content="Los cuatro tipos de pista y los cinco contenedores, con el mapa de los contenedores.">
+  <meta property="og:url" content="{{PAGE_URL}}">
+  <meta property="og:image" content="{{SITE_URL}}/og.png">
+  <link rel="stylesheet" href="/styles/tokens.css">
+  <link rel="stylesheet" href="/styles/scales.css">
+  <link rel="stylesheet" href="/styles/chrome.css">
+  <link rel="stylesheet" href="/styles/kbd.css">
+  <link rel="stylesheet" href="/styles/doc.css">
+  <link rel="stylesheet" href="/styles/sim.css">
+  <link rel="stylesheet" href="/styles/reduced-motion.css">
+  <link rel="stylesheet" href="/styles/print.css">
+</head>
+<body class="doc on-before">
+  {{> nav }}
+<main class="wrap">
+  <p class="eyebrow">léelo una vez · Tonverk OS 1.4.0</p>
+  <h1>Antes de empezar</h1>
+  <p class="lede">Dos ideas en las que se apoya cada sesión, un mapa de lo que guarda un guardado, y tres cosas que hacer antes de la sesión 1. Diez minutos.</p>
+
+  <h2 id="tracks">Cuatro tipos de pista</h2>
+  <p>La fila inferior del panel son dieciséis teclas, y los rótulos de debajo dicen qué son las dieciséis pistas del secuenciador (manual §5.3):</p>
+  <ul>
+    <li><b>Audio, 1–8.</b> Un preset cada una, un par de efectos de inserción propios, y un nivel de send apuntando a cada una de las tres pistas de send. Para el movimiento: dos LFO en la voz, dos más en los efectos, y una envolvente de modulación extra. Dale a la pista la máquina MIDI en su lugar y controla otro instrumento en vez de producir sonido ella misma.</li>
+    <li><b>Bus, 9–12.</b> Un sitio al que apuntar varias pistas a la vez para tratarlas como una sola, y también tiene un par de efectos de inserción. Un bus acepta la máquina MIDI también.</li>
+    <li><b>Send FX, 13–15.</b> Un efecto cada una; lo que les llega es lo que las demás pistas envían.</li>
+    <li><b>Mix, 16.</b> Donde los niveles de todas las pistas se encuentran con las entradas de audio y con el efecto principal del pattern.</li>
+  </ul>
+  <p>Mantén pulsado <kbd class="key" data-key="TRK">TRK</kbd> y toca una tecla trig: la pista queda seleccionada y en silencio (§5.3.7). Toca la misma tecla sola y la seleccionas <em>y</em> la oyes. Pero pasa a cualquier pista de la 9 a la 16 y el teclado se queda con la pista de audio en la que estabas antes. Tócalo y responde la pista <em>vieja</em> — no el silencio, que es lo que lo hace confuso, y la razón más probable de que una nota parezca venir de la pista equivocada.</p>
+
+  <h2 id="containers">Cinco contenedores</h2>
+  <p>Dónde vive una cosa decide cuándo está a salvo. De fuera hacia dentro (manual §5.2):</p>
+  <ol>
+    <li><b>La tarjeta SD.</b> Todo, de forma permanente. Proyectos, presets, instrumentos, samples, ajustes.</li>
+    <li><b>El proyecto.</b> 128 patterns, 16 songs, los pools de samples y de wavetables, sus ajustes. El proyecto activo es el que la máquina carga al arrancar.</li>
+    <li><b>El pattern.</b> Trigs, locks, longitud, tempo, swing, compás — <em>y los presets de sus doce pistas</em>.</li>
+    <li><b>El preset.</b> Las páginas de parámetros de una pista, su setup, su arpegiador. Cuando cargas uno, el pattern recibe su propia copia (§9).</li>
+    <li><b>Los pools.</b> Samples y wavetables guardados en RAM: 1023 slots de sample y 127 de wavetable (§5.2.6), con los samples sumando 4 GB como máximo (§6.13).</li>
+  </ol>
+  <p>Las consecuencias que hay que retener: un giro de mando cambia la copia del preset que tiene el pattern; un pattern se guarda solo cuando se guarda el proyecto; las cadenas no se guardan nunca (§10.1.3); el modo PERFORM (§10.12) y la memorización temporal (§10.10.6) no son guardados; las songs necesitan que el proyecto se guarde también (§10.11.3).</p>
+
+  <div class="sim" data-sim="containers" id="containers-map">
+    <p class="sim-caption"><b>El mapa de los contenedores.</b> {{{ S.sim.caption }}} Pulsa una acción y mira qué recuadros cambian y cuáles se quedan sin guardar; empieza donde la sesión 1 deja el proyecto.</p>
+    <div class="sim-mount"></div>
+  </div>
+
+  <h2 id="update">Actualiza al OS 1.4.0</h2>
+  <p>Este sitio describe el OS 1.4.0 y nada más. Comprueba el tuyo: SETTINGS › SYSTEM › DEVICE INFO. Para actualizar (manual §6.12): descarga el archivo del OS de las páginas de soporte de Elektron, conecta el Tonverk a una computadora, SETTINGS › USB DISK MODE › <kbd class="key" data-key="YES">YES</kbd>, copia el archivo del OS a la raíz de la tarjeta, expulsa, <kbd class="key" data-key="NO">NO</kbd> para salir del modo disco, y luego SETTINGS › SYSTEM › OS UPGRADE › <kbd class="key" data-key="YES">YES</kbd>.</p>
+
+  <h2 id="backup">Haz una copia de seguridad antes</h2>
+  <p>Antes de la sesión 1, copia la carpeta <code>USER</code> de la tarjeta a una computadora de la misma manera (manual §6.11): USB DISK MODE, copia la carpeta, expulsa, <kbd class="key" data-key="NO">NO</kbd>. Todo lo que hagas — proyectos, presets, instrumentos, grabaciones, samples añadidos — vive en esa carpeta. El curso nunca te pide que borres nada, pero una copia de seguridad es lo que hace que cada experimento salga gratis.</p>
+
+  <p class="next-link"><a href="/session-01/">Sesión 1: El primer sonido →</a></p>
+</main>
+  {{> foot }}
+  <script type="module" src="/pages/before-you-start.js"></script>
+</body>
+</html>

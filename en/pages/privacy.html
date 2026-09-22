@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {{> head }}
+  <title>Privacy — Sixteen Tracks</title>
+  <meta name="description" content="{{#if TRACK}}What Sixteen Tracks measures, what it deliberately does not, and why there is no cookie banner: self-hosted Matomo, no cookies, anonymised IP, Do Not Track obeyed.{{else}}Sixteen Tracks measures nothing: no analytics, no cookies, no request to any server but the one that serves it.{{/if}}">
+  <link rel="canonical" href="{{PAGE_URL}}">
+  <meta property="og:title" content="Privacy — Sixteen Tracks">
+  <meta property="og:description" content="{{#if TRACK}}What Sixteen Tracks measures, what it deliberately does not, and why there is no cookie banner.{{else}}Sixteen Tracks measures nothing: no analytics, no cookies, no request to any server but the one that serves it.{{/if}}">
+  <meta property="og:url" content="{{PAGE_URL}}">
+  <meta property="og:image" content="{{SITE_URL}}/og.png">
+  <link rel="stylesheet" href="/styles/tokens.css">
+  <link rel="stylesheet" href="/styles/scales.css">
+  <link rel="stylesheet" href="/styles/chrome.css">
+  <link rel="stylesheet" href="/styles/kbd.css">
+  <link rel="stylesheet" href="/styles/doc.css">
+  <link rel="stylesheet" href="/styles/reduced-motion.css">
+  <link rel="stylesheet" href="/styles/print.css">
+</head>
+<body class="doc on-privacy">
+  {{> nav }}
+
+<main class="wrap">
+  <h1>Privacy</h1>
+  <!-- The lede follows the config, like the description and the rest of the page. It used
+       to sit outside the conditional, so on a build with measurement switched off the
+       opening sentence promised a count that the "What is collected: Nothing" two screens
+       below denied. Both twins live here; only one ever renders. -->
+  {{#if TRACK}}
+  <p class="lede">
+    This site counts how many people read it. It does that with one self-hosted tool, no
+    cookies, and no third party. This page says exactly what is collected, and the shorter
+    list of what is not.
+  </p>
+  {{else}}
+  <p class="lede">
+    This site counts nothing. No measurement runs on it, no cookie is set, and no request
+    leaves for any server but the one that serves these pages. This page says what that
+    means, and the two things your own browser keeps.
+  </p>
+  {{/if}}
+
+  <h2>Who is responsible</h2>
+  <p>
+    Sixteen Tracks is published by {{ site.privacy.controller }}, which also operates
+    <a href="{{ site.privacy.controllerUrl }}">{{ site.privacy.controllerUrl }}</a>, and is
+    the data controller for the purposes of the GDPR. Questions, or a request about your own
+    data, go to <a href="mailto:{{ site.privacy.contact }}">{{ site.privacy.contact }}</a>.
+  </p>
+
+  {{#if TRACK}}
+  <h2>What is collected</h2>
+  <p>
+    Audience measurement runs on <strong>Matomo</strong>, installed on our own server at
+    <code>{{ site.analytics.matomo.url }}</code>. Nothing is sent to Google, to an
+    advertising network, or to any analytics company. For each page you open it records:
+  </p>
+  <ul>
+    <li>the address of the page, and the page or search engine you arrived from;</li>
+    <li>an <strong>anonymised</strong> IP address, from which only an approximate region is derived;</li>
+    <li>the kind of browser, operating system and screen size;</li>
+    <li>the time of the visit, and which links you followed onward;</li>
+    <li>whether you jumped to a step, opened a checkpoint, or used a simulator. These events carry only a fixed name and a step number.</li>
+  </ul>
+  <p>
+    The purpose is to see which sessions are read and whether the checkpoints and simulators
+    are used. The legal basis is legitimate interest under Article&nbsp;6(1)(f) of the GDPR —
+    measuring an audience in aggregate, which cannot be done without counting.
+  </p>
+
+  <h2>What is not collected</h2>
+  <ul>
+    <li><strong>No cookies.</strong> Matomo runs here in its cookieless mode. The two things the site keeps on your device are the number of the session you last opened and, if you picked one from the globe, the language you chose, in your browser's own local storage, so the front page can offer a "continue" link and every page can open in your language; neither ever leaves your device and nothing reads them but these pages.</li>
+    <li><strong>No cross-site tracking</strong>, no advertising identifiers, no profiling, no data sold or shared.</li>
+    <li><strong>Nothing you do in a simulator</strong> — which steps you set, which conditions, what you tried. A simulator event says only that a simulator was used. The site has no accounts and no forms, so there is nothing to type and nothing to store.</li>
+  </ul>
+
+  <h2>When nothing is collected at all</h2>
+  <p>
+    In these cases the measurement script does not load at all:
+  </p>
+  <ul>
+    <li>if your browser sends <strong>Do Not Track</strong> or <strong>Global Privacy Control</strong>;</li>
+    <li>on any copy of the site that is not at this address: a saved page, an offline copy.</li>
+  </ul>
+
+  <h2>How long it is kept</h2>
+  <p>{{{ S.privacy.retention }}}</p>
+
+  <h2>Your rights</h2>
+  <p>
+    Under the GDPR you may ask what data relates to you, ask for it to be corrected or
+    erased, object to its processing, or ask for a copy. Write to
+    <a href="mailto:{{ site.privacy.contact }}">{{ site.privacy.contact }}</a>. Be aware that
+    because the data is collected without cookies and with an anonymised IP, there is
+    usually no way to connect any stored record to a particular person, so a request may be
+    impossible to fulfil for lack of anything to match you against.
+  </p>
+  <p>
+    If you are in Italy or elsewhere in the EU and you think this site handles data
+    improperly, you may complain to your national supervisory authority — in Italy, the
+    <a href="https://www.garanteprivacy.it/">Garante per la protezione dei dati personali</a>.
+  </p>
+
+  <h2>Why there is no cookie banner</h2>
+  <p>
+    Nothing on this site identifies you or follows you: the measurement sets no cookie, and
+    the only items kept in your browser are preferences of your own, the session you last
+    opened and the language you picked, that no server ever sees. There is nothing to consent to, so nothing asks.
+  </p>
+
+  <h2>If this changes</h2>
+  <p>If what is collected changes, this page changes with it.</p>
+  {{else}}
+  <h2>What is collected</h2>
+  <p>Nothing. This site is published with audience measurement switched off. No analytics script is included on any page, no cookie is set, and the site makes no request to any server other than the one that serves its pages. There is no form, no account and nothing to type.</p>
+  <h2>What is stored on your device</h2>
+  <p>If your browser allows it, the site remembers which session you last opened, and the language you picked from the globe if you picked one, in your browser's own local storage, so the hub can offer a "continue" link and every page can open in your language. It never leaves your device, it is not read by anyone, and the site works identically without it.</p>
+  <h2>If this changes</h2>
+  <p>If the site ever starts counting its readers, this page will say so first, and what it says will be the whole of it.</p>
+  {{/if}}
+</main>
+
+  {{> foot }}
+</body>
+</html>

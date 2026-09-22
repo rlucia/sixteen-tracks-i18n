@@ -1,0 +1,20 @@
+{
+  "chapters": [
+    { "id": "rhythm", "title": "Rhythm", "order": 1 },
+    { "id": "sound", "title": "Sound", "order": 2 },
+    { "id": "composition", "title": "Composition", "order": 3 }
+  ],
+  "planned": [
+    { "number": 1, "slug": "first-sound", "title": "First sound", "chapter": "rhythm", "gains": "A saved project with one preset on track 1" },
+    { "number": 2, "slug": "first-beat", "title": "First beat", "chapter": "rhythm", "gains": "A one-bar drum pattern on tracks 1–4" },
+    { "number": 3, "slug": "a-kit-from-one-sample", "title": "A kit from one sample", "chapter": "rhythm", "gains": "A drum track built on Subtracks" },
+    { "number": 4, "slug": "make-it-move", "title": "Make it move", "chapter": "rhythm", "gains": "Ghost notes, a filter sweep, a snare roll" },
+    { "number": 5, "slug": "variation-without-new-patterns", "title": "Variation without new patterns", "chapter": "rhythm", "gains": "A pattern that changes every loop" },
+    { "number": 6, "slug": "notes-and-harmony", "title": "Notes and harmony", "chapter": "sound", "gains": "A bass line and a chord part" },
+    { "number": 7, "slug": "the-signal-path", "title": "The signal path", "chapter": "sound", "gains": "Drums on a bus with a compressor, a send reverb" },
+    { "number": 8, "slug": "modulation", "title": "Modulation", "chapter": "sound", "gains": "A moving pad" },
+    { "number": 9, "slug": "sampling", "title": "Sampling", "chapter": "sound", "gains": "A resampled loop made from the piece" },
+    { "number": 10, "slug": "beyond-the-loop", "title": "Beyond the loop", "chapter": "composition", "gains": "The finished piece as a song" },
+    { "number": 11, "slug": "finish-and-keep-it", "title": "Finish and keep it", "chapter": "composition", "gains": "The finished project saved, reopened, and playable on the Tonverk" }
+  ]
+}

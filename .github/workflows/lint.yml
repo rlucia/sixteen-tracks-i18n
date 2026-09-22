@@ -1,0 +1,39 @@
+name: lint
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+# The job only reads the checkout; it needs no token beyond that.
+permissions:
+  contents: read
+
+# Ten pushes to one pull request are one run, not ten: the newest wins and the
+# rest are cancelled while they wait.
+concurrency:
+  group: lint-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    # The whole job is a checkout, Node, and a linter with no dependencies —
+    # well under a minute. Five is a cap on something going wrong, not a budget.
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: en/ and lib/ are exported from the site — edit the site, not them
+        if: github.event_name == 'pull_request'
+        run: |
+          changed=$(git diff --name-only "origin/${{ github.base_ref }}...HEAD" -- en/ lib/ lint.mjs package.json)
+          if [ -n "$changed" ]; then
+            echo "These files are exported from the site and cannot change here (open an issue instead):"
+            echo "$changed"
+            exit 1
+          fi
+      - run: npm run lint

@@ -1,0 +1,20 @@
+{
+  "chapters": [
+    { "id": "rhythm", "title": "Ritmo", "order": 1 },
+    { "id": "sound", "title": "Suono", "order": 2 },
+    { "id": "composition", "title": "Composizione", "order": 3 }
+  ],
+  "planned": [
+    { "number": 1, "slug": "first-sound", "title": "Il primo suono", "chapter": "rhythm", "gains": "Un progetto salvato con un preset sulla traccia 1" },
+    { "number": 2, "slug": "first-beat", "title": "Il primo beat", "chapter": "rhythm", "gains": "Un pattern di batteria di una battuta sulle tracce 1–4" },
+    { "number": 3, "slug": "a-kit-from-one-sample", "title": "Un kit da un solo sample", "chapter": "rhythm", "gains": "Una traccia di batteria costruita sulle Subtracks" },
+    { "number": 4, "slug": "make-it-move", "title": "Fallo muovere", "chapter": "rhythm", "gains": "Ghost note, uno sweep di filtro, un roll di snare" },
+    { "number": 5, "slug": "variation-without-new-patterns", "title": "Variazione senza nuovi pattern", "chapter": "rhythm", "gains": "Un pattern che cambia a ogni loop" },
+    { "number": 6, "slug": "notes-and-harmony", "title": "Note e armonia", "chapter": "sound", "gains": "Una linea di basso e una parte di accordi" },
+    { "number": 7, "slug": "the-signal-path", "title": "Il percorso del segnale", "chapter": "sound", "gains": "La batteria su un bus con un compressore, un riverbero in send" },
+    { "number": 8, "slug": "modulation", "title": "Modulazione", "chapter": "sound", "gains": "Un pad che si muove" },
+    { "number": 9, "slug": "sampling", "title": "Sampling", "chapter": "sound", "gains": "Un loop resamplato dal pezzo" },
+    { "number": 10, "slug": "beyond-the-loop", "title": "Oltre il loop", "chapter": "composition", "gains": "Il pezzo finito come song" },
+    { "number": 11, "slug": "finish-and-keep-it", "title": "Finiscilo e tienilo", "chapter": "composition", "gains": "Il progetto finito salvato, riaperto e suonabile sul Tonverk" }
+  ]
+}

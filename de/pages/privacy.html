@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {{> head }}
+  <title>Datenschutz — Sixteen Tracks</title>
+  <meta name="description" content="{{#if TRACK}}Was Sixteen Tracks misst, was es bewusst nicht misst, und warum es kein Cookie-Banner gibt: selbst gehostetes Matomo, keine Cookies, anonymisierte IP, Do Not Track wird beachtet.{{else}}Sixteen Tracks misst nichts: keine Analyse, keine Cookies, keine Anfrage an irgendeinen Server außer dem, der es ausliefert.{{/if}}">
+  <link rel="canonical" href="{{PAGE_URL}}">
+  <meta property="og:title" content="Datenschutz — Sixteen Tracks">
+  <meta property="og:description" content="{{#if TRACK}}Was Sixteen Tracks misst, was es bewusst nicht misst, und warum es kein Cookie-Banner gibt.{{else}}Sixteen Tracks misst nichts: keine Analyse, keine Cookies, keine Anfrage an irgendeinen Server außer dem, der es ausliefert.{{/if}}">
+  <meta property="og:url" content="{{PAGE_URL}}">
+  <meta property="og:image" content="{{SITE_URL}}/og.png">
+  <link rel="stylesheet" href="/styles/tokens.css">
+  <link rel="stylesheet" href="/styles/scales.css">
+  <link rel="stylesheet" href="/styles/chrome.css">
+  <link rel="stylesheet" href="/styles/kbd.css">
+  <link rel="stylesheet" href="/styles/doc.css">
+  <link rel="stylesheet" href="/styles/reduced-motion.css">
+  <link rel="stylesheet" href="/styles/print.css">
+</head>
+<body class="doc on-privacy">
+  {{> nav }}
+
+<main class="wrap">
+  <h1>Datenschutz</h1>
+  <!-- Der Einleitungsabsatz folgt der Konfiguration, wie die Beschreibung und der Rest der
+       Seite. Er stand früher außerhalb der Bedingung, sodass auf einem Build mit
+       ausgeschalteter Messung der erste Satz eine Zählung versprach, die das „Was erhoben
+       wird: Nichts“ zwei Bildschirme weiter unten bestritt. Beide Zwillinge leben hier; nur
+       einer wird je gerendert. -->
+  {{#if TRACK}}
+  <p class="lede">
+    Diese Website zählt, wie viele Leute sie lesen. Sie tut das mit einem einzigen, selbst
+    gehosteten Werkzeug, ohne Cookies und ohne Dritte. Diese Seite sagt genau, was erhoben
+    wird, und die kürzere Liste dessen, was nicht.
+  </p>
+  {{else}}
+  <p class="lede">
+    Diese Website zählt nichts. Keine Messung läuft auf ihr, kein Cookie wird gesetzt, und
+    keine Anfrage geht an irgendeinen Server außer dem, der diese Seiten ausliefert. Diese
+    Seite sagt, was das bedeutet, und nennt die beiden Dinge, die dein eigener Browser behält.
+  </p>
+  {{/if}}
+
+  <h2>Wer verantwortlich ist</h2>
+  <p>
+    Sixteen Tracks wird veröffentlicht von {{ site.privacy.controller }}, die auch
+    <a href="{{ site.privacy.controllerUrl }}">{{ site.privacy.controllerUrl }}</a> betreibt und
+    die Verantwortliche im Sinne der DSGVO ist. Fragen, oder ein Antrag zu deinen eigenen
+    Daten, gehen an <a href="mailto:{{ site.privacy.contact }}">{{ site.privacy.contact }}</a>.
+  </p>
+
+  {{#if TRACK}}
+  <h2>Was erhoben wird</h2>
+  <p>
+    Die Reichweitenmessung läuft auf <strong>Matomo</strong>, installiert auf unserem eigenen
+    Server unter <code>{{ site.analytics.matomo.url }}</code>. Nichts wird an Google, an ein
+    Werbenetzwerk oder an irgendein Analyseunternehmen gesendet. Für jede Seite, die du öffnest,
+    wird erfasst:
+  </p>
+  <ul>
+    <li>die Adresse der Seite und die Seite oder Suchmaschine, von der du gekommen bist;</li>
+    <li>eine <strong>anonymisierte</strong> IP-Adresse, aus der nur eine ungefähre Region abgeleitet wird;</li>
+    <li>die Art des Browsers, das Betriebssystem und die Bildschirmgröße;</li>
+    <li>die Uhrzeit des Besuchs und welchen Links du weiter gefolgt bist;</li>
+    <li>ob du zu einem Schritt gesprungen bist, einen Kontrollpunkt geöffnet oder einen Simulator benutzt hast. Diese Ereignisse tragen nur einen festen Namen und eine Schrittnummer.</li>
+  </ul>
+  <p>
+    Der Zweck ist zu sehen, welche Sessions gelesen werden und ob die Kontrollpunkte und
+    Simulatoren benutzt werden. Die Rechtsgrundlage ist das berechtigte Interesse nach
+    Artikel&nbsp;6 Absatz 1 Buchstabe f der DSGVO — eine Leserschaft in der Summe zu messen,
+    was ohne Zählen nicht geht.
+  </p>
+
+  <h2>Was nicht erhoben wird</h2>
+  <ul>
+    <li><strong>Keine Cookies.</strong> Matomo läuft hier im cookielosen Modus. Die beiden Dinge, die die Website auf deinem Gerät behält, sind die Nummer der Session, die du zuletzt geöffnet hast, und, falls du eine über den Globus gewählt hast, die Sprache, die du gewählt hast, im lokalen Speicher deines eigenen Browsers, damit die Startseite einen „Weiter“-Link anbieten kann und sich jede Seite in deiner Sprache öffnen kann; beides verlässt dein Gerät nie, und nichts liest es außer diesen Seiten.</li>
+    <li><strong>Kein seitenübergreifendes Tracking</strong>, keine Werbe-IDs, keine Profilbildung, keine Daten, die verkauft oder geteilt werden.</li>
+    <li><strong>Nichts, was du in einem Simulator tust</strong> — welche Schritte du setzt, welche Bedingungen, was du ausprobiert hast. Ein Simulator-Ereignis sagt nur, dass ein Simulator benutzt wurde. Die Website hat keine Konten und keine Formulare, es gibt also nichts einzutippen und nichts zu speichern.</li>
+  </ul>
+
+  <h2>Wann gar nichts erhoben wird</h2>
+  <p>
+    In diesen Fällen wird das Messskript gar nicht erst geladen:
+  </p>
+  <ul>
+    <li>wenn dein Browser <strong>Do Not Track</strong> oder <strong>Global Privacy Control</strong> sendet;</li>
+    <li>auf jeder Kopie der Website, die nicht unter dieser Adresse liegt: eine gespeicherte Seite, eine Offline-Kopie.</li>
+  </ul>
+
+  <h2>Wie lange es aufbewahrt wird</h2>
+  <p>{{{ S.privacy.retention }}}</p>
+
+  <h2>Deine Rechte</h2>
+  <p>
+    Nach der DSGVO kannst du Auskunft darüber verlangen, welche Daten sich auf dich beziehen,
+    ihre Berichtigung oder Löschung verlangen, ihrer Verarbeitung widersprechen oder eine Kopie
+    verlangen. Schreib an
+    <a href="mailto:{{ site.privacy.contact }}">{{ site.privacy.contact }}</a>. Beachte, dass
+    sich, weil die Daten ohne Cookies und mit anonymisierter IP erhoben werden, in der Regel
+    kein gespeicherter Datensatz einer bestimmten Person zuordnen lässt; ein Antrag kann also
+    unerfüllbar sein, weil es nichts gibt, womit du dich abgleichen ließest.
+  </p>
+  <p>
+    Wenn du in Italien oder anderswo in der EU bist und meinst, diese Website gehe unsauber
+    mit Daten um, kannst du dich bei deiner nationalen Aufsichtsbehörde beschweren — in
+    Italien beim
+    <a href="https://www.garanteprivacy.it/">Garante per la protezione dei dati personali</a>.
+  </p>
+
+  <h2>Warum es kein Cookie-Banner gibt</h2>
+  <p>
+    Nichts auf dieser Website identifiziert dich oder folgt dir: die Messung setzt kein
+    Cookie, und was in deinem Browser bleibt, sind allein Einstellungen von dir selbst, die
+    zuletzt geöffnete Session und die gewählte Sprache, die kein Server je sieht. Es gibt nichts, worin
+    einzuwilligen wäre, also fragt nichts.
+  </p>
+
+  <h2>Falls sich das ändert</h2>
+  <p>Ändert sich, was erhoben wird, ändert sich diese Seite mit.</p>
+  {{else}}
+  <h2>Was erhoben wird</h2>
+  <p>Nichts. Diese Website wird mit ausgeschalteter Reichweitenmessung veröffentlicht. Kein Analyseskript ist auf irgendeiner Seite eingebunden, kein Cookie wird gesetzt, und die Website stellt keine Anfrage an irgendeinen Server außer dem, der ihre Seiten ausliefert. Es gibt kein Formular, kein Konto und nichts einzutippen.</p>
+  <h2>Was auf deinem Gerät gespeichert wird</h2>
+  <p>Wenn dein Browser es erlaubt, merkt sich die Website, welche Session du zuletzt geöffnet hast, und die Sprache, die du über den Globus gewählt hast, falls du eine gewählt hast, im lokalen Speicher deines eigenen Browsers, damit die Startseite einen „Weiter“-Link anbieten kann und sich jede Seite in deiner Sprache öffnen kann. Beides verlässt dein Gerät nie, wird von niemandem gelesen, und die Website funktioniert auch ohne genauso.</p>
+  <h2>Falls sich das ändert</h2>
+  <p>Fängt die Website je an, ihre Leser zu zählen, sagt diese Seite es als Erstes, und was sie sagt, wird das Ganze sein.</p>
+  {{/if}}
+</main>
+
+  {{> foot }}
+</body>
+</html>

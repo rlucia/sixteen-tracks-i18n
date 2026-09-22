@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {{> head }}
+  <title>Integritet — Sixteen Tracks</title>
+  <meta name="description" content="{{#if TRACK}}Vad Sixteen Tracks mäter, vad den medvetet inte mäter, och varför det inte finns någon cookiebanner: självhostad Matomo, inga cookies, anonymiserad IP, Do Not Track respekteras.{{else}}Sixteen Tracks mäter ingenting: ingen analys, inga cookies, ingen förfrågan till någon annan server än den som levererar den.{{/if}}">
+  <link rel="canonical" href="{{PAGE_URL}}">
+  <meta property="og:title" content="Integritet — Sixteen Tracks">
+  <meta property="og:description" content="{{#if TRACK}}Vad Sixteen Tracks mäter, vad den medvetet inte mäter, och varför det inte finns någon cookiebanner.{{else}}Sixteen Tracks mäter ingenting: ingen analys, inga cookies, ingen förfrågan till någon annan server än den som levererar den.{{/if}}">
+  <meta property="og:url" content="{{PAGE_URL}}">
+  <meta property="og:image" content="{{SITE_URL}}/og.png">
+  <link rel="stylesheet" href="/styles/tokens.css">
+  <link rel="stylesheet" href="/styles/scales.css">
+  <link rel="stylesheet" href="/styles/chrome.css">
+  <link rel="stylesheet" href="/styles/kbd.css">
+  <link rel="stylesheet" href="/styles/doc.css">
+  <link rel="stylesheet" href="/styles/reduced-motion.css">
+  <link rel="stylesheet" href="/styles/print.css">
+</head>
+<body class="doc on-privacy">
+  {{> nav }}
+
+<main class="wrap">
+  <h1>Integritet</h1>
+  <!-- Ingressen följer konfigurationen, precis som beskrivningen och resten av sidan. Den
+       satt förut utanför villkoret, så i ett bygge med mätningen avstängd lovade den
+       inledande meningen en räkning som "Vad som samlas in: Ingenting" två skärmar längre
+       ner förnekade. Båda tvillingarna bor här; bara en renderas någonsin. -->
+  {{#if TRACK}}
+  <p class="lede">
+    Den här sajten räknar hur många som läser den. Den gör det med ett enda självhostat
+    verktyg, utan cookies och utan någon tredje part. Den här sidan säger exakt vad som
+    samlas in, och den kortare listan över vad som inte gör det.
+  </p>
+  {{else}}
+  <p class="lede">
+    Den här sajten räknar ingenting. Ingen mätning körs på den, ingen cookie sätts, och
+    ingen förfrågan går till någon annan server än den som levererar de här sidorna. Den
+    här sidan säger vad det betyder, och vilka två saker din egen webbläsare behåller.
+  </p>
+  {{/if}}
+
+  <h2>Vem som är ansvarig</h2>
+  <p>
+    Sixteen Tracks ges ut av {{ site.privacy.controller }}, som också driver
+    <a href="{{ site.privacy.controllerUrl }}">{{ site.privacy.controllerUrl }}</a> och är
+    personuppgiftsansvarig enligt Dataskyddsförordningen (GDPR). Frågor, eller en begäran
+    som rör dina egna uppgifter, går till <a href="mailto:{{ site.privacy.contact }}">{{ site.privacy.contact }}</a>.
+  </p>
+
+  {{#if TRACK}}
+  <h2>Vad som samlas in</h2>
+  <p>
+    Publikmätningen körs på <strong>Matomo</strong>, installerad på vår egen server på
+    <code>{{ site.analytics.matomo.url }}</code>. Ingenting skickas till Google, till ett
+    annonsnätverk eller till något analysföretag. För varje sida du öppnar registreras:
+  </p>
+  <ul>
+    <li>sidans adress, och sidan eller sökmotorn du kom ifrån;</li>
+    <li>en <strong>anonymiserad</strong> IP-adress, ur vilken bara en ungefärlig region härleds;</li>
+    <li>typen av webbläsare, operativsystem och skärmstorlek;</li>
+    <li>tidpunkten för besöket, och vilka länkar du följde vidare;</li>
+    <li>om du hoppade till ett steg, öppnade en kontrollpunkt eller använde en simulator. De händelserna bär bara ett fast namn och ett stegnummer.</li>
+  </ul>
+  <p>
+    Syftet är att se vilka sessioner som läses och om kontrollpunkterna och simulatorerna
+    används. Den rättsliga grunden är berättigat intresse enligt artikel&nbsp;6.1 f i
+    Dataskyddsförordningen — att mäta en publik på aggregerad nivå, vilket inte går att göra
+    utan att räkna.
+  </p>
+
+  <h2>Vad som inte samlas in</h2>
+  <ul>
+    <li><strong>Inga cookies.</strong> Matomo körs här i sitt cookiefria läge. De två saker sajten behåller på din enhet är numret på sessionen du senast öppnade och, om du valde ett från jordgloben, språket du valde, i webbläsarens egen lokala lagring, så att startsidan kan erbjuda en fortsätt-länk och varje sida kan öppnas på ditt språk; ingen av dem lämnar någonsin din enhet och ingenting läser dem utom de här sidorna.</li>
+    <li><strong>Ingen spårning mellan sajter</strong>, inga annonsidentifierare, ingen profilering, inga uppgifter sålda eller delade.</li>
+    <li><strong>Ingenting du gör i en simulator</strong> — vilka steg du ställer, vilka villkor, vad du provade. En simulatorhändelse säger bara att en simulator användes. Sajten har inga konton och inga formulär, så det finns inget att skriva in och inget att lagra.</li>
+  </ul>
+
+  <h2>När ingenting alls samlas in</h2>
+  <p>
+    I de här fallen laddas mätskriptet inte alls:
+  </p>
+  <ul>
+    <li>om din webbläsare skickar <strong>Do Not Track</strong> eller <strong>Global Privacy Control</strong>;</li>
+    <li>på varje kopia av sajten som inte ligger på den här adressen: en sparad sida, en offlinekopia.</li>
+  </ul>
+
+  <h2>Hur länge det sparas</h2>
+  <p>{{{ S.privacy.retention }}}</p>
+
+  <h2>Dina rättigheter</h2>
+  <p>
+    Enligt Dataskyddsförordningen får du fråga vilka uppgifter som rör dig, begära att de
+    rättas eller raderas, invända mot behandlingen eller be om en kopia. Skriv till
+    <a href="mailto:{{ site.privacy.contact }}">{{ site.privacy.contact }}</a>. Var medveten
+    om att eftersom uppgifterna samlas in utan cookies och med anonymiserad IP, finns det
+    oftast inget sätt att koppla en lagrad post till en bestämd person, så en begäran kan
+    vara omöjlig att uppfylla i brist på något att matcha dig mot.
+  </p>
+  <p>
+    Är du i Italien eller någon annanstans i EU och anser att den här sajten hanterar
+    uppgifter felaktigt, kan du klaga hos din nationella tillsynsmyndighet — i Italien
+    <a href="https://www.garanteprivacy.it/">Garante per la protezione dei dati personali</a>.
+  </p>
+
+  <h2>Varför det inte finns någon cookiebanner</h2>
+  <p>
+    Ingenting på den här sajten identifierar dig eller följer dig: mätningen sätter ingen
+    cookie, och det enda som behålls i din webbläsare är dina egna inställningar — sessionen
+    du senast öppnade och språket du valde — som ingen server någonsin ser. Det finns ingenting att samtycka till, så ingenting frågar.
+  </p>
+
+  <h2>Om det här ändras</h2>
+  <p>Ändras det som samlas in ändras den här sidan med det.</p>
+  {{else}}
+  <h2>Vad som samlas in</h2>
+  <p>Ingenting. Den här sajten publiceras med publikmätningen avstängd. Inget analysskript finns med på någon sida, ingen cookie sätts, och sajten gör ingen förfrågan till någon annan server än den som levererar dess sidor. Det finns inget formulär, inget konto och inget att skriva in.</p>
+  <h2>Vad som lagras på din enhet</h2>
+  <p>Om din webbläsare tillåter det minns sajten vilken session du senast öppnade, och språket du valde från jordgloben om du valde ett, i webbläsarens egen lokala lagring, så att startsidan kan erbjuda en fortsätt-länk och varje sida kan öppnas på ditt språk. Det lämnar aldrig din enhet, det läses inte av någon, och sajten fungerar likadant utan det.</p>
+  <h2>Om det här ändras</h2>
+  <p>Om sajten någon gång börjar räkna sina läsare kommer den här sidan att säga det först, och det den säger blir allt som finns att säga.</p>
+  {{/if}}
+</main>
+
+  {{> foot }}
+</body>
+</html>

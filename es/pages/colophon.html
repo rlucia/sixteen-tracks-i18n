@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {{> head }}
+  <title>Colofón — Sixteen Tracks</title>
+  <meta name="description" content="Quién hizo Sixteen Tracks, dónde avisar de un error, qué significan las tres marcas de un paso, y cuánto del curso se ha comprobado en un Tonverk con el OS 1.4.0.">
+  <link rel="canonical" href="{{PAGE_URL}}">
+  <meta property="og:title" content="Colofón — Sixteen Tracks">
+  <meta property="og:description" content="Quién lo hizo, dónde escribir, y cuánto está comprobado en la unidad.">
+  <meta property="og:url" content="{{PAGE_URL}}">
+  <meta property="og:image" content="{{SITE_URL}}/og.png">
+  <link rel="stylesheet" href="/styles/tokens.css">
+  <link rel="stylesheet" href="/styles/scales.css">
+  <link rel="stylesheet" href="/styles/chrome.css">
+  <link rel="stylesheet" href="/styles/kbd.css">
+  <link rel="stylesheet" href="/styles/doc.css">
+  <link rel="stylesheet" href="/styles/session.css">
+  <link rel="stylesheet" href="/styles/reduced-motion.css">
+  <link rel="stylesheet" href="/styles/print.css">
+</head>
+<body class="doc on-colophon">
+  {{> nav }}
+<main class="wrap">
+  <h1>Colofón</h1>
+  <p class="lede">Quién hizo esto, dónde escribir cuando un paso está mal, y cuánto de ello se ha comprobado en un Tonverk.</p>
+
+  <h2 id="contact">Hecho por</h2>
+  <p>Sixteen Tracks está escrito por un propietario de Tonverk y publicado por {{ site.privacy.controller }} Si un paso no hace en tu unidad lo que dice, o una tecla tiene el nombre equivocado, escribe a <a href="mailto:{{ site.privacy.contact }}">{{ site.privacy.contact }}</a> con el número de la sesión y del paso. Las correcciones se listan abajo a medida que llegan.</p>
+
+  <h2 id="marks">La marca al pie de cada paso</h2>
+  <ul class="mark-list">
+    <li><span class="step-source" data-source="manual"><svg class="src-glyph" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1.5 3.2c2.2-.9 4.4-.9 6.5.6 2.1-1.5 4.3-1.5 6.5-.6v9.6c-2.2-.9-4.4-.9-6.5.6-2.1-1.5-4.3-1.5-6.5-.6z"/><path d="M8 3.8v9.6"/></svg>10.3</span> El paso está escrito a partir de esa sección del manual de usuario del Tonverk para el OS {{ OS }}.</li>
+    <li><span class="step-source" data-source="community">&#x2197; comunidad</span> El paso se apoya en algo que el manual no dice: un hilo de un foro, un vídeo, la respuesta de un desarrollador. El enlace es la fuente.</li>
+    <li><span class="step-source" data-source="device"><svg class="src-glyph" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2.5 8.5l3.5 3.5 7.5-8"/></svg>comprobado en la unidad</span> El paso se ha hecho en un Tonverk con el OS {{ OS }} y se comportó como está escrito.</li>
+  </ul>
+  <p>Hasta que un paso está comprobado, la autoridad es el manual y tu unidad puede diferir. Hasta dónde ha llegado la comprobación:</p>
+  {{> provenance }}
+
+  <h2 id="unit">Donde la unidad no estuvo de acuerdo</h2>
+  <p>En ningún sitio todavía: ninguna sesión ha pasado por una unidad. Hay una cosa en el panel dibujado que se sabe que está sin comprobar, más que equivocada: el rótulo menta bajo ARP, CHORD y SONG dice <em>On/Off</em> porque el manual los describe así, y la impresión de la unidad no se ha comprobado.</p>
+
+  <h2 id="drawings">Las imágenes</h2>
+  <p>El panel y las pantallas están dibujados a partir de las figuras y las descripciones del manual, no fotografiados. Muestran lo que un paso necesita y dejan fuera el resto. Qué significa cada color de las teclas, modo por modo, está en <a href="/key-colours/">Colores de las teclas</a>.</p>
+
+  <h2 id="measured">Medición</h2>
+  {{#if TRACK}}
+  <p>El sitio cuenta a sus lectores con un Matomo en nuestro propio servidor, sin cookies y sin datos personales; <a href="/privacy/">la página de privacidad</a> dice exactamente qué.</p>
+  {{else}}
+  <p>El sitio no cuenta nada y no hace ninguna petición a ningún servidor. <a href="/privacy/">La página de privacidad</a> dice qué cambiaría si lo hiciera.</p>
+  {{/if}}
+</main>
+  {{> foot }}
+</body>
+</html>

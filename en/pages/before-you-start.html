@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {{> head }}
+  <title>Before you start — Sixteen Tracks</title>
+  <meta name="description" content="The four kinds of track, the five containers a save touches, updating to OS 1.4.0, and backing up first. Read once before session 1 of Sixteen Tracks.">
+  <link rel="canonical" href="{{PAGE_URL}}">
+  <meta property="og:title" content="Before you start — Sixteen Tracks">
+  <meta property="og:description" content="The four kinds of track and the five containers, with the containers map.">
+  <meta property="og:url" content="{{PAGE_URL}}">
+  <meta property="og:image" content="{{SITE_URL}}/og.png">
+  <link rel="stylesheet" href="/styles/tokens.css">
+  <link rel="stylesheet" href="/styles/scales.css">
+  <link rel="stylesheet" href="/styles/chrome.css">
+  <link rel="stylesheet" href="/styles/kbd.css">
+  <link rel="stylesheet" href="/styles/doc.css">
+  <link rel="stylesheet" href="/styles/sim.css">
+  <link rel="stylesheet" href="/styles/reduced-motion.css">
+  <link rel="stylesheet" href="/styles/print.css">
+</head>
+<body class="doc on-before">
+  {{> nav }}
+<main class="wrap">
+  <p class="eyebrow">read once · Tonverk OS 1.4.0</p>
+  <h1>Before you start</h1>
+  <p class="lede">Two ideas every session leans on, a map of what a save saves, and three things to do before session 1. Ten minutes.</p>
+
+  <h2 id="tracks">Four kinds of track</h2>
+  <p>The bottom row of the panel is sixteen keys, and the labels under them say what the sixteen sequencer tracks are (manual §5.3):</p>
+  <ul>
+    <li><b>Audio, 1–8.</b> One preset apiece, a pair of insert effects of its own, and a send level aimed at each of the three send tracks. For movement: two LFOs on the voice, two more on the effects, and one extra modulation envelope. Give the track the MIDI machine instead and it drives another instrument rather than making a sound itself.</li>
+    <li><b>Bus, 9–12.</b> Somewhere to point several tracks at once so they can be treated as one, and it too has a pair of insert effects. A bus will take the MIDI machine as well.</li>
+    <li><b>Send FX, 13–15.</b> One effect apiece; what reaches them is whatever the other tracks send.</li>
+    <li><b>Mix, 16.</b> Where the levels of every track meet the audio inputs and the pattern's main effect.</li>
+  </ul>
+  <p>Hold <kbd class="key" data-key="TRK">TRK</kbd> and tap a trig key: the track is selected and stays quiet (§5.3.7). Tap the same key on its own and you select it <em>and</em> hear it. Move to any track from 9 to 16, though, and the keyboard stays with the audio track you were on before. Play it and the <em>old</em> track answers — not silence, which is what makes it confusing, and the likeliest reason a note seems to come from the wrong track.</p>
+
+  <h2 id="containers">Five containers</h2>
+  <p>Where a thing lives decides when it is safe. From the outside in (manual §5.2):</p>
+  <ol>
+    <li><b>The SD card.</b> Everything, permanently. Projects, presets, instruments, samples, settings.</li>
+    <li><b>The project.</b> 128 patterns, 16 songs, the sample and wavetable pools, its settings. The active project is what the machine boots into.</li>
+    <li><b>The pattern.</b> Trigs, locks, length, tempo, swing, time signature — <em>and the presets of its twelve tracks</em>.</li>
+    <li><b>The preset.</b> A track's parameter pages, its setup, its arpeggiator. When you load one, the pattern gets its own copy (§9).</li>
+    <li><b>The pools.</b> Samples and wavetables held in RAM: 1023 sample slots and 127 wavetable slots (§5.2.6), the samples coming to 4 GB at most (§6.13).</li>
+  </ol>
+  <p>The consequences to hold on to: a knob turn changes the pattern's copy of the preset; a pattern is saved only when the project is saved; chains are never saved (§10.1.3); PERFORM mode (§10.12) and the temporary memorise (§10.10.6) are not saves; songs need the project saved too (§10.11.3).</p>
+
+  <div class="sim" data-sim="containers" id="containers-map">
+    <p class="sim-caption"><b>The containers map.</b> {{{ S.sim.caption }}} Press an action and watch which boxes change and which stay unsaved; it starts where session 1 leaves the project.</p>
+    <div class="sim-mount"></div>
+  </div>
+
+  <h2 id="update">Update to OS 1.4.0</h2>
+  <p>This site describes OS 1.4.0 and nothing else. Check yours: SETTINGS › SYSTEM › DEVICE INFO. To update (manual §6.12): download the OS file from Elektron's support pages, connect the Tonverk to a computer, SETTINGS › USB DISK MODE › <kbd class="key" data-key="YES">YES</kbd>, copy the OS file to the root of the card, eject, <kbd class="key" data-key="NO">NO</kbd> to leave disk mode, then SETTINGS › SYSTEM › OS UPGRADE › <kbd class="key" data-key="YES">YES</kbd>.</p>
+
+  <h2 id="backup">Back up first</h2>
+  <p>Before session 1, copy the card's <code>USER</code> folder to a computer the same way (manual §6.11): USB DISK MODE, copy the folder, eject, <kbd class="key" data-key="NO">NO</kbd>. Everything you make — projects, presets, instruments, recordings, added samples — lives in that folder. The course never asks you to delete anything, but a backup is what makes every experiment free.</p>
+
+  <p class="next-link"><a href="/session-01/">Session 1: First sound →</a></p>
+</main>
+  {{> foot }}
+  <script type="module" src="/pages/before-you-start.js"></script>
+</body>
+</html>

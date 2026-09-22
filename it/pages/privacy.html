@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {{> head }}
+  <title>Privacy — Sixteen Tracks</title>
+  <meta name="description" content="{{#if TRACK}}Cosa misura Sixteen Tracks, cosa deliberatamente non misura, e perché non c'è un banner dei cookie: Matomo su un server proprio, nessun cookie, IP anonimizzato, Do Not Track rispettato.{{else}}Sixteen Tracks non misura niente: nessuna analisi, nessun cookie, nessuna richiesta a nessun server se non quello che lo serve.{{/if}}">
+  <link rel="canonical" href="{{PAGE_URL}}">
+  <meta property="og:title" content="Privacy — Sixteen Tracks">
+  <meta property="og:description" content="{{#if TRACK}}Cosa misura Sixteen Tracks, cosa deliberatamente non misura, e perché non c'è un banner dei cookie.{{else}}Sixteen Tracks non misura niente: nessuna analisi, nessun cookie, nessuna richiesta a nessun server se non quello che lo serve.{{/if}}">
+  <meta property="og:url" content="{{PAGE_URL}}">
+  <meta property="og:image" content="{{SITE_URL}}/og.png">
+  <link rel="stylesheet" href="/styles/tokens.css">
+  <link rel="stylesheet" href="/styles/scales.css">
+  <link rel="stylesheet" href="/styles/chrome.css">
+  <link rel="stylesheet" href="/styles/kbd.css">
+  <link rel="stylesheet" href="/styles/doc.css">
+  <link rel="stylesheet" href="/styles/reduced-motion.css">
+  <link rel="stylesheet" href="/styles/print.css">
+</head>
+<body class="doc on-privacy">
+  {{> nav }}
+
+<main class="wrap">
+  <h1>Privacy</h1>
+  <!-- Il lede segue la configurazione, come la description e il resto della pagina. Un tempo
+       stava fuori dal condizionale, così in un build con la misurazione spenta la frase di
+       apertura prometteva un conteggio che il "Cosa viene raccolto: Niente" due schermate
+       più sotto smentiva. Entrambi i gemelli vivono qui; ne viene reso sempre uno solo. -->
+  {{#if TRACK}}
+  <p class="lede">
+    Questo sito conta quante persone lo leggono. Lo fa con un solo strumento su un server
+    proprio, senza cookie e senza terze parti. Questa pagina dice esattamente cosa viene
+    raccolto, e la lista più breve di cosa non lo è.
+  </p>
+  {{else}}
+  <p class="lede">
+    Questo sito non conta niente. Nessuna misurazione gira su di esso, nessun cookie viene
+    impostato, e nessuna richiesta parte verso un server che non sia quello che serve queste
+    pagine. Questa pagina dice cosa vuol dire, e le due cose che il tuo browser conserva.
+  </p>
+  {{/if}}
+
+  <h2>Chi è responsabile</h2>
+  <p>
+    Sixteen Tracks è pubblicato da {{ site.privacy.controller }}, che gestisce anche
+    <a href="{{ site.privacy.controllerUrl }}">{{ site.privacy.controllerUrl }}</a> ed è
+    il titolare del trattamento ai sensi del GDPR. Le domande, o una richiesta sui tuoi
+    dati, vanno a <a href="mailto:{{ site.privacy.contact }}">{{ site.privacy.contact }}</a>.
+  </p>
+
+  {{#if TRACK}}
+  <h2>Cosa viene raccolto</h2>
+  <p>
+    La misurazione del pubblico gira su <strong>Matomo</strong>, installato sul nostro server
+    all'indirizzo <code>{{ site.analytics.matomo.url }}</code>. Niente viene mandato a Google, a una
+    rete pubblicitaria o a una società di analisi. Per ogni pagina che apri registra:
+  </p>
+  <ul>
+    <li>l'indirizzo della pagina, e la pagina o il motore di ricerca da cui sei arrivato;</li>
+    <li>un indirizzo IP <strong>anonimizzato</strong>, da cui si ricava solo una regione approssimativa;</li>
+    <li>il tipo di browser, il sistema operativo e la dimensione dello schermo;</li>
+    <li>l'ora della visita, e quali link hai seguito da lì;</li>
+    <li>se sei saltato a un passo, hai aperto un punto di controllo o hai usato un simulatore. Questi eventi portano solo un nome fisso e un numero di passo.</li>
+  </ul>
+  <p>
+    Lo scopo è vedere quali sessioni vengono lette e se i punti di controllo e i simulatori
+    vengono usati. La base giuridica è il legittimo interesse ai sensi dell'articolo&nbsp;6, paragrafo 1, lettera f) del GDPR —
+    misurare un pubblico in forma aggregata, cosa che non si può fare senza contare.
+  </p>
+
+  <h2>Cosa non viene raccolto</h2>
+  <ul>
+    <li><strong>Nessun cookie.</strong> Qui Matomo gira nella sua modalità senza cookie. Le due cose che il sito tiene sul tuo dispositivo sono il numero dell'ultima sessione che hai aperto e, se ne hai scelta una dal globo, la lingua che hai scelto, nel local storage del tuo browser, così la pagina iniziale può offrire un link "continua" e ogni pagina può aprirsi nella tua lingua; non lasciano mai il tuo dispositivo e niente li legge se non queste pagine.</li>
+    <li><strong>Nessun tracciamento tra siti</strong>, nessun identificatore pubblicitario, nessuna profilazione, nessun dato venduto o condiviso.</li>
+    <li><strong>Niente di quello che fai in un simulatore</strong> — quali passi hai impostato, quali condizioni, cosa hai provato. Un evento del simulatore dice solo che un simulatore è stato usato. Il sito non ha account né moduli, quindi non c'è niente da digitare e niente da conservare.</li>
+  </ul>
+
+  <h2>Quando non viene raccolto proprio niente</h2>
+  <p>
+    In questi casi lo script di misurazione non viene caricato affatto:
+  </p>
+  <ul>
+    <li>se il tuo browser manda <strong>Do Not Track</strong> o <strong>Global Privacy Control</strong>;</li>
+    <li>su qualsiasi copia del sito che non sia a questo indirizzo: una pagina salvata, una copia offline.</li>
+  </ul>
+
+  <h2>Per quanto viene conservato</h2>
+  <p>{{{ S.privacy.retention }}}</p>
+
+  <h2>I tuoi diritti</h2>
+  <p>
+    Ai sensi del GDPR puoi chiedere quali dati ti riguardano, chiederne la rettifica o la
+    cancellazione, opporti al loro trattamento, o chiederne una copia. Scrivi a
+    <a href="mailto:{{ site.privacy.contact }}">{{ site.privacy.contact }}</a>. Tieni presente che,
+    poiché i dati vengono raccolti senza cookie e con IP anonimizzato, di solito non c'è
+    modo di collegare un record conservato a una persona precisa, quindi una richiesta può
+    essere impossibile da soddisfare per mancanza di qualcosa con cui riconoscerti.
+  </p>
+  <p>
+    Se sei in Italia o altrove nell'UE e pensi che questo sito tratti i dati in modo
+    scorretto, puoi presentare reclamo alla tua autorità di controllo nazionale — in Italia, il
+    <a href="https://www.garanteprivacy.it/">Garante per la protezione dei dati personali</a>.
+  </p>
+
+  <h2>Perché non c'è un banner dei cookie</h2>
+  <p>
+    Niente in questo sito ti identifica o ti segue: la misurazione non imposta nessun cookie, e
+    le sole cose conservate nel tuo browser sono tue preferenze, l'ultima sessione che hai
+    aperto e la lingua che hai scelto, che nessun server vede mai. Non c'è niente a cui acconsentire, quindi niente lo chiede.
+  </p>
+
+  <h2>Se questo cambia</h2>
+  <p>Se cambia quello che viene raccolto, questa pagina cambia con esso.</p>
+  {{else}}
+  <h2>Cosa viene raccolto</h2>
+  <p>Niente. Questo sito è pubblicato con la misurazione del pubblico spenta. Nessuno script di analisi è incluso in nessuna pagina, nessun cookie viene impostato, e il sito non fa nessuna richiesta a nessun server che non sia quello che serve le sue pagine. Non c'è nessun modulo, nessun account e niente da digitare.</p>
+  <h2>Cosa viene conservato sul tuo dispositivo</h2>
+  <p>Se il tuo browser lo permette, il sito si ricorda quale sessione hai aperto per ultima, e la lingua che hai scelto dal globo se ne hai scelta una, nel local storage del tuo browser, così la pagina iniziale può offrire un link "continua" e ogni pagina può aprirsi nella tua lingua. Non lasciano mai il tuo dispositivo, nessuno li legge, e il sito funziona identicamente senza.</p>
+  <h2>Se questo cambia</h2>
+  <p>Se mai il sito cominciasse a contare i suoi lettori, questa pagina lo dirà per prima, e quello che dice sarà tutto.</p>
+  {{/if}}
+</main>
+
+  {{> foot }}
+</body>
+</html>

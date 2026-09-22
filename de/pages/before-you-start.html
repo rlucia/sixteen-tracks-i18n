@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {{> head }}
+  <title>Bevor du beginnst — Sixteen Tracks</title>
+  <meta name="description" content="Die vier Arten von Spuren, die fünf Behälter, die ein Speichern berührt, das Update auf OS 1.4.0 und das Backup davor. Einmal lesen, vor Session 1 von Sixteen Tracks.">
+  <link rel="canonical" href="{{PAGE_URL}}">
+  <meta property="og:title" content="Bevor du beginnst — Sixteen Tracks">
+  <meta property="og:description" content="Die vier Arten von Spuren und die fünf Behälter, mit der Behälter-Karte.">
+  <meta property="og:url" content="{{PAGE_URL}}">
+  <meta property="og:image" content="{{SITE_URL}}/og.png">
+  <link rel="stylesheet" href="/styles/tokens.css">
+  <link rel="stylesheet" href="/styles/scales.css">
+  <link rel="stylesheet" href="/styles/chrome.css">
+  <link rel="stylesheet" href="/styles/kbd.css">
+  <link rel="stylesheet" href="/styles/doc.css">
+  <link rel="stylesheet" href="/styles/sim.css">
+  <link rel="stylesheet" href="/styles/reduced-motion.css">
+  <link rel="stylesheet" href="/styles/print.css">
+</head>
+<body class="doc on-before">
+  {{> nav }}
+<main class="wrap">
+  <p class="eyebrow">einmal lesen · Tonverk OS 1.4.0</p>
+  <h1>Bevor du beginnst</h1>
+  <p class="lede">Zwei Ideen, auf die sich jede Session stützt, eine Karte dessen, was ein Speichern speichert, und drei Dinge, die vor Session 1 zu tun sind. Zehn Minuten.</p>
+
+  <h2 id="tracks">Vier Arten von Spuren</h2>
+  <p>Die unterste Reihe des Bedienfelds sind sechzehn Tasten, und die Beschriftungen darunter sagen, was die sechzehn Sequenzer-Spuren sind (Handbuch §5.3):</p>
+  <ul>
+    <li><b>Audio, 1–8.</b> Je ein Preset, ein eigenes Paar Insert-Effekte und ein Send-Pegel auf jede der drei Send-Spuren. Für Bewegung: zwei LFOs auf der Stimme, zwei weitere auf den Effekten und eine zusätzliche Modulationshüllkurve. Gib der Spur stattdessen die MIDI-Machine, und sie steuert ein anderes Instrument, statt selbst einen Klang zu erzeugen.</li>
+    <li><b>Bus, 9–12.</b> Ein Ort, auf den mehrere Spuren zugleich zeigen können, damit sie wie eine behandelt werden, und auch er hat ein Paar Insert-Effekte. Ein Bus nimmt ebenfalls die MIDI-Machine an.</li>
+    <li><b>Send FX, 13–15.</b> Je ein Effekt; was sie erreicht, ist das, was die anderen Spuren hinschicken.</li>
+    <li><b>Mix, 16.</b> Wo die Pegel aller Spuren auf die Audioeingänge und den Haupteffekt des Patterns treffen.</li>
+  </ul>
+  <p>Halte <kbd class="key" data-key="TRK">TRK</kbd> und tippe eine Trig-Taste an: die Spur ist gewählt und bleibt still (§5.3.7). Tipp dieselbe Taste allein an, und du wählst sie <em>und</em> hörst sie. Geh aber auf irgendeine Spur von 9 bis 16, und die Tastatur bleibt bei der Audiospur, auf der du vorher warst. Spiel sie, und die <em>alte</em> Spur antwortet — nicht Stille, und genau das macht es verwirrend und zum wahrscheinlichsten Grund, warum eine Note von der falschen Spur zu kommen scheint.</p>
+
+  <h2 id="containers">Fünf Behälter</h2>
+  <p>Wo etwas lebt, entscheidet, wann es sicher ist. Von außen nach innen (Handbuch §5.2):</p>
+  <ol>
+    <li><b>Die SD-Karte.</b> Alles, dauerhaft. Projekte, Presets, Instrumente, Samples, Einstellungen.</li>
+    <li><b>Das Projekt.</b> 128 Patterns, 16 Songs, die Sample- und Wavetable-Pools, seine Einstellungen. Das aktive Projekt ist das, mit dem das Gerät hochfährt.</li>
+    <li><b>Das Pattern.</b> Trigs, Locks, Länge, Tempo, Swing, Taktart — <em>und die Presets seiner zwölf Spuren</em>.</li>
+    <li><b>Das Preset.</b> Die Parameterseiten einer Spur, ihr Setup, ihr Arpeggiator. Lädst du eines, bekommt das Pattern seine eigene Kopie (§9).</li>
+    <li><b>Die Pools.</b> Samples und Wavetables im RAM: 1023 Sample-Plätze und 127 Wavetable-Plätze (§5.2.6), die Samples zusammen höchstens 4 GB (§6.13).</li>
+  </ol>
+  <p>Die Folgen, die du dir merken solltest: eine Reglerdrehung ändert die Kopie des Presets im Pattern; ein Pattern wird nur gespeichert, wenn das Projekt gespeichert wird; Chains werden nie gespeichert (§10.1.3); der PERFORM-Modus (§10.12) und das vorübergehende Merken (§10.10.6) sind kein Speichern; Songs brauchen ebenfalls ein gespeichertes Projekt (§10.11.3).</p>
+
+  <div class="sim" data-sim="containers" id="containers-map">
+    <p class="sim-caption"><b>Die Behälter-Karte.</b> {{{ S.sim.caption }}} Drücke eine Aktion und sieh, welche Kästen sich ändern und welche ungespeichert bleiben; sie beginnt dort, wo Session 1 das Projekt hinterlässt.</p>
+    <div class="sim-mount"></div>
+  </div>
+
+  <h2 id="update">Update auf OS 1.4.0</h2>
+  <p>Diese Website beschreibt OS 1.4.0 und sonst nichts. Prüf deins: SETTINGS › SYSTEM › DEVICE INFO. Zum Aktualisieren (Handbuch §6.12): lade die OS-Datei von Elektrons Support-Seiten herunter, verbinde den Tonverk mit einem Computer, SETTINGS › USB DISK MODE › <kbd class="key" data-key="YES">YES</kbd>, kopiere die OS-Datei ins Stammverzeichnis der Karte, wirf sie aus, <kbd class="key" data-key="NO">NO</kbd>, um den Disk-Modus zu verlassen, dann SETTINGS › SYSTEM › OS UPGRADE › <kbd class="key" data-key="YES">YES</kbd>.</p>
+
+  <h2 id="backup">Erst ein Backup</h2>
+  <p>Kopiere vor Session 1 den Ordner <code>USER</code> der Karte auf dieselbe Weise auf einen Computer (Handbuch §6.11): USB DISK MODE, Ordner kopieren, auswerfen, <kbd class="key" data-key="NO">NO</kbd>. Alles, was du machst — Projekte, Presets, Instrumente, Aufnahmen, hinzugefügte Samples — lebt in diesem Ordner. Der Kurs verlangt nie, dass du etwas löschst, aber ein Backup ist das, was jedes Experiment kostenlos macht.</p>
+
+  <p class="next-link"><a href="/session-01/">Session 1: Der erste Klang →</a></p>
+</main>
+  {{> foot }}
+  <script type="module" src="/pages/before-you-start.js"></script>
+</body>
+</html>

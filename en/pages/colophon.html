@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {{> head }}
+  <title>Colophon — Sixteen Tracks</title>
+  <meta name="description" content="Who made Sixteen Tracks, where to report a mistake, what the three marks on a step mean, and how much of the course has been checked on a Tonverk running OS 1.4.0.">
+  <link rel="canonical" href="{{PAGE_URL}}">
+  <meta property="og:title" content="Colophon — Sixteen Tracks">
+  <meta property="og:description" content="Who made it, where to write, and how much is checked on the unit.">
+  <meta property="og:url" content="{{PAGE_URL}}">
+  <meta property="og:image" content="{{SITE_URL}}/og.png">
+  <link rel="stylesheet" href="/styles/tokens.css">
+  <link rel="stylesheet" href="/styles/scales.css">
+  <link rel="stylesheet" href="/styles/chrome.css">
+  <link rel="stylesheet" href="/styles/kbd.css">
+  <link rel="stylesheet" href="/styles/doc.css">
+  <link rel="stylesheet" href="/styles/session.css">
+  <link rel="stylesheet" href="/styles/reduced-motion.css">
+  <link rel="stylesheet" href="/styles/print.css">
+</head>
+<body class="doc on-colophon">
+  {{> nav }}
+<main class="wrap">
+  <h1>Colophon</h1>
+  <p class="lede">Who made this, where to write when a step is wrong, and how much of it has been checked on a Tonverk.</p>
+
+  <h2 id="contact">Made by</h2>
+  <p>Sixteen Tracks is written by one Tonverk owner, published by {{ site.privacy.controller }} If a step does not do what it says on your unit, or a key is named wrong, write to <a href="mailto:{{ site.privacy.contact }}">{{ site.privacy.contact }}</a> with the session and step number. Corrections are listed below as they come in.</p>
+
+  <h2 id="marks">The mark at the foot of every step</h2>
+  <ul class="mark-list">
+    <li><span class="step-source" data-source="manual"><svg class="src-glyph" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1.5 3.2c2.2-.9 4.4-.9 6.5.6 2.1-1.5 4.3-1.5 6.5-.6v9.6c-2.2-.9-4.4-.9-6.5.6-2.1-1.5-4.3-1.5-6.5-.6z"/><path d="M8 3.8v9.6"/></svg>10.3</span> The step is written from that section of the Tonverk user manual for OS {{ OS }}.</li>
+    <li><span class="step-source" data-source="community">&#x2197; community</span> The step rests on something the manual does not say: a forum thread, a video, a developer's answer. The link is the source.</li>
+    <li><span class="step-source" data-source="device"><svg class="src-glyph" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2.5 8.5l3.5 3.5 7.5-8"/></svg>checked on the unit</span> The step has been done on a Tonverk running OS {{ OS }} and it behaved as written.</li>
+  </ul>
+  <p>Until a step is checked, the manual is the authority and your unit may differ. How far the checking has got:</p>
+  {{> provenance }}
+
+  <h2 id="unit">Where the unit disagreed</h2>
+  <p>Nowhere yet: no session has been through a unit. One thing on the drawn panel is known to be unchecked rather than wrong: the mint legend under ARP, CHORD and SONG says <em>On/Off</em> because the manual describes them that way, and the print on the unit has not been checked.</p>
+
+  <h2 id="drawings">The pictures</h2>
+  <p>The panel and the screens are drawn from the manual's figures and descriptions, not photographed. They show what a step needs and leave the rest out. What each key colour means, mode by mode, is on <a href="/key-colours/">Key colours</a>.</p>
+
+  <h2 id="measured">Measurement</h2>
+  {{#if TRACK}}
+  <p>The site counts its readers with a Matomo on our own server, cookieless and without personal data; <a href="/privacy/">the privacy page</a> says exactly what.</p>
+  {{else}}
+  <p>The site counts nothing and makes no request to any server. <a href="/privacy/">The privacy page</a> says what would change if it did.</p>
+  {{/if}}
+</main>
+  {{> foot }}
+</body>
+</html>

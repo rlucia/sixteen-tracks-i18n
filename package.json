@@ -1,0 +1,11 @@
+{
+  "name": "sixteen-tracks-i18n",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "lint": "node lint.mjs --all"
+  }
+}
