@@ -1,0 +1,53 @@
+name: A translation reads wrong
+description: A word or a sentence a musician of that language would not say — and you would rather report it than fix it yourself.
+labels: ["translation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If you can fix it yourself, [a pull request](CONTRIBUTING.md) is faster and puts your
+        name on that language's colophon. If you would rather not, this is the right place:
+        a reported word is worth more than a wrong word left standing.
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language
+      options:
+        - Deutsch (de)
+        - Italiano (it)
+        - Español (es)
+        - Svenska (sv)
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where
+      description: The file and the step, or simply the address of the page you were reading.
+      placeholder: sv/sessions/02-first-beat.md, step 7 — or https://www.iscanet.com/music/sixteen-tracks/sv/session-02/
+    validations:
+      required: true
+  - type: textarea
+    id: now
+    attributes:
+      label: What it says now
+    validations:
+      required: true
+  - type: textarea
+    id: instead
+    attributes:
+      label: What it should say, and why
+      description: |
+        The why matters more than the word: a term that means something else in this language,
+        a register that sounds like a manual instead of a studio, the same thing named two ways
+        in two sessions. The owner does not speak every language here, and your sentence is what
+        he merges on.
+    validations:
+      required: true
+  - type: checkboxes
+    id: reader
+    attributes:
+      label: Optional
+      options:
+        - label: I am a native speaker of this language.
+        - label: I could read this whole language through, if that is useful.

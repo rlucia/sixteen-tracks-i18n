@@ -1,0 +1,48 @@
+name: The English is wrong
+description: Something under en/ is mistaken, unclear, or names the machine wrongly.
+labels: ["english"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        `en/` is exported from the site, so it cannot be corrected here — a pull request that
+        touches it fails on purpose. Report it and the owner fixes it at the source, re-exports,
+        and every language is told which of its sentences moved.
+  - type: input
+    id: where
+    attributes:
+      label: Where
+      description: The file and the step, or the address of the English page.
+      placeholder: en/sessions/04-make-it-move.md, step 3
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What it says, and what is wrong with it
+    validations:
+      required: true
+  - type: dropdown
+    id: meaning
+    attributes:
+      label: Does this change the meaning?
+      description: |
+        It decides what happens to the four translations: a slip of wording only needs them
+        re-stamped, while a changed meaning makes a translated sentence wrong until someone
+        revises it.
+      options:
+        - No — a typo or a slip of wording; a translation of it is still correct
+        - Yes — a translated sentence would be wrong once this is fixed
+        - I am not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of mistake is it?
+      options:
+        - The prose — wording, grammar, something unclear
+        - The machine — a key name, a mode, a menu path, a manual section
+        - The course — a step that does not do what it says it does
+    validations:
+      required: false

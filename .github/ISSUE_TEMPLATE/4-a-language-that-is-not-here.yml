@@ -1,0 +1,51 @@
+name: A language that is not here yet
+description: You would translate the course into a language the repository does not have.
+labels: ["new language"]
+title: "New language: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ask before you translate anything: a language is one line in the site's configuration
+        plus a folder here, and both are the owner's to add. Once they exist you start from a
+        folder holding an empty `TRANSLATORS`, and the language goes live one session at a
+        time — until a session passes the linter, its place on the hub says "(English)".
+  - type: input
+    id: language
+    attributes:
+      label: The language, and its two-letter code
+      placeholder: Français (fr)
+    validations:
+      required: true
+  - type: dropdown
+    id: native
+    attributes:
+      label: Is it yours?
+      options:
+        - I am a native speaker
+        - I am not native, but I live and make music in it
+        - Neither — I would work from a dictionary and a good ear
+    validations:
+      required: true
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Where you would start
+      description: Nobody expects a whole course at once. A first session is a fine beginning.
+      options:
+        - One session, to see how it goes
+        - The interface strings and the five pages first, so the frame is in your language
+        - Every session that exists today
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything about your language worth settling early
+      description: |
+        The producer's words stay English in every language — kick, snare, pickup, loop, lock —
+        because that is what a producer types in a forum post. Key names, modes and menu items
+        stay English too, because they are printed on the machine. If either is awkward in your
+        language, this is the place to say so before eleven sessions are written.
+    validations:
+      required: false

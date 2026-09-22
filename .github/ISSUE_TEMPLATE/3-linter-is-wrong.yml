@@ -1,0 +1,39 @@
+name: The linter is wrong
+description: lint.mjs gave a verdict you do not believe, crashed, or said it in a way you could not act on.
+labels: ["linter"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        `lint.mjs` and `lib/` are exported from the site as well, so they are fixed there and
+        arrive here in the next export. Before reporting: `still English?`, `stale since …` and
+        `not stamped` are warnings — they never stop a pull request.
+  - type: input
+    id: command
+    attributes:
+      label: What you ran
+      placeholder: node lint.mjs de
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: What it printed
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected instead
+      description: If it refused a line you believe is correct, paste that line too — in your language and in the English it is translated from.
+    validations:
+      required: true
+  - type: input
+    id: node
+    attributes:
+      label: Node version
+      description: node --version
+      placeholder: v24.8.0
+    validations:
+      required: false

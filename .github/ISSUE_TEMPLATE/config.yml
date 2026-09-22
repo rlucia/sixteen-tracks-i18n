@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: The course itself
+    url: https://www.iscanet.com/music/sixteen-tracks/
+    about: This repository is only the translations. The course, and what it teaches about the Tonverk, lives on the site.
+  - name: How to contribute
+    url: https://github.com/rlucia/sixteen-tracks-i18n/blob/main/CONTRIBUTING.md
+    about: A correction you can make yourself is a pull request, not an issue — and it puts your name on the colophon.
