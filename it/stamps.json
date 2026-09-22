@@ -1,15 +1,15 @@
 {
-  "chapters.json": "89e178ba4afec32ef20a5fdcdc820340c528b8c0",
-  "key-colours.json": "89e178ba4afec32ef20a5fdcdc820340c528b8c0",
-  "pages/404.html": "89e178ba4afec32ef20a5fdcdc820340c528b8c0",
-  "pages/before-you-start.html": "89e178ba4afec32ef20a5fdcdc820340c528b8c0",
-  "pages/colophon.html": "39a7ae860a01d87ca4c7b5aae4ec1ce165c7015d",
-  "pages/index.html": "39a7ae860a01d87ca4c7b5aae4ec1ce165c7015d",
-  "pages/privacy.html": "89e178ba4afec32ef20a5fdcdc820340c528b8c0",
-  "sessions/01-first-sound.md": "89e178ba4afec32ef20a5fdcdc820340c528b8c0",
-  "sessions/02-first-beat.md": "89e178ba4afec32ef20a5fdcdc820340c528b8c0",
-  "sessions/03-a-kit-from-one-sample.md": "89e178ba4afec32ef20a5fdcdc820340c528b8c0",
-  "sessions/04-make-it-move.md": "89e178ba4afec32ef20a5fdcdc820340c528b8c0",
-  "sessions/05-variation-without-new-patterns.md": "89e178ba4afec32ef20a5fdcdc820340c528b8c0",
-  "strings.json": "89e178ba4afec32ef20a5fdcdc820340c528b8c0"
+  "chapters.json": "40c9c3c72ffc9abafd9a9e03e6e07d414f76dc6d",
+  "key-colours.json": "40c9c3c72ffc9abafd9a9e03e6e07d414f76dc6d",
+  "pages/404.html": "40c9c3c72ffc9abafd9a9e03e6e07d414f76dc6d",
+  "pages/before-you-start.html": "40c9c3c72ffc9abafd9a9e03e6e07d414f76dc6d",
+  "pages/colophon.html": "40c9c3c72ffc9abafd9a9e03e6e07d414f76dc6d",
+  "pages/index.html": "40c9c3c72ffc9abafd9a9e03e6e07d414f76dc6d",
+  "pages/privacy.html": "40c9c3c72ffc9abafd9a9e03e6e07d414f76dc6d",
+  "sessions/01-first-sound.md": "40c9c3c72ffc9abafd9a9e03e6e07d414f76dc6d",
+  "sessions/02-first-beat.md": "40c9c3c72ffc9abafd9a9e03e6e07d414f76dc6d",
+  "sessions/03-a-kit-from-one-sample.md": "40c9c3c72ffc9abafd9a9e03e6e07d414f76dc6d",
+  "sessions/04-make-it-move.md": "40c9c3c72ffc9abafd9a9e03e6e07d414f76dc6d",
+  "sessions/05-variation-without-new-patterns.md": "40c9c3c72ffc9abafd9a9e03e6e07d414f76dc6d",
+  "strings.json": "40c9c3c72ffc9abafd9a9e03e6e07d414f76dc6d"
 }
