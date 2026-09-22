@@ -1,15 +1,15 @@
 {
-  "chapters.json": "bb12eea2b0563c54c7b77b3f34aa39227bed6098",
-  "key-colours.json": "bb12eea2b0563c54c7b77b3f34aa39227bed6098",
-  "pages/404.html": "bb12eea2b0563c54c7b77b3f34aa39227bed6098",
-  "pages/before-you-start.html": "bb12eea2b0563c54c7b77b3f34aa39227bed6098",
-  "pages/colophon.html": "bb12eea2b0563c54c7b77b3f34aa39227bed6098",
-  "pages/index.html": "bb12eea2b0563c54c7b77b3f34aa39227bed6098",
-  "pages/privacy.html": "bb12eea2b0563c54c7b77b3f34aa39227bed6098",
-  "sessions/01-first-sound.md": "bb12eea2b0563c54c7b77b3f34aa39227bed6098",
-  "sessions/02-first-beat.md": "bb12eea2b0563c54c7b77b3f34aa39227bed6098",
-  "sessions/03-a-kit-from-one-sample.md": "bb12eea2b0563c54c7b77b3f34aa39227bed6098",
-  "sessions/04-make-it-move.md": "bb12eea2b0563c54c7b77b3f34aa39227bed6098",
-  "sessions/05-variation-without-new-patterns.md": "bb12eea2b0563c54c7b77b3f34aa39227bed6098",
-  "strings.json": "bb12eea2b0563c54c7b77b3f34aa39227bed6098"
+  "chapters.json": "89e178ba4afec32ef20a5fdcdc820340c528b8c0",
+  "key-colours.json": "89e178ba4afec32ef20a5fdcdc820340c528b8c0",
+  "pages/404.html": "89e178ba4afec32ef20a5fdcdc820340c528b8c0",
+  "pages/before-you-start.html": "89e178ba4afec32ef20a5fdcdc820340c528b8c0",
+  "pages/colophon.html": "89e178ba4afec32ef20a5fdcdc820340c528b8c0",
+  "pages/index.html": "89e178ba4afec32ef20a5fdcdc820340c528b8c0",
+  "pages/privacy.html": "89e178ba4afec32ef20a5fdcdc820340c528b8c0",
+  "sessions/01-first-sound.md": "89e178ba4afec32ef20a5fdcdc820340c528b8c0",
+  "sessions/02-first-beat.md": "89e178ba4afec32ef20a5fdcdc820340c528b8c0",
+  "sessions/03-a-kit-from-one-sample.md": "89e178ba4afec32ef20a5fdcdc820340c528b8c0",
+  "sessions/04-make-it-move.md": "89e178ba4afec32ef20a5fdcdc820340c528b8c0",
+  "sessions/05-variation-without-new-patterns.md": "89e178ba4afec32ef20a5fdcdc820340c528b8c0",
+  "strings.json": "89e178ba4afec32ef20a5fdcdc820340c528b8c0"
 }
