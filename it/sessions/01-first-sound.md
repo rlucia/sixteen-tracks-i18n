@@ -13,6 +13,7 @@ ends: { keys16: { 1: white } }
 ## Step: Accensione
 keys: []
 source: manual §3.2, §3.3, §5.2.1
+checked: yes
 mode: any
 
 Collega l'alimentatore in dotazione a una presa a muro e il suo cavo USB a una delle due
@@ -36,6 +37,7 @@ ciò che non è salvato se ne va con lei.
 ## Step: Le cuffie e le due manopole del volume
 keys: [MAIN VOLUME, LEVEL/DATA]
 source: manual §3.1, §6.1
+checked: yes
 mode: any
 
 Collega le cuffie a OUT E/F (HEADPHONES) sul retro. Porta [MAIN VOLUME] a circa un quarto.
@@ -53,6 +55,7 @@ che dica perché.
 ## Step: Un progetto nuovo
 keys: [FUNC, PRESET, UP, DOWN, YES, NO]
 source: manual §9.1, §9.1.1
+checked: yes
 mode: menu:FILE
 
 Tieni premuto [FUNC] e premi [PRESET]: si apre il menu FILE. Vai su PROJECT con [UP]/[DOWN]
@@ -78,6 +81,7 @@ fabbrica.
 keys: [TRK, TRIG 1]
 leds: { TRIG 1: white }
 source: manual §5.3.7
+checked: yes
 mode: any
 
 Tieni premuto [TRK] e premi [TRIG 1]. La traccia 1 è ora la traccia attiva: quella che il
@@ -103,6 +107,7 @@ hai davanti stampa TRK, quindi è così che lo chiama questo corso.
 ## Step: Carica un kick
 keys: [PRESET, LEFT, RIGHT, UP, DOWN, LEVEL/DATA, YES]
 source: manual §7.1, §9.1.4
+checked: yes
 mode: menu:LOAD PRESET
 
 Premi [PRESET]. Il menu LOAD PRESET si apre sulla traccia attiva. [LEFT]/[RIGHT] spostano tra
@@ -135,6 +140,7 @@ contenitori; la mappa in [Prima di cominciare](/before-you-start/) mostra le alt
 keys: [KEYBOARD]
 leds: { TRIG 1: white }
 source: manual §7.3, §8.5
+checked: yes
 mode: any
 
 Premi i tasti [KEYBOARD] della fila in basso, da C1 a C2, poi i tasti neri sopra di loro. È
@@ -159,6 +165,7 @@ seleziona una traccia audio, da 1 a 8, per riavere la tastiera.
 ## Step: Ottave
 keys: [+, -]
 source: manual §8.5
+checked: yes
 mode: any
 
 Premi [+]: la finestra della tastiera sale di un'ottava, e i LED KEYBOARD OCTAVE accanto al
@@ -172,6 +179,7 @@ recover: Il limite è cinque ottave per parte, quindi una pressione che non fa n
 ## Step: Imposta il tempo
 keys: [TEMPO, A, NO]
 source: manual §7.5.1
+checked: yes
 mode: menu:TEMPO
 
 Premi [TEMPO]. La manopola DATA ENTRY [A] è il BPM; premila mentre la giri e si muove di otto
@@ -187,6 +195,7 @@ recover: Se il BPM si rifiuta di muoversi, il Tonverk sta seguendo un clock este
 ## Step: Ascolta il tempo
 keys: [FUNC, KEYBOARD F#1, PLAY, STOP]
 source: manual §7.5.2
+checked: yes
 mode: playback
 
 Tieni premuto [FUNC] e premi [KEYBOARD F#1] — la sua scritta menta dice Metronome. Premi
@@ -202,6 +211,7 @@ recover: Nessun click: apri [TEMPO] e guarda le manopole da E ad H — METRO lo 
 ## Step: Dai un nome al progetto
 keys: [FUNC, PRESET, LEFT, RIGHT, UP, DOWN, LEVEL/DATA, YES]
 source: manual §9.1.1, §6.7
+checked: yes
 mode: menu:NAMING
 
 Tieni premuto [FUNC] e premi [PRESET] per il menu FILE, di nuovo, poi PROJECT e SAVE AS. Si
@@ -219,6 +229,7 @@ recover: Se finisci da qualche parte senza schermata NAMING, hai scelto SAVE inv
 ## Step: L'abitudine del salvataggio
 keys: [FUNC, SETTINGS, NO]
 source: community https://www.elektronauts.com/t/create-new-empty-project-no-samples-inside-my-own-name-how/238370
+checked: yes
 mode: any
 
 Tieni premuto [FUNC] e premi [SETTINGS] — la scritta menta dice Save Proj. Niente ti chiede

@@ -12,7 +12,6 @@
   "nav.staleMark": "This translation is older than the English.",
   "nav.sessionLabel": "Session {n}: {title}",
   "nav.sessionInEnglish": "Session {n}: {title} (English)",
-
   "foot.trademark": "Tonverk, Elektron, Overbridge and Outbox 8 are trademarks of Elektron Music Machines MAV AB, used here only to identify the device this course describes. Sixteen Tracks is unofficial: not affiliated with, endorsed by, sponsored by, or connected to Elektron.",
   "foot.schematic": "Panel and screen drawings are schematics, not photographs.",
   "foot.licence": "Code is MIT, writing and drawings CC BY 4.0; neither covers Elektron's marks.",
@@ -20,7 +19,6 @@
   "foot.before": "before you start",
   "foot.colophon": "colophon",
   "foot.privacy": "privacy",
-
   "hub.inEnglish": "(English)",
   "hub.notYetWritten": "not yet written",
   "hub.stripLabel": "Trig keys at the end of session {n}",
@@ -28,7 +26,6 @@
   "hero.label": "Schematic of the Tonverk front panel.",
   "hero.labelLatest": "Schematic of the Tonverk front panel, its trig keys as they are at the end of session {n}.",
   "hero.hint": "Hover a session below: the panel shows the keys it teaches.",
-
   "session.title": "Session {n} · {title} — Sixteen Tracks",
   "session.description": "{goal} Session {n} of Sixteen Tracks, a hands-on course for the Elektron Tonverk, OS {os}.",
   "session.eyebrow": "Session {n} of {total} · {chapter} · Tonverk OS {os}",
@@ -49,14 +46,13 @@
   "session.nextSessionInEnglish": "Session {n} · {title} (English)",
   "session.nextPlanned": "Session {n} · {title} (not yet written)",
   "session.staleNote": "The English version of this session changed on {date}; this translation is older.",
-
   "step.checkpoint": "Checkpoint",
   "step.screenCaption": "Screen, schematic",
   "step.trigKeys": "Trig keys",
   "step.hear": "Hear",
   "step.ifNot": "If not",
   "step.newIn": "new in {version}",
-  "step.sourceDevice": "checked on the unit",
+  "step.checked": "checked on the unit",
   "step.sourceCommunity": "community",
   "step.sourceManual": "Manual §",
   "step.cropLabel": "Panel, {region}: {keys} for step {n}",
@@ -69,7 +65,6 @@
   "crop.regionTrig": "the trig row",
   "crop.regionComma": ", ",
   "crop.regionAnd": " and ",
-
   "sim.caption": "Simulates the rule, not the sound.",
   "sim.title.containers": "The containers map",
   "sim.title.conditions": "Trig conditions",
@@ -80,7 +75,6 @@
   "sim.start.routing": "Starts where session 7 leaves the routing.",
   "sim.start.length": "Starts where session 10 leaves the pattern.",
   "sim.startAgain": "Start again",
-
   "sim.containers.box.card": "SD card",
   "sim.containers.box.project": "Project",
   "sim.containers.box.pattern": "Pattern",
@@ -124,7 +118,6 @@
   "sim.containers.rule.memorise": "manual §10.10.6 — a restore point in temporary memory, lost with a project load or power off",
   "sim.containers.rule.perform": "manual §10.12 — tweaks live in temporary memory and are not saved",
   "sim.containers.rule.powerOff": "manual §3.2, §10.10.6 — unsaved work might be lost, and temporary memory goes with it; save first",
-
   "sim.conditions.track.kick": "Kick, subtrack 1",
   "sim.conditions.track.hats": "Hats, subtrack 3",
   "sim.conditions.grid": "Two tracks, sixteen steps",
@@ -168,7 +161,6 @@
   "sim.conditions.reason.first": "{label}: loop {loop}",
   "sim.conditions.reason.abMet": "{a}:{b} — loop {x} of {b}: met",
   "sim.conditions.reason.abNotMet": "{a}:{b} — loop {x} of {b}: not met",
-
   "keyColours.title": "Key colours — Sixteen Tracks",
   "keyColours.description": "What each colour on the Tonverk's keys means, state by state, compiled from the sessions of Sixteen Tracks. OS {os}.",
   "keyColours.ogDescription": "Colour, blink and mode on every lit key of the Tonverk, and what each one means.",
@@ -192,7 +184,6 @@
   "colour.magenta": "magenta",
   "colour.cyan": "cyan",
   "colour.off": "off",
-
   "colophon.provenanceLine": "Session {n}, {title}: {device} of {steps} steps checked on the unit.",
   "colophon.staleHeading": "Behind the English",
   "colophon.staleLine": "Session {n}, {title}: the English changed on {date}.",

@@ -13,6 +13,7 @@ ends: { keys16: { 1: white } }
 ## Step: Einschalten
 keys: []
 source: manual §3.2, §3.3, §5.2.1
+checked: yes
 mode: any
 
 Steck das mitgelieferte Netzteil in eine Steckdose und sein USB-Kabel in einen der beiden
@@ -36,6 +37,7 @@ und alles Ungespeicherte geht damit verloren.
 ## Step: Kopfhörer und die zwei Lautstärkeregler
 keys: [MAIN VOLUME, LEVEL/DATA]
 source: manual §3.1, §6.1
+checked: yes
 mode: any
 
 Steck deinen Kopfhörer hinten in OUT E/F (HEADPHONES). Dreh [MAIN VOLUME] auf etwa ein
@@ -53,6 +55,7 @@ immer noch leise, ohne dass das Display sagt, warum.
 ## Step: Ein neues Projekt
 keys: [FUNC, PRESET, UP, DOWN, YES, NO]
 source: manual §9.1, §9.1.1
+checked: yes
 mode: menu:FILE
 
 Halte [FUNC] und drücke [PRESET]: das FILE-Menü öffnet sich. Geh mit [UP]/[DOWN] und [YES] zu
@@ -77,6 +80,7 @@ da ist. Nichts, was du hier tust, kann dem Werksmaterial schaden.
 keys: [TRK, TRIG 1]
 leds: { TRIG 1: white }
 source: manual §5.3.7
+checked: yes
 mode: any
 
 Halte [TRK] und drücke [TRIG 1]. Spur 1 ist jetzt die aktive Spur: die, die das Display
@@ -102,6 +106,7 @@ Trig-Taste. Auf dem Bedienfeld vor dir steht TRK, also sagt dieser Kurs das.
 ## Step: Eine Kick laden
 keys: [PRESET, LEFT, RIGHT, UP, DOWN, LEVEL/DATA, YES]
 source: manual §7.1, §9.1.4
+checked: yes
 mode: menu:LOAD PRESET
 
 Drücke [PRESET]. Das LOAD-PRESET-Menü öffnet sich für die aktive Spur. [LEFT]/[RIGHT] wechseln
@@ -134,6 +139,7 @@ Behälter-Regeln; die Karte auf [Bevor du beginnst](/before-you-start/) zeigt di
 keys: [KEYBOARD]
 leds: { TRIG 1: white }
 source: manual §7.3, §8.5
+checked: yes
 mode: any
 
 Drücke die [KEYBOARD]-Tasten der unteren Reihe, C1 bis C2, dann die schwarzen Tasten darüber.
@@ -158,6 +164,7 @@ wähle eine Audiospur, 1 bis 8, um die Tastatur zurückzuholen.
 ## Step: Oktaven
 keys: [+, -]
 source: manual §8.5
+checked: yes
 mode: any
 
 Drücke [+]: das Tastaturfenster wandert eine Oktave nach oben, und die KEYBOARD-OCTAVE-LEDs
@@ -172,6 +179,7 @@ recover: Fünf Oktaven in jede Richtung sind die Grenze, ein Druck, der nichts t
 ## Step: Das Tempo setzen
 keys: [TEMPO, A, NO]
 source: manual §7.5.1
+checked: yes
 mode: menu:TEMPO
 
 Drücke [TEMPO]. DATA-ENTRY-Regler [A] ist die BPM; drück ihn beim Drehen hinein, und er
@@ -187,6 +195,7 @@ recover: Lässt sich die BPM nicht bewegen, folgt der Tonverk einer externen Clo
 ## Step: Das Tempo hören
 keys: [FUNC, KEYBOARD F#1, PLAY, STOP]
 source: manual §7.5.2
+checked: yes
 mode: playback
 
 Halte [FUNC] und drücke [KEYBOARD F#1] — die mintfarbene Beschriftung sagt Metronome. Drücke
@@ -202,6 +211,7 @@ recover: Kein Klick: öffne [TEMPO] und sieh auf die Regler E bis H — METRO sc
 ## Step: Das Projekt benennen
 keys: [FUNC, PRESET, LEFT, RIGHT, UP, DOWN, LEVEL/DATA, YES]
 source: manual §9.1.1, §6.7
+checked: yes
 mode: menu:NAMING
 
 Halte [FUNC] und drücke [PRESET] für das FILE-Menü, dann PROJECT und SAVE AS. Eine
@@ -219,6 +229,7 @@ recover: Landest du irgendwo ohne NAMING-Ansicht, hast du SAVE statt SAVE AS gew
 ## Step: Die Speichergewohnheit
 keys: [FUNC, SETTINGS, NO]
 source: community https://www.elektronauts.com/t/create-new-empty-project-no-samples-inside-my-own-name-how/238370
+checked: yes
 mode: any
 
 Halte [FUNC] und drücke [SETTINGS] — die mintfarbene Beschriftung sagt Save Proj. Nichts fragt

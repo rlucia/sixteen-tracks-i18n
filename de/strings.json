@@ -12,7 +12,6 @@
   "nav.staleMark": "Diese Übersetzung ist älter als das englische Original.",
   "nav.sessionLabel": "Session {n}: {title}",
   "nav.sessionInEnglish": "Session {n}: {title} (Englisch)",
-
   "foot.trademark": "Tonverk, Elektron, Overbridge und Outbox 8 sind Marken der Elektron Music Machines MAV AB und werden hier nur verwendet, um das Gerät zu benennen, das dieser Kurs beschreibt. Sixteen Tracks ist inoffiziell: weder mit Elektron verbunden noch von Elektron unterstützt, gesponsert oder autorisiert.",
   "foot.schematic": "Die Zeichnungen von Bedienfeld und Display sind Schemazeichnungen, keine Fotos.",
   "foot.licence": "Der Code steht unter MIT, Text und Zeichnungen unter CC BY 4.0; keine der beiden Lizenzen erfasst die Marken von Elektron.",
@@ -20,7 +19,6 @@
   "foot.before": "bevor du beginnst",
   "foot.colophon": "Kolophon",
   "foot.privacy": "Datenschutz",
-
   "hub.inEnglish": "(Englisch)",
   "hub.notYetWritten": "noch nicht geschrieben",
   "hub.stripLabel": "Trig-Tasten am Ende von Session {n}",
@@ -28,7 +26,6 @@
   "hero.label": "Schemazeichnung des Tonverk-Bedienfelds.",
   "hero.labelLatest": "Schemazeichnung des Tonverk-Bedienfelds, die Trig-Tasten so, wie sie am Ende von Session {n} stehen.",
   "hero.hint": "Fahre unten über eine Session: das Bedienfeld zeigt die Tasten, die sie dir beibringt.",
-
   "session.title": "Session {n} · {title} — Sixteen Tracks",
   "session.description": "{goal} Session {n} von Sixteen Tracks, einem Praxiskurs für den Elektron Tonverk, OS {os}.",
   "session.eyebrow": "Session {n} von {total} · {chapter} · Tonverk OS {os}",
@@ -49,14 +46,13 @@
   "session.nextSessionInEnglish": "Session {n} · {title} (Englisch)",
   "session.nextPlanned": "Session {n} · {title} (noch nicht geschrieben)",
   "session.staleNote": "Die englische Fassung dieser Session hat sich am {date} geändert; diese Übersetzung ist älter.",
-
   "step.checkpoint": "Kontrollpunkt",
   "step.screenCaption": "Display, Schema",
   "step.trigKeys": "Trig-Tasten",
   "step.hear": "Hören",
   "step.ifNot": "Falls nicht",
   "step.newIn": "neu in {version}",
-  "step.sourceDevice": "am Gerät geprüft",
+  "step.checked": "am Gerät geprüft",
   "step.sourceCommunity": "Community",
   "step.sourceManual": "Handbuch §",
   "step.cropLabel": "Bedienfeld, {region}: {keys} für Schritt {n}",
@@ -69,7 +65,6 @@
   "crop.regionTrig": "die Trig-Reihe",
   "crop.regionComma": ", ",
   "crop.regionAnd": " und ",
-
   "sim.caption": "Simuliert die Regel, nicht den Klang.",
   "sim.title.containers": "Die Behälter-Karte",
   "sim.title.conditions": "Trig-Bedingungen",
@@ -80,7 +75,6 @@
   "sim.start.routing": "Beginnt dort, wo Session 7 das Routing hinterlässt.",
   "sim.start.length": "Beginnt dort, wo Session 10 das Pattern hinterlässt.",
   "sim.startAgain": "Von vorn",
-
   "sim.containers.box.card": "SD-Karte",
   "sim.containers.box.project": "Projekt",
   "sim.containers.box.pattern": "Pattern",
@@ -124,7 +118,6 @@
   "sim.containers.rule.memorise": "Handbuch §10.10.6 — ein Wiederherstellungspunkt im flüchtigen Speicher, verloren beim Laden eines Projekts oder beim Ausschalten",
   "sim.containers.rule.perform": "Handbuch §10.12 — die Änderungen leben im flüchtigen Speicher und werden nicht gespeichert",
   "sim.containers.rule.powerOff": "Handbuch §3.2, §10.10.6 — ungespeicherte Arbeit kann verloren gehen, und der flüchtige Speicher geht mit; erst speichern",
-
   "sim.conditions.track.kick": "Kick, Subtrack 1",
   "sim.conditions.track.hats": "Hi-Hats, Subtrack 3",
   "sim.conditions.grid": "Zwei Spuren, sechzehn Schritte",
@@ -168,7 +161,6 @@
   "sim.conditions.reason.first": "{label}: Loop {loop}",
   "sim.conditions.reason.abMet": "{a}:{b} — Loop {x} von {b}: erfüllt",
   "sim.conditions.reason.abNotMet": "{a}:{b} — Loop {x} von {b}: nicht erfüllt",
-
   "keyColours.title": "Tastenfarben — Sixteen Tracks",
   "keyColours.description": "Was jede Farbe auf den Tasten des Tonverk bedeutet, Zustand für Zustand, zusammengestellt aus den Sessions von Sixteen Tracks. OS {os}.",
   "keyColours.ogDescription": "Farbe, Blinken und Modus jeder leuchtenden Taste des Tonverk, und was das jeweils bedeutet.",
@@ -192,7 +184,6 @@
   "colour.magenta": "magenta",
   "colour.cyan": "cyan",
   "colour.off": "aus",
-
   "colophon.provenanceLine": "Session {n}, {title}: {device} von {steps} Schritten am Gerät geprüft.",
   "colophon.staleHeading": "Hinter dem Englischen zurück",
   "colophon.staleLine": "Session {n}, {title}: das Englische hat sich am {date} geändert.",

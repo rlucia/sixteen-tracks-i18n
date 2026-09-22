@@ -12,7 +12,6 @@
   "nav.staleMark": "Den här översättningen är äldre än den engelska.",
   "nav.sessionLabel": "Session {n}: {title}",
   "nav.sessionInEnglish": "Session {n}: {title} (engelska)",
-
   "foot.trademark": "Tonverk, Elektron, Overbridge och Outbox 8 är varumärken som tillhör Elektron Music Machines MAV AB och används här bara för att identifiera enheten som den här kursen beskriver. Sixteen Tracks är inofficiell: varken knuten till, godkänd av, sponsrad av eller på annat sätt förbunden med Elektron.",
   "foot.schematic": "Teckningarna av panelen och displayen är schematiska, inte fotografier.",
   "foot.licence": "Koden är MIT, text och teckningar CC BY 4.0; ingen av dem omfattar Elektrons varumärken.",
@@ -20,7 +19,6 @@
   "foot.before": "innan du börjar",
   "foot.colophon": "kolofon",
   "foot.privacy": "integritet",
-
   "hub.inEnglish": "(engelska)",
   "hub.notYetWritten": "ännu inte skriven",
   "hub.stripLabel": "Trig-tangenter vid slutet av session {n}",
@@ -28,7 +26,6 @@
   "hero.label": "Schematisk bild av Tonverks frontpanel.",
   "hero.labelLatest": "Schematisk bild av Tonverks frontpanel, med trig-tangenterna som de står vid slutet av session {n}.",
   "hero.hint": "Håll pekaren över en session nedan: panelen visar tangenterna den lär ut.",
-
   "session.title": "Session {n} · {title} — Sixteen Tracks",
   "session.description": "{goal} Session {n} av Sixteen Tracks, en praktisk kurs för Elektron Tonverk, OS {os}.",
   "session.eyebrow": "Session {n} av {total} · {chapter} · Tonverk OS {os}",
@@ -49,14 +46,13 @@
   "session.nextSessionInEnglish": "Session {n} · {title} (engelska)",
   "session.nextPlanned": "Session {n} · {title} (inte skriven ännu)",
   "session.staleNote": "Den engelska versionen av den här sessionen ändrades {date}; den här översättningen är äldre.",
-
   "step.checkpoint": "Kontrollpunkt",
   "step.screenCaption": "Display, schematisk",
   "step.trigKeys": "Trig-tangenter",
   "step.hear": "Lyssna",
   "step.ifNot": "Om inte",
   "step.newIn": "ny i {version}",
-  "step.sourceDevice": "kontrollerat på enheten",
+  "step.checked": "kontrollerat på enheten",
   "step.sourceCommunity": "community",
   "step.sourceManual": "Manualen §",
   "step.cropLabel": "Panel, {region}: {keys} för steg {n}",
@@ -69,7 +65,6 @@
   "crop.regionTrig": "trig-raden",
   "crop.regionComma": ", ",
   "crop.regionAnd": " och ",
-
   "sim.caption": "Simulerar regeln, inte ljudet.",
   "sim.title.containers": "Behållarkartan",
   "sim.title.conditions": "Trig-villkor",
@@ -80,7 +75,6 @@
   "sim.start.routing": "Börjar där session 7 lämnar routingen.",
   "sim.start.length": "Börjar där session 10 lämnar patternet.",
   "sim.startAgain": "Börja om",
-
   "sim.containers.box.card": "SD-kort",
   "sim.containers.box.project": "Projekt",
   "sim.containers.box.pattern": "Pattern",
@@ -124,7 +118,6 @@
   "sim.containers.rule.memorise": "manualen §10.10.6 — en återställningspunkt i tillfälligt minne, förlorad vid en projektladdning eller avstängning",
   "sim.containers.rule.perform": "manualen §10.12 — ändringarna lever i tillfälligt minne och sparas inte",
   "sim.containers.rule.powerOff": "manualen §3.2, §10.10.6 — osparat arbete kan gå förlorat, och det tillfälliga minnet följer med; spara först",
-
   "sim.conditions.track.kick": "Kick, subtrack 1",
   "sim.conditions.track.hats": "Hi-hats, subtrack 3",
   "sim.conditions.grid": "Två spår, sexton steg",
@@ -168,7 +161,6 @@
   "sim.conditions.reason.first": "{label}: loop {loop}",
   "sim.conditions.reason.abMet": "{a}:{b} — loop {x} av {b}: uppfyllt",
   "sim.conditions.reason.abNotMet": "{a}:{b} — loop {x} av {b}: inte uppfyllt",
-
   "keyColours.title": "Tangentfärger — Sixteen Tracks",
   "keyColours.description": "Vad varje färg på Tonverks tangenter betyder, tillstånd för tillstånd, sammanställt ur sessionerna i Sixteen Tracks. OS {os}.",
   "keyColours.ogDescription": "Färg, blink och läge på varje tänd tangent på Tonverk, och vad var och en betyder.",
@@ -192,7 +184,6 @@
   "colour.magenta": "magenta",
   "colour.cyan": "cyan",
   "colour.off": "släckt",
-
   "colophon.provenanceLine": "Session {n}, {title}: {device} av {steps} steg kontrollerade på enheten.",
   "colophon.staleHeading": "Ligger efter engelskan",
   "colophon.staleLine": "Session {n}, {title}: engelskan ändrades {date}.",

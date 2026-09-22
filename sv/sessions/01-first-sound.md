@@ -13,6 +13,7 @@ ends: { keys16: { 1: white } }
 ## Step: Slå på strömmen
 keys: []
 source: manual §3.2, §3.3, §5.2.1
+checked: yes
 mode: any
 
 Sätt den medföljande adaptern i ett vägguttag och dess USB-kabel i någon av de två
@@ -36,6 +37,7 @@ avstängning, och allt osparat följer med.
 ## Step: Hörlurarna och de två volymrattarna
 keys: [MAIN VOLUME, LEVEL/DATA]
 source: manual §3.1, §6.1
+checked: yes
 mode: any
 
 Koppla in hörlurarna i OUT E/F (HEADPHONES) på baksidan. Vrid [MAIN VOLUME] till ungefär en
@@ -53,6 +55,7 @@ att något på displayen säger varför.
 ## Step: Ett nytt projekt
 keys: [FUNC, PRESET, UP, DOWN, YES, NO]
 source: manual §9.1, §9.1.1
+checked: yes
 mode: menu:FILE
 
 Håll [FUNC] och tryck på [PRESET]: FILE-menyn öppnas. Gå till PROJECT med [UP]/[DOWN] och
@@ -78,6 +81,7 @@ finns till för att förklara. Inget du gör här inne kan skada fabriksmaterial
 keys: [TRK, TRIG 1]
 leds: { TRIG 1: white }
 source: manual §5.3.7
+checked: yes
 mode: any
 
 Håll [TRK] och tryck på [TRIG 1]. Spår 1 är nu det aktiva spåret: det som displayen
@@ -103,6 +107,7 @@ dig har TRK tryckt på sig, så det är vad den här kursen säger.
 ## Step: Ladda en kick
 keys: [PRESET, LEFT, RIGHT, UP, DOWN, LEVEL/DATA, YES]
 source: manual §7.1, §9.1.4
+checked: yes
 mode: menu:LOAD PRESET
 
 Tryck på [PRESET]. LOAD PRESET-menyn öppnas på det aktiva spåret. [LEFT]/[RIGHT] flyttar
@@ -135,6 +140,7 @@ behållarreglerna; kartan på [Innan du börjar](/before-you-start/) visar reste
 keys: [KEYBOARD]
 leds: { TRIG 1: white }
 source: manual §7.3, §8.5
+checked: yes
 mode: any
 
 Tryck på den nedre raden av [KEYBOARD]-tangenter, C1 till C2, och sedan på de svarta
@@ -159,6 +165,7 @@ välj ett audiospår, 1 till 8, så kommer klaviaturen tillbaka.
 ## Step: Oktaver
 keys: [+, -]
 source: manual §8.5
+checked: yes
 mode: any
 
 Tryck på [+]: klaviaturens fönster flyttar upp en oktav, och lysdioderna för KEYBOARD OCTAVE
@@ -173,6 +180,7 @@ recover: Fem oktaver åt vardera hållet är gränsen, så ett tryck som inte g�
 ## Step: Ställ tempot
 keys: [TEMPO, A, NO]
 source: manual §7.5.1
+checked: yes
 mode: menu:TEMPO
 
 Tryck på [TEMPO]. DATA ENTRY-ratten [A] är BPM; tryck in den medan du vrider så går det åtta
@@ -188,6 +196,7 @@ recover: Vägrar BPM att röra sig, följer Tonverk en extern klocka. §7.5.1 s�
 ## Step: Hör tempot
 keys: [FUNC, KEYBOARD F#1, PLAY, STOP]
 source: manual §7.5.2
+checked: yes
 mode: playback
 
 Håll [FUNC] och tryck på [KEYBOARD F#1] — dess mintgröna text säger Metronome. Tryck på
@@ -203,6 +212,7 @@ recover: Inget klick: öppna [TEMPO] och titta på rattarna E till H — METRO s
 ## Step: Döp projektet
 keys: [FUNC, PRESET, LEFT, RIGHT, UP, DOWN, LEVEL/DATA, YES]
 source: manual §9.1.1, §6.7
+checked: yes
 mode: menu:NAMING
 
 Håll [FUNC] och tryck på [PRESET] för FILE-menyn igen, sedan PROJECT och SAVE AS. En
@@ -220,6 +230,7 @@ recover: Hamnar du någonstans utan NAMING-skärm, valde du SAVE och inte SAVE A
 ## Step: Spara-vanan
 keys: [FUNC, SETTINGS, NO]
 source: community https://www.elektronauts.com/t/create-new-empty-project-no-samples-inside-my-own-name-how/238370
+checked: yes
 mode: any
 
 Håll [FUNC] och tryck på [SETTINGS] — den mintgröna texten läser Save Proj. Ingenting frågar

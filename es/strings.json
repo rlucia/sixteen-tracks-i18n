@@ -12,7 +12,6 @@
   "nav.staleMark": "Esta traducción es más antigua que el original en inglés.",
   "nav.sessionLabel": "Sesión {n}: {title}",
   "nav.sessionInEnglish": "Sesión {n}: {title} (en inglés)",
-
   "foot.trademark": "Tonverk, Elektron, Overbridge y Outbox 8 son marcas de Elektron Music Machines MAV AB, usadas aquí solo para identificar el dispositivo que este curso describe. Sixteen Tracks no es oficial: no está afiliado a Elektron, ni respaldado, patrocinado o vinculado a Elektron.",
   "foot.schematic": "Los dibujos del panel y de la pantalla son esquemas, no fotografías.",
   "foot.licence": "El código es MIT; los textos y los dibujos, CC BY 4.0; ninguna de las dos licencias cubre las marcas de Elektron.",
@@ -20,7 +19,6 @@
   "foot.before": "antes de empezar",
   "foot.colophon": "colofón",
   "foot.privacy": "privacidad",
-
   "hub.inEnglish": "(en inglés)",
   "hub.notYetWritten": "todavía no escrita",
   "hub.stripLabel": "Las teclas trig al final de la sesión {n}",
@@ -28,7 +26,6 @@
   "hero.label": "Esquema del panel frontal del Tonverk.",
   "hero.labelLatest": "Esquema del panel frontal del Tonverk, con sus teclas trig tal como quedan al final de la sesión {n}.",
   "hero.hint": "Pasa el cursor por una sesión de abajo: el panel muestra las teclas que enseña.",
-
   "session.title": "Sesión {n} · {title} — Sixteen Tracks",
   "session.description": "{goal} Sesión {n} de Sixteen Tracks, un curso práctico para el Elektron Tonverk, OS {os}.",
   "session.eyebrow": "Sesión {n} de {total} · {chapter} · Tonverk OS {os}",
@@ -49,14 +46,13 @@
   "session.nextSessionInEnglish": "Sesión {n} · {title} (en inglés)",
   "session.nextPlanned": "Sesión {n} · {title} (todavía no escrita)",
   "session.staleNote": "La versión inglesa de esta sesión cambió el {date}; esta traducción es anterior.",
-
   "step.checkpoint": "Punto de control",
   "step.screenCaption": "Pantalla, esquema",
   "step.trigKeys": "Teclas trig",
   "step.hear": "Escucha",
   "step.ifNot": "Si no",
   "step.newIn": "nuevo en la {version}",
-  "step.sourceDevice": "comprobado en la unidad",
+  "step.checked": "comprobado en la unidad",
   "step.sourceCommunity": "comunidad",
   "step.sourceManual": "Manual §",
   "step.cropLabel": "Panel, {region}: {keys} para el paso {n}",
@@ -69,7 +65,6 @@
   "crop.regionTrig": "la fila de trigs",
   "crop.regionComma": ", ",
   "crop.regionAnd": " y ",
-
   "sim.caption": "Simula la regla, no el sonido.",
   "sim.title.containers": "El mapa de los contenedores",
   "sim.title.conditions": "Condiciones de trig",
@@ -80,7 +75,6 @@
   "sim.start.routing": "Empieza donde la sesión 7 deja el routing.",
   "sim.start.length": "Empieza donde la sesión 10 deja el pattern.",
   "sim.startAgain": "Empezar de nuevo",
-
   "sim.containers.box.card": "Tarjeta SD",
   "sim.containers.box.project": "Proyecto",
   "sim.containers.box.pattern": "Pattern",
@@ -124,7 +118,6 @@
   "sim.containers.rule.memorise": "manual §10.10.6 — un punto de restauración en memoria temporal, que se pierde al cargar un proyecto o al apagar",
   "sim.containers.rule.perform": "manual §10.12 — los retoques viven en memoria temporal y no se guardan",
   "sim.containers.rule.powerOff": "manual §3.2, §10.10.6 — el trabajo sin guardar puede perderse, y la memoria temporal se va con él; guarda antes",
-
   "sim.conditions.track.kick": "Kick, subtrack 1",
   "sim.conditions.track.hats": "Hi-hats, subtrack 3",
   "sim.conditions.grid": "Dos pistas, dieciséis pasos",
@@ -168,7 +161,6 @@
   "sim.conditions.reason.first": "{label}: loop {loop}",
   "sim.conditions.reason.abMet": "{a}:{b} — loop {x} de {b}: se cumple",
   "sim.conditions.reason.abNotMet": "{a}:{b} — loop {x} de {b}: no se cumple",
-
   "keyColours.title": "Colores de las teclas — Sixteen Tracks",
   "keyColours.description": "Qué significa cada color en las teclas del Tonverk, estado por estado, recopilado de las sesiones de Sixteen Tracks. OS {os}.",
   "keyColours.ogDescription": "Color, parpadeo y modo de cada tecla encendida del Tonverk, y qué significa cada uno.",
@@ -192,7 +184,6 @@
   "colour.magenta": "magenta",
   "colour.cyan": "cian",
   "colour.off": "apagado",
-
   "colophon.provenanceLine": "Sesión {n}, {title}: {device} de {steps} pasos comprobados en la unidad.",
   "colophon.staleHeading": "Por detrás del inglés",
   "colophon.staleLine": "Sesión {n}, {title}: el inglés cambió el {date}.",

@@ -13,6 +13,7 @@ ends: { keys16: { 1: white } }
 ## Step: Encendido
 keys: []
 source: manual §3.2, §3.3, §5.2.1
+checked: yes
 mode: any
 
 Enchufa el adaptador incluido a una toma de corriente y su cable USB a cualquiera de los dos
@@ -36,6 +37,7 @@ todo lo que no esté guardado se va con ella.
 ## Step: Los auriculares y los dos mandos de volumen
 keys: [MAIN VOLUME, LEVEL/DATA]
 source: manual §3.1, §6.1
+checked: yes
 mode: any
 
 Conecta los auriculares a OUT E/F (HEADPHONES) en la parte trasera. Pon [MAIN VOLUME] más o
@@ -53,6 +55,7 @@ por qué.
 ## Step: Un proyecto nuevo
 keys: [FUNC, PRESET, UP, DOWN, YES, NO]
 source: manual §9.1, §9.1.1
+checked: yes
 mode: menu:FILE
 
 Mantén pulsado [FUNC] y pulsa [PRESET]: se abre el menú FILE. Ve a PROJECT con [UP]/[DOWN] y
@@ -77,6 +80,7 @@ existe para explicar. Nada de lo que hagas aquí dentro puede dañar el material
 keys: [TRK, TRIG 1]
 leds: { TRIG 1: white }
 source: manual §5.3.7
+checked: yes
 mode: any
 
 Mantén pulsado [TRK] y pulsa [TRIG 1]. La pista 1 es ahora la pista activa: la que describe
@@ -102,6 +106,7 @@ El panel que tienes delante imprime TRK, así que eso es lo que dice este curso.
 ## Step: Carga un kick
 keys: [PRESET, LEFT, RIGHT, UP, DOWN, LEVEL/DATA, YES]
 source: manual §7.1, §9.1.4
+checked: yes
 mode: menu:LOAD PRESET
 
 Pulsa [PRESET]. El menú LOAD PRESET se abre sobre la pista activa. [LEFT]/[RIGHT] se mueven
@@ -134,6 +139,7 @@ de los contenedores; el mapa de [Antes de empezar](/before-you-start/) muestra l
 keys: [KEYBOARD]
 leds: { TRIG 1: white }
 source: manual §7.3, §8.5
+checked: yes
 mode: any
 
 Pulsa las teclas [KEYBOARD] de la fila de abajo, de C1 a C2, y luego las teclas negras de
@@ -158,6 +164,7 @@ selecciona una pista de audio, de la 1 a la 8, para recuperar el teclado.
 ## Step: Octavas
 keys: [+, -]
 source: manual §8.5
+checked: yes
 mode: any
 
 Pulsa [+]: la ventana del teclado sube una octava, y los LED KEYBOARD OCTAVE junto a la
@@ -171,6 +178,7 @@ recover: El límite es cinco octavas hacia cada lado, así que una pulsación qu
 ## Step: Ajusta el tempo
 keys: [TEMPO, A, NO]
 source: manual §7.5.1
+checked: yes
 mode: menu:TEMPO
 
 Pulsa [TEMPO]. El mando DATA ENTRY [A] es el BPM; púlsalo mientras lo giras y se mueve de
@@ -186,6 +194,7 @@ recover: Si el BPM se niega a moverse, el Tonverk está siguiendo un reloj exter
 ## Step: Escucha el tempo
 keys: [FUNC, KEYBOARD F#1, PLAY, STOP]
 source: manual §7.5.2
+checked: yes
 mode: playback
 
 Mantén pulsado [FUNC] y pulsa [KEYBOARD F#1] — su rótulo menta dice Metronome. Pulsa [PLAY]:
@@ -201,6 +210,7 @@ recover: Sin clic: abre [TEMPO] y mira los mandos de E a H — METRO lo enciende
 ## Step: Ponle nombre al proyecto
 keys: [FUNC, PRESET, LEFT, RIGHT, UP, DOWN, LEVEL/DATA, YES]
 source: manual §9.1.1, §6.7
+checked: yes
 mode: menu:NAMING
 
 Mantén pulsado [FUNC] y pulsa [PRESET] para el menú FILE otra vez, luego PROJECT y SAVE AS.
@@ -218,6 +228,7 @@ recover: Si acabas en algún sitio sin pantalla NAMING, elegiste SAVE en vez de 
 ## Step: El hábito de guardar
 keys: [FUNC, SETTINGS, NO]
 source: community https://www.elektronauts.com/t/create-new-empty-project-no-samples-inside-my-own-name-how/238370
+checked: yes
 mode: any
 
 Mantén pulsado [FUNC] y pulsa [SETTINGS] — el rótulo menta dice Save Proj. Nada te pregunta

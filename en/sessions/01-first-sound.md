@@ -13,6 +13,7 @@ ends: { keys16: { 1: white } }
 ## Step: Power on
 keys: []
 source: manual §3.2, §3.3, §5.2.1
+checked: yes
 mode: any
 
 Plug the supplied adapter into a wall socket and its USB cable into either USB port on the
@@ -35,6 +36,7 @@ responding, holding POWER down forces it off, and anything unsaved goes with it.
 ## Step: Headphones and the two volume knobs
 keys: [MAIN VOLUME, LEVEL/DATA]
 source: manual §3.1, §6.1
+checked: yes
 mode: any
 
 Plug your headphones into OUT E/F (HEADPHONES) on the rear. Turn [MAIN VOLUME] to about a
@@ -52,6 +54,7 @@ nothing on screen to say why.
 ## Step: A fresh project
 keys: [FUNC, PRESET, UP, DOWN, YES, NO]
 source: manual §9.1, §9.1.1
+checked: yes
 mode: menu:FILE
 
 Hold [FUNC] and press [PRESET]: the FILE menu opens. Go to PROJECT with [UP]/[DOWN] and
@@ -76,6 +79,7 @@ exists to explain. Nothing you do in here can hurt the factory material.
 keys: [TRK, TRIG 1]
 leds: { TRIG 1: white }
 source: manual §5.3.7
+checked: yes
 mode: any
 
 Hold [TRK] and press [TRIG 1]. Track 1 is now the active track: the one the screen
@@ -101,6 +105,7 @@ you prints TRK, so that is what this course says.
 ## Step: Load a kick
 keys: [PRESET, LEFT, RIGHT, UP, DOWN, LEVEL/DATA, YES]
 source: manual §7.1, §9.1.4
+checked: yes
 mode: menu:LOAD PRESET
 
 Press [PRESET]. The LOAD PRESET menu opens on the active track. [LEFT]/[RIGHT] move between
@@ -132,6 +137,7 @@ the map on [Before you start](/before-you-start/) shows the rest.
 keys: [KEYBOARD]
 leds: { TRIG 1: white }
 source: manual §7.3, §8.5
+checked: yes
 mode: any
 
 Press the bottom-row [KEYBOARD] keys, C1 to C2, then the black keys above them. It is the
@@ -156,6 +162,7 @@ select an audio track, 1 to 8, to bring the keyboard back.
 ## Step: Octaves
 keys: [+, -]
 source: manual §8.5
+checked: yes
 mode: any
 
 Press [+]: the keyboard window moves up an octave, and the KEYBOARD OCTAVE LEDs beside the
@@ -169,6 +176,7 @@ recover: Five octaves each way is the limit, so a press that does nothing means 
 ## Step: Set the tempo
 keys: [TEMPO, A, NO]
 source: manual §7.5.1
+checked: yes
 mode: menu:TEMPO
 
 Press [TEMPO]. DATA ENTRY knob [A] is the BPM; push it in while you turn and it moves eight
@@ -184,6 +192,7 @@ recover: If the BPM refuses to move, the Tonverk is following an external clock.
 ## Step: Hear the tempo
 keys: [FUNC, KEYBOARD F#1, PLAY, STOP]
 source: manual §7.5.2
+checked: yes
 mode: playback
 
 Hold [FUNC] and press [KEYBOARD F#1] — its mint legend says Metronome. Press [PLAY]: a
@@ -199,6 +208,7 @@ recover: No click: open [TEMPO] and look at knobs E to H — METRO turns it on a
 ## Step: Name the project
 keys: [FUNC, PRESET, LEFT, RIGHT, UP, DOWN, LEVEL/DATA, YES]
 source: manual §9.1.1, §6.7
+checked: yes
 mode: menu:NAMING
 
 Hold [FUNC] and press [PRESET] for the FILE menu again, then PROJECT and SAVE AS. A NAMING
@@ -215,6 +225,7 @@ recover: If you land somewhere with no NAMING screen you chose SAVE rather than 
 ## Step: The save habit
 keys: [FUNC, SETTINGS, NO]
 source: community https://www.elektronauts.com/t/create-new-empty-project-no-samples-inside-my-own-name-how/238370
+checked: yes
 mode: any
 
 Hold [FUNC] and press [SETTINGS] — the mint legend reads Save Proj. Nothing asks you
