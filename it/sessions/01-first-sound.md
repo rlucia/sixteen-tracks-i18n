@@ -151,7 +151,7 @@ mode: any
 Premi la fila in basso della tastiera un tasto alla volta, da [KEYBOARD C1] a
 [KEYBOARD C2]. Ogni tasto è un suono del kit. Il numero sul display segue il tasto che hai
 premuto, e quel tasto resta rosso: è il suono che adesso suona [TRIG 1]. Riconoscili da dove
-stanno e da quanto durano. Il kick è il più basso e il più corto, quello su cui poggiano gli
+stanno e da quanto durano. Il kick è il più basso, e breve — quello su cui poggiano gli
 altri. Lo snare è uno schiocco secco a metà del registro; un clap è un battito di mani e
 spesso prende il posto dello snare. L'hi-hat chiuso è il più acuto e il più breve di tutti;
 un hi-hat aperto è altrettanto acuto ma resta a suonare. Un tom è un tamburo con un'altezza

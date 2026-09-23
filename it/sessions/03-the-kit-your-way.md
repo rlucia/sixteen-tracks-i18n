@@ -22,7 +22,7 @@ il beat — tutto quello che fai in questa sessione succede mentre suona.
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
 hear: Il beat della sessione 2 in loop da A01: kick, snare, hi-hat chiuso e clap, tutti dal kit sulla traccia 1.
-recover: Se nel frattempo hai suonato e vuoi tornare allo stato salvato, evidenzia il tuo progetto nella lista LOAD, premi [RIGHT] per PROJECT ACTIONS e scegli RELOAD. Se [TRIG 2], [TRIG 3] o [TRIG 4] suonano suoni propri, il tuo beat è sparso su quattro tracce: la sessione 2 lo costruisce su una sola, e questa sessione parte da lì. Cominci da qui senza la sessione 2? Quella sessione scrive il beat su cui lavora questa, e ci vogliono circa sedici minuti.
+recover: Se nel frattempo hai suonato e vuoi tornare allo stato salvato, evidenzia il tuo progetto nella lista LOAD, premi [RIGHT] per PROJECT ACTIONS e scegli RELOAD. Se [TRIG 2], [TRIG 3] o [TRIG 4] suonano suoni propri, il tuo beat è sparso su quattro tracce: la sessione 2 lo costruisce su una sola, e il suo primo passo cancella quello vecchio. Cominci da qui senza la sessione 2? Quella sessione scrive il beat su cui lavora questa, e ci vogliono circa sedici minuti.
 :::
 
 ## Step: Le tre vite di un tasto trig
@@ -76,7 +76,7 @@ questo è il contrario, un passo attraverso tutto il kit. Premi [KEYBOARD F1] me
 
 :::checkpoint
 hear: Il beat com'era, una volta rimesso quello che hai tolto.
-recover: STEP EDIT fa parte del GRID RECORDING (§10.3.1), quindi [RECORD] si accende insieme. Un tasto debole sulla fila in basso è il suono che hai selezionato, non uno che suona sul passo — [lo avverte il tutorial di Elektron stesso](https://www.youtube.com/watch?v=ijPa_vgY8QA). Un clap che hai tolto e non riesci a rimettere: [FUNC] + [NO] lo annulla.
+recover: STEP EDIT fa parte del GRID RECORDING (§10.3.1), quindi [RECORD] si accende insieme. Un tasto acceso debolmente sulla fila in basso è il suono che hai selezionato, non uno che suona sul passo — [lo avverte il tutorial di Elektron stesso](https://www.youtube.com/watch?v=ijPa_vgY8QA).
 :::
 
 ## Step: Riaccorda un suono
@@ -92,16 +92,16 @@ gli effetti del kit, che tiene la supertrack — due passi più avanti.
 
 :::checkpoint
 hear: Uno snare più basso nello stesso beat; il kick, gli hi-hat e il clap come prima.
-recover: Se si è mosso un altro suono, il tasto rosso era altrove quando hai girato: tieni premuto [TRK], premi [KEYBOARD D1] e gira di nuovo. Per tornare com'era, TUNE a 0 lascia l'altezza invariata.
+recover: Se si è mosso un altro suono, il tasto rosso era altrove quando hai girato: tieni premuto [TRK], premi [KEYBOARD D1] e gira di nuovo. Per tornare indietro, leggi TUNE prima di girare e riportalo a quel valore.
 :::
 
 ## Step: Sostituisci un sample
-keys: [TRK, TRIG 1, KEYBOARD F1, FUNC, UP, DOWN, YES, NO]
+keys: [TRK, KEYBOARD F1, FUNC, UP, DOWN, YES, NO]
 source: manual §A.2.3, §6.13
 mode: menu:SAMPLE BROWSER
 
-Tieni premuto [TRK] e premi [TRIG 1] per tornare al kit, poi [TRK] + [KEYBOARD F1], il quarto
-tasto SUBTRACKS, così il clap è il suono in cui sei. [FUNC] + [KEYBOARD F1] apre il browser
+Tieni premuto [TRK] e premi [KEYBOARD F1], il quarto
+tasto SUBTRACKS, così il clap è il suono su cui sei. [FUNC] + [KEYBOARD F1] apre il browser
 dei sample sulla scheda SD, puntato su quella sola subtrack: [UP]/[DOWN] scorre la scheda,
 [YES] apre una cartella e [YES] su un sample lo carica nel pool di sample del progetto e sulla
 subtrack (§5.2.6), e [NO] risale di un livello. Scegli un suono corto che ti piace al posto

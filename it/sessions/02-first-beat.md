@@ -23,7 +23,7 @@ sessione 1? Ti serve un progetto che puoi modificare, con un kit di batteria sul
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
 hear: Premi [TRIG 1]: il kick della sessione 1.
-recover: Se nel frattempo hai sperimentato e vuoi tornare allo stato salvato, evidenzia il tuo progetto nella lista LOAD e premi [RIGHT] per PROJECT ACTIONS, poi RELOAD. Quello è l'ultimo salvataggio.
+recover: Se nel frattempo hai sperimentato e vuoi tornare allo stato salvato, evidenzia il tuo progetto nella lista LOAD e premi [RIGHT] per PROJECT ACTIONS, poi RELOAD. Quello è l'ultimo salvataggio. Se [TRIG 2], [TRIG 3] o [TRIG 4] suonano batteria propria, un passaggio precedente ha lasciato il beat su quattro tracce: con il GRID RECORDING spento, [FUNC] + [PLAY] e [YES] cancellano i trig di A01 (§10.10.4), e i passi qui sotto lo riscrivono sulla traccia 1.
 :::
 
 :::note
@@ -46,7 +46,7 @@ kick. Questi quattro sono il beat.
 
 :::checkpoint
 hear: Niente mentre tieni premuto [TRK]. Ogni suono suona solo quando premi il suo tasto da solo.
-recover: Un suono che ha suonato vuol dire che [TRK] non era giù prima — tienilo premuto, poi premi. Con un altro kit, lo snare, l'hi-hat chiuso e la quarta voce stanno dove li ha trovati il tuo orecchio nella sessione 1; usa quei tasti ovunque questa sessione dice D1, A1 e F1.
+recover: Un suono che ha suonato vuol dire che [TRK] non era giù prima — tienilo premuto, poi premi. Con un altro kit, lo snare, l'hi-hat chiuso e la quarta voce stanno dove li ha trovati il tuo orecchio nella sessione 1; usa quei tasti ovunque il corso dice D1, A1 e F1.
 :::
 
 ## Step: Entra in GRID RECORDING
@@ -279,7 +279,7 @@ recover: Il salvataggio non dice niente e non mostra nessuna schermata del nome;
 ## What you now have
 
 SIXTEEN ha un beat di una battuta su A01 — kick, snare, hi-hat chiuso e clap, tutti dal kit
-sulla traccia 1 — e A02 ne contiene una copia. Le tracce da 2 a 4 sono ancora vuote.
+sulla traccia 1 — e A02 ne contiene una copia. Le tracce da 2 a 4 non suonano niente.
 Entrambi i pattern sono salvati. Fermati qui, o continua
 a suonare: tutto quello che cambi da adesso non è salvato fino al prossimo [FUNC] +
 [SETTINGS].

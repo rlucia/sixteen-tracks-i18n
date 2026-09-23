@@ -247,4 +247,4 @@ quelli del primo pattern sono spariti (§10.12).
 
 La sessione 6 lascia stare la batteria e comincia il secondo capitolo: un basso sulla
 traccia 2 e una parte di accordi sulla traccia 3, suonate dalla tastiera in La minore, sulle
-tracce che la sessione 3 ha liberato. Il ritmo è finito — da qui il pezzo guadagna le note.
+tracce 2 e 3, che il beat lascia libere. Il ritmo è finito — da qui il pezzo guadagna le note.
