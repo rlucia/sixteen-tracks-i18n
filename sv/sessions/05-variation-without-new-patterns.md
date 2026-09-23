@@ -47,12 +47,12 @@ recover: Kommer pickupen varje loop, står COND fortfarande på strecket: håll 
 :::
 
 ## Step: Chans på ghost notes
-keys: [TRK, KEYBOARD E1, TRIG 3, TRIG 7, TRIG 11, TRIG 15, D]
+keys: [TRK, KEYBOARD A1, TRIG 3, TRIG 7, TRIG 11, TRIG 15, D]
 leds: { TRIG 3: red, TRIG 7: red, TRIG 11: red, TRIG 15: red }
 source: manual §12.2
 mode: grid-recording
 
-Håll [TRK] och tryck på [KEYBOARD E1], den tredje SUBTRACKS-tangenten, för den stängda
+Håll [TRK] och tryck på [KEYBOARD A1], den sjätte SUBTRACKS-tangenten, för den stängda
 hi-haten — TRIG PAGE 1 ligger kvar framför dig. Håll [TRIG 3], [TRIG 7], [TRIG 11] och
 [TRIG 15], session 4:s fyra ghost notes, och vrid ratten [D], PROB, ner till 50%.
 
@@ -211,10 +211,16 @@ trumfill brukar göra.
 tryck i stället för ett håll (§10.10.3). Praktiskt i samma stund som din andra hand ligger på
 en ratt, och lätt att lämna påslaget av misstag.
 
+### Den andra kicken
+Flytta 1:2-pickupen från kicken till [KEYBOARD E1], HELLO KITs mörka kick: rensa steg 15 på
+[KEYBOARD C1], skriv det på E1 och sätt COND till 1:2 där på samma sätt. Takten behåller sina
+fyra kickar på slagen, och vartannat varv leder en djupare kick in i början.
+
 ### 1ST, en intro som händer en gång
 1ST avfyrar en trig första varvet runt patternet och aldrig mer; samma villkor med ett streck
-över sitter över det första varvet och spelar på alla de andra (§10.10.2). En öppen hi-hat på
-steg 1 med 1ST, och patternet anmäler sig och går sedan vidare.
+över sitter över det första varvet och spelar på alla de andra (§10.10.2). En cymbal på steg
+1 med 1ST — HELLO KIT har en lång på [KEYBOARD C2] — och patternet anmäler sig och går sedan
+vidare.
 
 ### NEI, i simulatorn i stället för på kitet
 NEI tittar åt sidan: den frågar hur det senaste villkoret gick på spåret bredvid — det som är

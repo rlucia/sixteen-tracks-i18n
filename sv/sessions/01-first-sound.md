@@ -3,9 +3,9 @@ number: 1
 chapter: rhythm
 slug: first-sound
 title: Första ljudet
-goal: Slå på strömmen, lägg ett ljud på spår 1, spela det från klaviaturen, ställ tempot och spara ett projekt du kan komma tillbaka till.
+goal: Slå på strömmen, lägg ett trumkit på spår 1, hitta dess kick på den nedre raden, ställ tempot och spara ett projekt du kan komma tillbaka till.
 needs: [Tonverk och dess nätadapter, "Hörlurar med 6,3 mm-kontakt (eller en mixer på OUT A/B)", Fabriks-SD-kortet i sin plats, "Ungefär sexton minuter"]
-teaches: [power, volume, new-project, track-select, load-preset, keyboard, octave, tempo, metronome, name-project, save-project]
+teaches: [power, volume, new-project, track-select, load-preset, kit, subtrack-select, tempo, metronome, name-project, save-project]
 simulator: null
 ends: { keys16: { 1: white } }
 ---
@@ -104,22 +104,28 @@ dig har TRK tryckt på sig, så det är vad den här kursen säger.
 [TRK] och en trig-tangent är det tysta valet.
 :::
 
-## Step: Ladda en kick
+## Step: Ladda ett kit
 keys: [PRESET, LEFT, RIGHT, UP, DOWN, LEVEL/DATA, YES]
 source: manual §7.1, §9.1.4
-checked: yes
 mode: menu:LOAD PRESET
 
 Tryck på [PRESET]. LOAD PRESET-menyn öppnas på det aktiva spåret. [LEFT]/[RIGHT] flyttar
 mellan preset-kategorierna DRUMS och KEYS; stanna i DRUMS. Scrolla med [UP]/[DOWN] eller
-[LEVEL/DATA] tills du hittar en kick — vilket preset som helst med ett sådant namn duger.
-Exempelstycket använder den första kicken i listan; välj en du gillar. Tryck på [YES] för
-att ladda den till spår 1.
+[LEVEL/DATA] till 017 HELLO KIT, kitet som exempelstycket använder, och tryck på [YES] för att
+ladda det till spår 1. Ett annat kit fungerar lika bra: stegen nämner HELLO KITs tangenter, och
+i ditt kan samma ljud ligga på andra tangenter.
 
 :::checkpoint
 screen: { menu: "LOAD PRESET", items: [DRUMS, KEYS], sel: 0 }
-hear: Tryck en gång på [TRIG 1]. Kicken spelar.
+hear: Tryck en gång på [TRIG 1]. Ett av kitets ljud spelar.
 recover: Tystnad: upp lite med [MAIN VOLUME], och hörlurskontakten hela vägen in. Ger [TRIG 1] inget ljud alls, hamnade presetet någon annanstans — håll [TRK], tryck på [TRIG 1] och ladda om det.
+:::
+
+:::note
+Nästan allt under DRUMS är ett kit: åtta ljud på ett spår, inte en enda trumma.
+[En rundtur bland fabrikskiten](https://www.youtube.com/watch?v=vWVw534Xvs4) spelar dem ett
+efter ett. Det finns inget preset som bara är en kick: du laddar ett kit och hittar kicken i
+det.
 :::
 
 :::note
@@ -136,21 +142,25 @@ vrider på *det här patternets kopia*, aldrig filen på kortet. Det är den fö
 behållarreglerna; kartan på [Innan du börjar](/before-you-start/) visar resten.
 :::
 
-## Step: Spela det från klaviaturen
-keys: [KEYBOARD]
-leds: { TRIG 1: white }
-source: manual §7.3, §8.5
-checked: yes
+## Step: Åtta ljud på den nedre raden
+keys: [KEYBOARD C1, KEYBOARD D1, KEYBOARD E1, KEYBOARD F1, KEYBOARD G1, KEYBOARD A1, KEYBOARD B1, KEYBOARD C2, TRIG 1]
+leds: { KEYBOARD C1: red }
+source: manual §3.1, §A.2.3
 mode: any
 
-Tryck på den nedre raden av [KEYBOARD]-tangenter, C1 till C2, och sedan på de svarta
-tangenterna ovanför. Det är samma kick varje gång, spelad i olika tonhöjd: klaviaturen är
-kromatisk och presetet följer den. Ett trumpreset spelat två oktaver ner är ett annat
-instrument, och det är värt fem sekunder av din tid.
+Tryck på klaviaturens nedre rad en tangent i taget, från [KEYBOARD C1] till [KEYBOARD C2].
+Varje tangent är ett av kitets ljud. Siffran på skärmen följer tangenten du tryckte på, och
+den tangenten förblir röd: det är ljudet som [TRIG 1] spelar nu. Skilj dem åt efter var de
+ligger och hur länge de klingar. Kicken är den mörkaste och kortaste, den som de andra står
+på. Snaren är en skarp smäll mitt i registret; en clap är en handklappning och tar ofta
+snarens plats. Den stängda hi-haten är den ljusaste och kortaste av alla; en öppen hi-hat är
+lika ljus men ringer kvar. En tom är en trumma med tydlig tonhöjd, och en cymbal är ett långt
+metalliskt sus. I HELLO KIT ligger kicken på [KEYBOARD C1]: tryck på den sist, och sedan på
+[TRIG 1].
 
 :::checkpoint
-hear: Presetet spelar i olika tonhöjd på varje tangent.
-recover: Spelar klaviaturen något som inte är din kick? Då har det aktiva spåret flyttat sig. [TRK] + [TRIG 1] tar tillbaka det.
+hear: Åtta olika ljud, och sedan kicken ensam från [TRIG 1].
+recover: Klaviaturens övre rad och oktavtangenterna gör ingenting medan ett kit ligger på spåret; det är kitet, inte ett fel. Spelar [TRIG 1] något som inte är din kick ligger den röda tangenten någon annanstans — tryck på [KEYBOARD C1], eller tangenten där ditt kit har kicken, och försök igen.
 :::
 
 :::note
@@ -160,21 +170,6 @@ Klaviaturen följer inte alltid spåret du just har valt. Välj vad som helst fr
 läses det som ett val som inte gick igenom.
 [Det är meningen](https://www.elektronauts.com/t/tonverk-technical-q-a/238273/1088):
 välj ett audiospår, 1 till 8, så kommer klaviaturen tillbaka.
-:::
-
-## Step: Oktaver
-keys: [+, -]
-source: manual §8.5
-checked: yes
-mode: any
-
-Tryck på [+]: klaviaturens fönster flyttar upp en oktav, och lysdioderna för KEYBOARD OCTAVE
-bredvid tangenten visar var du är. [-] flyttar ner. Tryck på [+] + [-] samtidigt för att
-komma tillbaka till 0.
-
-:::checkpoint
-hear: Samma tangent, en oktav högre efter [+]; tillbaka där den var efter [+] + [-].
-recover: Fem oktaver åt vardera hållet är gränsen, så ett tryck som inte gör något betyder att du är längst ut. Läs lysdioderna för KEYBOARD OCTAVE bredvid [+] för att se var du har hamnat, och håll återställningskombinationen nära till hands.
 :::
 
 ## Step: Ställ tempot
@@ -188,19 +183,19 @@ i taget. Exempelstycket går i 92. Har du ett tempo i huvudet så använd det �
 80 och 100 gör de senare sessionerna bekväma. [NO] stänger menyn igen.
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 1, type: "AUDIO" }
+screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
 hear: Inget ändras ännu; tempot står uppe till höger på huvuddisplayen.
 recover: Vägrar BPM att röra sig, följer Tonverk en extern klocka. §7.5.1 säger att displayen visar "MIDI" ovanför BPM; §6 beskriver en låsikon bredvid. Båda märkena betyder samma sak — dra ur MIDI- eller USB-klockan tills vidare.
 :::
 
 ## Step: Hör tempot
-keys: [FUNC, KEYBOARD F#1, PLAY, STOP]
+keys: [FUNC, KEYBOARD F#1, PLAY, KEYBOARD C1, STOP]
 source: manual §7.5.2
 checked: yes
 mode: playback
 
 Håll [FUNC] och tryck på [KEYBOARD F#1] — dess mintgröna text säger Metronome. Tryck på
-[PLAY]: ett klick i ditt tempo. Spela kicken mot det från klaviaturen en minut; det är
+[PLAY]: ett klick i ditt tempo. Spela kicken på [KEYBOARD C1] mot det en minut; det är
 övningen, och det är hela skälet till att tempot kom före beatet. Tryck på [STOP], sedan
 [FUNC] + [KEYBOARD F#1] igen för att tysta klicket.
 
@@ -222,8 +217,8 @@ så att du kan peka ut ett med pilarna. Döp det till SIXTEEN, eller något du k
 tryck på [YES].
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 1, type: "AUDIO" }
-hear: Inget ändras. Projektet, dess pattern och din kick ligger nu på kortet under ett namn du har valt.
+screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
+hear: Inget ändras. Projektet, dess pattern och ditt kit ligger nu på kortet under ett namn du har valt.
 recover: Hamnar du någonstans utan NAMING-skärm, valde du SAVE och inte SAVE AS. [NO] backar ut; SAVE AS är den som frågar efter ett namn och tar en ny plats. På själva namnskärmen raderar [FUNC] + [NO] en bokstav och [FUNC] + [YES] infogar ett mellanslag.
 :::
 
@@ -239,7 +234,7 @@ egen plats under namnet du just gav det, och du är på huvuddisplayen igen. Gö
 att första gången du möter den tystnaden är en gång då du väntade dig den.
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 1, type: "AUDIO" }
+screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
 hear: Ingenting alls. Den tystnaden är steget: projektet ligger på kortet, under namnet du gav det.
 recover: Öppnades en meny med inställningar i stället? Då tryckte du på [SETTINGS] utan [FUNC]. Tryck på [NO], håll [FUNC] först, tryck sedan på [SETTINGS]. Är du osäker på om sparningen skedde: öppna FILE-menyn, PROJECT, LOAD — ditt namn står i listan.
 :::
@@ -266,8 +261,8 @@ PERFORM-läget är ingen sparning, den tillfälliga memoreringen är en tillfäl
 
 ## What you now have
 
-Ett projekt som heter SIXTEEN med ett pattern, A01, ett ljud — en kick på spår 1 — och ett
-tempo på 92. Det är sparat, så du kan stänga av här: nästa session börjar från det här
+Ett projekt som heter SIXTEEN med ett pattern, A01, ett trumkit på spår 1 — HELLO KIT, med
+kicken hittad på [KEYBOARD C1] — och ett tempo på 92. Det är sparat, så du kan stänga av här: nästa session börjar från det här
 läget. Behöll du ditt eget namn eller ditt eget tempo fungerar nästa session likadant.
 
 ## Explore further
@@ -289,9 +284,16 @@ varandra ([FUNC] + [NO] rensar en sökning). Det här
 skillnaden mellan en bläddrare och en scroll.
 
 ### Den andra kategorin
-Bläddra i KEYS, ladda något, spela på klaviaturen och ladda sedan tillbaka din kick.
-Laddningen ersätter spåret båda gångerna — bara patternets kopia ändras någonsin, och på
+Bläddra i KEYS, ladda något och spela på klaviaturen: ett KEYS-preset är ett enda ljud över
+hela klaviaturen, den övre raden och oktavtangenterna inräknade. Ladda sedan tillbaka HELLO
+KIT. Laddningen ersätter spåret båda gångerna — bara patternets kopia ändras någonsin, och på
 kortet ligger båda preseten kvar precis som de var.
+
+### Andra kit
+Ladda några kit till från DRUMS och spela den nedre raden på vart och ett. Tangenterna är
+desamma; det som ligger på dem skiftar från kit till kit, och ditt öra är den enda kartan.
+Ladda tillbaka HELLO KIT när du är klar, eller behåll kitet du gillade och kom ihåg var dess
+kick, snaren, den stängda hi-haten och clapen ligger.
 
 ### Nivåratten
 [LEVEL/DATA] ställer det aktiva spårets nivå, och displayen visar den nere till höger medan
@@ -299,7 +301,7 @@ du vrider. Nu när du vet vad den gör slutar den vara ratten som mystiskt tysta
 
 ## Next
 
-Session 2 lägger tre trumljud till på spår 2 till 4 och skriver det beat på en takt som hela
-stycket står på. Innan dess förklarar tio minuter på
+Session 2 skriver det beat på en takt som hela stycket står på, på det här enda spåret, ett
+av kitets ljud i taget. Innan dess förklarar tio minuter på
 [Innan du börjar](/before-you-start/) de fem behållarna en sparning rör vid och de fyra
 sorternas spår: det är sidan varje senare session lutar sig mot.

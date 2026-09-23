@@ -3,9 +3,9 @@ number: 2
 chapter: rhythm
 slug: first-beat
 title: Första beatet
-goal: Lägg trummor på spår 1 till 4, skriv ett beat på en takt i GRID RECORDING, mutea och unmutea, kopiera patternet och spara.
-needs: ["SIXTEEN-projektet från session 1 (eller vilket projekt som helst med en kick på spår 1 — steg 1 säger hur)", Anslutna hörlurar, Fabrikens trumpresets på SD-kortet, "Ungefär sexton minuter"]
-teaches: [grid-recording, track-select, page-length, mute, copy-paste-clear, undo, pattern-select]
+goal: Skriv ett beat på en takt med kitets ljud i GRID RECORDING, mutea ett ljud, kopiera patternet och spara.
+needs: ["SIXTEEN-projektet från session 1 (eller vilket projekt som helst med ett trumkit på spår 1 — steg 1 säger hur)", Anslutna hörlurar, "Ungefär sexton minuter"]
+teaches: [grid-recording, subtrack-select, page-length, mute, copy-paste-clear, undo, pattern-select]
 simulator: null
 ends: { keys16: { 1: red, 5: red, 9: red, 13: red } }
 ---
@@ -17,11 +17,11 @@ mode: menu:FILE
 
 Är inte SIXTEEN-projektet på displayen, så ladda det: [FUNC] + [PRESET] öppnar FILE-menyn,
 sedan [UP]/[DOWN] genom PROJECT, LOAD och ditt projekt, [YES]. Börjar du här utan session 1?
-Då behöver du ett projekt du kan redigera med en kick på spår 1 — session 1, steg 3 till 5,
-tar fyra minuter.
+Då behöver du ett projekt du kan redigera med ett trumkit på spår 1 — session 1, steg 3 till
+6, tar fem minuter.
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 1, type: "AUDIO" }
+screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
 hear: Tryck på [TRIG 1]: kicken från session 1.
 recover: Har du experimenterat sedan dess och vill ha tillbaka det sparade läget: markera ditt projekt i LOAD-listan och tryck på [RIGHT] för PROJECT ACTIONS, sedan RELOAD. Det är den senaste sparningen.
 :::
@@ -32,50 +32,21 @@ och du har spelat under tiden: spara innan du laddar något — arbetsläget du 
 överge skrivs inte tillbaka till ditt projekt av sig självt.
 :::
 
-## Step: En snare på spår 2
-keys: [TRK, TRIG 2, PRESET, LEFT, RIGHT, UP, DOWN, YES]
-leds: { TRIG 2: white }
-source: manual §5.3.7, §7.1
-mode: menu:LOAD PRESET
+## Step: Välj ett ljud i tystnad
+keys: [TRK, KEYBOARD D1, KEYBOARD A1, KEYBOARD F1, KEYBOARD C1]
+leds: { KEYBOARD C1: red }
+source: manual §A.2.3
+mode: any
 
-Håll [TRK] och tryck på [TRIG 2]. Tryck på [PRESET]; är du inte i DRUMS tar [LEFT]/[RIGHT]
-dig tillbaka. [UP]/[DOWN] till en snare — vilket preset som helst med ett sådant namn — och
-tryck på [YES].
-
-:::checkpoint
-keys16: { 2: white }
-hear: [TRIG 2] spelar snaren; [TRIG 1] spelar fortfarande kicken.
-recover: Spelar [TRIG 2] kicken, hamnade presetet på spår 1: presetet går alltid till det spår som var aktivt när du tryckte på [YES]. Håll [TRK] och tryck på [TRIG 2] först, ladda sedan om.
-:::
-
-## Step: En stängd hi-hat på spår 3
-keys: [TRK, TRIG 3, PRESET, UP, DOWN, YES]
-leds: { TRIG 3: white }
-source: manual §5.3.7, §7.1
-mode: menu:LOAD PRESET
-
-Håll [TRK] och tryck på [TRIG 3]. Sedan [PRESET], [UP]/[DOWN] till en stängd hi-hat, [YES].
+Håll [TRK] och tryck på [KEYBOARD D1]. Nu är snaren det valda ljudet, och ingenting spelade:
+samma tysta val som [TRK] ger trig-tangenterna för spår, här för ljuden i ett kit. Siffran på
+skärmen säger 2 och D1 är den röda tangenten. Gör likadant med [KEYBOARD A1], den stängda
+hi-haten, och [KEYBOARD F1], clapen, och sluta på [KEYBOARD C1], kicken. De här fyra är
+beatet.
 
 :::checkpoint
-keys16: { 3: white }
-hear: [TRIG 3] spelar hi-haten.
-recover: Samma regel som för snaren: det aktiva spåret avgör var ett preset hamnar.
-:::
-
-## Step: En fjärde röst på spår 4
-keys: [TRK, TRIG 4, PRESET, UP, DOWN, YES]
-leds: { TRIG 4: white }
-source: manual §5.3.7, §7.1
-mode: menu:LOAD PRESET
-
-Håll [TRK] och tryck på [TRIG 4]. Exempelstycket använder en öppen hi-hat här; en clap
-eller ett percussion-slag fungerar lika bra, och beatet landar ändå där kontrollpunkterna
-säger. Ladda det: [PRESET], [UP]/[DOWN] fram till det, [YES].
-
-:::checkpoint
-keys16: { 4: white }
-hear: Fyra olika ljud på [TRIG 1] till [TRIG 4].
-recover: Ladda ett annat preset över det. Bara patternets kopia ändras, och kortet har fortfarande kvar varje preset du passerade.
+hear: Ingenting medan [TRK] hålls. Varje ljud spelar bara när du trycker på dess tangent ensam.
+recover: Ett ljud som spelade betyder att [TRK] inte var nere först — håll den, tryck sedan. Med ett annat kit ligger snaren, den stängda hi-haten och den fjärde rösten där ditt öra hittade dem i session 1; använd de tangenterna överallt där den här sessionen säger D1, A1 och F1.
 :::
 
 ## Step: Gå in i GRID RECORDING
@@ -85,11 +56,11 @@ source: manual §10.3
 mode: playback
 
 Tryck på [RECORD]. Tangenten lyser rött, och det röda är GRID RECORDING. De sexton
-trig-tangenterna står inte längre för spår. Nu står de för en takts sexton steg, på det
-aktiva spåret.
+trig-tangenterna står inte längre för spår. Nu står de för en takts sexton steg, för det
+aktiva spårets valda ljud.
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 4, type: "AUDIO", page: { n: 1, of: 1 } }
+screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS", page: { n: 1, of: 1 } }
 hear: Inget ännu; sequencern går inte.
 recover: Visar trig-tangenterna pattern-platser i stället? Då är du i pattern-valet. Tryck på [PTN] eller [NO] för att lämna det, tryck sedan på [RECORD].
 :::
@@ -100,13 +71,13 @@ trigs medan den går eller medan den står stilla — det du tycker är lättast
 :::
 
 ## Step: Kicken på slagen
-keys: [TRK, TRIG 1, TRIG 5, TRIG 9, TRIG 13]
+keys: [TRK, KEYBOARD C1, TRIG 1, TRIG 5, TRIG 9, TRIG 13]
 leds: { RECORD: red, TRIG 1: red, TRIG 5: red, TRIG 9: red, TRIG 13: red }
 source: manual §10.3, §10.2.1
 mode: grid-recording
 
-Håll [TRK] och tryck på [TRIG 1] så att kickens spår blir det du skriver på; dess tangent
-blir vit. Tryck sedan på [TRIG 1], [TRIG 5], [TRIG 9] och [TRIG 13]: en kick på varje slag.
+Håll [TRK] och tryck på [KEYBOARD C1] så att kicken blir ljudet du skriver. Tryck sedan på
+[TRIG 1], [TRIG 5], [TRIG 9] och [TRIG 13]: en kick på varje slag.
 Alla fyra lyser rött — rött är en note-trig.
 
 :::checkpoint
@@ -131,27 +102,27 @@ recover: Tystnad medan ljuset fortfarande löper beror oftast på en av två sak
 :::
 
 ## Step: Snaren på två och fyra
-keys: [TRK, TRIG 2, TRIG 5, TRIG 13]
+keys: [TRK, KEYBOARD D1, TRIG 5, TRIG 13]
 leds: { RECORD: red, TRIG 5: red, TRIG 13: red }
 source: manual §10.3
 mode: grid-recording
 
-Håll [TRK] och tryck på [TRIG 2]. De sexton tangenterna töms: de visar spår 2 nu, och spår 2
-har inget på sig. Tryck på [TRIG 5] och [TRIG 13].
+Håll [TRK] och tryck på [KEYBOARD D1]. De sexton tangenterna töms: de visar snarens steg nu,
+och snaren har inga än. Tryck på [TRIG 5] och [TRIG 13].
 
 :::checkpoint
 keys16: { 5: red, 13: red }
 hear: Kick, snare, kick, snare.
-recover: Lyser kickens fyra tangenter fortfarande, lämnade du aldrig spår 1. Håll [TRK] — håll, tryck inte bara till — och tryck på [TRIG 2] igen.
+recover: Lyser kickens fyra tangenter fortfarande, lämnade du aldrig kicken. Håll [TRK] — håll, tryck inte bara till — och tryck på [KEYBOARD D1] igen.
 :::
 
 ## Step: Hi-hats på varannat steg
-keys: [TRK, TRIG 3, TRIG 1, TRIG 5, TRIG 7, TRIG 9, TRIG 11, TRIG 13, TRIG 15]
+keys: [TRK, KEYBOARD A1, TRIG 1, TRIG 3, TRIG 5, TRIG 7, TRIG 9, TRIG 11, TRIG 13, TRIG 15]
 leds: { RECORD: red, TRIG 1: red, TRIG 3: red, TRIG 5: red, TRIG 7: red, TRIG 9: red, TRIG 11: red, TRIG 13: red, TRIG 15: red }
 source: manual §10.3
 mode: grid-recording
 
-Håll [TRK] och tryck på [TRIG 3]. Tryck nu på varje udda tangent från [TRIG 1] till [TRIG 15]: åtta
+Håll [TRK] och tryck på [KEYBOARD A1], den stängda hi-haten. Tryck nu på varje udda tangent från [TRIG 1] till [TRIG 15]: åtta
 hi-hats, en på varje åttondel. Vill du hellre ha en på varje steg? Tryck på allihop —
 exempelstycket håller sig till åtta, och kontrollpunkterna härifrån och framåt bryr sig
 inte om vilket du valde.
@@ -163,14 +134,14 @@ recover: För plottrigt: tryck på de tangenter du vill ha släckta. Ett snabbt 
 :::
 
 ## Step: Den fjärde rösten, vid sidan av slaget
-keys: [TRK, TRIG 4, TRIG 7, TRIG 15]
+keys: [TRK, KEYBOARD F1, TRIG 7, TRIG 15]
 leds: { RECORD: red, TRIG 7: red, TRIG 15: red }
 source: manual §10.3
 mode: grid-recording
 
-Håll [TRK] och tryck på [TRIG 4]. Lägg den öppna hi-haten — eller din clap — på [TRIG 7] och
-[TRIG 15]: "och"-slaget före slag tre och slag ett, där det puttar takten framåt. Var som
-helst utanför snaren duger.
+Håll [TRK] och tryck på [KEYBOARD F1], clapen. Lägg den på [TRIG 7] och [TRIG 15]:
+"och"-slaget före slag tre och slag ett, där det puttar takten framåt. Var som helst utanför
+snaren duger, och ett annat kort ljud ur kitet i clapens ställe likaså.
 
 :::checkpoint
 keys16: { 7: red, 15: red }
@@ -184,7 +155,7 @@ leds: { RECORD: red }
 source: manual §10.3, §19
 mode: grid-recording
 
-Välj ett slag du är osäker på — vi tar den öppna hi-haten på steg 7. Håll [TRIG 7] och tryck
+Välj ett slag du är osäker på — vi tar clapen på steg 7. Håll [TRIG 7] och tryck
 på [YES]: just den trigen låter, ensam, med det som är satt på den. Ett snabbt tryck på
 [TRIG 7] tar bort den; tryck igen för att lägga tillbaka den.
 
@@ -216,22 +187,22 @@ sig för vad menyn heter — rubriken i §10.9 och panelens text säger PAGE SET
 SCALE. Det är samma meny.
 :::
 
-## Step: Mutea ett spår
-keys: [MUTE, TRIG 2, UP, DOWN]
-leds: { TRIG 1: green, TRIG 3: green, TRIG 4: green }
+## Step: Mutea ett ljud
+keys: [MUTE, KEYBOARD D1, UP, DOWN]
+leds: { KEYBOARD C1: green, KEYBOARD E1: green, KEYBOARD F1: green, KEYBOARD G1: green, KEYBOARD A1: green, KEYBOARD B1: green, KEYBOARD C2: green }
 source: manual §8.6
 mode: playback
 
-Tryck på [MUTE]. Trig-tangenterna är spår igen: tända spelar, släckta är mutade. Tryck på
-[TRIG 2] så faller snaren bort; tryck igen så kommer den tillbaka. Tryck på [MUTE] för att
-lämna. Grönt är GLOBAL mute, som följer med dig in i varje pattern och sparas med projektet;
-[MUTE] + [DOWN] byter till PATTERN mute, magenta, som hör till bara det här patternet.
-[MUTE] + [UP] går tillbaka till global.
+Tryck på [MUTE] medan spår 1 fortfarande är det aktiva spåret — kitets ljud erbjuds bara för
+spåret du stod på. Den nedre radens tangenter tänds för dem: tända spelar, släckta är mutade.
+Tryck på [KEYBOARD D1] så faller snaren bort; tryck igen så kommer den tillbaka. Tryck på
+[MUTE] för att lämna. Grönt är GLOBAL mute, som följer med dig in i varje pattern och sparas
+med projektet; [MUTE] + [DOWN] byter till PATTERN mute, magenta, som hör till bara det här
+patternet. [MUTE] + [UP] går tillbaka till global.
 
 :::checkpoint
-keys16: { 1: green, 3: green, 4: green }
 hear: Beatet utan sin snare, sedan med den igen.
-recover: Lämnade du något mutat? [MUTE] själv glöder svagt, grönt eller magenta, så snart något är det — och färgen säger vilket läge du ska leta i. Tryck på den och hitta den släckta tangenten.
+recover: Lämnade du något mutat? [MUTE] själv glöder svagt, grönt eller magenta, så snart något är det — och färgen säger vilket läge du ska leta i. Tryck på den och hitta den släckta tangenten. I det här läget är trig-tangenterna hela spår: en trig-tangent skulle mutea kitet, alla ljud på en gång.
 :::
 
 :::note
@@ -256,7 +227,7 @@ tryck på [STOP], mintgrön text Paste. A02 är ditt beat, i säkerhet undan de 
 kommer i session 3.
 
 :::checkpoint
-screen: { bank: "A02", tempo: 92, track: 4, type: "AUDIO" }
+screen: { bank: "A02", tempo: 92, track: 1, type: "SUBTRACKS" }
 keys16: { 1: white, 2: red }
 hear: Samma beat, nu spelat från A02.
 recover: Kommer A02 runt och är tyst, skedde inklistringen före bytet. Vänta tills A02:s nummer slutar blinka uppe till vänster — det blinkandet är patternet i kö, inte maskinen som ignorerar dig — och sedan [FUNC] + [STOP] igen.
@@ -288,17 +259,17 @@ recover: Gör Undo ingenting: klistra in igen — kopian ligger kvar i urklippet
 :::
 
 ## Step: Tillbaka till A01, och spara
-keys: [PTN, TRIG 1, FUNC, SETTINGS, RECORD, TRK]
+keys: [PTN, TRIG 1, FUNC, SETTINGS, RECORD, TRK, KEYBOARD C1]
 leds: { RECORD: red, TRIG 1: red, TRIG 5: red, TRIG 9: red, TRIG 13: red }
 source: manual §10.1.1, §9.1.1
 mode: playback
 
 Håll [PTN] och tryck på [TRIG 1] för att komma tillbaka till A01. Håll [FUNC] och tryck på
 [SETTINGS]: sparat, båda patterns, ingen fråga. Tryck sedan på [RECORD] en gång till, håll
-[TRK] och tryck på [TRIG 1], och titta på kicken en sista gång — steg 1, 5, 9 och 13, röda. Den bilden är den här sessionens vinjett.
+[TRK] och tryck på [KEYBOARD C1], och titta på kicken en sista gång — steg 1, 5, 9 och 13, röda. Den bilden är den här sessionens vinjett.
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 1, type: "AUDIO" }
+screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
 keys16: { 1: red, 5: red, 9: red, 13: red }
 hear: Ditt beat, från A01.
 recover: Sparningen säger ingenting och visar ingen namnskärm; så ser en sparning ut här. Vill du vara säker? Då står ditt namn i FILE-menyns lista under PROJECT, LOAD.
@@ -306,8 +277,9 @@ recover: Sparningen säger ingenting och visar ingen namnskärm; så ser en spar
 
 ## What you now have
 
-SIXTEEN har ett beat på en takt i A01 — kick, snare, hi-hats och en fjärde röst över fyra
-spår — och A02 innehåller en kopia av det. Båda är sparade. Sluta här, eller fortsätt spela:
+SIXTEEN har ett beat på en takt i A01 — kick, snare, stängd hi-hat och clap, alla ur kitet på
+spår 1 — och A02 innehåller en kopia av det. Spår 2 till 4 är fortfarande tomma. Båda
+patternen är sparade. Sluta här, eller fortsätt spela:
 allt du ändrar från och med nu är osparat fram till nästa [FUNC] + [SETTINGS].
 
 ## Explore further
@@ -318,14 +290,15 @@ kopia av den första, inte tomma takter (§10.9.1). I GRID RECORDING växlar [PA
 så du kan ändra ett slag bara på sida två. Sätt tillbaka LENGTH till 16 före session 3,
 eller behåll det och kom ihåg att session 3:s kontrollpunkter beskriver en sida.
 
-### Kopiera ett spårs trigs
+### Kopiera ett ljuds trigs
 I GRID RECORDING — det här vill ha det *på* — lyfter [FUNC] + [RECORD] av trigsen från
-spåret du står på; gå till ett annat spår och [FUNC] + [STOP] släpper ner dem (§10.10.4).
-Lägg hi-hat-figuren på spår 4 och hör två hi-hats. Samma två tangenter, med grid recording
+ljudet du står på; välj ett annat ljud med [TRK] och dess tangent på den nedre raden och
+[FUNC] + [STOP] släpper ner dem (§10.10.4). Lägg den stängda hi-hatens figur på tomen,
+[KEYBOARD B1], och hör vad den gör med takten; [FUNC] + [NO] tar tillbaka den. Samma två tangenter, med grid recording
 av, flyttar ett helt pattern: läget avgör vad de verkar på.
 
 ### Snabb mute
-[MUTE] + [TRIG 2] mutear snaren utan att du går in i mute-läget alls, och gör det igen för
+[MUTE] + [TRIG 1] mutear hela kitet utan att du går in i mute-läget alls, och gör det igen för
 att unmutea (§8.6). Det är den att lära sig om du någon gång spelar det här live.
 
 ### Swing
@@ -342,7 +315,7 @@ en annan familj än [FUNC]-kombinationerna ovan, som alltid verkar på där du s
 
 ## Next
 
-Session 3 laddar en Subtracks-maskin på spår 1 och bygger om de här fyra rösterna till ett
-enda kit, vilket frigör spår 2 till 4 för basen, ackorden och paden som kommer senare. Din
-A02-kopia står kvar precis som den är. Lärdomen om tangentfärgerna — trig-tangenter som
-spår, som steg, som pattern-platser — är det du ska ta med dig vidare.
+Session 3 gör kitet till ditt: ett steg sett genom alla åtta ljuden, ett ljud omstämt, ett
+eget sample i clapens ställe. Din A02-kopia står kvar precis som den är. Lärdomen om
+tangentfärgerna — trig-tangenter som spår, som steg, som pattern-platser, och den nedre raden
+som kitets ljud — är det du ska ta med dig vidare.

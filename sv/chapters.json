@@ -5,9 +5,9 @@
     { "id": "composition", "title": "Komposition", "order": 3 }
   ],
   "planned": [
-    { "number": 1, "slug": "first-sound", "title": "Första ljudet", "chapter": "rhythm", "gains": "Ett sparat projekt med ett preset på spår 1" },
-    { "number": 2, "slug": "first-beat", "title": "Första beatet", "chapter": "rhythm", "gains": "Ett trumpattern på en takt över spår 1–4" },
-    { "number": 3, "slug": "a-kit-from-one-sample", "title": "Ett kit av ett enda sample", "chapter": "rhythm", "gains": "Ett trumspår byggt på Subtracks" },
+    { "number": 1, "slug": "first-sound", "title": "Första ljudet", "chapter": "rhythm", "gains": "Ett sparat projekt med ett trumkit på spår 1" },
+    { "number": 2, "slug": "first-beat", "title": "Första beatet", "chapter": "rhythm", "gains": "Ett beat på en takt på ett enda spår, ett ljud i taget" },
+    { "number": 3, "slug": "the-kit-your-way", "title": "Kitet, på ditt sätt", "chapter": "rhythm", "gains": "Ett steg genom hela kitet, ett ljud omstämt, ett eget sample" },
     { "number": 4, "slug": "make-it-move", "title": "Få det att röra sig", "chapter": "rhythm", "gains": "Ghost notes, en filtersweep, en snare-roll" },
     { "number": 5, "slug": "variation-without-new-patterns", "title": "Variation utan nya patterns", "chapter": "rhythm", "gains": "Ett pattern som ändrar sig varje loop" },
     { "number": 6, "slug": "notes-and-harmony", "title": "Toner och harmoni", "chapter": "sound", "gains": "En basgång och en ackordstämma" },

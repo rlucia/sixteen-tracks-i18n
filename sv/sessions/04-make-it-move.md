@@ -15,7 +15,7 @@ keys: [PLAY, FUNC, SETTINGS]
 source: manual §9.1.1, §10.1.2
 mode: grid-recording
 
-Session 3 lämnade dig i GRID RECORDING på spår 1 med subtrack 3, den stängda hi-haten, på de
+Session 3 lämnade dig i GRID RECORDING på spår 1 med subtrack 6, den stängda hi-haten, på de
 sexton tangenterna. Går inte sequencern: tryck på [PLAY] och låt den gå — varje steg här
 skrivs över loopen. Håll sedan [FUNC] och tryck på [SETTINGS] — den här sessionen skriver
 lockar tvärs genom kitet, och den sparningen är läget du kan komma tillbaka till.
@@ -23,8 +23,8 @@ lockar tvärs genom kitet, och den sparningen är läget du kan komma tillbaka t
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
 keys16: { 1: red, 3: red, 5: red, 7: red, 9: red, 11: red, 13: red, 15: red }
-hear: Hela beatet från spår 1 — kick, snare, stängd hi-hat, öppen hi-hat — i loop från A01.
-recover: En mörk remsa betyder att [RECORD] inte lyser: tryck på den för GRID RECORDING, håll sedan [TRK] och tryck på [KEYBOARD E1], den tredje SUBTRACKS-tangenten, för att komma tillbaka till den stängda hi-haten. Börjar du här utan session 3? Den sessionen bygger det kit som den här får att röra sig, och den tar ungefär sexton minuter.
+hear: Hela beatet från spår 1 — kick, snare, stängd hi-hat och ditt ljud i clapens ställe — i loop från A01.
+recover: En mörk remsa betyder att [RECORD] inte lyser: tryck på den för GRID RECORDING, håll sedan [TRK] och tryck på [KEYBOARD A1], den sjätte SUBTRACKS-tangenten, för att komma tillbaka till den stängda hi-haten. Börjar du här utan session 3? Den sessionen bygger det kit som den här får att röra sig, och den tar ungefär sexton minuter.
 :::
 
 ## Step: Ghost notes
@@ -125,19 +125,19 @@ ovanför, vilket lägger RTRG på [E], medan meningen i §12.2 pekar ut ratten [
 ratten under parametern, och säger din enhet något annat har din enhet rätt.
 :::
 
-## Step: Putta den öppna hi-haten sent
+## Step: Putta clapen sent
 keys: [TRK, KEYBOARD F1, TRIG 7, RIGHT, UP, DOWN]
 source: community https://www.youtube.com/watch?v=7lFFSUOsXsA
 mode: grid-recording
 
-Håll [TRK] och tryck på [KEYBOARD F1], den fjärde SUBTRACKS-tangenten, för den öppna
-hi-haten. Håll [TRIG 7] och tryck på [RIGHT]: MICRO TIMING-rutan öppnas och visar det
+Håll [TRK] och tryck på [KEYBOARD F1], den fjärde SUBTRACKS-tangenten, för clapen
+— ditt ljud sedan session 3. Håll [TRIG 7] och tryck på [RIGHT]: MICRO TIMING-rutan öppnas och visar det
 stegets förskjutning i procent (§10.5). Håll kvar tangenten — [RIGHT] igen puttar den längre
 i stora hopp, [UP] och [DOWN] flyttar den lite i taget — och släpp [TRIG 7] för att lämna.
 
 :::checkpoint
 screen: { menu: "MICRO TIMING", items: [+25%] }
-hear: Den öppna hi-haten på 7 landar en aning efter steget den sitter på, och takten lutar hårdare in i nästa. Avläsningen är ritad här puttad sent; hur långt ett tryck tar den är enhetens sak att berätta.
+hear: Clapen på 7 landar en aning efter steget den sitter på, och takten lutar hårdare in i nästa. Avläsningen är ritad här puttad sent; hur långt ett tryck tar den är enhetens sak att berätta.
 recover: Öppnades ingenting? Rutan vill ha trig-tangenten hållen först och pilen sedan, och ett steg utan trig har ingenting att tajma. Puttad för långt: [LEFT] går tillbaka, och förskjutningen sparas med patternet, så den överlever sparningen på slutet (§10.5).
 :::
 
@@ -178,17 +178,17 @@ gång, och den här sessionen låter den vara; [NO] stänger menyn.
 
 :::checkpoint
 screen: { menu: "QUANTIZE", items: [TRK 0, PATTERN 0] }
-hear: Båda inställningarna börjar på noll. Kicken och snaren rör sig inte, för de skrevs på rutnätet och ligger redan på det. Det TRK drar är allt som inte gör det: stämman du spelade för hand, och den öppna hi-haten du puttade sent två steg tillbaka (§10.8) — och det är därför du slutar klättra så snart tagningen sitter.
-recover: Öppnades inte menyn? Prova [FUNC] + [TRIG] i stället, kombinationen §10.4 ger för samma meny där §10.8 ger [FUNC] + [KEYBOARD G#1]; din enhet får avgöra vilken av de två den tar. Gick du hela vägen och tappade den sena öppna hi-haten? Gå tillbaka till den öppna hi-hatens subtrack, håll [TRIG 7] och tryck på [RIGHT] för att putta ut den igen (§10.5); kvantisering avrundar till närmaste steg, och för en mikrotajmad trig behöver det inte vara steget den skrevs på (§10.8). Och låter tagningen ändå inte som det du spelade, inbillar du dig inte: [en ägare rapporterar samma sak](https://www.elektronauts.com/t/tonverk-user-thread/238631/1812), utan svar i tråden.
+hear: Båda inställningarna börjar på noll. Kicken och snaren rör sig inte, för de skrevs på rutnätet och ligger redan på det. Det TRK drar är allt som inte gör det: stämman du spelade för hand, och clapen du puttade sent två steg tillbaka (§10.8) — och det är därför du slutar klättra så snart tagningen sitter.
+recover: Öppnades inte menyn? Prova [FUNC] + [TRIG] i stället, kombinationen §10.4 ger för samma meny där §10.8 ger [FUNC] + [KEYBOARD G#1]; din enhet får avgöra vilken av de två den tar. Gick du hela vägen och tappade den sena clapen? Gå tillbaka till clapens subtrack, håll [TRIG 7] och tryck på [RIGHT] för att putta ut den igen (§10.5); kvantisering avrundar till närmaste steg, och för en mikrotajmad trig behöver det inte vara steget den skrevs på (§10.8). Och låter tagningen ändå inte som det du spelade, inbillar du dig inte: [en ägare rapporterar samma sak](https://www.elektronauts.com/t/tonverk-user-thread/238631/1812), utan svar i tråden.
 :::
 
 ## Step: Se lockarna för sig
-keys: [TRK, KEYBOARD E1, RECORD, FUNC, UP, DOWN, NO]
+keys: [TRK, KEYBOARD A1, RECORD, FUNC, UP, DOWN, NO]
 leds: { RECORD: red }
 source: manual §10.3.2
 mode: grid-recording
 
-Håll [TRK] och tryck på [KEYBOARD E1], den tredje SUBTRACKS-tangenten, för att komma
+Håll [TRK] och tryck på [KEYBOARD A1], den sjätte SUBTRACKS-tangenten, för att komma
 tillbaka till den stängda hi-haten, och tryck sedan på [RECORD] för GRID RECORDING. Håll
 [FUNC] och tryck på [UP] för SEQUENCE LANE-menyn, och tryck på [UP]/[DOWN] tills P-LOCKS är
 den valda. Sätt tillbaka den på NOTES + P-LOCKS innan du lämnar, och tryck sedan på [NO].
@@ -221,19 +221,19 @@ recover: Två tangenter och inte fler är rätt — snaren har alltid haft två 
 
 A01 är samma kit och samma fyra röster, i rörelse. På den stängda hi-haten sitter fyra ghost
 notes bakom de fyra på slagen och ett steg på slag tre är filtrerat matt; snaren på 13 är en
-kort roll, en pickup in i nästa takt; den öppna hi-haten på 7 sitter en aning sent om du
+kort roll, en pickup in i nästa takt; clapen på 7 sitter en aning sent om du
 lämnade TRK under toppen, och exakt på steget om du inte gjorde det; och ett femte subtrack
 bär en stämma du spelade med händerna och sedan drog in på rutnätet. Allt är parameterlockar
 och tajming på trigs du redan hade, allt är sparat, och A02 har fortfarande kvar session 2:s
-beat på fyra spår.
+kopia av beatet.
 
 ## Explore further
 
 ### Randomisera velocity, och ta tillbaka det
 [FUNC] + [-] öppnar TRANSFORM-menyn, som verkar på varje trig på spåret du står på (§10.6).
 VELOCITY RANDOMIZE skriver en VEL-lock på allihop; VELOCITY UNLOCK tar bort varenda VEL-lock
-som finns — de fyra ghost notes inräknade — så prova den på den öppna hi-hatens subtrack i
-stället för på den stängdas, och håll din sparning inom räckhåll.
+som finns — de fyra ghost notes inräknade — så prova den på clapens subtrack i
+stället för på den stängda hi-hatens, och håll din sparning inom räckhåll.
 
 ### En lock utan ton under sig
 I GRID RECORDING skriver [FUNC] + [TRIG 8] på ett tomt steg en lock-trig: gul i stället för
