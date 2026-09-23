@@ -3,9 +3,9 @@ number: 1
 chapter: rhythm
 slug: first-sound
 title: El primer sonido
-goal: Enciende, pon un sonido en la pista 1, tócalo desde el teclado, ajusta el tempo y guarda un proyecto al que puedas volver.
+goal: Enciende, pon un kit de batería en la pista 1, encuentra su kick en la fila de abajo, ajusta el tempo y guarda un proyecto al que puedas volver.
 needs: ["El Tonverk y su fuente de alimentación", "Auriculares con jack de 1/4 de pulgada (o un mezclador en OUT A/B)", "La tarjeta SD de fábrica en su ranura", "Unos dieciséis minutos"]
-teaches: [power, volume, new-project, track-select, load-preset, keyboard, octave, tempo, metronome, name-project, save-project]
+teaches: [power, volume, new-project, track-select, load-preset, kit, subtrack-select, tempo, metronome, name-project, save-project]
 simulator: null
 ends: { keys16: { 1: white } }
 ---
@@ -103,22 +103,28 @@ El panel que tienes delante imprime TRK, así que eso es lo que dice este curso.
 [TRK] y una tecla trig es la selección silenciosa.
 :::
 
-## Step: Carga un kick
+## Step: Carga un kit
 keys: [PRESET, LEFT, RIGHT, UP, DOWN, LEVEL/DATA, YES]
 source: manual §7.1, §9.1.4
-checked: yes
 mode: menu:LOAD PRESET
 
 Pulsa [PRESET]. El menú LOAD PRESET se abre sobre la pista activa. [LEFT]/[RIGHT] se mueven
 entre las categorías de presets, DRUMS y KEYS; quédate en DRUMS. Desplázate con [UP]/[DOWN] o
-[LEVEL/DATA] hasta encontrar un kick — vale cualquier preset que se llame así. La pieza de
-ejemplo usa el primer kick de la lista; tú elige uno que te guste. Pulsa [YES] para cargarlo
-en la pista 1.
+[LEVEL/DATA] hasta 017 HELLO KIT, el kit que usa la pieza de ejemplo, y pulsa [YES] para
+cargarlo en la pista 1. Otro kit sirve igual: los pasos nombran las teclas de HELLO KIT, y en
+el tuyo los mismos sonidos pueden estar en otras teclas.
 
 :::checkpoint
 screen: { menu: "LOAD PRESET", items: [DRUMS, KEYS], sel: 0 }
-hear: Pulsa [TRIG 1] una vez. Suena el kick.
+hear: Pulsa [TRIG 1] una vez. Suena uno de los sonidos del kit.
 recover: Silencio: sube un poco [MAIN VOLUME], y el jack de los auriculares hasta el fondo. Si [TRIG 1] no hace ningún sonido, el preset fue a parar a otro sitio — mantén pulsado [TRK], pulsa [TRIG 1] y cárgalo otra vez.
+:::
+
+:::note
+Casi todo lo que hay en DRUMS es un kit: ocho sonidos en una pista, no un solo tambor.
+[Un recorrido por los kits de fábrica](https://www.youtube.com/watch?v=vWVw534Xvs4) los hace
+sonar uno tras otro. No existe un preset que sea solo un kick: cargas un kit y encuentras el
+kick dentro.
 :::
 
 :::note
@@ -135,21 +141,25 @@ Cargar un preset lo copia en el pattern (§9). A partir de ahora, un mando que g
 de los contenedores; el mapa de [Antes de empezar](/before-you-start/) muestra las demás.
 :::
 
-## Step: Tócalo desde el teclado
-keys: [KEYBOARD]
-leds: { TRIG 1: white }
-source: manual §7.3, §8.5
-checked: yes
+## Step: Ocho sonidos en la fila de abajo
+keys: [KEYBOARD C1, KEYBOARD D1, KEYBOARD E1, KEYBOARD F1, KEYBOARD G1, KEYBOARD A1, KEYBOARD B1, KEYBOARD C2, TRIG 1]
+leds: { KEYBOARD C1: red }
+source: manual §3.1, §A.2.3
 mode: any
 
-Pulsa las teclas [KEYBOARD] de la fila de abajo, de C1 a C2, y luego las teclas negras de
-encima. Es el mismo kick cada vez, tocado a una altura distinta: el teclado es cromático y
-el preset lo sigue. Un preset de batería tocado dos octavas más abajo es otro instrumento, y
-merece cinco segundos de tu tiempo.
+Pulsa la fila de abajo del teclado tecla a tecla, de [KEYBOARD C1] a [KEYBOARD C2]. Cada tecla
+es un sonido del kit. El número de la pantalla sigue la tecla que has pulsado, y esa tecla se
+queda en rojo: es el sonido que ahora toca [TRIG 1]. Distínguelos por dónde están y cuánto
+duran. El kick es el más grave y el más corto, sobre el que se apoyan los demás. El snare es
+un chasquido seco en mitad del registro; un clap es una palmada y a menudo ocupa el lugar del
+snare. El hi-hat cerrado es el más agudo y el más breve de todos; un hi-hat abierto es igual
+de agudo pero se queda sonando. Un tom es un tambor con una altura clara, y un platillo es una
+larga estela metálica. En HELLO KIT el kick está en [KEYBOARD C1]: púlsalo el último, y luego
+[TRIG 1].
 
 :::checkpoint
-hear: El preset suena a una altura distinta en cada tecla.
-recover: Si el teclado toca algo que no es tu kick, la pista activa se ha movido. [TRK] + [TRIG 1] la trae de vuelta.
+hear: Ocho sonidos distintos, y luego el kick solo desde [TRIG 1].
+recover: La fila de arriba del teclado y las teclas de octava no hacen nada mientras hay un kit en la pista; es el kit, no una avería. Si [TRIG 1] toca algo que no es tu kick, la tecla roja está en otro sitio — pulsa [KEYBOARD C1], o la tecla donde tu kit tiene el kick, y vuelve a probar.
 :::
 
 :::note
@@ -159,20 +169,6 @@ a la 16 con una pista de audio activa y el [KEYBOARD] se queda en esa pista de a
 nuevo le parece una selección que no funcionó.
 [Es intencionado](https://www.elektronauts.com/t/tonverk-technical-q-a/238273/1088):
 selecciona una pista de audio, de la 1 a la 8, para recuperar el teclado.
-:::
-
-## Step: Octavas
-keys: [+, -]
-source: manual §8.5
-checked: yes
-mode: any
-
-Pulsa [+]: la ventana del teclado sube una octava, y los LED KEYBOARD OCTAVE junto a la
-tecla muestran dónde estás. [-] baja. Pulsa [+] + [-] a la vez para volver a 0.
-
-:::checkpoint
-hear: La misma tecla, una octava más alta después de [+]; de vuelta donde estaba después de [+] + [-].
-recover: El límite es cinco octavas hacia cada lado, así que una pulsación que no hace nada significa que estás en el extremo. Lee los LED KEYBOARD OCTAVE junto a [+] para ver hasta dónde has llegado, y ten a mano la combinación de reinicio.
 :::
 
 ## Step: Ajusta el tempo
@@ -186,19 +182,19 @@ ocho en ocho. La pieza de ejemplo va a 92. Si tienes un tempo en mente, usa ese 
 entre 80 y 100 mantiene cómodas las sesiones siguientes. [NO] vuelve a cerrar el menú.
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 1, type: "AUDIO" }
+screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
 hear: Nada cambia todavía; el tempo aparece arriba a la derecha en la pantalla principal.
 recover: Si el BPM se niega a moverse, el Tonverk está siguiendo un reloj externo. El §7.5.1 dice que la pantalla muestra "MIDI" encima del BPM; el §6 describe un icono de candado al lado. Las dos marcas significan lo mismo — desconecta por ahora la fuente de reloj MIDI o USB.
 :::
 
 ## Step: Escucha el tempo
-keys: [FUNC, KEYBOARD F#1, PLAY, STOP]
+keys: [FUNC, KEYBOARD F#1, PLAY, KEYBOARD C1, STOP]
 source: manual §7.5.2
 checked: yes
 mode: playback
 
 Mantén pulsado [FUNC] y pulsa [KEYBOARD F#1] — su rótulo menta dice Metronome. Pulsa [PLAY]:
-un clic a tu tempo. Toca el kick encima desde el teclado durante un minuto; ese es el
+un clic a tu tempo. Toca el kick en [KEYBOARD C1] encima durante un minuto; ese es el
 ejercicio, y es toda la razón por la que el tempo ha venido antes que el beat. Pulsa [STOP] y
 luego [FUNC] + [KEYBOARD F#1] otra vez para callar el clic.
 
@@ -220,8 +216,8 @@ la vez, para que puedas elegir con las flechas. Llámalo SIXTEEN, o como quieras
 reconozcas, y pulsa [YES].
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 1, type: "AUDIO" }
-hear: Nada cambia. El proyecto, su pattern y tu kick están ahora en la tarjeta con un nombre que elegiste tú.
+screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
+hear: Nada cambia. El proyecto, su pattern y tu kit están ahora en la tarjeta con un nombre que elegiste tú.
 recover: Si acabas en algún sitio sin pantalla NAMING, elegiste SAVE en vez de SAVE AS. [NO] sale; SAVE AS es el que pide un nombre y ocupa un slot nuevo. En la propia pantalla del nombre, [FUNC] + [NO] borra una letra y [FUNC] + [YES] inserta un espacio.
 :::
 
@@ -237,7 +233,7 @@ el nombre que acabas de darle, y estás otra vez en la pantalla principal. Hazlo
 que la primera vez que veas ese silencio sea una vez en la que lo esperabas.
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 1, type: "AUDIO" }
+screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
 hear: Nada de nada. Ese silencio es el paso: el proyecto está en la tarjeta, con el nombre que le diste.
 recover: Si en cambio se abrió un menú de ajustes, pulsaste [SETTINGS] sin [FUNC]. Pulsa [NO], mantén pulsado [FUNC] primero y luego pulsa [SETTINGS]. Si no estás seguro de que se haya guardado, abre el menú FILE, PROJECT, LOAD: tu nombre está en la lista.
 :::
@@ -265,8 +261,8 @@ restauración provisional que muere al apagar (§10.10.6), y una cadena no se gu
 
 ## What you now have
 
-Un proyecto llamado SIXTEEN con un pattern, A01, un sonido — un kick en la pista 1 — y un
-tempo de 92. Está guardado, así que puedes apagar aquí: la próxima sesión parte de este
+Un proyecto llamado SIXTEEN con un pattern, A01, un kit de batería en la pista 1 — HELLO KIT,
+con su kick encontrado en [KEYBOARD C1] — y un tempo de 92. Está guardado, así que puedes apagar aquí: la próxima sesión parte de este
 estado. Si te quedaste con tu propio nombre o tu propio tempo, la próxima sesión funciona
 igual.
 
@@ -289,9 +285,16 @@ con CATEGORY, TAGS y una SEARCH de texto, y los tres se suman en vez de sustitui
 la diferencia entre un navegador y un desplazamiento.
 
 ### La otra categoría
-Recorre KEYS, carga algo, toca el teclado y vuelve a cargar tu kick. Cargar sustituye la
-pista las dos veces — solo cambia la copia del pattern, y la tarjeta sigue teniendo los dos
-presets exactamente como estaban.
+Recorre KEYS, carga algo y toca el teclado: un preset de KEYS es un solo sonido en todo el
+teclado, la fila de arriba y las teclas de octava incluidas. Luego vuelve a cargar HELLO KIT.
+Cargar sustituye la pista las dos veces — solo cambia la copia del pattern, y la tarjeta sigue
+teniendo los dos presets exactamente como estaban.
+
+### Otros kits
+Carga algunos kits más de DRUMS y toca la fila de abajo de cada uno. Las teclas siguen siendo
+las mismas; lo que hay en ellas cambia de un kit a otro, y tu oído es el único mapa. Vuelve a
+cargar HELLO KIT cuando termines, o quédate con el kit que te gustó y recuerda dónde están su
+kick, el snare, el hi-hat cerrado y el clap.
 
 ### El mando de nivel
 [LEVEL/DATA] ajusta el nivel de la pista activa, y la pantalla lo muestra abajo a la derecha
@@ -300,7 +303,7 @@ las cosas.
 
 ## Next
 
-La sesión 2 pone tres sonidos de batería más en las pistas 2 a 4 y escribe el beat de un
-compás sobre el que se apoya toda la pieza. Antes, diez minutos en
+La sesión 2 escribe el beat de un compás sobre el que se apoya toda la pieza, en esta misma
+pista, un sonido del kit cada vez. Antes, diez minutos en
 [Antes de empezar](/before-you-start/) explican los cinco contenedores que toca un guardado y
 los cuatro tipos de pista: es la página en la que se apoya cada sesión posterior.

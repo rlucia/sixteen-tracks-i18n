@@ -15,7 +15,7 @@ keys: [PLAY, FUNC, SETTINGS]
 source: manual §9.1.1, §10.1.2
 mode: grid-recording
 
-La sesión 3 te dejó en GRID RECORDING en la pista 1 con la subtrack 3, el hi-hat cerrado, en
+La sesión 3 te dejó en GRID RECORDING en la pista 1 con la subtrack 6, el hi-hat cerrado, en
 las dieciséis teclas. Si el secuenciador no está en marcha, pulsa [PLAY] y déjalo correr:
 cada paso de aquí se escribe sobre el loop. Luego mantén pulsado [FUNC] y pulsa [SETTINGS] —
 esta sesión escribe locks por todo el kit, y ese guardado es el estado al que puedes volver.
@@ -23,8 +23,8 @@ esta sesión escribe locks por todo el kit, y ese guardado es el estado al que p
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
 keys16: { 1: red, 3: red, 5: red, 7: red, 9: red, 11: red, 13: red, 15: red }
-hear: Todo el beat desde la pista 1 — kick, snare, hi-hat cerrado, hi-hat abierto — en loop desde A01.
-recover: Una tira apagada significa que [RECORD] no está encendido: púlsalo para GRID RECORDING, luego mantén pulsado [TRK] y pulsa [KEYBOARD E1], la tercera tecla SUBTRACKS, para volver al hi-hat cerrado. ¿Empiezas aquí sin la sesión 3? Esa sesión construye el kit que esta pone en movimiento, y lleva unos dieciséis minutos.
+hear: Todo el beat desde la pista 1 — kick, snare, hi-hat cerrado y tu sonido en lugar del clap — en loop desde A01.
+recover: Una tira apagada significa que [RECORD] no está encendido: púlsalo para GRID RECORDING, luego mantén pulsado [TRK] y pulsa [KEYBOARD A1], la sexta tecla SUBTRACKS, para volver al hi-hat cerrado. ¿Empiezas aquí sin la sesión 3? Esa sesión construye el kit que esta pone en movimiento, y lleva unos dieciséis minutos.
 :::
 
 ## Step: Ghost notes
@@ -126,20 +126,20 @@ mando [A]. Gira el mando que está bajo el parámetro, y si tu unidad dice otra 
 tiene razón.
 :::
 
-## Step: Retrasa el hi-hat abierto
+## Step: Retrasa el clap
 keys: [TRK, KEYBOARD F1, TRIG 7, RIGHT, UP, DOWN]
 source: community https://www.youtube.com/watch?v=7lFFSUOsXsA
 mode: grid-recording
 
-Mantén pulsado [TRK] y pulsa [KEYBOARD F1], la cuarta tecla SUBTRACKS, para el hi-hat
-abierto. Mantén pulsado [TRIG 7] y pulsa [RIGHT]: se abre la ventana MICRO TIMING y muestra
+Mantén pulsado [TRK] y pulsa [KEYBOARD F1], la cuarta tecla SUBTRACKS, para el clap
+— tu sonido desde la sesión 3. Mantén pulsado [TRIG 7] y pulsa [RIGHT]: se abre la ventana MICRO TIMING y muestra
 el desplazamiento de ese paso como un porcentaje (§10.5). Mantén la tecla pulsada — [RIGHT]
 otra vez lo empuja más lejos a saltos grandes, [UP] y [DOWN] lo mueven poco a poco — y suelta
 [TRIG 7] para salir.
 
 :::checkpoint
 screen: { menu: "MICRO TIMING", items: [+25%] }
-hear: El hi-hat abierto del 7 cae un pelo después del paso en el que está, y el compás se inclina con más fuerza hacia el siguiente. La lectura está dibujada aquí retrasada; cuánto la mueve una pulsación es cosa de la unidad.
+hear: El clap del 7 cae un pelo después del paso en el que está, y el compás se inclina con más fuerza hacia el siguiente. La lectura está dibujada aquí retrasada; cuánto la mueve una pulsación es cosa de la unidad.
 recover: ¿No se abrió nada? La ventana quiere primero la tecla trig pulsada y después la flecha, y un paso sin trig no tiene nada que desplazar. Si te pasaste: [LEFT] lo devuelve, y el desplazamiento se guarda con el pattern, así que sobrevive al guardado del final (§10.5).
 :::
 
@@ -185,12 +185,12 @@ recover: ¿No se abrió el menú? Prueba [FUNC] + [TRIG] en su lugar, la combina
 :::
 
 ## Step: Mira los locks a solas
-keys: [TRK, KEYBOARD E1, RECORD, FUNC, UP, DOWN, NO]
+keys: [TRK, KEYBOARD A1, RECORD, FUNC, UP, DOWN, NO]
 leds: { RECORD: red }
 source: manual §10.3.2
 mode: grid-recording
 
-Mantén pulsado [TRK] y pulsa [KEYBOARD E1], la tercera tecla SUBTRACKS, para volver al
+Mantén pulsado [TRK] y pulsa [KEYBOARD A1], la sexta tecla SUBTRACKS, para volver al
 hi-hat cerrado, y luego pulsa [RECORD] para GRID RECORDING. Mantén pulsado [FUNC] y pulsa
 [UP] para el menú SEQUENCE LANE, y pulsa [UP]/[DOWN] hasta que P-LOCKS sea la opción elegida.
 Vuelve a ponerlo en NOTES + P-LOCKS antes de salir, y luego pulsa [NO].
@@ -224,10 +224,10 @@ recover: Dos teclas y ninguna más es lo correcto — el snare siempre ha tenido
 A01 es el mismo kit y las mismas cuatro voces, en movimiento. En el hi-hat cerrado, cuatro
 ghost notes se sientan detrás de las cuatro a tiempo y un paso del tercer tiempo está
 filtrado y apagado; el snare del 13 es un roll corto, un pickup hacia el compás
-siguiente; el hi-hat abierto del 7 va un pelo retrasado si dejaste TRK sin llegar al tope, y
+siguiente; el clap del 7 va un pelo retrasado si dejaste TRK sin llegar al tope, y
 clavado en el paso si no; y una quinta subtrack lleva una parte que tocaste con las manos y
 luego arrastraste a la rejilla. Todo son parameter locks y timing sobre trigs que ya tenías,
-todo está guardado, y A02 sigue teniendo el beat de cuatro pistas de la sesión 2.
+todo está guardado, y A02 sigue teniendo la copia del beat de la sesión 2.
 
 ## Explore further
 
@@ -235,7 +235,7 @@ todo está guardado, y A02 sigue teniendo el beat de cuatro pistas de la sesión
 [FUNC] + [-] abre el menú TRANSFORM, que actúa sobre todos los trigs de la pista en la que
 estás (§10.6). VELOCITY RANDOMIZE escribe un lock de VEL en todos; VELOCITY UNLOCK quita
 todos los locks de VEL que haya — incluidas las cuatro ghost notes — así que pruébalo en la
-subtrack del hi-hat abierto y no en la del cerrado, y ten tu guardado a mano.
+subtrack del clap y no en la del hi-hat cerrado, y ten tu guardado a mano.
 
 ### Un lock sin nota debajo
 En GRID RECORDING, [FUNC] + [TRIG 8] en un paso vacío escribe un trig de lock: amarillo en

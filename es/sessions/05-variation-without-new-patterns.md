@@ -47,12 +47,12 @@ recover: Si el pickup llega en cada loop, COND sigue en el guion: mantén pulsad
 :::
 
 ## Step: Probabilidad en las ghost notes
-keys: [TRK, KEYBOARD E1, TRIG 3, TRIG 7, TRIG 11, TRIG 15, D]
+keys: [TRK, KEYBOARD A1, TRIG 3, TRIG 7, TRIG 11, TRIG 15, D]
 leds: { TRIG 3: red, TRIG 7: red, TRIG 11: red, TRIG 15: red }
 source: manual §12.2
 mode: grid-recording
 
-Mantén pulsado [TRK] y pulsa [KEYBOARD E1], la tercera tecla SUBTRACKS, para el hi-hat
+Mantén pulsado [TRK] y pulsa [KEYBOARD A1], la sexta tecla SUBTRACKS, para el hi-hat
 cerrado — TRIG PAGE 1 sigue delante de ti. Mantén pulsados [TRIG 3], [TRIG 7], [TRIG 11] y
 [TRIG 15], las cuatro ghost notes de la sesión 4, y baja el mando [D], PROB, al 50%.
 
@@ -214,10 +214,17 @@ suele hacer un fill de batería.
 modo con un toque en vez de manteniéndolo (§10.10.3). Útil en cuanto tu otra mano está en un
 mando, y fácil de dejar activado por error.
 
+### El otro kick
+Pasa el pickup 1:2 del kick a [KEYBOARD E1], el kick grave de HELLO KIT: borra el paso 15 en
+[KEYBOARD C1], escríbelo en E1 y pon allí COND en 1:2 de la misma manera. El compás conserva
+sus cuatro kicks en los tiempos, y una vuelta sí y otra no un kick más profundo lleva al
+principio.
+
 ### 1ST, una intro que ocurre una sola vez
 1ST dispara un trig la primera vuelta del pattern y nunca más; la misma condición con una
-raya encima se salta esa primera pasada y suena en todas las demás (§10.10.2). Un hi-hat
-abierto en el paso 1 con 1ST, y el pattern se anuncia y luego sigue a lo suyo.
+raya encima se salta esa primera pasada y suena en todas las demás (§10.10.2). Un platillo
+en el paso 1 con 1ST — HELLO KIT tiene uno largo en [KEYBOARD C2] — y el pattern se anuncia y
+luego sigue a lo suyo.
 
 ### NEI, en el simulador y no en el kit
 NEI mira de lado: pregunta cómo salió la última condición en la pista de al lado — la

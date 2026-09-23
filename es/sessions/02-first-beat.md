@@ -3,9 +3,9 @@ number: 2
 chapter: rhythm
 slug: first-beat
 title: El primer beat
-goal: Pon batería en las pistas 1 a 4, escribe un beat de un compás en GRID RECORDING, pon en mute y quita el mute, copia el pattern y guarda.
-needs: ["El proyecto SIXTEEN de la sesión 1 (o cualquier proyecto con un kick en la pista 1 — el paso 1 dice cómo)", "Auriculares conectados", "Los presets de batería de fábrica en la tarjeta SD", "Unos dieciséis minutos"]
-teaches: [grid-recording, track-select, page-length, mute, copy-paste-clear, undo, pattern-select]
+goal: Escribe un beat de un compás con los sonidos del kit en GRID RECORDING, pon un sonido en mute, copia el pattern y guarda.
+needs: ["El proyecto SIXTEEN de la sesión 1 (o cualquier proyecto con un kit de batería en la pista 1 — el paso 1 dice cómo)", "Auriculares conectados", "Unos dieciséis minutos"]
+teaches: [grid-recording, subtrack-select, page-length, mute, copy-paste-clear, undo, pattern-select]
 simulator: null
 ends: { keys16: { 1: red, 5: red, 9: red, 13: red } }
 ---
@@ -17,11 +17,11 @@ mode: menu:FILE
 
 Si SIXTEEN no es el proyecto que hay en la pantalla, cárgalo: [FUNC] + [PRESET] abre el menú
 FILE, luego [UP]/[DOWN] por PROJECT, LOAD y tu proyecto, [YES]. ¿Empiezas aquí sin la
-sesión 1? Necesitas un proyecto que puedas editar con un kick en la pista 1 — la sesión 1,
-pasos 3 a 5, lleva cuatro minutos.
+sesión 1? Necesitas un proyecto que puedas editar con un kit de batería en la pista 1 — la
+sesión 1, pasos 3 a 6, lleva cinco minutos.
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 1, type: "AUDIO" }
+screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
 hear: Pulsa [TRIG 1]: el kick de la sesión 1.
 recover: Si has experimentado desde entonces y quieres recuperar el estado guardado, resalta tu proyecto en la lista LOAD y pulsa [RIGHT] para PROJECT ACTIONS, luego RELOAD. Ese es el último guardado.
 :::
@@ -32,50 +32,21 @@ la sesión 1 y has estado tocando, guarda antes de cargar nada — el estado de 
 estás a punto de abandonar no se escribe de vuelta en tu proyecto por sí solo.
 :::
 
-## Step: Un snare en la pista 2
-keys: [TRK, TRIG 2, PRESET, LEFT, RIGHT, UP, DOWN, YES]
-leds: { TRIG 2: white }
-source: manual §5.3.7, §7.1
-mode: menu:LOAD PRESET
+## Step: Elige un sonido en silencio
+keys: [TRK, KEYBOARD D1, KEYBOARD A1, KEYBOARD F1, KEYBOARD C1]
+leds: { KEYBOARD C1: red }
+source: manual §A.2.3
+mode: any
 
-Mantén pulsado [TRK] y pulsa [TRIG 2]. Pulsa [PRESET]; si no estás en DRUMS, [LEFT]/[RIGHT]
-te devuelve. [UP]/[DOWN] hasta un snare — cualquier preset que se llame así — y pulsa [YES].
-
-:::checkpoint
-keys16: { 2: white }
-hear: [TRIG 2] toca el snare; [TRIG 1] sigue tocando el kick.
-recover: Si [TRIG 2] toca el kick, el preset cayó en la pista 1: el preset va siempre a la pista que estuviera activa cuando pulsaste [YES]. Mantén pulsado [TRK] y pulsa [TRIG 2] primero, luego carga otra vez.
-:::
-
-## Step: Un hi-hat cerrado en la pista 3
-keys: [TRK, TRIG 3, PRESET, UP, DOWN, YES]
-leds: { TRIG 3: white }
-source: manual §5.3.7, §7.1
-mode: menu:LOAD PRESET
-
-Mantén pulsado [TRK] y pulsa [TRIG 3]. Luego [PRESET], [UP]/[DOWN] hasta un hi-hat cerrado,
-[YES].
+Mantén pulsado [TRK] y pulsa [KEYBOARD D1]. Ahora el sonido elegido es el snare, y no ha
+sonado nada: la misma selección silenciosa que [TRK] da a las teclas trig para las pistas,
+aquí para los sonidos de un kit. El número de la pantalla dice 2 y D1 es la tecla roja. Haz
+lo mismo con [KEYBOARD A1], el hi-hat cerrado, y con [KEYBOARD F1], el clap, y termina en
+[KEYBOARD C1], el kick. Estos cuatro son el beat.
 
 :::checkpoint
-keys16: { 3: white }
-hear: [TRIG 3] toca el hi-hat.
-recover: La misma regla que con el snare: la pista activa decide dónde cae un preset.
-:::
-
-## Step: Una cuarta voz en la pista 4
-keys: [TRK, TRIG 4, PRESET, UP, DOWN, YES]
-leds: { TRIG 4: white }
-source: manual §5.3.7, §7.1
-mode: menu:LOAD PRESET
-
-Mantén pulsado [TRK] y pulsa [TRIG 4]. La pieza de ejemplo usa aquí un hi-hat abierto; un
-clap o un golpe de percusión funcionan igual de bien, y el beat seguirá cayendo donde dicen
-los puntos de control. Cárgalo: [PRESET], [UP]/[DOWN] hasta él, [YES].
-
-:::checkpoint
-keys16: { 4: white }
-hear: Cuatro sonidos distintos de [TRIG 1] a [TRIG 4].
-recover: Carga otro preset encima. Solo cambia la copia del pattern, y la tarjeta sigue teniendo todos los presets por los que pasaste.
+hear: Nada mientras mantienes pulsado [TRK]. Cada sonido suena solo cuando pulsas su tecla sola.
+recover: Un sonido que ha sonado significa que [TRK] no estaba pulsado antes — mantenlo, y luego pulsa. Con otro kit, el snare, el hi-hat cerrado y la cuarta voz están donde los encontró tu oído en la sesión 1; usa esas teclas donde esta sesión diga D1, A1 y F1.
 :::
 
 ## Step: Entra en GRID RECORDING
@@ -86,10 +57,10 @@ mode: playback
 
 Pulsa [RECORD]. La tecla se enciende en rojo, y ese rojo es GRID RECORDING. Las dieciséis
 teclas trig han dejado de representar pistas. Ahora representan los dieciséis pasos de un
-compás, en la pista activa.
+compás, para el sonido elegido de la pista activa.
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 4, type: "AUDIO", page: { n: 1, of: 1 } }
+screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS", page: { n: 1, of: 1 } }
 hear: Nada todavía; el secuenciador no está en marcha.
 recover: Si las teclas trig muestran slots de pattern en su lugar, estás en la selección de pattern. Pulsa [PTN] o [NO] para salir, y luego pulsa [RECORD].
 :::
@@ -100,14 +71,13 @@ escribir trigs mientras corre o mientras está parado — lo que te resulte más
 :::
 
 ## Step: El kick a tiempo
-keys: [TRK, TRIG 1, TRIG 5, TRIG 9, TRIG 13]
+keys: [TRK, KEYBOARD C1, TRIG 1, TRIG 5, TRIG 9, TRIG 13]
 leds: { RECORD: red, TRIG 1: red, TRIG 5: red, TRIG 9: red, TRIG 13: red }
 source: manual §10.3, §10.2.1
 mode: grid-recording
 
-Mantén pulsado [TRK] y pulsa [TRIG 1] para que la pista del kick sea la que estás
-escribiendo; su tecla se pone blanca. Luego pulsa [TRIG 1], [TRIG 5], [TRIG 9] y [TRIG 13]:
-un kick en cada tiempo. Cada una de las cuatro se enciende en rojo — rojo es un trig de
+Mantén pulsado [TRK] y pulsa [KEYBOARD C1] para que el kick sea el sonido que escribes. Luego
+pulsa [TRIG 1], [TRIG 5], [TRIG 9] y [TRIG 13]: un kick en cada tiempo. Cada una de las cuatro se enciende en rojo — rojo es un trig de
 nota.
 
 :::checkpoint
@@ -132,27 +102,27 @@ recover: Silencio mientras la luz sigue corriendo suele ser una de dos cosas: [M
 :::
 
 ## Step: El snare en el dos y el cuatro
-keys: [TRK, TRIG 2, TRIG 5, TRIG 13]
+keys: [TRK, KEYBOARD D1, TRIG 5, TRIG 13]
 leds: { RECORD: red, TRIG 5: red, TRIG 13: red }
 source: manual §10.3
 mode: grid-recording
 
-Mantén pulsado [TRK] y pulsa [TRIG 2]. Las dieciséis teclas se vacían: ahora muestran la
-pista 2, y la pista 2 no tiene nada. Pulsa [TRIG 5] y [TRIG 13].
+Mantén pulsado [TRK] y pulsa [KEYBOARD D1]. Las dieciséis teclas se vacían: ahora muestran los
+pasos del snare, y el snare todavía no tiene ninguno. Pulsa [TRIG 5] y [TRIG 13].
 
 :::checkpoint
 keys16: { 5: red, 13: red }
 hear: Kick, snare, kick, snare.
-recover: Si las cuatro teclas del kick siguen encendidas, nunca saliste de la pista 1. Mantén pulsado [TRK] — pulsado, no un toque — y pulsa [TRIG 2] otra vez.
+recover: Si las cuatro teclas del kick siguen encendidas, nunca saliste del kick. Mantén pulsado [TRK] — pulsado, no un toque — y pulsa [KEYBOARD D1] otra vez.
 :::
 
 ## Step: Hi-hats paso sí, paso no
-keys: [TRK, TRIG 3, TRIG 1, TRIG 5, TRIG 7, TRIG 9, TRIG 11, TRIG 13, TRIG 15]
+keys: [TRK, KEYBOARD A1, TRIG 1, TRIG 3, TRIG 5, TRIG 7, TRIG 9, TRIG 11, TRIG 13, TRIG 15]
 leds: { RECORD: red, TRIG 1: red, TRIG 3: red, TRIG 5: red, TRIG 7: red, TRIG 9: red, TRIG 11: red, TRIG 13: red, TRIG 15: red }
 source: manual §10.3
 mode: grid-recording
 
-Mantén pulsado [TRK] y pulsa [TRIG 3]. Ahora pulsa todas las teclas impares
+Mantén pulsado [TRK] y pulsa [KEYBOARD A1], el hi-hat cerrado. Ahora pulsa todas las teclas impares
 de [TRIG 1] a [TRIG 15]: ocho hi-hats, uno cada corchea. ¿Prefieres uno en cada paso?
 Púlsalas todas — la pieza de ejemplo se queda con ocho, y a los puntos de control de aquí en
 adelante no les importa cuál elegiste.
@@ -164,14 +134,14 @@ recover: Demasiado cargado: pulsa las teclas que quieras apagar. Una pulsación 
 :::
 
 ## Step: La cuarta voz, a contratiempo
-keys: [TRK, TRIG 4, TRIG 7, TRIG 15]
+keys: [TRK, KEYBOARD F1, TRIG 7, TRIG 15]
 leds: { RECORD: red, TRIG 7: red, TRIG 15: red }
 source: manual §10.3
 mode: grid-recording
 
-Mantén pulsado [TRK] y pulsa [TRIG 4]. Pon el hi-hat abierto — o tu clap — en [TRIG 7] y
-[TRIG 15]: el "y" antes de los tiempos tres y uno, donde empuja el compás hacia delante.
-Cualquier sitio fuera del snare vale.
+Mantén pulsado [TRK] y pulsa [KEYBOARD F1], el clap. Ponlo en [TRIG 7] y [TRIG 15]: el "y"
+antes de los tiempos tres y uno, donde empuja el compás hacia delante. Cualquier sitio fuera
+del snare vale, y también otro sonido corto del kit en lugar del clap.
 
 :::checkpoint
 keys16: { 7: red, 15: red }
@@ -185,7 +155,7 @@ leds: { RECORD: red }
 source: manual §10.3, §19
 mode: grid-recording
 
-Elige un golpe del que no estés seguro — aquí usamos el hi-hat abierto del paso 7. Mantén
+Elige un golpe del que no estés seguro — aquí usamos el clap del paso 7. Mantén
 pulsado [TRIG 7] y pulsa [YES]: ese trig suena, solo, con lo que tenga ajustado. Una
 pulsación corta de [TRIG 7] lo quita; pulsa otra vez para volver a ponerlo.
 
@@ -218,22 +188,22 @@ se decide sobre cómo se llama este menú — el encabezado del §10.9 y el rót
 dicen PAGE SETUP, el propio texto del §10.9 dice SCALE. Son el mismo menú.
 :::
 
-## Step: Pon una pista en mute
-keys: [MUTE, TRIG 2, UP, DOWN]
-leds: { TRIG 1: green, TRIG 3: green, TRIG 4: green }
+## Step: Pon un sonido en mute
+keys: [MUTE, KEYBOARD D1, UP, DOWN]
+leds: { KEYBOARD C1: green, KEYBOARD E1: green, KEYBOARD F1: green, KEYBOARD G1: green, KEYBOARD A1: green, KEYBOARD B1: green, KEYBOARD C2: green }
 source: manual §8.6
 mode: playback
 
-Pulsa [MUTE]. Las teclas trig vuelven a ser pistas: las encendidas suenan, las apagadas
-están silenciadas. Pulsa [TRIG 2] y el snare desaparece; púlsala otra vez y vuelve. Pulsa
-[MUTE] para salir. El verde es el mute GLOBAL, que te sigue a todos los patterns y se guarda
-con el proyecto; [MUTE] + [DOWN] cambia al mute PATTERN, magenta, que pertenece solo a este
-pattern. [MUTE] + [UP] vuelve al global.
+Pulsa [MUTE] con la pista 1 todavía activa — los sonidos del kit solo se ofrecen para la
+pista en la que estabas. Las teclas de la fila de abajo se encienden para ellos: las
+encendidas suenan, las apagadas están silenciadas. Pulsa [KEYBOARD D1] y el snare desaparece;
+púlsala otra vez y vuelve. Pulsa [MUTE] para salir. El verde es el mute GLOBAL, que te sigue a
+todos los patterns y se guarda con el proyecto; [MUTE] + [DOWN] cambia al mute PATTERN,
+magenta, que pertenece solo a este pattern. [MUTE] + [UP] vuelve al global.
 
 :::checkpoint
-keys16: { 1: green, 3: green, 4: green }
 hear: El beat sin su snare, y luego con él otra vez.
-recover: ¿Te dejaste algo en mute? El propio [MUTE] brilla tenue, verde o magenta, siempre que haya algo en mute — y el color te dice en qué modo ir a buscar. Púlsalo y encuentra la tecla apagada.
+recover: ¿Te dejaste algo en mute? El propio [MUTE] brilla tenue, verde o magenta, siempre que haya algo en mute — y el color te dice en qué modo ir a buscar. Púlsalo y encuentra la tecla apagada. En este modo las teclas trig son pistas enteras: una tecla trig silenciaría el kit, todos los sonidos a la vez.
 :::
 
 :::note
@@ -258,7 +228,7 @@ está sonando. Ahora mantén pulsado [FUNC] y pulsa [STOP], rótulo menta Paste.
 beat, a salvo de los cambios que vienen en la sesión 3.
 
 :::checkpoint
-screen: { bank: "A02", tempo: 92, track: 4, type: "AUDIO" }
+screen: { bank: "A02", tempo: 92, track: 1, type: "SUBTRACKS" }
 keys16: { 1: white, 2: red }
 hear: El mismo beat, sonando ahora desde A02.
 recover: Si A02 llega en silencio, el pegado ocurrió antes que el cambio. Espera a que el número de A02 deje de parpadear arriba a la izquierda — ese parpadeo es el pattern en cola, no la máquina ignorándote — y luego [FUNC] + [STOP] otra vez.
@@ -290,18 +260,18 @@ recover: Si deshacer no hace nada, pega otra vez — la copia sigue en el portap
 :::
 
 ## Step: Vuelta a A01, y guarda
-keys: [PTN, TRIG 1, FUNC, SETTINGS, RECORD, TRK]
+keys: [PTN, TRIG 1, FUNC, SETTINGS, RECORD, TRK, KEYBOARD C1]
 leds: { RECORD: red, TRIG 1: red, TRIG 5: red, TRIG 9: red, TRIG 13: red }
 source: manual §10.1.1, §9.1.1
 mode: playback
 
 Mantén pulsado [PTN] y pulsa [TRIG 1] para volver a A01. Mantén pulsado [FUNC] y pulsa
 [SETTINGS]: guardado, los dos patterns, sin aviso. Luego pulsa [RECORD] una vez más, mantén
-pulsado [TRK] y pulsa [TRIG 1], y mira el kick por última vez — pasos 1, 5, 9 y 13, en
+pulsado [TRK] y pulsa [KEYBOARD C1], y mira el kick por última vez — pasos 1, 5, 9 y 13, en
 rojo. Esa imagen es la cabecera de esta sesión.
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 1, type: "AUDIO" }
+screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
 keys16: { 1: red, 5: red, 9: red, 13: red }
 hear: Tu beat, desde A01.
 recover: El guardado no dice nada y no muestra ninguna pantalla de nombre; así es como se ve un guardado aquí. Si quieres estar seguro, la lista PROJECT, LOAD del menú FILE tiene tu nombre.
@@ -309,8 +279,9 @@ recover: El guardado no dice nada y no muestra ninguna pantalla de nombre; así 
 
 ## What you now have
 
-SIXTEEN tiene un beat de un compás en A01 — kick, snare, hi-hats y una cuarta voz repartidos
-en cuatro pistas — y A02 guarda una copia. Los dos están guardados. Para aquí, o sigue
+SIXTEEN tiene un beat de un compás en A01 — kick, snare, hi-hat cerrado y clap, todos del kit
+de la pista 1 — y A02 guarda una copia. Las pistas 2 a 4 siguen vacías. Los dos patterns
+están guardados. Para aquí, o sigue
 tocando: todo lo que cambies a partir de ahora está sin guardar hasta el siguiente
 [FUNC] + [SETTINGS].
 
@@ -323,15 +294,16 @@ ellas, así que puedes cambiar un golpe solo en la página dos. Devuelve LENGTH 
 la sesión 3, o déjalo y ten en cuenta que los puntos de control de la sesión 3 describen una
 sola página.
 
-### Copia los trigs de una sola pista
-En GRID RECORDING — esta lo quiere *activado* — [FUNC] + [RECORD] levanta los trigs de la
-pista en la que estás; pasa a otra pista y [FUNC] + [STOP] los suelta ahí (§10.10.4). Pon el
-pattern del hi-hat en la pista 4 y escucha dos hi-hats. Las mismas dos teclas, con grid
+### Copia los trigs de un solo sonido
+En GRID RECORDING — esta lo quiere *activado* — [FUNC] + [RECORD] levanta los trigs del
+sonido en el que estás; elige otro sonido con [TRK] y su tecla de la fila de abajo y
+[FUNC] + [STOP] los suelta ahí (§10.10.4). Pon el pattern del hi-hat cerrado en el tom,
+[KEYBOARD B1], y escucha lo que le hace al compás; [FUNC] + [NO] lo deshace. Las mismas dos teclas, con grid
 recording desactivado, mueven un pattern entero: el modo decide sobre qué actúan.
 
 ### Mute rápido
-[MUTE] + [TRIG 2] pone el snare en mute sin entrar siquiera en el modo mute, y lo mismo otra vez
-para reactivarla (§8.6). Esta es la que hay que aprender si alguna vez tocas esto en directo.
+[MUTE] + [TRIG 1] pone todo el kit en mute sin entrar siquiera en el modo mute, y lo mismo otra
+vez para reactivarlo (§8.6). Esta es la que hay que aprender si alguna vez tocas esto en directo.
 
 ### Swing
 En el menú [TEMPO], el mando [D] ajusta SWING entre el 50 y el 80 por ciento, y 50 es
@@ -348,8 +320,7 @@ donde estás.
 
 ## Next
 
-La sesión 3 carga una máquina Subtracks en la pista 1 y reconstruye estas cuatro voces como
-un solo kit, lo que libera las pistas 2 a 4 para el bajo, los acordes y el pad que vienen
-después. Tu copia A02 se queda exactamente como está. La lección de los colores de las
-teclas — teclas trig como pistas, como pasos, como slots de pattern — es lo que hay que
-llevarse.
+La sesión 3 hace tuyo el kit: un paso visto a lo largo de los ocho sonidos, un sonido
+reafinado, un sample tuyo en lugar del clap. Tu copia A02 se queda exactamente como está. La
+lección de los colores de las teclas — teclas trig como pistas, como pasos, como slots de
+pattern, y la fila de abajo como los sonidos del kit — es lo que hay que llevarse.
