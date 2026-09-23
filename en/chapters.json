@@ -5,9 +5,9 @@
     { "id": "composition", "title": "Composition", "order": 3 }
   ],
   "planned": [
-    { "number": 1, "slug": "first-sound", "title": "First sound", "chapter": "rhythm", "gains": "A saved project with one preset on track 1" },
-    { "number": 2, "slug": "first-beat", "title": "First beat", "chapter": "rhythm", "gains": "A one-bar drum pattern on tracks 1–4" },
-    { "number": 3, "slug": "a-kit-from-one-sample", "title": "A kit from one sample", "chapter": "rhythm", "gains": "A drum track built on Subtracks" },
+    { "number": 1, "slug": "first-sound", "title": "First sound", "chapter": "rhythm", "gains": "A saved project with a drum kit on track 1" },
+    { "number": 2, "slug": "first-beat", "title": "First beat", "chapter": "rhythm", "gains": "A one-bar beat on one track, a sound at a time" },
+    { "number": 3, "slug": "the-kit-your-way", "title": "The kit, your way", "chapter": "rhythm", "gains": "One step across the kit, a sound retuned, a sample of your own" },
     { "number": 4, "slug": "make-it-move", "title": "Make it move", "chapter": "rhythm", "gains": "Ghost notes, a filter sweep, a snare roll" },
     { "number": 5, "slug": "variation-without-new-patterns", "title": "Variation without new patterns", "chapter": "rhythm", "gains": "A pattern that changes every loop" },
     { "number": 6, "slug": "notes-and-harmony", "title": "Notes and harmony", "chapter": "sound", "gains": "A bass line and a chord part" },

@@ -15,7 +15,7 @@ keys: [PLAY, FUNC, SETTINGS]
 source: manual §9.1.1, §10.1.2
 mode: grid-recording
 
-Session 3 left you in GRID RECORDING on track 1 with subtrack 3, the closed hat, on the
+Session 3 left you in GRID RECORDING on track 1 with subtrack 6, the closed hat, on the
 sixteen keys. If the sequencer is not running, press [PLAY] and leave it running: every step
 here is written over the loop. Then hold [FUNC] and press [SETTINGS] — this session writes
 locks all through the kit, and that save is the state you can come back to.
@@ -23,8 +23,8 @@ locks all through the kit, and that save is the state you can come back to.
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
 keys16: { 1: red, 3: red, 5: red, 7: red, 9: red, 11: red, 13: red, 15: red }
-hear: The whole beat from track 1 — kick, snare, closed hat, open hat — looping from A01.
-recover: A dark strip means [RECORD] is not lit: press it for GRID RECORDING, then hold [TRK] and press [KEYBOARD E1], the third SUBTRACKS key, to get back to the closed hat. Starting here without session 3? That session builds the kit this one moves, and it takes about sixteen minutes.
+hear: The whole beat from track 1 — kick, snare, closed hat and your sound in the clap's place — looping from A01.
+recover: A dark strip means [RECORD] is not lit: press it for GRID RECORDING, then hold [TRK] and press [KEYBOARD A1], the sixth SUBTRACKS key, to get back to the closed hat. Starting here without session 3? That session builds the kit this one moves, and it takes about sixteen minutes.
 :::
 
 ## Step: Ghost notes
@@ -124,19 +124,19 @@ on [E], while §12.2's own sentence names knob [A]. Turn the knob under the para
 your unit says otherwise, your unit is right.
 :::
 
-## Step: Push the open hat late
+## Step: Push the clap late
 keys: [TRK, KEYBOARD F1, TRIG 7, RIGHT, UP, DOWN]
 source: community https://www.youtube.com/watch?v=7lFFSUOsXsA
 mode: grid-recording
 
-Hold [TRK] and press [KEYBOARD F1], the fourth SUBTRACKS key, for the open hat. Hold
+Hold [TRK] and press [KEYBOARD F1], the fourth SUBTRACKS key, for the clap — your own sound since session 3. Hold
 [TRIG 7] and press [RIGHT]: the MICRO TIMING pop-up opens and reads that step's offset as a
 percentage (§10.5). Keep the key down — [RIGHT] again pushes it further in big jumps, [UP]
 and [DOWN] move it a little at a time — and release [TRIG 7] to leave.
 
 :::checkpoint
 screen: { menu: "MICRO TIMING", items: [+25%] }
-hear: The open hat on 7 lands a shade after the step it sits on, and the bar leans harder into the next one. The reading is drawn here pushed late; how far one press takes it is the unit's to tell you.
+hear: The clap on 7 lands a shade after the step it sits on, and the bar leans harder into the next one. The reading is drawn here pushed late; how far one press takes it is the unit's to tell you.
 recover: Nothing opened? The pop-up wants the trig key held first and the arrow second, and a step with no trig on it has nothing to time. Pushed too far: [LEFT] walks it back, and the offset is stored with the pattern, so it survives the save at the end (§10.5).
 :::
 
@@ -181,12 +181,12 @@ recover: Menu did not open? Try [FUNC] + [TRIG] instead, the combination §10.4 
 :::
 
 ## Step: See the locks alone
-keys: [TRK, KEYBOARD E1, RECORD, FUNC, UP, DOWN, NO]
+keys: [TRK, KEYBOARD A1, RECORD, FUNC, UP, DOWN, NO]
 leds: { RECORD: red }
 source: manual §10.3.2
 mode: grid-recording
 
-Hold [TRK] and press [KEYBOARD E1], the third SUBTRACKS key, to come back to the closed hat,
+Hold [TRK] and press [KEYBOARD A1], the sixth SUBTRACKS key, to come back to the closed hat,
 then press [RECORD] for GRID RECORDING. Hold [FUNC] and press [UP] for the SEQUENCE LANE
 menu, and press [UP]/[DOWN] until P-LOCKS is the one chosen. Put it back on NOTES + P-LOCKS
 before you leave, then press [NO].
@@ -218,18 +218,18 @@ recover: Two keys and no more is right — the snare has always had two trigs, a
 
 A01 is the same kit and the same four voices, moving. On the closed hat, four ghost notes sit
 behind the four on the beat and one step on beat three is filtered dull; the snare on 13 is a
-short roll, a pickup into the next bar; the open hat on 7 sits a shade late if you left TRK
+short roll, a pickup into the next bar; the clap on 7 sits a shade late if you left TRK
 short of the top, and dead on the step if you did not; and a fifth subtrack carries a part
 you played with your hands and then pulled onto the grid. All of it is parameter locks and
-timing on trigs you already had, all of it is saved, and A02 still holds session 2's
-four-track beat.
+timing on trigs you already had, all of it is saved, and A02 still holds session 2's copy
+of the beat.
 
 ## Explore further
 
 ### Randomise the velocities, then take it back
 [FUNC] + [-] opens the TRANSFORM menu, which acts on every trig of the track you are on
 (§10.6). VELOCITY RANDOMIZE writes a VEL lock on all of them; VELOCITY UNLOCK removes every
-VEL lock there is — including the four ghost notes — so try it on the open hat's subtrack
+VEL lock there is — including the four ghost notes — so try it on the clap's subtrack
 rather than the closed hat's, and keep your save in reach.
 
 ### A lock with no note under it

@@ -47,12 +47,12 @@ recover: If the pickup comes every loop, COND is still on the dash: hold [TRIG 1
 :::
 
 ## Step: Chance on the ghosts
-keys: [TRK, KEYBOARD E1, TRIG 3, TRIG 7, TRIG 11, TRIG 15, D]
+keys: [TRK, KEYBOARD A1, TRIG 3, TRIG 7, TRIG 11, TRIG 15, D]
 leds: { TRIG 3: red, TRIG 7: red, TRIG 11: red, TRIG 15: red }
 source: manual §12.2
 mode: grid-recording
 
-Hold [TRK] and press [KEYBOARD E1], the third SUBTRACKS key, for the closed hat — TRIG PAGE 1
+Hold [TRK] and press [KEYBOARD A1], the sixth SUBTRACKS key, for the closed hat — TRIG PAGE 1
 stays in front of you. Hold [TRIG 3], [TRIG 7], [TRIG 11] and [TRIG 15], session 4's four
 ghost notes, and turn knob [D], PROB, down to 50%.
 
@@ -210,10 +210,16 @@ does.
 a tap rather than a hold (§10.10.3). Handy the moment your other hand is on a knob, and easy
 to leave switched on by mistake.
 
+### The other kick
+Move the 1:2 pickup off the kick and onto [KEYBOARD E1], HELLO KIT's low kick: clear step 15
+on [KEYBOARD C1], write it on E1, and set COND to 1:2 there the same way. The bar keeps its
+four kicks on the beat, and every other loop a deeper one leads into the top.
+
 ### 1ST, an intro that happens once
 1ST fires a trig the first time round the pattern and never again; the same condition with a
-line over it sits out that first pass and plays on all the rest (§10.10.2). One open hat on
-step 1 with 1ST, and the pattern announces itself and then gets on with it.
+line over it sits out that first pass and plays on all the rest (§10.10.2). One cymbal on
+step 1 with 1ST — HELLO KIT keeps a long one on [KEYBOARD C2] — and the pattern announces
+itself and then gets on with it.
 
 ### NEI, in the simulator rather than on the kit
 NEI looks sideways: it asks how the last condition turned out on the track next door — the

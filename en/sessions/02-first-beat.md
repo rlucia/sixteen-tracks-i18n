@@ -3,9 +3,9 @@ number: 2
 chapter: rhythm
 slug: first-beat
 title: First beat
-goal: Put drums on tracks 1 to 4, write a one-bar beat in GRID RECORDING, mute and unmute, copy the pattern, and save.
-needs: [The SIXTEEN project from session 1 (or any project with a kick on track 1 — step 1 says how), Headphones connected, Factory drum presets on the SD card, "About sixteen minutes"]
-teaches: [grid-recording, track-select, page-length, mute, copy-paste-clear, undo, pattern-select]
+goal: Write a one-bar beat on the kit's sounds in GRID RECORDING, mute one sound, copy the pattern, and save.
+needs: [The SIXTEEN project from session 1 (or any project with a drum kit on track 1 — step 1 says how), Headphones connected, "About sixteen minutes"]
+teaches: [grid-recording, subtrack-select, page-length, mute, copy-paste-clear, undo, pattern-select]
 simulator: null
 ends: { keys16: { 1: red, 5: red, 9: red, 13: red } }
 ---
@@ -17,10 +17,10 @@ mode: menu:FILE
 
 If SIXTEEN is not the project on the screen, load it: [FUNC] + [PRESET] opens the FILE menu,
 then [UP]/[DOWN] through PROJECT, LOAD and your project, [YES]. Starting here without session 1? You need a project
-you can edit with a kick on track 1 — session 1, steps 3 to 5, takes four minutes.
+you can edit with a drum kit on track 1 — session 1, steps 3 to 6, takes five minutes.
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 1, type: "AUDIO" }
+screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
 hear: Press [TRIG 1]: the kick from session 1.
 recover: If you experimented since and want the saved state back, highlight your project in the LOAD list and press [RIGHT] for PROJECT ACTIONS, then RELOAD. That is the last save.
 :::
@@ -31,49 +31,21 @@ session 1 and you have been playing, save before you load anything — the worki
 are about to abandon is not written back to your project on its own.
 :::
 
-## Step: A snare on track 2
-keys: [TRK, TRIG 2, PRESET, LEFT, RIGHT, UP, DOWN, YES]
-leds: { TRIG 2: white }
-source: manual §5.3.7, §7.1
-mode: menu:LOAD PRESET
+## Step: Choose a sound in silence
+keys: [TRK, KEYBOARD D1, KEYBOARD A1, KEYBOARD F1, KEYBOARD C1]
+leds: { KEYBOARD C1: red }
+source: manual §A.2.3
+mode: any
 
-Hold [TRK] and press [TRIG 2]. Press [PRESET]; if you are not in DRUMS, [LEFT]/[RIGHT] puts
-you back. [UP]/[DOWN] to a snare — any preset named as one — and press [YES].
-
-:::checkpoint
-keys16: { 2: white }
-hear: [TRIG 2] plays the snare; [TRIG 1] still plays the kick.
-recover: If [TRIG 2] plays the kick, the preset landed on track 1: the preset always goes to whichever track was active when you pressed [YES]. Hold [TRK] and press [TRIG 2] first, then load again.
-:::
-
-## Step: A closed hat on track 3
-keys: [TRK, TRIG 3, PRESET, UP, DOWN, YES]
-leds: { TRIG 3: white }
-source: manual §5.3.7, §7.1
-mode: menu:LOAD PRESET
-
-Hold [TRK] and press [TRIG 3]. Then [PRESET], [UP]/[DOWN] to a closed hi-hat, [YES].
+Hold [TRK] and press [KEYBOARD D1]. The snare is now the chosen sound and nothing played:
+the same silent select that [TRK] gives the trig keys for tracks, here for the sounds of one
+kit. The number on the screen says 2 and D1 is the red key. Do the same with [KEYBOARD A1],
+the closed hat, and [KEYBOARD F1], the clap, then finish on [KEYBOARD C1], the kick. These
+four are the beat.
 
 :::checkpoint
-keys16: { 3: white }
-hear: [TRIG 3] plays the hat.
-recover: Same rule as the snare: the active track decides where a preset lands.
-:::
-
-## Step: A fourth voice on track 4
-keys: [TRK, TRIG 4, PRESET, UP, DOWN, YES]
-leds: { TRIG 4: white }
-source: manual §5.3.7, §7.1
-mode: menu:LOAD PRESET
-
-Hold [TRK] and press [TRIG 4]. The worked piece uses an open hat here; a clap or a
-percussion hit works just as well, and the beat will still land where the checkpoints say.
-Load it: [PRESET], [UP]/[DOWN] to it, [YES].
-
-:::checkpoint
-keys16: { 4: white }
-hear: Four different sounds on [TRIG 1] to [TRIG 4].
-recover: Load another preset over it. Only the pattern's copy changes, and the card still holds every preset you passed.
+hear: Nothing while [TRK] is held. Each sound plays only when you press its key on its own.
+recover: A sound that played means [TRK] was not down first — hold it, then press. With another kit, the snare, the closed hat and the fourth voice are wherever your ear found them in session 1; use those keys wherever this session names D1, A1 and F1.
 :::
 
 ## Step: Enter GRID RECORDING
@@ -83,11 +55,11 @@ source: manual §10.3
 mode: playback
 
 Press [RECORD]. The key lights red, and that red is GRID RECORDING. The sixteen trig keys
-have stopped standing for tracks. They now stand for the sixteen steps of one bar, on
-the active track.
+have stopped standing for tracks. They now stand for the sixteen steps of one bar, for the
+chosen sound of the active track.
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 4, type: "AUDIO", page: { n: 1, of: 1 } }
+screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS", page: { n: 1, of: 1 } }
 hear: Nothing yet; the sequencer is not running.
 recover: If the trig keys show pattern slots instead, you are in pattern select. Press [PTN] or [NO] to leave it, then press [RECORD].
 :::
@@ -98,14 +70,14 @@ write trigs while it runs or while it is stopped — whichever you find easier.
 :::
 
 ## Step: The kick on the beat
-keys: [TRK, TRIG 1, TRIG 5, TRIG 9, TRIG 13]
+keys: [TRK, KEYBOARD C1, TRIG 1, TRIG 5, TRIG 9, TRIG 13]
 leds: { RECORD: red, TRIG 1: red, TRIG 5: red, TRIG 9: red, TRIG 13: red }
 source: manual §10.3, §10.2.1
 mode: grid-recording
 
-Hold [TRK] and press [TRIG 1] to make the kick's track the one you are writing on; its key
-goes white. Then press [TRIG 1], [TRIG 5], [TRIG 9] and [TRIG 13]: one kick on every beat.
-Each of the four lights red — red is a note trig.
+Hold [TRK] and press [KEYBOARD C1] to make the kick the sound you are writing. Then press
+[TRIG 1], [TRIG 5], [TRIG 9] and [TRIG 13]: one kick on every beat. Each of the four lights
+red — red is a note trig.
 
 :::checkpoint
 keys16: { 1: red, 5: red, 9: red, 13: red }
@@ -129,27 +101,27 @@ recover: Silence while the light still runs is usually one of two things: [MAIN 
 :::
 
 ## Step: The snare on two and four
-keys: [TRK, TRIG 2, TRIG 5, TRIG 13]
+keys: [TRK, KEYBOARD D1, TRIG 5, TRIG 13]
 leds: { RECORD: red, TRIG 5: red, TRIG 13: red }
 source: manual §10.3
 mode: grid-recording
 
-Hold [TRK] and press [TRIG 2]. The sixteen keys empty out: they are showing track 2 now,
-and track 2 has nothing on it. Press [TRIG 5] and [TRIG 13].
+Hold [TRK] and press [KEYBOARD D1]. The sixteen keys empty out: they are showing the
+snare's steps now, and the snare has none yet. Press [TRIG 5] and [TRIG 13].
 
 :::checkpoint
 keys16: { 5: red, 13: red }
 hear: Kick, snare, kick, snare.
-recover: If the kick's four keys are still lit you never left track 1. Hold [TRK] — hold, not tap — and press [TRIG 2] again.
+recover: If the kick's four keys are still lit you never left the kick. Hold [TRK] — hold, not tap — and press [KEYBOARD D1] again.
 :::
 
 ## Step: Hats every other step
-keys: [TRK, TRIG 3, TRIG 1, TRIG 5, TRIG 7, TRIG 9, TRIG 11, TRIG 13, TRIG 15]
+keys: [TRK, KEYBOARD A1, TRIG 1, TRIG 3, TRIG 5, TRIG 7, TRIG 9, TRIG 11, TRIG 13, TRIG 15]
 leds: { RECORD: red, TRIG 1: red, TRIG 3: red, TRIG 5: red, TRIG 7: red, TRIG 9: red, TRIG 11: red, TRIG 13: red, TRIG 15: red }
 source: manual §10.3
 mode: grid-recording
 
-Hold [TRK] and press [TRIG 3]. Now press every odd key from [TRIG 1] to [TRIG 15]: eight
+Hold [TRK] and press [KEYBOARD A1], the closed hat. Now press every odd key from [TRIG 1] to [TRIG 15]: eight
 hats, one every eighth note. Prefer one on every step? Press them all — the worked piece
 keeps eight, and the checkpoints from here on do not care which you chose.
 
@@ -160,14 +132,14 @@ recover: Too busy: press the keys you want dark. Quick press removes; a held pre
 :::
 
 ## Step: The fourth voice, off the beat
-keys: [TRK, TRIG 4, TRIG 7, TRIG 15]
+keys: [TRK, KEYBOARD F1, TRIG 7, TRIG 15]
 leds: { RECORD: red, TRIG 7: red, TRIG 15: red }
 source: manual §10.3
 mode: grid-recording
 
-Hold [TRK] and press [TRIG 4]. Put the open hat — or your clap — on [TRIG 7] and [TRIG 15]:
-the "and" before beats three and one, where it pushes the bar forward. Anywhere off the
-snare is fine.
+Hold [TRK] and press [KEYBOARD F1], the clap. Put it on [TRIG 7] and [TRIG 15]: the "and"
+before beats three and one, where it pushes the bar forward. Anywhere off the snare is fine,
+and so is another short sound of the kit in the clap's place.
 
 :::checkpoint
 keys16: { 7: red, 15: red }
@@ -181,7 +153,7 @@ leds: { RECORD: red }
 source: manual §10.3, §19
 mode: grid-recording
 
-Choose a hit you are not sure about — we use the open hat on step 7. Hold [TRIG 7] and press
+Choose a hit you are not sure about — we use the clap on step 7. Hold [TRIG 7] and press
 [YES]: that one trig sounds, alone, with whatever is set on it. A quick press of [TRIG 7]
 removes it; press again to put it back.
 
@@ -213,22 +185,22 @@ this menu is called — §10.9's heading and the panel
 legend say PAGE SETUP, §10.9's own text says SCALE. They are the same menu.
 :::
 
-## Step: Mute a track
-keys: [MUTE, TRIG 2, UP, DOWN]
-leds: { TRIG 1: green, TRIG 3: green, TRIG 4: green }
+## Step: Mute one sound
+keys: [MUTE, KEYBOARD D1, UP, DOWN]
+leds: { KEYBOARD C1: green, KEYBOARD E1: green, KEYBOARD F1: green, KEYBOARD G1: green, KEYBOARD A1: green, KEYBOARD B1: green, KEYBOARD C2: green }
 source: manual §8.6
 mode: playback
 
-Press [MUTE]. The trig keys are tracks again: lit ones play, dark ones are silenced. Press
-[TRIG 2] and the snare drops out; press it again and it returns. Press [MUTE] to leave.
-Green is GLOBAL mute, which follows you into every pattern and is stored with the project;
-[MUTE] + [DOWN] switches to PATTERN mute, magenta, which belongs to this pattern alone.
-[MUTE] + [UP] goes back to global.
+Press [MUTE] with track 1 still the active track — the kit's sounds are offered only for the
+track you were on. The bottom-row keys light for them: lit ones play, dark ones are
+silenced. Press [KEYBOARD D1] and the snare drops out; press it again and it returns. Press
+[MUTE] to leave. Green is GLOBAL mute, which follows you into every pattern and is stored
+with the project; [MUTE] + [DOWN] switches to PATTERN mute, magenta, which belongs to this
+pattern alone. [MUTE] + [UP] goes back to global.
 
 :::checkpoint
-keys16: { 1: green, 3: green, 4: green }
 hear: The beat without its snare, then with it again.
-recover: Left something muted? [MUTE] itself glows dimly, green or magenta, whenever anything is — and the colour tells you which mode to go looking in. Press it and find the dark key.
+recover: Left something muted? [MUTE] itself glows dimly, green or magenta, whenever anything is — and the colour tells you which mode to go looking in. Press it and find the dark key. In this mode the trig keys are whole tracks: a trig key would silence the kit, every sound at once.
 :::
 
 :::note
@@ -252,7 +224,7 @@ with something in it and the red key is the one playing. Now hold [FUNC] and pre
 mint legend Paste. A02 is your beat, kept safe against the changes coming in session 3.
 
 :::checkpoint
-screen: { bank: "A02", tempo: 92, track: 4, type: "AUDIO" }
+screen: { bank: "A02", tempo: 92, track: 1, type: "SUBTRACKS" }
 keys16: { 1: white, 2: red }
 hear: The same beat, now playing from A02.
 recover: If A02 comes round silent, the paste happened before the switch did. Wait for A02's number to stop flashing at the top left — that flashing is the pattern queued, not the machine ignoring you — then [FUNC] + [STOP] again.
@@ -283,17 +255,17 @@ recover: If undo does nothing, paste again — the copy is still in the clipboar
 :::
 
 ## Step: Back to A01, and save
-keys: [PTN, TRIG 1, FUNC, SETTINGS, RECORD, TRK]
+keys: [PTN, TRIG 1, FUNC, SETTINGS, RECORD, TRK, KEYBOARD C1]
 leds: { RECORD: red, TRIG 1: red, TRIG 5: red, TRIG 9: red, TRIG 13: red }
 source: manual §10.1.1, §9.1.1
 mode: playback
 
 Hold [PTN] and press [TRIG 1] to return to A01. Hold [FUNC] and press [SETTINGS]: saved,
 both patterns, no prompt. Then press [RECORD] once more, hold [TRK] and press
-[TRIG 1], and look at the kick one last time — steps 1, 5, 9 and 13, red. That picture is this session's masthead.
+[KEYBOARD C1], and look at the kick one last time — steps 1, 5, 9 and 13, red. That picture is this session's masthead.
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 1, type: "AUDIO" }
+screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
 keys16: { 1: red, 5: red, 9: red, 13: red }
 hear: Your beat, from A01.
 recover: The save says nothing and shows no naming screen; that is what a save looks like here. If you want to be certain, the FILE menu's PROJECT, LOAD list has your name in it.
@@ -301,8 +273,9 @@ recover: The save says nothing and shows no naming screen; that is what a save l
 
 ## What you now have
 
-SIXTEEN has a one-bar beat on A01 — kick, snare, hats and a fourth voice across four tracks
-— and A02 holds a copy of it. Both are saved. Stop here, or keep playing: everything you
+SIXTEEN has a one-bar beat on A01 — kick, snare, closed hat and clap, all from the kit on
+track 1 — and A02 holds a copy of it. Tracks 2 to 4 are still empty. Both patterns are
+saved. Stop here, or keep playing: everything you
 change from now on is unsaved until the next [FUNC] + [SETTINGS].
 
 ## Explore further
@@ -313,15 +286,16 @@ copy of the first, not blank bars (§10.9.1). In GRID RECORDING, [PAGE] flips be
 so you can change a hit on page two only. Put LENGTH back to 16 before session 3, or keep it
 and know that session 3's checkpoints describe one page.
 
-### Copy one track's trigs
-In GRID RECORDING — this one wants it *on* — [FUNC] + [RECORD] lifts the trigs off the track
-you are on; move to a different track and [FUNC] + [STOP] drops them in (§10.10.4). Put the hat
-pattern on track 4 and hear two hats. The same two keys, with grid recording off, move a
-whole pattern: the mode decides what they act on.
+### Copy one sound's trigs
+In GRID RECORDING — this one wants it *on* — [FUNC] + [RECORD] lifts the trigs off the sound
+you are on; choose another sound with [TRK] and its bottom-row key and [FUNC] + [STOP] drops
+them in (§10.10.4). Put the closed hat's pattern on the tom, [KEYBOARD B1], and hear what it
+does to the bar; [FUNC] + [NO] takes it back. The same two keys, with grid recording off,
+move a whole pattern: the mode decides what they act on.
 
 ### Quick mute
-[MUTE] + [TRIG 2] mutes the snare without entering mute mode at all, and does it again to
-unmute (§8.6). This is the one to learn if you ever play this live.
+[MUTE] + [TRIG 1] mutes the whole kit without entering mute mode at all, and does it again
+to unmute (§8.6). This is the one to learn if you ever play this live.
 
 ### Swing
 In the [TEMPO] menu, knob [D] sets SWING between 50 and 80 per cent, and 50 is dead even
@@ -336,7 +310,7 @@ a different family from the [FUNC] combinations above, which always act on where
 
 ## Next
 
-Session 3 loads one Subtracks machine on track 1 and rebuilds these four voices as a single
-kit, which frees tracks 2 to 4 for the bass, chords and pad that come later. Your A02 copy
-stays exactly as it is. The key-colour lesson — trig keys as tracks, as steps, as pattern
-slots — is the thing to carry forward.
+Session 3 makes the kit yours: one step seen across all eight sounds, a sound retuned, a
+sample of your own in place of the clap. Your A02 copy stays exactly as it is. The key-colour
+lesson — trig keys as tracks, as steps, as pattern slots, and the bottom row as the kit's
+sounds — is the thing to carry forward.
