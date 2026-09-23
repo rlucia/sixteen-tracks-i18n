@@ -149,7 +149,7 @@ mode: any
 Press the bottom row of the keyboard one key at a time, from [KEYBOARD C1] to
 [KEYBOARD C2]. Each key is one sound of the kit. The number on the screen follows the key
 you pressed, and that key stays red: it is the sound [TRIG 1] plays now. Tell them apart by
-where they sit and how long they last. The kick is the lowest and shortest, the one the
+where they sit and how long they last. The kick is the lowest, and short — the one the
 others stand on. The snare is a sharp crack in the middle of the range; a clap is a handclap
 and often takes the snare's place. The closed hat is the highest and shortest of all; an open
 hat is as high but left ringing. A tom is a drum with a clear pitch, and a cymbal is a long

@@ -22,7 +22,7 @@ you can edit with a drum kit on track 1 — session 1, steps 3 to 6, takes five 
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
 hear: Press [TRIG 1]: the kick from session 1.
-recover: If you experimented since and want the saved state back, highlight your project in the LOAD list and press [RIGHT] for PROJECT ACTIONS, then RELOAD. That is the last save.
+recover: If you experimented since and want the saved state back, highlight your project in the LOAD list and press [RIGHT] for PROJECT ACTIONS, then RELOAD. That is the last save. If [TRIG 2], [TRIG 3] or [TRIG 4] play drums of their own, an earlier pass left the beat across four tracks: with GRID RECORDING off, [FUNC] + [PLAY] and [YES] clear A01's trigs (§10.10.4), and the steps below write it again on track 1.
 :::
 
 :::note
@@ -45,7 +45,7 @@ four are the beat.
 
 :::checkpoint
 hear: Nothing while [TRK] is held. Each sound plays only when you press its key on its own.
-recover: A sound that played means [TRK] was not down first — hold it, then press. With another kit, the snare, the closed hat and the fourth voice are wherever your ear found them in session 1; use those keys wherever this session names D1, A1 and F1.
+recover: A sound that played means [TRK] was not down first — hold it, then press. With another kit, the snare, the closed hat and the fourth voice are wherever your ear found them in session 1; use those keys wherever the course names D1, A1 and F1.
 :::
 
 ## Step: Enter GRID RECORDING
@@ -274,7 +274,7 @@ recover: The save says nothing and shows no naming screen; that is what a save l
 ## What you now have
 
 SIXTEEN has a one-bar beat on A01 — kick, snare, closed hat and clap, all from the kit on
-track 1 — and A02 holds a copy of it. Tracks 2 to 4 are still empty. Both patterns are
+track 1 — and A02 holds a copy of it. Tracks 2 to 4 play nothing. Both patterns are
 saved. Stop here, or keep playing: everything you
 change from now on is unsaved until the next [FUNC] + [SETTINGS].
 

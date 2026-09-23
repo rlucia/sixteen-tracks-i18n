@@ -22,7 +22,7 @@ beat running — everything in this session happens while it plays.
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
 hear: Session 2's beat looping from A01: kick, snare, closed hat and clap, all from the kit on track 1.
-recover: If you have been playing since and want the saved state back, highlight your project in the LOAD list, press [RIGHT] for PROJECT ACTIONS and choose RELOAD. If [TRIG 2], [TRIG 3] or [TRIG 4] play sounds of their own, your beat is spread over four tracks: session 2 builds it on one, and this session starts from there. Starting here without session 2? That session writes the beat this one works on, and it takes about sixteen minutes.
+recover: If you have been playing since and want the saved state back, highlight your project in the LOAD list, press [RIGHT] for PROJECT ACTIONS and choose RELOAD. If [TRIG 2], [TRIG 3] or [TRIG 4] play sounds of their own, your beat is spread over four tracks: session 2 builds it on one, and its first step clears the old one. Starting here without session 2? That session writes the beat this one works on, and it takes about sixteen minutes.
 :::
 
 ## Step: Three lives of a trig key
@@ -75,7 +75,7 @@ leaves that step; press it again and it is back. Press [STEP EDIT] again to leav
 
 :::checkpoint
 hear: The beat as it was, once you have put back what you took out.
-recover: STEP EDIT is part of GRID RECORDING (§10.3.1), so [RECORD] lights with it. A dim key on the bottom row is the sound you have selected, not one that plays on the step — [owners are warned about it in Elektron's own tutorial](https://www.youtube.com/watch?v=ijPa_vgY8QA). A clap you removed and cannot bring back: [FUNC] + [NO] undoes it.
+recover: STEP EDIT is part of GRID RECORDING (§10.3.1), so [RECORD] lights with it. A dim key on the bottom row is the sound you have selected, not one that plays on the step — [owners are warned about it in Elektron's own tutorial](https://www.youtube.com/watch?v=ijPa_vgY8QA).
 :::
 
 ## Step: Tune one sound
@@ -91,15 +91,15 @@ holds — two steps on.
 
 :::checkpoint
 hear: A lower snare in the same beat; the kick, the hats and the clap as they were.
-recover: If another sound moved, the red key was elsewhere when you turned: hold [TRK], press [KEYBOARD D1], and turn again. To go back to where it was, TUNE at 0 leaves the pitch unchanged.
+recover: If another sound moved, the red key was elsewhere when you turned: hold [TRK], press [KEYBOARD D1], and turn again. To go back, read TUNE before you turn and return it to that value.
 :::
 
 ## Step: Swap one sample
-keys: [TRK, TRIG 1, KEYBOARD F1, FUNC, UP, DOWN, YES, NO]
+keys: [TRK, KEYBOARD F1, FUNC, UP, DOWN, YES, NO]
 source: manual §A.2.3, §6.13
 mode: menu:SAMPLE BROWSER
 
-Hold [TRK] and press [TRIG 1] to come back to the kit, then [TRK] + [KEYBOARD F1], the fourth
+Hold [TRK] and press [KEYBOARD F1], the fourth
 SUBTRACKS key, so the clap is the sound you are on. [FUNC] + [KEYBOARD F1] opens the
 Sample browser on the SD card, aimed at that one subtrack: [UP]/[DOWN] scrolls the card, [YES]
 opens a folder and [YES] on a sample loads it into the project's sample pool and onto the

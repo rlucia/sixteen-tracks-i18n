@@ -240,5 +240,5 @@ pattern's are gone (§10.12).
 ## Next
 
 Session 6 leaves the drums alone and starts the second chapter: a bass on track 2 and a chord
-part on track 3, played from the keyboard in A minor, on the tracks session 3 freed. The
+part on track 3, played from the keyboard in A minor, on tracks 2 and 3, which the beat leaves free. The
 rhythm is finished — from here the piece gains notes.
