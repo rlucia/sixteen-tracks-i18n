@@ -119,7 +119,7 @@
   "sim.containers.rule.perform": "manualen §10.12 — ändringarna lever i tillfälligt minne och sparas inte",
   "sim.containers.rule.powerOff": "manualen §3.2, §10.10.6 — osparat arbete kan gå förlorat, och det tillfälliga minnet följer med; spara först",
   "sim.conditions.track.kick": "Kick, subtrack 1",
-  "sim.conditions.track.hats": "Hi-hats, subtrack 3",
+  "sim.conditions.track.hats": "Hi-hats, subtrack 6",
   "sim.conditions.grid": "Två spår, sexton steg",
   "sim.conditions.condition": "villkor",
   "sim.conditions.a": "A",
