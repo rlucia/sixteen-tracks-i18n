@@ -119,7 +119,7 @@
   "sim.containers.rule.perform": "Handbuch §10.12 — die Änderungen leben im flüchtigen Speicher und werden nicht gespeichert",
   "sim.containers.rule.powerOff": "Handbuch §3.2, §10.10.6 — ungespeicherte Arbeit kann verloren gehen, und der flüchtige Speicher geht mit; erst speichern",
   "sim.conditions.track.kick": "Kick, Subtrack 1",
-  "sim.conditions.track.hats": "Hi-Hats, Subtrack 3",
+  "sim.conditions.track.hats": "Hi-Hats, Subtrack 6",
   "sim.conditions.grid": "Zwei Spuren, sechzehn Schritte",
   "sim.conditions.condition": "Bedingung",
   "sim.conditions.a": "A",
