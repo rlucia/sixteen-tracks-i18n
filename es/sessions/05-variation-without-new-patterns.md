@@ -246,5 +246,5 @@ pattern se han ido (§10.12).
 ## Next
 
 La sesión 6 deja la batería en paz y empieza el segundo capítulo: un bajo en la pista 2 y una
-parte de acordes en la pista 3, tocados desde el teclado en la menor, en las pistas que la
-sesión 3 liberó. El ritmo está terminado — a partir de aquí la pieza gana notas.
+parte de acordes en la pista 3, tocados desde el teclado en la menor, en las pistas 2 y 3,
+que el beat deja libres. El ritmo está terminado — a partir de aquí la pieza gana notas.

@@ -150,7 +150,7 @@ mode: any
 Pulsa la fila de abajo del teclado tecla a tecla, de [KEYBOARD C1] a [KEYBOARD C2]. Cada tecla
 es un sonido del kit. El número de la pantalla sigue la tecla que has pulsado, y esa tecla se
 queda en rojo: es el sonido que ahora toca [TRIG 1]. Distínguelos por dónde están y cuánto
-duran. El kick es el más grave y el más corto, sobre el que se apoyan los demás. El snare es
+duran. El kick es el más grave, y corto: sobre él se apoyan los demás. El snare es
 un chasquido seco en mitad del registro; un clap es una palmada y a menudo ocupa el lugar del
 snare. El hi-hat cerrado es el más agudo y el más breve de todos; un hi-hat abierto es igual
 de agudo pero se queda sonando. Un tom es un tambor con una altura clara, y un platillo es una

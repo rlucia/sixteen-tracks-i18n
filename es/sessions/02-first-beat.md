@@ -23,7 +23,7 @@ sesión 1, pasos 3 a 6, lleva cinco minutos.
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
 hear: Pulsa [TRIG 1]: el kick de la sesión 1.
-recover: Si has experimentado desde entonces y quieres recuperar el estado guardado, resalta tu proyecto en la lista LOAD y pulsa [RIGHT] para PROJECT ACTIONS, luego RELOAD. Ese es el último guardado.
+recover: Si has experimentado desde entonces y quieres recuperar el estado guardado, resalta tu proyecto en la lista LOAD y pulsa [RIGHT] para PROJECT ACTIONS, luego RELOAD. Ese es el último guardado. Si [TRIG 2], [TRIG 3] o [TRIG 4] tocan batería propia, una pasada anterior dejó el beat en cuatro pistas: con GRID RECORDING desactivado, [FUNC] + [PLAY] y [YES] borran los trigs de A01 (§10.10.4), y los pasos de abajo lo vuelven a escribir en la pista 1.
 :::
 
 :::note
@@ -46,7 +46,7 @@ lo mismo con [KEYBOARD A1], el hi-hat cerrado, y con [KEYBOARD F1], el clap, y t
 
 :::checkpoint
 hear: Nada mientras mantienes pulsado [TRK]. Cada sonido suena solo cuando pulsas su tecla sola.
-recover: Un sonido que ha sonado significa que [TRK] no estaba pulsado antes — mantenlo, y luego pulsa. Con otro kit, el snare, el hi-hat cerrado y la cuarta voz están donde los encontró tu oído en la sesión 1; usa esas teclas donde esta sesión diga D1, A1 y F1.
+recover: Un sonido que ha sonado significa que [TRK] no estaba pulsado antes — mantenlo, y luego pulsa. Con otro kit, el snare, el hi-hat cerrado y la cuarta voz están donde los encontró tu oído en la sesión 1; usa esas teclas donde el curso diga D1, A1 y F1.
 :::
 
 ## Step: Entra en GRID RECORDING
@@ -280,7 +280,7 @@ recover: El guardado no dice nada y no muestra ninguna pantalla de nombre; así 
 ## What you now have
 
 SIXTEEN tiene un beat de un compás en A01 — kick, snare, hi-hat cerrado y clap, todos del kit
-de la pista 1 — y A02 guarda una copia. Las pistas 2 a 4 siguen vacías. Los dos patterns
+de la pista 1 — y A02 guarda una copia. Las pistas 2 a 4 no tocan nada. Los dos patterns
 están guardados. Para aquí, o sigue
 tocando: todo lo que cambies a partir de ahora está sin guardar hasta el siguiente
 [FUNC] + [SETTINGS].
