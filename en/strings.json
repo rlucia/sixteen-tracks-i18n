@@ -119,7 +119,7 @@
   "sim.containers.rule.perform": "manual §10.12 — tweaks live in temporary memory and are not saved",
   "sim.containers.rule.powerOff": "manual §3.2, §10.10.6 — unsaved work might be lost, and temporary memory goes with it; save first",
   "sim.conditions.track.kick": "Kick, subtrack 1",
-  "sim.conditions.track.hats": "Hats, subtrack 3",
+  "sim.conditions.track.hats": "Hats, subtrack 6",
   "sim.conditions.grid": "Two tracks, sixteen steps",
   "sim.conditions.condition": "condition",
   "sim.conditions.a": "A",
