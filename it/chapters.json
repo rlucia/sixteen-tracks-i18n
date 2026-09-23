@@ -5,9 +5,9 @@
     { "id": "composition", "title": "Composizione", "order": 3 }
   ],
   "planned": [
-    { "number": 1, "slug": "first-sound", "title": "Il primo suono", "chapter": "rhythm", "gains": "Un progetto salvato con un preset sulla traccia 1" },
-    { "number": 2, "slug": "first-beat", "title": "Il primo beat", "chapter": "rhythm", "gains": "Un pattern di batteria di una battuta sulle tracce 1–4" },
-    { "number": 3, "slug": "a-kit-from-one-sample", "title": "Un kit da un solo sample", "chapter": "rhythm", "gains": "Una traccia di batteria costruita sulle Subtracks" },
+    { "number": 1, "slug": "first-sound", "title": "Il primo suono", "chapter": "rhythm", "gains": "Un progetto salvato con un kit di batteria sulla traccia 1" },
+    { "number": 2, "slug": "first-beat", "title": "Il primo beat", "chapter": "rhythm", "gains": "Un beat di una battuta su una sola traccia, un suono alla volta" },
+    { "number": 3, "slug": "the-kit-your-way", "title": "Il kit, a modo tuo", "chapter": "rhythm", "gains": "Un passo attraverso il kit, un suono riaccordato, un sample tuo" },
     { "number": 4, "slug": "make-it-move", "title": "Fallo muovere", "chapter": "rhythm", "gains": "Ghost note, uno sweep di filtro, un roll di snare" },
     { "number": 5, "slug": "variation-without-new-patterns", "title": "Variazione senza nuovi pattern", "chapter": "rhythm", "gains": "Un pattern che cambia a ogni loop" },
     { "number": 6, "slug": "notes-and-harmony", "title": "Note e armonia", "chapter": "sound", "gains": "Una linea di basso e una parte di accordi" },

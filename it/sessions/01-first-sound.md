@@ -3,9 +3,9 @@ number: 1
 chapter: rhythm
 slug: first-sound
 title: Il primo suono
-goal: Accendi, metti un suono sulla traccia 1, suonalo dalla tastiera, imposta il tempo e salva un progetto a cui poter tornare.
+goal: Accendi, metti un kit di batteria sulla traccia 1, trova il suo kick sulla fila in basso, imposta il tempo e salva un progetto a cui poter tornare.
 needs: ["Il Tonverk e il suo alimentatore", "Cuffie con jack da 1/4 di pollice (o un mixer su OUT A/B)", "La scheda SD di fabbrica nel suo slot", "Circa sedici minuti"]
-teaches: [power, volume, new-project, track-select, load-preset, keyboard, octave, tempo, metronome, name-project, save-project]
+teaches: [power, volume, new-project, track-select, load-preset, kit, subtrack-select, tempo, metronome, name-project, save-project]
 simulator: null
 ends: { keys16: { 1: white } }
 ---
@@ -104,22 +104,28 @@ hai davanti stampa TRK, quindi è così che lo chiama questo corso.
 [TRK] e un tasto trig è la selezione silenziosa.
 :::
 
-## Step: Carica un kick
+## Step: Carica un kit
 keys: [PRESET, LEFT, RIGHT, UP, DOWN, LEVEL/DATA, YES]
 source: manual §7.1, §9.1.4
-checked: yes
 mode: menu:LOAD PRESET
 
 Premi [PRESET]. Il menu LOAD PRESET si apre sulla traccia attiva. [LEFT]/[RIGHT] spostano tra
 le categorie di preset, DRUMS e KEYS; resta in DRUMS. Scorri con [UP]/[DOWN] o [LEVEL/DATA]
-finché non trovi un kick — va bene qualunque preset che si chiami così. Il pezzo d'esempio
-usa il primo kick della lista; tu scegline uno che ti piace. Premi [YES] per caricarlo sulla
-traccia 1.
+fino a 017 HELLO KIT, il kit che usa il pezzo d'esempio, e premi [YES] per caricarlo sulla
+traccia 1. Un altro kit va bene lo stesso: i passi nominano i tasti di HELLO KIT, e nel tuo
+gli stessi suoni possono stare su tasti diversi.
 
 :::checkpoint
 screen: { menu: "LOAD PRESET", items: [DRUMS, KEYS], sel: 0 }
-hear: Premi [TRIG 1] una volta. Il kick suona.
+hear: Premi [TRIG 1] una volta. Suona uno dei suoni del kit.
 recover: Silenzio: alza un po' [MAIN VOLUME], e il jack delle cuffie fino in fondo. Se [TRIG 1] non fa nessun suono, il preset è finito da un'altra parte — tieni premuto [TRK], premi [TRIG 1] e caricalo di nuovo.
+:::
+
+:::note
+Quasi tutto quello che c'è in DRUMS è un kit: otto suoni su una traccia, non un tamburo solo.
+[Un giro dei kit di fabbrica](https://www.youtube.com/watch?v=vWVw534Xvs4) li fa sentire uno
+dopo l'altro. Non esiste un preset che sia un kick da solo: carichi un kit, e il kick lo
+trovi dentro.
 :::
 
 :::note
@@ -136,21 +142,25 @@ Caricare un preset lo copia nel pattern (§9). Da adesso in poi una manopola che
 contenitori; la mappa in [Prima di cominciare](/before-you-start/) mostra le altre.
 :::
 
-## Step: Suonalo dalla tastiera
-keys: [KEYBOARD]
-leds: { TRIG 1: white }
-source: manual §7.3, §8.5
-checked: yes
+## Step: Otto suoni sulla fila in basso
+keys: [KEYBOARD C1, KEYBOARD D1, KEYBOARD E1, KEYBOARD F1, KEYBOARD G1, KEYBOARD A1, KEYBOARD B1, KEYBOARD C2, TRIG 1]
+leds: { KEYBOARD C1: red }
+source: manual §3.1, §A.2.3
 mode: any
 
-Premi i tasti [KEYBOARD] della fila in basso, da C1 a C2, poi i tasti neri sopra di loro. È
-sempre lo stesso kick, suonato a un'altezza diversa: la tastiera è cromatica e il preset la
-segue. Un preset di batteria suonato due ottave sotto è un altro strumento, e vale cinque
-secondi del tuo tempo.
+Premi la fila in basso della tastiera un tasto alla volta, da [KEYBOARD C1] a
+[KEYBOARD C2]. Ogni tasto è un suono del kit. Il numero sul display segue il tasto che hai
+premuto, e quel tasto resta rosso: è il suono che adesso suona [TRIG 1]. Riconoscili da dove
+stanno e da quanto durano. Il kick è il più basso e il più corto, quello su cui poggiano gli
+altri. Lo snare è uno schiocco secco a metà del registro; un clap è un battito di mani e
+spesso prende il posto dello snare. L'hi-hat chiuso è il più acuto e il più breve di tutti;
+un hi-hat aperto è altrettanto acuto ma resta a suonare. Un tom è un tamburo con un'altezza
+precisa, e un piatto è una lunga scia metallica. In HELLO KIT il kick è su [KEYBOARD C1]:
+premilo per ultimo, poi [TRIG 1].
 
 :::checkpoint
-hear: Il preset suona a un'altezza diversa su ogni tasto.
-recover: Se la tastiera suona qualcosa che non è il tuo kick, la traccia attiva si è spostata. [TRK] + [TRIG 1] la riporta indietro.
+hear: Otto suoni diversi, poi il kick da solo da [TRIG 1].
+recover: La fila in alto della tastiera e i tasti delle ottave non fanno niente mentre sulla traccia c'è un kit; è il kit, non un guasto. Se [TRIG 1] suona qualcosa che non è il tuo kick, il tasto rosso è altrove — premi [KEYBOARD C1], o il tasto dove il tuo kit tiene il kick, e riprova.
 :::
 
 :::note
@@ -160,20 +170,6 @@ di prima (§5.3.7, §8.5), così puoi suonare attraverso un bus mentre lo regoli
 sembra una selezione che non ha funzionato.
 [È voluto](https://www.elektronauts.com/t/tonverk-technical-q-a/238273/1088):
 seleziona una traccia audio, da 1 a 8, per riavere la tastiera.
-:::
-
-## Step: Ottave
-keys: [+, -]
-source: manual §8.5
-checked: yes
-mode: any
-
-Premi [+]: la finestra della tastiera sale di un'ottava, e i LED KEYBOARD OCTAVE accanto al
-tasto mostrano dove sei. [-] scende. Premi [+] + [-] insieme per tornare a 0.
-
-:::checkpoint
-hear: Lo stesso tasto, un'ottava più in alto dopo [+]; di nuovo dov'era dopo [+] + [-].
-recover: Il limite è cinque ottave per parte, quindi una pressione che non fa niente vuol dire che sei in fondo. Leggi i LED KEYBOARD OCTAVE accanto a [+] per vedere dove sei arrivato, e tieni a portata di mano la combinazione di reset.
 :::
 
 ## Step: Imposta il tempo
@@ -187,19 +183,19 @@ alla volta. Il pezzo d'esempio va a 92. Se hai in mente un tempo, usa quello —
 valore tra 80 e 100 tiene comode le sessioni successive. [NO] richiude il menu.
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 1, type: "AUDIO" }
+screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
 hear: Ancora non cambia niente; il tempo compare in alto a destra nella schermata principale.
 recover: Se il BPM si rifiuta di muoversi, il Tonverk sta seguendo un clock esterno. Il §7.5.1 dice che il display mostra "MIDI" sopra il BPM; il §6 descrive un'icona a lucchetto accanto. I due segni vogliono dire la stessa cosa — per ora stacca la sorgente di clock MIDI o USB.
 :::
 
 ## Step: Ascolta il tempo
-keys: [FUNC, KEYBOARD F#1, PLAY, STOP]
+keys: [FUNC, KEYBOARD F#1, PLAY, KEYBOARD C1, STOP]
 source: manual §7.5.2
 checked: yes
 mode: playback
 
 Tieni premuto [FUNC] e premi [KEYBOARD F#1] — la sua scritta menta dice Metronome. Premi
-[PLAY]: un click al tuo tempo. Suonaci sopra il kick dalla tastiera per un minuto;
+[PLAY]: un click al tuo tempo. Suonaci sopra il kick su [KEYBOARD C1] per un minuto;
 l'esercizio è questo, ed è tutta la ragione per cui il tempo è venuto prima del beat. Premi
 [STOP], poi di nuovo [FUNC] + [KEYBOARD F#1] per zittire il click.
 
@@ -221,8 +217,8 @@ insieme, così puoi scegliere con le frecce. Chiamalo SIXTEEN, o in qualunque mo
 riconoscere, e premi [YES].
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 1, type: "AUDIO" }
-hear: Non cambia niente. Il progetto, il suo pattern e il tuo kick sono ora sulla scheda con un nome che hai scelto tu.
+screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
+hear: Non cambia niente. Il progetto, il suo pattern e il tuo kit sono ora sulla scheda con un nome che hai scelto tu.
 recover: Se finisci da qualche parte senza schermata NAMING, hai scelto SAVE invece di SAVE AS. [NO] torna indietro; SAVE AS è quello che chiede un nome e prende uno slot nuovo. Nella schermata del nome, [FUNC] + [NO] cancella una lettera e [FUNC] + [YES] inserisce uno spazio.
 :::
 
@@ -238,7 +234,7 @@ con il nome che gli hai appena dato, e sei di nuovo nella schermata principale. 
 così la prima volta che vedi quel silenzio è una volta in cui te lo aspettavi.
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 1, type: "AUDIO" }
+screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
 hear: Niente di niente. Quel silenzio è il passo: il progetto è sulla scheda, con il nome che gli hai dato.
 recover: Se invece si è aperto un menu di impostazioni, hai premuto [SETTINGS] senza [FUNC]. Premi [NO], tieni premuto [FUNC] prima, poi premi [SETTINGS]. Se non sei sicuro che il salvataggio sia avvenuto, apri il menu FILE, PROJECT, LOAD: il tuo nome è nella lista.
 :::
@@ -267,8 +263,8 @@ prendila adesso.
 
 ## What you now have
 
-Un progetto chiamato SIXTEEN con un pattern, A01, un suono — un kick sulla traccia 1 — e
-un tempo di 92. È salvato, quindi puoi spegnere qui: la prossima sessione parte da questo
+Un progetto chiamato SIXTEEN con un pattern, A01, un kit di batteria sulla traccia 1 — HELLO
+KIT, con il kick trovato su [KEYBOARD C1] — e un tempo di 92. È salvato, quindi puoi spegnere qui: la prossima sessione parte da questo
 stato. Se hai tenuto un nome tuo o un tempo tuo, la prossima sessione funziona lo stesso.
 
 ## Explore further
@@ -290,9 +286,16 @@ cancella una ricerca). È stato
 la differenza tra un browser e uno scorrimento.
 
 ### L'altra categoria
-Sfoglia KEYS, carica qualcosa, suona la tastiera, poi ricarica il tuo kick. Caricare
+Sfoglia KEYS, carica qualcosa e suona la tastiera: un preset KEYS è un suono solo su tutta la
+tastiera, compresi la fila in alto e i tasti delle ottave. Poi ricarica HELLO KIT. Caricare
 sostituisce la traccia entrambe le volte — cambia solo la copia del pattern, e la scheda ha
 ancora entrambi i preset esattamente com'erano.
+
+### Altri kit
+Carica qualche altro kit da DRUMS e suona la fila in basso di ciascuno. I tasti restano gli
+stessi; quello che ci sta sopra cambia da kit a kit, e l'orecchio è l'unica mappa. Ricarica
+HELLO KIT quando hai finito, oppure tieni il kit che ti è piaciuto e ricordati dove stanno il
+suo kick, lo snare, l'hi-hat chiuso e il clap.
 
 ### La manopola del livello
 [LEVEL/DATA] imposta il livello della traccia attiva, e il display lo mostra in basso a
@@ -301,7 +304,7 @@ abbassa le cose.
 
 ## Next
 
-La sessione 2 mette altri tre suoni di batteria sulle tracce da 2 a 4 e scrive il beat di una
-battuta su cui poggia tutto il pezzo. Prima, dieci minuti su
+La sessione 2 scrive il beat di una battuta su cui poggia tutto il pezzo, su questa sola
+traccia, un suono del kit alla volta. Prima, dieci minuti su
 [Prima di cominciare](/before-you-start/) spiegano i cinque contenitori che un salvataggio
 tocca e i quattro tipi di traccia: è la pagina su cui ogni sessione successiva si appoggia.
