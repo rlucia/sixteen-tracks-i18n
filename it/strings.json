@@ -119,7 +119,7 @@
   "sim.containers.rule.perform": "manuale §10.12 — i ritocchi vivono in memoria temporanea e non vengono salvati",
   "sim.containers.rule.powerOff": "manuale §3.2, §10.10.6 — il lavoro non salvato può andare perso, e la memoria temporanea se ne va con lui; prima salva",
   "sim.conditions.track.kick": "Kick, subtrack 1",
-  "sim.conditions.track.hats": "Hi-hat, subtrack 3",
+  "sim.conditions.track.hats": "Hi-hat, subtrack 6",
   "sim.conditions.grid": "Due tracce, sedici passi",
   "sim.conditions.condition": "condizione",
   "sim.conditions.a": "A",
