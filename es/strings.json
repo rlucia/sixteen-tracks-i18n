@@ -119,7 +119,7 @@
   "sim.containers.rule.perform": "manual §10.12 — los retoques viven en memoria temporal y no se guardan",
   "sim.containers.rule.powerOff": "manual §3.2, §10.10.6 — el trabajo sin guardar puede perderse, y la memoria temporal se va con él; guarda antes",
   "sim.conditions.track.kick": "Kick, subtrack 1",
-  "sim.conditions.track.hats": "Hi-hats, subtrack 3",
+  "sim.conditions.track.hats": "Hi-hats, subtrack 6",
   "sim.conditions.grid": "Dos pistas, dieciséis pasos",
   "sim.conditions.condition": "condición",
   "sim.conditions.a": "A",
