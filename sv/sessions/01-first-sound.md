@@ -151,7 +151,7 @@ mode: any
 Tryck på klaviaturens nedre rad en tangent i taget, från [KEYBOARD C1] till [KEYBOARD C2].
 Varje tangent är ett av kitets ljud. Siffran på skärmen följer tangenten du tryckte på, och
 den tangenten förblir röd: det är ljudet som [TRIG 1] spelar nu. Skilj dem åt efter var de
-ligger och hur länge de klingar. Kicken är den mörkaste och kortaste, den som de andra står
+ligger och hur länge de klingar. Kicken är den mörkaste, och kort — den som de andra står
 på. Snaren är en skarp smäll mitt i registret; en clap är en handklappning och tar ofta
 snarens plats. Den stängda hi-haten är den ljusaste och kortaste av alla; en öppen hi-hat är
 lika ljus men ringer kvar. En tom är en trumma med tydlig tonhöjd, och en cymbal är ett långt

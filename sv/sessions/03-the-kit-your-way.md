@@ -22,7 +22,7 @@ beatet gå — allt i den här sessionen händer medan det spelar.
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
 hear: Session 2:s beat i loop från A01: kick, snare, stängd hi-hat och clap, alla ur kitet på spår 1.
-recover: Har du spelat sedan dess och vill ha tillbaka det sparade läget: markera ditt projekt i LOAD-listan, tryck på [RIGHT] för PROJECT ACTIONS och välj RELOAD. Spelar [TRIG 2], [TRIG 3] eller [TRIG 4] egna ljud, är ditt beat utspritt över fyra spår: session 2 bygger det på ett enda, och den här sessionen börjar därifrån. Börjar du här utan session 2? Den sessionen skriver det beat som den här arbetar med, och den tar ungefär sexton minuter.
+recover: Har du spelat sedan dess och vill ha tillbaka det sparade läget: markera ditt projekt i LOAD-listan, tryck på [RIGHT] för PROJECT ACTIONS och välj RELOAD. Spelar [TRIG 2], [TRIG 3] eller [TRIG 4] egna ljud, är ditt beat utspritt över fyra spår: session 2 bygger det på ett enda, och dess första steg rensar det gamla. Börjar du här utan session 2? Den sessionen skriver det beat som den här arbetar med, och den tar ungefär sexton minuter.
 :::
 
 ## Step: En trig-tangents tre liv
@@ -74,7 +74,7 @@ clapen det steget; tryck igen så är den tillbaka. Tryck på [STEP EDIT] igen f
 
 :::checkpoint
 hear: Beatet som det var, när du har satt tillbaka det du tog bort.
-recover: STEP EDIT hör till GRID RECORDING (§10.3.1), så [RECORD] tänds med. En svagt lysande tangent på den nedre raden är ljudet du har valt, inte ett som spelar på steget — [Elektrons egen genomgång varnar för det](https://www.youtube.com/watch?v=ijPa_vgY8QA). En clap du tog bort och inte får tillbaka: [FUNC] + [NO] ångrar det.
+recover: STEP EDIT hör till GRID RECORDING (§10.3.1), så [RECORD] tänds med. En svagt lysande tangent på den nedre raden är ljudet du har valt, inte ett som spelar på steget — [Elektrons egen genomgång varnar för det](https://www.youtube.com/watch?v=ijPa_vgY8QA).
 :::
 
 ## Step: Stäm om ett ljud
@@ -90,15 +90,15 @@ supertracket håller — två steg längre fram.
 
 :::checkpoint
 hear: En mörkare snare i samma beat; kicken, hi-hatsen och clapen som förut.
-recover: Flyttade sig ett annat ljud, låg den röda tangenten någon annanstans när du vred: håll [TRK], tryck på [KEYBOARD D1] och vrid igen. För att komma tillbaka lämnar TUNE på 0 tonhöjden oförändrad.
+recover: Flyttade sig ett annat ljud, låg den röda tangenten någon annanstans när du vred: håll [TRK], tryck på [KEYBOARD D1] och vrid igen. För att komma tillbaka: läs av TUNE innan du vrider och ställ tillbaka den på det värdet.
 :::
 
 ## Step: Byt ut ett sample
-keys: [TRK, TRIG 1, KEYBOARD F1, FUNC, UP, DOWN, YES, NO]
+keys: [TRK, KEYBOARD F1, FUNC, UP, DOWN, YES, NO]
 source: manual §A.2.3, §6.13
 mode: menu:SAMPLE BROWSER
 
-Håll [TRK] och tryck på [TRIG 1] för att komma tillbaka till kitet, sedan [TRK] +
+Håll [TRK] och tryck på
 [KEYBOARD F1], den fjärde SUBTRACKS-tangenten, så att clapen är ljudet du står på.
 [FUNC] + [KEYBOARD F1] öppnar Sample-bläddraren på SD-kortet, riktad mot just det
 subtracket: [UP]/[DOWN] scrollar kortet, [YES] öppnar en mapp och [YES] på ett sample laddar

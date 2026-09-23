@@ -23,7 +23,7 @@ Då behöver du ett projekt du kan redigera med ett trumkit på spår 1 — sess
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
 hear: Tryck på [TRIG 1]: kicken från session 1.
-recover: Har du experimenterat sedan dess och vill ha tillbaka det sparade läget: markera ditt projekt i LOAD-listan och tryck på [RIGHT] för PROJECT ACTIONS, sedan RELOAD. Det är den senaste sparningen.
+recover: Har du experimenterat sedan dess och vill ha tillbaka det sparade läget: markera ditt projekt i LOAD-listan och tryck på [RIGHT] för PROJECT ACTIONS, sedan RELOAD. Det är den senaste sparningen. Spelar [TRIG 2], [TRIG 3] eller [TRIG 4] egna trummor, lämnade en tidigare genomgång beatet över fyra spår: med GRID RECORDING avstängt rensar [FUNC] + [PLAY] och [YES] A01:s trigs (§10.10.4), och stegen nedan skriver det igen på spår 1.
 :::
 
 :::note
@@ -46,7 +46,7 @@ beatet.
 
 :::checkpoint
 hear: Ingenting medan [TRK] hålls. Varje ljud spelar bara när du trycker på dess tangent ensam.
-recover: Ett ljud som spelade betyder att [TRK] inte var nere först — håll den, tryck sedan. Med ett annat kit ligger snaren, den stängda hi-haten och den fjärde rösten där ditt öra hittade dem i session 1; använd de tangenterna överallt där den här sessionen säger D1, A1 och F1.
+recover: Ett ljud som spelade betyder att [TRK] inte var nere först — håll den, tryck sedan. Med ett annat kit ligger snaren, den stängda hi-haten och den fjärde rösten där ditt öra hittade dem i session 1; använd de tangenterna överallt där kursen säger D1, A1 och F1.
 :::
 
 ## Step: Gå in i GRID RECORDING
@@ -278,7 +278,7 @@ recover: Sparningen säger ingenting och visar ingen namnskärm; så ser en spar
 ## What you now have
 
 SIXTEEN har ett beat på en takt i A01 — kick, snare, stängd hi-hat och clap, alla ur kitet på
-spår 1 — och A02 innehåller en kopia av det. Spår 2 till 4 är fortfarande tomma. Båda
+spår 1 — och A02 innehåller en kopia av det. Spår 2 till 4 spelar ingenting. Båda
 patternen är sparade. Sluta här, eller fortsätt spela:
 allt du ändrar från och med nu är osparat fram till nästa [FUNC] + [SETTINGS].
 

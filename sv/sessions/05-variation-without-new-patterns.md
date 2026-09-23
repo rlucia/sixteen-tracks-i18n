@@ -242,5 +242,5 @@ patternets är borta (§10.12).
 ## Next
 
 Session 6 lämnar trummorna i fred och börjar det andra kapitlet: en bas på spår 2 och en
-ackordstämma på spår 3, spelade från klaviaturen i a-moll, på de spår session 3 frigjorde.
+ackordstämma på spår 3, spelade från klaviaturen i a-moll, på spår 2 och 3, som beatet lämnar fria.
 Rytmen är klar — härifrån får stycket toner.
