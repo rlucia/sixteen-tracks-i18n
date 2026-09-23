@@ -47,12 +47,12 @@ recover: Kommt der Auftakt bei jedem Loop, steht COND noch auf dem Strich: halte
 :::
 
 ## Step: Wahrscheinlichkeit auf den Ghost Notes
-keys: [TRK, KEYBOARD E1, TRIG 3, TRIG 7, TRIG 11, TRIG 15, D]
+keys: [TRK, KEYBOARD A1, TRIG 3, TRIG 7, TRIG 11, TRIG 15, D]
 leds: { TRIG 3: red, TRIG 7: red, TRIG 11: red, TRIG 15: red }
 source: manual §12.2
 mode: grid-recording
 
-Halte [TRK] und drücke [KEYBOARD E1], die dritte SUBTRACKS-Taste, für die geschlossene Hi-Hat —
+Halte [TRK] und drücke [KEYBOARD A1], die sechste SUBTRACKS-Taste, für die geschlossene Hi-Hat —
 TRIG PAGE 1 bleibt vor dir. Halte [TRIG 3], [TRIG 7], [TRIG 11] und [TRIG 15], die vier Ghost
 Notes aus Session 4, und dreh Regler [D], PROB, herunter auf 50 %.
 
@@ -215,11 +215,17 @@ Noch einmal [FUNC] + [FILL], [DOWN] auf LATCHING, [YES]: jetzt schaltet [FILL] d
 einem Antippen ein und aus, statt gehalten zu werden (§10.10.3). Praktisch, sobald deine
 andere Hand an einem Regler ist, und leicht aus Versehen angelassen.
 
+### Die andere Kick
+Leg den 1:2-Auftakt von der Kick auf [KEYBOARD E1], die tiefe Kick von HELLO KIT: lösche
+Schritt 15 auf [KEYBOARD C1], schreib ihn auf E1 und setz dort COND auf dieselbe Weise auf 1:2.
+Der Takt behält seine vier Kicks auf den Zählzeiten, und jeden zweiten Durchlauf führt eine
+tiefere in den Anfang.
+
 ### 1ST, ein Intro, das einmal passiert
 1ST feuert einen Trig beim ersten Durchlauf des Patterns und nie wieder; dieselbe Bedingung
 mit einem Strich darüber setzt diesen ersten Durchlauf aus und spielt bei allen übrigen
-(§10.10.2). Eine offene Hi-Hat auf Schritt 1 mit 1ST, und das Pattern meldet sich an und macht
-dann weiter.
+(§10.10.2). Ein Becken auf Schritt 1 mit 1ST — HELLO KIT hat ein langes auf [KEYBOARD C2] — und das
+Pattern meldet sich an und macht dann weiter.
 
 ### NEI, im Simulator statt auf dem Kit
 NEI schaut zur Seite: es fragt, wie die letzte Bedingung auf der Spur nebenan ausgegangen ist

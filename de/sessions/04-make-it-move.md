@@ -15,7 +15,7 @@ keys: [PLAY, FUNC, SETTINGS]
 source: manual §9.1.1, §10.1.2
 mode: grid-recording
 
-Session 3 hat dich im GRID RECORDING auf Spur 1 zurückgelassen, mit Subtrack 3, der
+Session 3 hat dich im GRID RECORDING auf Spur 1 zurückgelassen, mit Subtrack 6, der
 geschlossenen Hi-Hat, auf den sechzehn Tasten. Läuft der Sequenzer nicht, drücke [PLAY] und
 lass ihn laufen: jeder Schritt hier wird über den Loop geschrieben. Dann halte [FUNC] und
 drücke [SETTINGS] — diese Session schreibt Locks quer durchs ganze Kit, und dieses Speichern
@@ -24,8 +24,8 @@ ist der Stand, zu dem du zurückkommen kannst.
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
 keys16: { 1: red, 3: red, 5: red, 7: red, 9: red, 11: red, 13: red, 15: red }
-hear: Der ganze Beat von Spur 1 — Kick, Snare, geschlossene Hi-Hat, offene Hi-Hat — im Loop von A01.
-recover: Ein dunkler Streifen heißt, [RECORD] leuchtet nicht: drücke es für GRID RECORDING, dann halte [TRK] und drücke [KEYBOARD E1], die dritte SUBTRACKS-Taste, um zur geschlossenen Hi-Hat zurückzukommen. Du fängst hier ohne Session 3 an? Diese Session baut das Kit, das diese hier in Bewegung bringt, und sie dauert etwa sechzehn Minuten.
+hear: Der ganze Beat von Spur 1 — Kick, Snare, geschlossene Hi-Hat und dein Sound anstelle des Claps — im Loop von A01.
+recover: Ein dunkler Streifen heißt, [RECORD] leuchtet nicht: drücke es für GRID RECORDING, dann halte [TRK] und drücke [KEYBOARD A1], die sechste SUBTRACKS-Taste, um zur geschlossenen Hi-Hat zurückzukommen. Du fängst hier ohne Session 3 an? Diese Session baut das Kit, das diese hier in Bewegung bringt, und sie dauert etwa sechzehn Minuten.
 :::
 
 ## Step: Ghost Notes
@@ -128,12 +128,12 @@ Regler [A] nennt. Dreh den Regler unter dem Parameter, und sagt dein Gerät etwa
 dein Gerät recht.
 :::
 
-## Step: Die offene Hi-Hat nach hinten schieben
+## Step: Den Clap nach hinten schieben
 keys: [TRK, KEYBOARD F1, TRIG 7, RIGHT, UP, DOWN]
 source: community https://www.youtube.com/watch?v=7lFFSUOsXsA
 mode: grid-recording
 
-Halte [TRK] und drücke [KEYBOARD F1], die vierte SUBTRACKS-Taste, für die offene Hi-Hat. Halte
+Halte [TRK] und drücke [KEYBOARD F1], die vierte SUBTRACKS-Taste, für den Clap — deinen Sound seit Session 3. Halte
 [TRIG 7] und drücke [RIGHT]: das MICRO-TIMING-Pop-up öffnet sich und zeigt den Versatz dieses
 Schritts als Prozentzahl (§10.5). Halte die Taste gedrückt — [RIGHT] noch einmal schiebt ihn in
 großen Sprüngen weiter, [UP] und [DOWN] bewegen ihn ein Stück nach dem anderen — und lass
@@ -141,7 +141,7 @@ großen Sprüngen weiter, [UP] und [DOWN] bewegen ihn ein Stück nach dem andere
 
 :::checkpoint
 screen: { menu: "MICRO TIMING", items: [+25%] }
-hear: Die offene Hi-Hat auf 7 landet einen Hauch nach dem Schritt, auf dem sie sitzt, und der Takt lehnt sich stärker in den nächsten. Der Wert ist hier nach hinten geschoben gezeichnet; wie weit ihn ein Druck bringt, sagt dir das Gerät.
+hear: Der Clap auf 7 landet einen Hauch nach dem Schritt, auf dem er sitzt, und der Takt lehnt sich stärker in den nächsten. Der Wert ist hier nach hinten geschoben gezeichnet; wie weit ihn ein Druck bringt, sagt dir das Gerät.
 recover: Nichts hat sich geöffnet? Das Pop-up will zuerst die gehaltene Trig-Taste und dann den Pfeil, und ein Schritt ohne Trig hat nichts zu timen. Zu weit geschoben: [LEFT] geht zurück, und der Versatz wird mit dem Pattern gespeichert, er überlebt also das Speichern am Ende (§10.5).
 :::
 
@@ -188,12 +188,12 @@ recover: Menü nicht aufgegangen? Probier stattdessen [FUNC] + [TRIG], die Kombi
 :::
 
 ## Step: Nur die Locks sehen
-keys: [TRK, KEYBOARD E1, RECORD, FUNC, UP, DOWN, NO]
+keys: [TRK, KEYBOARD A1, RECORD, FUNC, UP, DOWN, NO]
 leds: { RECORD: red }
 source: manual §10.3.2
 mode: grid-recording
 
-Halte [TRK] und drücke [KEYBOARD E1], die dritte SUBTRACKS-Taste, um zur geschlossenen Hi-Hat
+Halte [TRK] und drücke [KEYBOARD A1], die sechste SUBTRACKS-Taste, um zur geschlossenen Hi-Hat
 zurückzukommen, dann drücke [RECORD] für GRID RECORDING. Halte [FUNC] und drücke [UP] für das
 SEQUENCE-LANE-Menü, und drücke [UP]/[DOWN], bis P-LOCKS die gewählte ist. Stell es zurück auf
 NOTES + P-LOCKS, bevor du gehst, dann drücke [NO].
@@ -227,11 +227,11 @@ recover: Zwei Tasten und nicht mehr ist richtig — die Snare hatte immer zwei T
 A01 ist dasselbe Kit und dieselben vier Stimmen, in Bewegung. Auf der geschlossenen Hi-Hat
 sitzen vier Ghost Notes hinter den vieren auf den Zählzeiten, und ein Schritt auf Zählzeit
 drei ist dumpf gefiltert; die Snare auf 13 ist ein kurzer Roll, ein Auftakt in den nächsten
-Takt; die offene Hi-Hat auf 7 sitzt einen Hauch spät, wenn du TRK unter dem Maximum gelassen
+Takt; der Clap auf 7 sitzt einen Hauch spät, wenn du TRK unter dem Maximum gelassen
 hast, und genau auf dem Schritt, wenn nicht; und ein fünfter Subtrack trägt einen Part, den du
 mit den Händen gespielt und dann aufs Raster gezogen hast. All das sind Parameter-Locks und
-Timing auf Trigs, die du schon hattest, all das ist gespeichert, und A02 hält noch den
-Vierspur-Beat aus Session 2.
+Timing auf Trigs, die du schon hattest, all das ist gespeichert, und A02 hält noch die
+Kopie des Beats aus Session 2.
 
 ## Explore further
 
@@ -239,7 +239,7 @@ Vierspur-Beat aus Session 2.
 [FUNC] + [-] öffnet das TRANSFORM-Menü, das auf jeden Trig der Spur wirkt, auf der du bist
 (§10.6). VELOCITY RANDOMIZE schreibt einen VEL-Lock auf alle; VELOCITY UNLOCK entfernt jeden
 VEL-Lock, den es gibt — die vier Ghost Notes eingeschlossen — probier es also auf dem Subtrack
-der offenen Hi-Hat statt auf dem der geschlossenen, und behalte dein Speichern in Reichweite.
+des Claps statt auf dem der geschlossenen Hi-Hat, und behalte dein Speichern in Reichweite.
 
 ### Ein Lock ohne Note darunter
 Im GRID RECORDING schreibt [FUNC] + [TRIG 8] auf einen leeren Schritt einen Lock-Trig: gelb

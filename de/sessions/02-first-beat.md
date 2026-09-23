@@ -3,9 +3,9 @@ number: 2
 chapter: rhythm
 slug: first-beat
 title: Der erste Beat
-goal: Drums auf die Spuren 1 bis 4 legen, einen eintaktigen Beat im GRID RECORDING schreiben, stummschalten und wieder freigeben, das Pattern kopieren und speichern.
-needs: ["Das Projekt SIXTEEN aus Session 1 (oder irgendein Projekt mit einer Kick auf Spur 1 — Schritt 1 sagt, wie)", Angeschlossene Kopfhörer, Werks-Drum-Presets auf der SD-Karte, "Etwa sechzehn Minuten"]
-teaches: [grid-recording, track-select, page-length, mute, copy-paste-clear, undo, pattern-select]
+goal: Einen eintaktigen Beat auf den Sounds des Kits im GRID RECORDING schreiben, einen Sound stummschalten, das Pattern kopieren und speichern.
+needs: ["Das Projekt SIXTEEN aus Session 1 (oder irgendein Projekt mit einem Drum-Kit auf Spur 1 — Schritt 1 sagt, wie)", Angeschlossene Kopfhörer, "Etwa sechzehn Minuten"]
+teaches: [grid-recording, subtrack-select, page-length, mute, copy-paste-clear, undo, pattern-select]
 simulator: null
 ends: { keys16: { 1: red, 5: red, 9: red, 13: red } }
 ---
@@ -17,11 +17,11 @@ mode: menu:FILE
 
 Ist SIXTEEN nicht das Projekt auf dem Display, lade es: [FUNC] + [PRESET] öffnet das FILE-Menü,
 dann mit [UP]/[DOWN] durch PROJECT, LOAD und dein Projekt, [YES]. Du fängst hier ohne Session 1
-an? Du brauchst ein Projekt, das du bearbeiten kannst, mit einer Kick auf Spur 1 — Session 1,
-Schritte 3 bis 5, dauert vier Minuten.
+an? Du brauchst ein Projekt, das du bearbeiten kannst, mit einem Drum-Kit auf Spur 1 — Session 1,
+Schritte 3 bis 6, dauert fünf Minuten.
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 1, type: "AUDIO" }
+screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
 hear: Drücke [TRIG 1]: die Kick aus Session 1.
 recover: Hast du seither experimentiert und willst den gespeicherten Stand zurück, markiere dein Projekt in der LOAD-Liste und drücke [RIGHT] für PROJECT ACTIONS, dann RELOAD. Das ist der letzte Speicherstand.
 :::
@@ -32,51 +32,21 @@ hast du gespielt, speichere, bevor du irgendetwas lädst — der Arbeitszustand,
 aufgibst, wird nicht von allein in dein Projekt zurückgeschrieben.
 :::
 
-## Step: Eine Snare auf Spur 2
-keys: [TRK, TRIG 2, PRESET, LEFT, RIGHT, UP, DOWN, YES]
-leds: { TRIG 2: white }
-source: manual §5.3.7, §7.1
-mode: menu:LOAD PRESET
+## Step: Einen Sound still wählen
+keys: [TRK, KEYBOARD D1, KEYBOARD A1, KEYBOARD F1, KEYBOARD C1]
+leds: { KEYBOARD C1: red }
+source: manual §A.2.3
+mode: any
 
-Halte [TRK] und drücke [TRIG 2]. Drücke [PRESET]; bist du nicht in DRUMS, bringen dich
-[LEFT]/[RIGHT] zurück. Mit [UP]/[DOWN] zu einer Snare — jedes Preset, das so heißt — und
-drücke [YES].
-
-:::checkpoint
-keys16: { 2: white }
-hear: [TRIG 2] spielt die Snare; [TRIG 1] spielt weiterhin die Kick.
-recover: Spielt [TRIG 2] die Kick, ist das Preset auf Spur 1 gelandet: das Preset geht immer auf die Spur, die aktiv war, als du [YES] gedrückt hast. Halte erst [TRK] und drücke [TRIG 2], dann lade noch einmal.
-:::
-
-## Step: Eine geschlossene Hi-Hat auf Spur 3
-keys: [TRK, TRIG 3, PRESET, UP, DOWN, YES]
-leds: { TRIG 3: white }
-source: manual §5.3.7, §7.1
-mode: menu:LOAD PRESET
-
-Halte [TRK] und drücke [TRIG 3]. Dann [PRESET], mit [UP]/[DOWN] zu einer geschlossenen Hi-Hat,
-[YES].
+Halte [TRK] und drücke [KEYBOARD D1]. Die Snare ist jetzt der gewählte Sound, und nichts hat
+gespielt: dieselbe stille Auswahl, die [TRK] den Trig-Tasten für Spuren gibt, hier für die
+Sounds eines Kits. Die Zahl auf dem Display sagt 2, und D1 ist die rote Taste. Mach dasselbe
+mit [KEYBOARD A1], der geschlossenen Hi-Hat, und mit [KEYBOARD F1], dem Clap, und schließ mit
+[KEYBOARD C1], der Kick. Diese vier sind der Beat.
 
 :::checkpoint
-keys16: { 3: white }
-hear: [TRIG 3] spielt die Hi-Hat.
-recover: Dieselbe Regel wie bei der Snare: die aktive Spur entscheidet, wo ein Preset landet.
-:::
-
-## Step: Eine vierte Stimme auf Spur 4
-keys: [TRK, TRIG 4, PRESET, UP, DOWN, YES]
-leds: { TRIG 4: white }
-source: manual §5.3.7, §7.1
-mode: menu:LOAD PRESET
-
-Halte [TRK] und drücke [TRIG 4]. Das Beispielstück nimmt hier eine offene Hi-Hat; ein Clap
-oder ein Percussion-Schlag tut es genauso, und der Beat landet trotzdem dort, wo die
-Kontrollpunkte es sagen. Lade sie: [PRESET], mit [UP]/[DOWN] hin, [YES].
-
-:::checkpoint
-keys16: { 4: white }
-hear: Vier verschiedene Sounds auf [TRIG 1] bis [TRIG 4].
-recover: Lade ein anderes Preset darüber. Nur die Kopie des Patterns ändert sich, und die Karte hält jedes Preset, an dem du vorbeigekommen bist.
+hear: Nichts, solange [TRK] gehalten ist. Jeder Sound spielt nur, wenn du seine Taste allein drückst.
+recover: Ein Sound, der gespielt hat, heißt, [TRK] war nicht zuerst unten — halte es, dann drücke. Mit einem anderen Kit liegen die Snare, die geschlossene Hi-Hat und die vierte Stimme dort, wo dein Ohr sie in Session 1 gefunden hat; nimm diese Tasten überall, wo diese Session D1, A1 und F1 nennt.
 :::
 
 ## Step: Ins GRID RECORDING
@@ -87,10 +57,10 @@ mode: playback
 
 Drücke [RECORD]. Die Taste leuchtet rot, und dieses Rot ist GRID RECORDING. Die sechzehn
 Trig-Tasten stehen nicht mehr für Spuren. Sie stehen jetzt für die sechzehn Schritte eines
-Takts, auf der aktiven Spur.
+Takts, für den gewählten Sound der aktiven Spur.
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 4, type: "AUDIO", page: { n: 1, of: 1 } }
+screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS", page: { n: 1, of: 1 } }
 hear: Noch nichts; der Sequenzer läuft nicht.
 recover: Zeigen die Trig-Tasten stattdessen Pattern-Plätze, bist du in der Pattern-Auswahl. Drücke [PTN] oder [NO], um sie zu verlassen, dann drücke [RECORD].
 :::
@@ -101,14 +71,13 @@ schreiben, während er läuft oder während er steht — je nachdem, was dir lei
 :::
 
 ## Step: Die Kick auf die Zählzeiten
-keys: [TRK, TRIG 1, TRIG 5, TRIG 9, TRIG 13]
+keys: [TRK, KEYBOARD C1, TRIG 1, TRIG 5, TRIG 9, TRIG 13]
 leds: { RECORD: red, TRIG 1: red, TRIG 5: red, TRIG 9: red, TRIG 13: red }
 source: manual §10.3, §10.2.1
 mode: grid-recording
 
-Halte [TRK] und drücke [TRIG 1], damit die Spur der Kick die ist, auf der du schreibst; ihre
-Taste wird weiß. Dann drücke [TRIG 1], [TRIG 5], [TRIG 9] und [TRIG 13]: eine Kick auf jeder
-Zählzeit. Jede der vier leuchtet rot — rot ist ein Noten-Trig.
+Halte [TRK] und drücke [KEYBOARD C1], damit die Kick der Sound ist, den du schreibst. Dann
+drücke [TRIG 1], [TRIG 5], [TRIG 9] und [TRIG 13]: eine Kick auf jeder Zählzeit. Jede der vier leuchtet rot — rot ist ein Noten-Trig.
 
 :::checkpoint
 keys16: { 1: red, 5: red, 9: red, 13: red }
@@ -132,27 +101,27 @@ recover: Stille, während das Licht noch läuft, ist meistens eins von zwei Ding
 :::
 
 ## Step: Die Snare auf zwei und vier
-keys: [TRK, TRIG 2, TRIG 5, TRIG 13]
+keys: [TRK, KEYBOARD D1, TRIG 5, TRIG 13]
 leds: { RECORD: red, TRIG 5: red, TRIG 13: red }
 source: manual §10.3
 mode: grid-recording
 
-Halte [TRK] und drücke [TRIG 2]. Die sechzehn Tasten leeren sich: sie zeigen jetzt Spur 2, und
-auf Spur 2 liegt nichts. Drücke [TRIG 5] und [TRIG 13].
+Halte [TRK] und drücke [KEYBOARD D1]. Die sechzehn Tasten leeren sich: sie zeigen jetzt die
+Schritte der Snare, und die Snare hat noch keine. Drücke [TRIG 5] und [TRIG 13].
 
 :::checkpoint
 keys16: { 5: red, 13: red }
 hear: Kick, Snare, Kick, Snare.
-recover: Leuchten die vier Tasten der Kick noch, hast du Spur 1 nie verlassen. Halte [TRK] — halten, nicht tippen — und drücke [TRIG 2] noch einmal.
+recover: Leuchten die vier Tasten der Kick noch, hast du die Kick nie verlassen. Halte [TRK] — halten, nicht tippen — und drücke [KEYBOARD D1] noch einmal.
 :::
 
 ## Step: Hi-Hats auf jedem zweiten Schritt
-keys: [TRK, TRIG 3, TRIG 1, TRIG 5, TRIG 7, TRIG 9, TRIG 11, TRIG 13, TRIG 15]
+keys: [TRK, KEYBOARD A1, TRIG 1, TRIG 3, TRIG 5, TRIG 7, TRIG 9, TRIG 11, TRIG 13, TRIG 15]
 leds: { RECORD: red, TRIG 1: red, TRIG 3: red, TRIG 5: red, TRIG 7: red, TRIG 9: red, TRIG 11: red, TRIG 13: red, TRIG 15: red }
 source: manual §10.3
 mode: grid-recording
 
-Halte [TRK] und drücke [TRIG 3]. Jetzt drücke jede ungerade Taste von [TRIG 1] bis [TRIG 15]:
+Halte [TRK] und drücke [KEYBOARD A1], die geschlossene Hi-Hat. Jetzt drücke jede ungerade Taste von [TRIG 1] bis [TRIG 15]:
 acht Hi-Hats, eine auf jeder Achtel. Lieber eine auf jedem Schritt? Drücke sie alle — das
 Beispielstück bleibt bei acht, und den Kontrollpunkten ab hier ist egal, was du gewählt hast.
 
@@ -163,19 +132,19 @@ recover: Zu voll: drücke die Tasten, die dunkel werden sollen. Ein kurzer Druck
 :::
 
 ## Step: Die vierte Stimme, neben der Zählzeit
-keys: [TRK, TRIG 4, TRIG 7, TRIG 15]
+keys: [TRK, KEYBOARD F1, TRIG 7, TRIG 15]
 leds: { RECORD: red, TRIG 7: red, TRIG 15: red }
 source: manual §10.3
 mode: grid-recording
 
-Halte [TRK] und drücke [TRIG 4]. Leg die offene Hi-Hat — oder deinen Clap — auf [TRIG 7] und
-[TRIG 15]: das „und“ vor den Zählzeiten drei und eins, wo es den Takt nach vorn schiebt.
-Irgendwo neben der Snare ist gut.
+Halte [TRK] und drücke [KEYBOARD F1], den Clap. Leg ihn auf [TRIG 7] und [TRIG 15]: das
+„und“ vor den Zählzeiten drei und eins, wo es den Takt nach vorn schiebt. Irgendwo neben der
+Snare ist gut, und ein anderer kurzer Sound des Kits an Stelle des Claps auch.
 
 :::checkpoint
 keys16: { 7: red, 15: red }
 hear: Der Takt lehnt sich in den nächsten hinein.
-recover: Landet sie auf der Snare und verwischt sie, verschieb sie: drücke die Taste zum Entfernen, drücke eine andere zum Hinzufügen.
+recover: Landet er auf der Snare und verwischt sie, verschieb ihn: drücke die Taste zum Entfernen, drücke eine andere zum Hinzufügen.
 :::
 
 ## Step: Einen Schlag korrigieren
@@ -184,7 +153,7 @@ leds: { RECORD: red }
 source: manual §10.3, §19
 mode: grid-recording
 
-Such dir einen Schlag, bei dem du nicht sicher bist — der Kurs nimmt die offene Hi-Hat auf
+Such dir einen Schlag, bei dem du nicht sicher bist — der Kurs nimmt den Clap auf
 Schritt 7. Halte [TRIG 7] und drücke [YES]: dieser eine Trig klingt, allein, mit allem, was
 auf ihm eingestellt ist. Ein kurzer Druck auf [TRIG 7] entfernt ihn; drücke noch einmal, um
 ihn zurückzusetzen.
@@ -218,22 +187,23 @@ entscheiden, wie dieses Menü heißt — die Überschrift von §10.9 und die Bes
 Bedienfeld sagen PAGE SETUP, der Text von §10.9 selbst sagt SCALE. Es ist dasselbe Menü.
 :::
 
-## Step: Eine Spur stummschalten
-keys: [MUTE, TRIG 2, UP, DOWN]
-leds: { TRIG 1: green, TRIG 3: green, TRIG 4: green }
+## Step: Einen Sound stummschalten
+keys: [MUTE, KEYBOARD D1, UP, DOWN]
+leds: { KEYBOARD C1: green, KEYBOARD E1: green, KEYBOARD F1: green, KEYBOARD G1: green, KEYBOARD A1: green, KEYBOARD B1: green, KEYBOARD C2: green }
 source: manual §8.6
 mode: playback
 
-Drücke [MUTE]. Die Trig-Tasten sind wieder Spuren: leuchtende spielen, dunkle sind stumm.
-Drücke [TRIG 2], und die Snare fällt weg; drücke sie noch einmal, und sie kommt zurück. Drücke
-[MUTE], um wieder herauszugehen. Grün ist GLOBAL MUTE, das dir in jedes Pattern folgt und mit
-dem Projekt gespeichert wird; [MUTE] + [DOWN] schaltet auf PATTERN MUTE um, magenta, das nur
-zu diesem Pattern gehört. [MUTE] + [UP] geht zurück auf global.
+Drücke [MUTE], während Spur 1 noch die aktive Spur ist — die Sounds des Kits werden nur für
+die Spur angeboten, auf der du warst. Die Tasten der unteren Reihe leuchten für sie:
+leuchtende spielen, dunkle sind stumm. Drücke [KEYBOARD D1], und die Snare fällt weg; drücke
+sie noch einmal, und sie kommt zurück. Drücke [MUTE], um wieder herauszugehen. Grün ist
+GLOBAL MUTE, das dir in jedes Pattern folgt und mit dem Projekt gespeichert wird;
+[MUTE] + [DOWN] schaltet auf PATTERN MUTE um, magenta, das nur zu diesem Pattern gehört.
+[MUTE] + [UP] geht zurück auf global.
 
 :::checkpoint
-keys16: { 1: green, 3: green, 4: green }
 hear: Der Beat ohne seine Snare, dann wieder mit ihr.
-recover: Etwas stumm gelassen? [MUTE] selbst glimmt schwach, grün oder magenta, sobald irgendetwas stumm ist — und die Farbe sagt dir, in welchem Modus du suchen musst. Drücke sie und such die dunkle Taste.
+recover: Etwas stumm gelassen? [MUTE] selbst glimmt schwach, grün oder magenta, sobald irgendetwas stumm ist — und die Farbe sagt dir, in welchem Modus du suchen musst. Drücke sie und such die dunkle Taste. In diesem Modus sind die Trig-Tasten ganze Spuren: eine Trig-Taste würde das Kit stummschalten, alle Sounds auf einmal.
 :::
 
 :::note
@@ -258,7 +228,7 @@ die, die spielt. Jetzt halte [FUNC] und drücke [STOP], mintfarbene Beschriftung
 dein Beat, in Sicherheit vor den Änderungen, die in Session 3 kommen.
 
 :::checkpoint
-screen: { bank: "A02", tempo: 92, track: 4, type: "AUDIO" }
+screen: { bank: "A02", tempo: 92, track: 1, type: "SUBTRACKS" }
 keys16: { 1: white, 2: red }
 hear: Derselbe Beat, jetzt von A02 gespielt.
 recover: Kommt A02 still herum, ist das Einfügen vor dem Wechsel passiert. Warte, bis die Nummer von A02 oben links aufhört zu blinken — dieses Blinken ist das Pattern in der Warteschlange, nicht das Gerät, das dich ignoriert — dann noch einmal [FUNC] + [STOP].
@@ -290,18 +260,18 @@ recover: Tut Undo nichts, füge noch einmal ein — die Kopie liegt noch in der 
 :::
 
 ## Step: Zurück zu A01, und speichern
-keys: [PTN, TRIG 1, FUNC, SETTINGS, RECORD, TRK]
+keys: [PTN, TRIG 1, FUNC, SETTINGS, RECORD, TRK, KEYBOARD C1]
 leds: { RECORD: red, TRIG 1: red, TRIG 5: red, TRIG 9: red, TRIG 13: red }
 source: manual §10.1.1, §9.1.1
 mode: playback
 
 Halte [PTN] und drücke [TRIG 1], um zu A01 zurückzukehren. Halte [FUNC] und drücke
 [SETTINGS]: gespeichert, beide Patterns, keine Rückfrage. Dann drücke noch einmal [RECORD],
-halte [TRK] und drücke [TRIG 1], und sieh dir die Kick ein letztes Mal an — Schritte 1, 5, 9
+halte [TRK] und drücke [KEYBOARD C1], und sieh dir die Kick ein letztes Mal an — Schritte 1, 5, 9
 und 13, rot. Dieses Bild ist das Titelbild dieser Session.
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 1, type: "AUDIO" }
+screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
 keys16: { 1: red, 5: red, 9: red, 13: red }
 hear: Dein Beat, von A01.
 recover: Das Speichern sagt nichts und zeigt keine NAMING-Ansicht; so sieht ein Speichern hier aus. Willst du sicher sein: in der Liste unter PROJECT, LOAD im FILE-Menü steht dein Name.
@@ -309,8 +279,9 @@ recover: Das Speichern sagt nichts und zeigt keine NAMING-Ansicht; so sieht ein 
 
 ## What you now have
 
-SIXTEEN hat einen eintaktigen Beat auf A01 — Kick, Snare, Hi-Hats und eine vierte Stimme über
-vier Spuren — und A02 hält eine Kopie davon. Beide sind gespeichert. Hör hier auf, oder spiel
+SIXTEEN hat einen eintaktigen Beat auf A01 — Kick, Snare, geschlossene Hi-Hat und Clap, alle
+aus dem Kit auf Spur 1 — und A02 hält eine Kopie davon. Die Spuren 2 bis 4 sind noch leer.
+Beide Patterns sind gespeichert. Hör hier auf, oder spiel
 weiter: alles, was du von jetzt an änderst, ist ungespeichert bis zum nächsten
 [FUNC] + [SETTINGS].
 
@@ -323,15 +294,16 @@ zwischen ihnen, du kannst also einen Schlag nur auf Seite zwei ändern. Stell LE
 Session 3 auf 16 zurück, oder behalte es und wisse, dass die Kontrollpunkte von Session 3
 eine Seite beschreiben.
 
-### Die Trigs einer Spur kopieren
-Im GRID RECORDING — hier muss es *an* sein — hebt [FUNC] + [RECORD] die Trigs von der Spur,
-auf der du bist; wechsle auf eine andere Spur, und [FUNC] + [STOP] setzt sie dort ab
-(§10.10.4). Leg das Hi-Hat-Pattern auf Spur 4 und hör zwei Hi-Hats. Dieselben zwei Tasten
+### Die Trigs eines Sounds kopieren
+Im GRID RECORDING — hier muss es *an* sein — hebt [FUNC] + [RECORD] die Trigs von dem Sound,
+auf dem du bist; wähl mit [TRK] und seiner Taste der unteren Reihe einen anderen Sound, und
+[FUNC] + [STOP] setzt sie dort ab (§10.10.4). Leg das Pattern der geschlossenen Hi-Hat auf den
+Tom, [KEYBOARD B1], und hör, was es mit dem Takt macht; [FUNC] + [NO] nimmt es zurück. Dieselben zwei Tasten
 bewegen bei ausgeschaltetem GRID RECORDING ein ganzes Pattern: der Modus entscheidet, worauf
 sie wirken.
 
 ### Schnelles Stummschalten
-[MUTE] + [TRIG 2] schaltet die Snare stumm, ohne überhaupt in den Mute-Modus zu gehen, und
+[MUTE] + [TRIG 1] schaltet das ganze Kit stumm, ohne überhaupt in den Mute-Modus zu gehen, und
 noch einmal hebt es die Stummschaltung auf (§8.6). Das ist das, was du lernen solltest, falls
 du das je live spielst.
 
@@ -349,7 +321,7 @@ eine andere Familie als die [FUNC]-Kombinationen oben, die immer dort wirken, wo
 
 ## Next
 
-Session 3 lädt eine Subtracks-Machine auf Spur 1 und baut diese vier Stimmen als ein einziges
-Kit neu auf, was die Spuren 2 bis 4 für Bass, Akkorde und Pad freimacht, die später kommen.
-Deine Kopie A02 bleibt genau, wie sie ist. Die Lektion über die Tastenfarben — Trig-Tasten als
-Spuren, als Schritte, als Pattern-Plätze — ist das, was du mitnehmen solltest.
+Session 3 macht das Kit zu deinem: ein Schritt quer durch alle acht Sounds, ein Sound
+umgestimmt, ein eigenes Sample an Stelle des Claps. Deine Kopie A02 bleibt genau, wie sie ist.
+Die Lektion über die Tastenfarben — Trig-Tasten als Spuren, als Schritte, als Pattern-Plätze,
+und die untere Reihe als die Sounds des Kits — ist das, was du mitnehmen solltest.

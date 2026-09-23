@@ -1,13 +1,13 @@
 {
   "chapters": [
     { "id": "rhythm", "title": "Rhythmus", "order": 1 },
-    { "id": "sound", "title": "Klang", "order": 2 },
+    { "id": "sound", "title": "Sound", "order": 2 },
     { "id": "composition", "title": "Komposition", "order": 3 }
   ],
   "planned": [
-    { "number": 1, "slug": "first-sound", "title": "Der erste Klang", "chapter": "rhythm", "gains": "Ein gespeichertes Projekt mit einem Preset auf Spur 1" },
-    { "number": 2, "slug": "first-beat", "title": "Der erste Beat", "chapter": "rhythm", "gains": "Ein eintaktiges Drum-Pattern auf den Spuren 1–4" },
-    { "number": 3, "slug": "a-kit-from-one-sample", "title": "Ein Kit aus einem Sample", "chapter": "rhythm", "gains": "Eine Drumspur, aufgebaut auf Subtracks" },
+    { "number": 1, "slug": "first-sound", "title": "Der erste Klang", "chapter": "rhythm", "gains": "Ein gespeichertes Projekt mit einem Drum-Kit auf Spur 1" },
+    { "number": 2, "slug": "first-beat", "title": "Der erste Beat", "chapter": "rhythm", "gains": "Ein eintaktiger Beat auf einer Spur, ein Sound nach dem anderen" },
+    { "number": 3, "slug": "the-kit-your-way", "title": "Das Kit, auf deine Art", "chapter": "rhythm", "gains": "Ein Schritt quer durchs Kit, ein Sound umgestimmt, ein eigenes Sample" },
     { "number": 4, "slug": "make-it-move", "title": "Bring es in Bewegung", "chapter": "rhythm", "gains": "Ghost Notes, ein Filter-Sweep, ein Snare-Roll" },
     { "number": 5, "slug": "variation-without-new-patterns", "title": "Variation ohne neue Patterns", "chapter": "rhythm", "gains": "Ein Pattern, das sich mit jedem Loop ändert" },
     { "number": 6, "slug": "notes-and-harmony", "title": "Noten und Harmonie", "chapter": "sound", "gains": "Eine Basslinie und ein Akkordpart" },
