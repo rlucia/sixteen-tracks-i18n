@@ -150,10 +150,10 @@ mode: any
 Drücke die untere Reihe der Tastatur Taste für Taste, von [KEYBOARD C1] bis [KEYBOARD C2].
 Jede Taste ist ein Sound des Kits. Die Zahl auf dem Display folgt der Taste, die du gedrückt
 hast, und diese Taste bleibt rot: sie ist der Sound, den [TRIG 1] jetzt spielt. Unterscheide
-sie danach, wo sie liegen und wie lange sie klingen. Die Kick ist der tiefste und kürzeste,
+sie danach, wo sie liegen und wie lange sie klingen. Die Kick ist der tiefste Sound, und kurz,
 der, auf dem die anderen stehen. Die Snare ist ein scharfer Knall in der Mitte des Bereichs;
 ein Clap ist ein Händeklatschen und nimmt oft den Platz der Snare ein. Die geschlossene Hi-Hat
-ist der höchste und kürzeste von allen; eine offene Hi-Hat ist genauso hoch, klingt aber nach.
+ist der höchste und kürzeste Sound von allen; eine offene Hi-Hat ist genauso hoch, klingt aber nach.
 Ein Tom ist eine Trommel mit deutlicher Tonhöhe, und ein Becken ist ein langes metallisches
 Rauschen. In HELLO KIT liegt die Kick auf [KEYBOARD C1]: drück sie zuletzt, dann [TRIG 1].
 

@@ -23,7 +23,7 @@ Schritte 3 bis 6, dauert fünf Minuten.
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
 hear: Drücke [TRIG 1]: die Kick aus Session 1.
-recover: Hast du seither experimentiert und willst den gespeicherten Stand zurück, markiere dein Projekt in der LOAD-Liste und drücke [RIGHT] für PROJECT ACTIONS, dann RELOAD. Das ist der letzte Speicherstand.
+recover: Hast du seither experimentiert und willst den gespeicherten Stand zurück, markiere dein Projekt in der LOAD-Liste und drücke [RIGHT] für PROJECT ACTIONS, dann RELOAD. Das ist der letzte Speicherstand. Spielen [TRIG 2], [TRIG 3] oder [TRIG 4] eigene Drums, hat ein früherer Durchgang den Beat über vier Spuren verteilt: bei ausgeschaltetem GRID RECORDING löschen [FUNC] + [PLAY] und [YES] die Trigs von A01 (§10.10.4), und die Schritte unten schreiben ihn neu auf Spur 1.
 :::
 
 :::note
@@ -46,7 +46,7 @@ mit [KEYBOARD A1], der geschlossenen Hi-Hat, und mit [KEYBOARD F1], dem Clap, un
 
 :::checkpoint
 hear: Nichts, solange [TRK] gehalten ist. Jeder Sound spielt nur, wenn du seine Taste allein drückst.
-recover: Ein Sound, der gespielt hat, heißt, [TRK] war nicht zuerst unten — halte es, dann drücke. Mit einem anderen Kit liegen die Snare, die geschlossene Hi-Hat und die vierte Stimme dort, wo dein Ohr sie in Session 1 gefunden hat; nimm diese Tasten überall, wo diese Session D1, A1 und F1 nennt.
+recover: Ein Sound, der gespielt hat, heißt, [TRK] war nicht zuerst unten — halte es, dann drücke. Mit einem anderen Kit liegen die Snare, die geschlossene Hi-Hat und die vierte Stimme dort, wo dein Ohr sie in Session 1 gefunden hat; nimm diese Tasten überall, wo der Kurs D1, A1 und F1 nennt.
 :::
 
 ## Step: Ins GRID RECORDING
@@ -280,7 +280,7 @@ recover: Das Speichern sagt nichts und zeigt keine NAMING-Ansicht; so sieht ein 
 ## What you now have
 
 SIXTEEN hat einen eintaktigen Beat auf A01 — Kick, Snare, geschlossene Hi-Hat und Clap, alle
-aus dem Kit auf Spur 1 — und A02 hält eine Kopie davon. Die Spuren 2 bis 4 sind noch leer.
+aus dem Kit auf Spur 1 — und A02 hält eine Kopie davon. Die Spuren 2 bis 4 spielen nichts.
 Beide Patterns sind gespeichert. Hör hier auf, oder spiel
 weiter: alles, was du von jetzt an änderst, ist ungespeichert bis zum nächsten
 [FUNC] + [SETTINGS].

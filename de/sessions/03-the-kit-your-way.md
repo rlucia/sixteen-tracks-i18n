@@ -22,7 +22,7 @@ Beat laufen — alles in dieser Session passiert, während er spielt.
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
 hear: Der Beat aus Session 2 im Loop von A01: Kick, Snare, geschlossene Hi-Hat und Clap, alle aus dem Kit auf Spur 1.
-recover: Hast du seither gespielt und willst den gespeicherten Stand zurück, markiere dein Projekt in der LOAD-Liste, drücke [RIGHT] für PROJECT ACTIONS und wähle RELOAD. Spielen [TRIG 2], [TRIG 3] oder [TRIG 4] eigene Sounds, ist dein Beat über vier Spuren verteilt: Session 2 baut ihn auf einer einzigen, und diese Session beginnt dort. Du fängst hier ohne Session 2 an? Diese Session schreibt den Beat, an dem diese hier arbeitet, und sie dauert etwa sechzehn Minuten.
+recover: Hast du seither gespielt und willst den gespeicherten Stand zurück, markiere dein Projekt in der LOAD-Liste, drücke [RIGHT] für PROJECT ACTIONS und wähle RELOAD. Spielen [TRIG 2], [TRIG 3] oder [TRIG 4] eigene Sounds, ist dein Beat über vier Spuren verteilt: Session 2 baut ihn auf einer einzigen, und ihr erster Schritt löscht den alten. Du fängst hier ohne Session 2 an? Diese Session schreibt den Beat, an dem diese hier arbeitet, und sie dauert etwa sechzehn Minuten.
 :::
 
 ## Step: Drei Leben einer Trig-Taste
@@ -77,7 +77,7 @@ sie noch einmal, und er ist zurück. Drücke [STEP EDIT] noch einmal, um herausz
 
 :::checkpoint
 hear: Der Beat, wie er war, sobald du zurückgesetzt hast, was du herausgenommen hast.
-recover: STEP EDIT gehört zum GRID RECORDING (§10.3.1), also leuchtet [RECORD] mit. Eine schwach leuchtende Taste auf der unteren Reihe ist der Sound, den du gewählt hast, nicht einer, der auf dem Schritt spielt — [davor warnt Elektrons eigenes Tutorial](https://www.youtube.com/watch?v=ijPa_vgY8QA). Ein Clap, den du entfernt hast und nicht zurückbekommst: [FUNC] + [NO] macht es rückgängig.
+recover: STEP EDIT gehört zum GRID RECORDING (§10.3.1), also leuchtet [RECORD] mit. Eine schwach leuchtende Taste auf der unteren Reihe ist der Sound, den du gewählt hast, nicht einer, der auf dem Schritt spielt — [davor warnt Elektrons eigenes Tutorial](https://www.youtube.com/watch?v=ijPa_vgY8QA).
 :::
 
 ## Step: Einen Sound umstimmen
@@ -93,15 +93,15 @@ des Kits, die der Supertrack hält — zwei Schritte weiter.
 
 :::checkpoint
 hear: Eine tiefere Snare im selben Beat; die Kick, die Hi-Hats und der Clap wie vorher.
-recover: Hat sich ein anderer Sound bewegt, war die rote Taste woanders, als du gedreht hast: halte [TRK], drücke [KEYBOARD D1] und dreh noch einmal. Um zurückzukommen: TUNE auf 0 lässt die Tonhöhe unverändert.
+recover: Hat sich ein anderer Sound bewegt, war die rote Taste woanders, als du gedreht hast: halte [TRK], drücke [KEYBOARD D1] und dreh noch einmal. Um zurückzukommen, lies TUNE vor dem Drehen ab und stell es wieder auf diesen Wert.
 :::
 
 ## Step: Ein Sample tauschen
-keys: [TRK, TRIG 1, KEYBOARD F1, FUNC, UP, DOWN, YES, NO]
+keys: [TRK, KEYBOARD F1, FUNC, UP, DOWN, YES, NO]
 source: manual §A.2.3, §6.13
 mode: menu:SAMPLE BROWSER
 
-Halte [TRK] und drücke [TRIG 1], um zum Kit zurückzukommen, dann [TRK] + [KEYBOARD F1], die
+Halte [TRK] und drücke [KEYBOARD F1], die
 vierte SUBTRACKS-Taste, damit der Clap der Sound ist, auf dem du bist. [FUNC] + [KEYBOARD F1]
 öffnet den Sample-Browser auf der SD-Karte, gerichtet auf diesen einen Subtrack: [UP]/[DOWN]
 scrollt durch die Karte, [YES] öffnet einen Ordner, und [YES] auf einem Sample lädt es in den

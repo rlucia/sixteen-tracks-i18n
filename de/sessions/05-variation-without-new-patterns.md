@@ -247,5 +247,5 @@ ein, und die des ersten Patterns sind weg (§10.12).
 ## Next
 
 Session 6 lässt die Drums in Ruhe und beginnt das zweite Kapitel: ein Bass auf Spur 2 und ein
-Akkordpart auf Spur 3, von der Tastatur in a-Moll gespielt, auf den Spuren, die Session 3
-freigemacht hat. Der Rhythmus ist fertig — von hier an gewinnt das Stück Noten.
+Akkordpart auf Spur 3, von der Tastatur in a-Moll gespielt, auf den Spuren 2 und 3, die
+der Beat frei lässt. Der Rhythmus ist fertig — von hier an gewinnt das Stück Noten.
