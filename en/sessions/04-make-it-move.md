@@ -176,8 +176,8 @@ leaves it alone; [NO] closes the menu.
 
 :::checkpoint
 screen: { menu: "QUANTIZE", items: [TRK 0, PATTERN 0] }
-hear: Both settings start at zero. The kick and the snare do not move, because they were written on the grid and are on it already. What TRK pulls is everything that is not: the part you played by hand, and the open hat you pushed late two steps ago (§10.8) — which is why you stop climbing as soon as the take is tight.
-recover: Menu did not open? Try [FUNC] + [TRIG] instead, the combination §10.4 gives for this same menu where §10.8 gives [FUNC] + [KEYBOARD G#1]; your unit will settle which of the two it takes. Gone all the way and lost the late open hat? Go back to the open hat's subtrack, hold [TRIG 7] and press [RIGHT] to push it out again (§10.5); quantising rounds to the nearest step, and for a micro-timed trig that need not be the step it was written on (§10.8). And if the take still does not sound like what you played, you are not imagining it: [one owner reports the same](https://www.elektronauts.com/t/tonverk-user-thread/238631/1812), with no answer in the thread.
+hear: Both settings start at zero. The kick and the snare do not move, because they were written on the grid and are on it already. What TRK pulls is everything that is not: the part you played by hand, and the clap you pushed late two steps ago (§10.8) — which is why you stop climbing as soon as the take is tight.
+recover: Menu did not open? Try [FUNC] + [TRIG] instead, the combination §10.4 gives for this same menu where §10.8 gives [FUNC] + [KEYBOARD G#1]; your unit will settle which of the two it takes. Gone all the way and lost the late clap? Go back to the clap's subtrack, hold [TRIG 7] and press [RIGHT] to push it out again (§10.5); quantising rounds to the nearest step, and for a micro-timed trig that need not be the step it was written on (§10.8). And if the take still does not sound like what you played, you are not imagining it: [one owner reports the same](https://www.elektronauts.com/t/tonverk-user-thread/238631/1812), with no answer in the thread.
 :::
 
 ## Step: See the locks alone
