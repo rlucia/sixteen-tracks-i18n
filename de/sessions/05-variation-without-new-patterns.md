@@ -43,7 +43,7 @@ DATA-ENTRY-Regler [H], COND, bis dort 1:2 steht.
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS", params: [NOTE —, VEL 100, LEN 1/16, PROB 100%, RTRG OFF, RTIM 1/16, RVEL 0, COND 1:2], invert: [7] }
 keys16: { 1: red, 5: red, 9: red, 13: red, 15: red }
 hear: Der Auftakt kommt, setzt beim nächsten Durchlauf aus und kommt beim übernächsten wieder — A:B zählt, wie oft das Pattern gespielt hat, nicht, wo du im Takt bist (§10.10.2). Schritt 15 blinkt gegen die vier dauerhaften Kicks, wie jeder Trig mit einem Lock, und COND ist das eine invertierte Feld auf der Seite.
-recover: Kommt der Auftakt bei jedem Loop, steht COND noch auf dem Strich: halte [TRIG 15] gedrückt und sieh zu, wie sich dieser Wert beim Drehen von [H] ändert, statt auf die Tasten zu sehen. Kommt er überhaupt nie, bist du über 1:2 hinaus — die Bedingungen sind eine Liste auf einem Regler, und ihr Nachbar 2:2 spielt genau in den Loops, die 1:2 aussetzt, obwohl §10.10.2 diese beiden nur als Beispiele gibt und nicht als Reihenfolge, auf die man zählen kann. Die anderen sieben Werte auf der Zeichnung stammen aus §12.2, nicht von einem Gerät.
+recover: Kommt der Auftakt bei jedem Loop, steht COND noch auf dem Strich: halte [TRIG 15] gedrückt und sieh zu, wie sich dieser Wert beim Drehen von [H] ändert, statt auf die Tasten zu sehen. Kommt er überhaupt nie, bist du über 1:2 hinaus — die Bedingungen sind eine Liste auf einem Regler, und 2:2 spielt genau in den Loops, die 1:2 aussetzt.
 :::
 
 ## Step: Wahrscheinlichkeit auf den Ghost Notes
@@ -76,16 +76,14 @@ Sequenzer vor ihm abgewogen hat, auch geklungen hat (§10.10.2).
 :::checkpoint
 keys16: { 1: red, 3: red, 5: red, 7: red, 9: red, 11: red, 13: red, 15: red, 16: red }
 hear: Die letzten zwei Schritte des Takts kommen als Paar oder gar nicht — gewinnt die Ghost Note auf 15 ihren Münzwurf, antwortet 16 darauf; setzt 15 aus, setzt 16 mit ihr aus. Beide Tasten blinken, 15 für ihre Wahrscheinlichkeit und 16 für ihre Bedingung.
-recover: Spielt 16 bei jedem Loop, steht COND noch auf dem Strich: halte [TRIG 16] und dreh [H] Klick für Klick, am FILL-Paar vorbei, bis PRE der Wert ist. Und bist du versucht, ein zweites PRE auf dieses zu stapeln: es würde immer noch nach 15 fragen — ein PRE-Trig wird übersprungen, wenn ein späteres PRE zurückschaut (§10.10.2). Eines klärt §10.10.2 für eine Spur und nicht für ein Kit: ob der Trig, auf den 16 zurückschaut, der vor ihm auf diesem Subtrack ist oder der vor ihm irgendwo auf Spur 1. Das klärt dein Gerät; dieses Paar ist für die erste Lesart geschrieben.
+recover: Spielt 16 bei jedem Loop, steht COND noch auf dem Strich: halte [TRIG 16] und dreh [H] Klick für Klick, am FILL-Paar vorbei, bis PRE der Wert ist. Und bist du versucht, ein zweites PRE auf dieses zu stapeln: es würde immer noch nach 15 fragen — ein PRE-Trig wird übersprungen, wenn ein späteres PRE zurückschaut (§10.10.2). §10.10.2 beschreibt PRE auf einer Spur, nicht in einem Kit: es sagt nicht, ob 16 auf den Trig vor ihm auf diesem Subtrack zurückschaut oder irgendwo auf Spur 1.
 :::
 
 :::note
 Eine Ghost Note, die ihren Münzwurf verliert, zählt, soweit es 16 betrifft, als eine Ghost
-Note, die nie da war. Das ist es wert, laut gesagt zu werden, denn es war nicht immer so:
-Elektrons eigene Release Notes führen
+Note, die nie da war. Vor OS 1.4.0 war das nicht so: Elektrons Release Notes führen
 [einen PROB-Lock, der bei der PRE- und NEI-Rechnung ausgelassen wurde](https://www.elektron.se/release-notes/tonverk-os-release-notes),
-unter den Fehlern, die OS 1.4.0 behoben hat, und 1.4.0 ist die Version, gegen die dieser Kurs
-geschrieben ist. Auf einem älteren OS fällt das Paar auseinander.
+unter den Fehlern, die 1.4.0 behoben hat, und auf einem älteren OS fällt das Paar auseinander.
 :::
 
 ## Step: Warum hat Schritt 16 nicht gespielt?
@@ -103,7 +101,7 @@ gerade gebaut hast — die Kick mit ihrem 1:2-Auftakt, die Hi-Hats mit ihren Gho
 
 :::checkpoint
 hear: Drücke vier- oder fünfmal Nächster Loop, und die Zeilen des Protokolls zeigen, wie das Paar auf 15 und 16 zusammen kommt und zusammen ausbleibt. Klick Schritt 16 in der Hi-Hat-Reihe an, und die Zeile unter dem Editor gibt das Schicksal dieses Schritts für den Loop, in dem du bist — den Trig, auf den er zurückgeschaut hat, und ob der gespielt hat; die Punkte im Protokoll tragen denselben Satz unter dem Zeiger. Setz die Chance von 15 auf 100, und 16 bleibt nicht mehr aus.
-recover: Nichts hier ist ein Hörtest — der Simulator zeichnet die Regel, nicht das Kit, und sein einziger Klang ist ein Klick. Eines muss er selbst entscheiden: ob ein schlichter Trig, ohne Bedingung und ohne Wahrscheinlichkeit, der Trig ist, auf den PRE zurückschaut. Er liest den Satz in §10.10.2 wörtlich und schaut auf den letzten Trig zurück, den er ausgewertet hat, während Besitzer-Threads zu anderen Elektron-Geräten mit derselben Regel sagen, ein bloßer Trig werde überhaupt nie ausgewertet. Das klärt dein Gerät.
+recover: Der Simulator zählt einen schlichten Trig, ohne Bedingung und ohne Wahrscheinlichkeit, als einen, auf den PRE zurückschauen kann, wie der Satz in §10.10.2 lautet; Besitzer anderer Elektron-Geräte mit derselben Regel sagen, ein bloßer Trig werde überhaupt nie ausgewertet.
 :::
 
 ## Step: Ein Fill-Takt
@@ -123,7 +121,7 @@ und halte [FILL] über die letzte Zählzeit des Takts gedrückt.
 screen: { menu: "FILL EDIT", items: [MOMENTARY, LATCHING], sel: 0 }
 keys16: { 5: red, 13: red, 14: red, 15: red, 16: red }
 hear: Mit gehaltenem [FILL] endet der Takt in einem Lauf von drei Snares in den nächsten hinein; lass los, und diese drei Schritte sind wieder still, Loop für Loop, während 5 und 13 weitermachen wie immer. Fünf Tasten auf dem Streifen jetzt, die drei neuen blinkend für die Bedingung darauf.
-recover: Spielt der Lauf, ohne dass etwas gehalten wird, stehen entweder die drei Trigs noch auf dem Strich statt auf FILL, oder LATCHING ist die gewählte Option, und ein früheres Antippen hat den FILL-Modus eingeschaltet gelassen — drücke [FILL] einmal und hör noch einmal hin. Ob die [FILL]-Taste selbst leuchtet, während sie gehalten wird, und in welcher Farbe, steht nicht im Handbuch und nirgends, wo sich nachsehen ließ; das klärt dein Gerät.
+recover: Spielt der Lauf, ohne dass etwas gehalten wird, stehen entweder die drei Trigs noch auf dem Strich statt auf FILL, oder LATCHING ist die gewählte Option, und ein früheres Antippen hat den FILL-Modus eingeschaltet gelassen — drücke [FILL] einmal und hör noch einmal hin.
 :::
 
 ## Step: Ein Wiederherstellungspunkt, dann ein Risiko
@@ -140,7 +138,7 @@ zurückzuholen, was du dir gemerkt hast.
 :::checkpoint
 screen: { menu: "TRANSFORM", items: [VELOCITY UNLOCK, VELOCITY RANDOMIZE, VELOCITY RAMP UP, VELOCITY RAMP DOWN, PLACEMENT RANDOMIZE, PLACEMENT REVERSE], sel: 1 }
 hear: Jede Velocity auf der Spur landet auf einmal irgendwo neu — Hi-Hats laut, wo sie leise waren, Ghost Notes, die keine Ghost Notes mehr sind, das Abklingen des Snare-Rolls neu gebaut — und nach dem Zurückholen sind die Velocities wieder dort, wo Session 4 sie gelassen hat, die vier Ghost Notes sitzen wieder hinter den Zählzeiten. Was das Zurückholen zurücksetzt, ist das Pattern, das du dir eben gemerkt hast — Bedingungen, Wahrscheinlichkeit und Fill-Trigs eingeschlossen — nicht das aus Session 4.
-recover: Hat sich nichts geändert, ist das [YES] nicht auf der markierten Zeile gelandet: öffne das Menü noch einmal und sieh, welche Aktion hervorgehoben ist, bevor du drückst. Ob das Zurückholen die alten Velocities genau zurücksetzt oder nur ungefähr, ist der eine Teil hiervon, den niemand aufgeschrieben hat; das klärt dein Gerät, und bis dahin ist das Speichern aus Schritt 1 der wirkliche Boden.
+recover: Hat sich nichts geändert, ist das [YES] nicht auf der markierten Zeile gelandet: öffne das Menü noch einmal und sieh, welche Aktion hervorgehoben ist, bevor du drückst. Bringt das Zurückholen die Velocities nicht zurück, hat das Speichern aus Schritt 1 sie noch.
 :::
 
 :::note
@@ -148,15 +146,13 @@ Eine Transformation bleibt nicht auf dem Subtrack, den du gerade ansiehst. §10.
 Grenze an der Spur, und auf einer Subtracks-Spur heißt das: das ganze Kit in einem Durchgang.
 Die Auftakt-Kick bekommt mit den Hi-Hats eine neue Velocity, und jede Snare auch. Velocity und
 sonst nichts — VELOCITY RANDOMIZE schreibt VEL-Locks, der Auftakt behält also sein 1:2 und die
-drei neuen Snares ihr FILL. Dass die acht Subtracks wirklich zusammen gehen, ist der Bericht
-von Besitzern und nicht der des Handbuchs: sie haben um eine Möglichkeit gebeten, eine
-Transformation auf einen Subtrack zu richten, und
+drei neuen Snares ihr FILL. Besitzer bestätigen, dass die acht Subtracks zusammen gehen: sie
+haben um eine Möglichkeit gebeten, eine Transformation auf einen Subtrack zu richten, und
 [es gibt noch keine](https://www.elektronauts.com/t/tonverk-feature-requests/238027/2057), und
 ein anderer Bericht hat PLACEMENT RANDOMIZE
 [Lock-Trigs bewegen, die nichts spielen](https://www.elektronauts.com/t/tonverk-feature-requests/238027/1559),
-zusammen mit den Noten — das klärt dein Gerät. So oder so kommt das Merken zuerst, und
-VELOCITY UNLOCK ist ein schwererer Hammer, als sein Name vermuten lässt: es nimmt jeden
-VEL-Lock von der Spur, die vier aus Session 4 eingeschlossen.
+zusammen mit den Noten. VELOCITY UNLOCK ist ein schwererer Hammer, als sein Name vermuten
+lässt: es nimmt jeden VEL-Lock von der Spur, die vier aus Session 4 eingeschlossen.
 :::
 
 ## Step: PERFORM-Modus
@@ -165,15 +161,15 @@ leds: { TRK: green }
 source: manual §10.12, §A.2.3
 mode: grid-recording
 
-Halte zuerst [FUNC] und drücke [SETTINGS]; das Speichern zählt hier mehr als irgendwo sonst in
-dieser Session. Jetzt halte [FUNC] und drücke [TRK]: der PERFORM-Modus ist an, und [TRK]
+Halte zuerst [FUNC] und drücke [SETTINGS]: wer den PERFORM-Modus verlässt, bringt das Pattern
+auf seinen zuletzt gespeicherten Stand zurück (§10.12). Jetzt halte [FUNC] und drücke [TRK]: der PERFORM-Modus ist an, und [TRK]
 leuchtet grün, solange er es ist (§10.12). Drücke [FLTR] und dreh Regler [E], FREQ, bei
 laufendem Loop deutlich herunter, dann halte [FUNC] und drücke [TRK] noch einmal, um ihn zu
 verlassen.
 
 :::checkpoint
 hear: Die Snare wird unter deiner Hand dumpf — der Filter gehört zu dem Subtrack, auf dem du bist (§A.2.3), Kick und Hi-Hats klingen also weiter wie gehabt — und sie bleibt dumpf, solange der PERFORM-Modus an ist. In dem Moment, in dem du ihn verlässt, ist die Snare wieder hell und das grüne Licht aus: die Änderung ist weg, und Speichern, während du drin warst, hätte sie auch nicht behalten (§10.12).
-recover: Ist die Snare nach dem Verlassen dumpf geblieben, war [FUNC] beim zweiten Druck nicht unten; das grüne Licht ist das, worauf du achten musst. Hat sich beim Drehen gar nichts geändert, zeigt [FLTR] die Seite eines anderen Subtracks — halte [TRK] und drücke [KEYBOARD D1] für die Snare, und versuch es noch einmal. Der Schritt speichert mit Absicht zuerst: §10.12 verspricht, dass das Pattern zu einem gespeicherten Zustand zurückkehrt, und sagt nicht mehr, und was mit Änderungen geschieht, die nach dem letzten Speichern und vor dem Betreten des PERFORM-Modus gemacht wurden, steht nirgends. Das klärt dein Gerät; wer zuerst speichert, erübrigt die Frage.
+recover: Ist die Snare nach dem Verlassen dumpf geblieben, war [FUNC] beim zweiten Druck nicht unten; das grüne Licht ist das, worauf du achten musst. Hat sich beim Drehen gar nichts geändert, zeigt [FLTR] die Seite eines anderen Subtracks — halte [TRK] und drücke [KEYBOARD D1] für die Snare, und versuch es noch einmal.
 :::
 
 ## Step: Speichern
@@ -187,7 +183,7 @@ Snare: zwei, die bei jedem Loop spielen, und drei, die auf deinen Daumen warten.
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
 keys16: { 5: red, 13: red, 14: red, 15: red, 16: red }
-hear: Derselbe Takt, mit dem du die Session begonnen hast, und keine zwei Loops davon gleich — eine Auftakt-Kick bei jedem zweiten Durchlauf, die Hälfte der Ghost Notes, eine antwortende Hi-Hat, die nur kommt, wenn ihre Frage kam, und ein Fill unter deinem Daumen. Dieser Streifen aus fünf Tasten ist das Titelbild dieser Session.
+hear: Derselbe Takt, mit dem du die Session begonnen hast, und keine zwei Loops davon gleich — eine Auftakt-Kick bei jedem zweiten Durchlauf, die Hälfte der Ghost Notes, eine antwortende Hi-Hat, die nur kommt, wenn ihre Frage kam, und ein Fill unter deinem Daumen.
 recover: Fünf Tasten, und 14, 15 und 16 blinken. Sind diese drei dunkel, sind die Fill-Trigs auf einen anderen Subtrack gegangen: halte [TRK] und drücke [KEYBOARD D1] und sieh noch einmal hin — und fehlen sie auch dort, ist Schritt 6 drei Tastendrücke und einen Regler von oben entfernt.
 :::
 
@@ -230,9 +226,8 @@ Pattern meldet sich an und macht dann weiter.
 ### NEI, im Simulator statt auf dem Kit
 NEI schaut zur Seite: es fragt, wie die letzte Bedingung auf der Spur nebenan ausgegangen ist
 — der mit der Nummer vor der, auf der du bist — und spielt, oder nicht, auf diese Antwort hin
-(§10.10.2). Die zwei Spuren des Simulators sind genau dieses Paar, und darum gehört NEI
-dorthin: was das eigene NEI eines Subtracks auf einer Subtracks-Spur liest, steht nirgends, wo
-sich nachsehen ließ, und nur dein Gerät kann es sagen.
+(§10.10.2). Die zwei Spuren des Simulators sind genau dieses Paar. Was NEI für einen Subtrack
+innerhalb eines Kits liest, sagt das Handbuch nicht.
 
 ### PROB, ohne etwas zu halten
 Dreh [D], ohne eine Trig-Taste zu halten, und PROB wird zur Einstellung des Subtracks selbst

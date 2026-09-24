@@ -103,13 +103,13 @@ Håll [TRK] och tryck på
 [FUNC] + [KEYBOARD F1] öppnar Sample-bläddraren på SD-kortet, riktad mot just det
 subtracket: [UP]/[DOWN] scrollar kortet, [YES] öppnar en mapp och [YES] på ett sample laddar
 det in i projektets sample-pool och ut på subtracket (§5.2.6), och [NO] backar upp en nivå.
-Välj ett kort ljud du gillar i clapens ställe — av de fyra rösterna är det den stycket är
-minst kinkigt med — och sedan [FUNC] + [NO] för att lämna bläddraren (§6.13.1).
+Välj ett kort ljud du gillar i clapens ställe, och sedan [FUNC] + [NO] för att lämna
+bläddraren (§6.13.1).
 
 :::checkpoint
 screen: { menu: "SAMPLE BROWSER", items: [SD CARD, SAMPLE BANKS, WAVETABLES], sel: 0 }
 hear: Ditt eget sample på steg 7 och 15, i stället för kitets clap, med resten av beatet oförändrat.
-recover: Lägger ett [YES] till samplet men subtracket vägrar spela det, vill bläddraren ha sin OPERATIONS-meny: tryck på [RIGHT], välj LOAD SAMPLES och tryck på [YES] (§6.13.1). Om den här vägen behöver ett tryck eller två är en fråga för enheten — manualen beskriver båda, på olika sidor.
+recover: Lägger ett [YES] till samplet men subtracket vägrar spela det, vill bläddraren ha sin OPERATIONS-meny: tryck på [RIGHT], välj LOAD SAMPLES och tryck på [YES] (§6.13.1).
 :::
 
 :::note
@@ -143,8 +143,7 @@ En lock som läggs här flyttar alla åtta subtracks på en gång, vilket passar
 [send-nivåerna delas också här](https://www.elektronauts.com/t/tonverk-subtrack-drum-strategies/243084),
 i stället för att sättas per subtrack, och det är därför en mix av ett kit röst för röst går
 genom supertracket. Elektrons presentatör i den videon kallar märket på displayen tre
-punkter snarare än tre rektanglar, så hur det ser ut är värt en andra blick på din egen
-enhet.
+punkter snarare än tre rektanglar.
 :::
 
 ## Step: Spara
@@ -154,8 +153,7 @@ mode: grid-recording
 
 Håll [FUNC] och tryck på [SETTINGS]: sparat, i tystnad, så som varje sparning här går till.
 Tryck sedan på [RECORD] om den är släckt, håll [TRK] och tryck på [KEYBOARD A1], den stängda
-hi-hatens tangent, och titta på den en sista gång — varje udda steg rött. Den bilden är den
-här sessionens vinjett.
+hi-hatens tangent, och titta på den en sista gång — varje udda steg rött.
 
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }

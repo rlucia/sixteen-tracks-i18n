@@ -42,7 +42,7 @@ den till vänster om [SRC]. TRIG PAGE 1 öppnas; håll de fyra kvar och vrid DAT
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS", params: [NOTE —, VEL 60, LEN 1/16, PROB 100%, RTRG OFF, RTIM 1/16, RVEL 0, COND —], invert: [1] }
 keys16: { 1: red, 3: red, 5: red, 7: red, 9: red, 11: red, 13: red, 15: red }
 hear: Hi-hatsen på slagen står där de stod och de fyra mellan dem lägger sig bakom dem. VEL är den enda rutan på sidan som är ritad inverterad, och de fyra tangenter du höll blinkar rött medan de andra fyra lyser fast.
-recover: Tystnade alla åtta hi-hats? Då hölls ingenting nere, och vridningen flyttade hela subtrackets VEL: vrid tillbaka upp, håll de fyra tangenterna och vrid igen. Räkna med att NOTE visar ett streck — §12.2 säger bara att den inte är tillgänglig på ett Subtracks-spår — och räkna med att de andra sju avläsningarna skiljer sig från teckningen, som är gjord ur det avsnittet och inte från en enhet.
+recover: Tystnade alla åtta hi-hats? Då hölls ingenting nere, och vridningen flyttade hela subtrackets VEL: vrid tillbaka upp, håll de fyra tangenterna och vrid igen. NOTE visar ett streck: §12.2 säger att den inte är tillgänglig på ett Subtracks-spår.
 :::
 
 :::note
@@ -66,7 +66,7 @@ Håll [TRIG 3] och tryck på [YES]: just det steget spelar, med sin nya VEL inba
 
 :::checkpoint
 hear: Två hi-hats, en efter den andra, i de två volymer du just satte, ovanpå loopen som fortsätter gå under.
-recover: Låter de två likadant, landade locken aldrig — gå tillbaka ett steg, håll de fyra tangenterna och se VEL bli inverterad medan du vrider på ratten. Om den här förhandslyssningen låter den hållna trigens eget subtrack eller det subtrack du har valt är inte avgjort någonstans vi har kunnat hitta; din enhet får avgöra det.
+recover: Låter de två likadant, landade locken aldrig — gå tillbaka ett steg, håll de fyra tangenterna och se VEL bli inverterad medan du vrider på ratten.
 :::
 
 ## Step: En filterlock
@@ -81,7 +81,7 @@ ENTRY-ratten [E], FREQ, ner tills just den hi-haten blir matt.
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS", params: [ATK, DEC, SUS, REL, FREQ 42, RESO, TYPE, ENV], invert: [4] }
 hear: Sju hi-hats som de var, och en på slag tre med toppen borttagen. Steg 9 blinkar nu, vid sidan av de fyra ghost notes.
-recover: Blev varje hi-hat matt på en gång? Då var [TRIG 9] inte nere när du vred: håll den först. Din enhet fyller alla åtta rutor på den här sidan med avläsningar; teckningen ger bara en åt rutan du ändrade.
+recover: Blev varje hi-hat matt på en gång? Då var [TRIG 9] inte nere när du vred: håll den först.
 :::
 
 ## Step: Ta bort en lock
@@ -95,7 +95,7 @@ exempelstycket behåller den här.
 
 :::checkpoint
 hear: Hi-haten på slag tre kommer tillbaka ljus, och blir matt igen när du lägger tillbaka locken.
-recover: Försvann hi-haten helt? Då var det ett snabbt tryck och inte ett hållet, vilket tar bort trigen — tryck på [TRIG 9] en gång till för att skriva tillbaka den, och vet att varje lock den bar följde med (§10.10.1), så det här steget är värt att göra två gånger.
+recover: Försvann hi-haten helt? Då var det ett snabbt tryck och inte ett hållet, vilket tar bort trigen — tryck på [TRIG 9] en gång till för att skriva tillbaka den, och varje lock den bar följde med (§10.10.1).
 :::
 
 ## Step: Snare-rollen
@@ -107,22 +107,21 @@ mode: grid-recording
 Håll [TRK] och tryck på [KEYBOARD D1], den andra SUBTRACKS-tangenten, för snaren. Håll
 [TRIG 13] och tryck på [TRIG] för TRIG PAGE 1, och håll kvar: vrid [E] för att slå på RTRG,
 [F] för att sätta RTIM till 1/32 och [G] för att ta RVEL upp mot 1, så att upprepningarna
-växer i stället för att falna. Det är en utgångspunkt och inte det enda svaret.
+växer i stället för att falna.
 
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS", params: [NOTE —, VEL 100, LEN 1/16, PROB 100%, RTRG ON, RTIM 1/32, RVEL 0.5, COND —], invert: [4, 5, 6] }
 keys16: { 5: red, 13: red }
-hear: Snaren på slag fyra kommer som en kort roll: upprepningarna löper trigens egen LEN och slutar inom steg 13, en pickup in i nästa takt snarare än ett fill tvärs över den. Snaren på 5 är orörd, och på sidan — ritad här, inte avläst från en enhet — är de tre du vred de inverterade. Steg 13 blinkar nu, 5 lyser fast.
-recover: En roll du inte hör beror oftast på att RTRG fortfarande är av — håll [TRIG 13] och se den avläsningen ändra sig innan du går nära RTIM. Rullar båda snarerna, släpptes [TRIG 13] innan du vred, och inställningen hamnade på hela subtracket i stället för på just den trigen: vrid tillbaka RTRG till av utan att hålla något, och börja sedan om med tangenten nere. För plottrigt? [F] tillbaka till 1/16 ger en upprepning per steg, 1/12 ger trioler. Ingen har publicerat siffror för det här; din enhet får avgöra vilka som är snyggast.
+hear: Snaren på slag fyra kommer som en kort roll: upprepningarna löper trigens egen LEN och slutar inom steg 13, en pickup in i nästa takt snarare än ett fill tvärs över den. Snaren på 5 är orörd, och på sidan är de tre du vred de inverterade. Steg 13 blinkar nu, 5 lyser fast.
+recover: En roll du inte hör beror oftast på att RTRG fortfarande är av — håll [TRIG 13] och se den avläsningen ändra sig innan du går nära RTIM. Rullar båda snarerna, släpptes [TRIG 13] innan du vred, och inställningen hamnade på hela subtracket i stället för på just den trigen: vrid tillbaka RTRG till av utan att hålla något, och börja sedan om med tangenten nere. För plottrigt? [F] tillbaka till 1/16 ger en upprepning per steg, 1/12 ger trioler.
 :::
 
 :::note
 Två saker på den här sidan fångar folk. Det finns ingen RLEN: den fjärde av
 retrig-parametrarna är COND, ett trig-villkor, som är session 5:s ämne — det som formar en
-roll är RVEL, och den arbetar mot trigens egen VEL. Och manualen är av två sinnen om vilken
-ratt som slår på RTRG: regeln i §6.3 är att en parameter svarar på ratten den sitter
-ovanför, vilket lägger RTRG på [E], medan meningen i §12.2 pekar ut ratten [A]. Vrid på
-ratten under parametern, och säger din enhet något annat har din enhet rätt.
+roll är RVEL, och den arbetar mot trigens egen VEL. Och manualen pekar ut två rattar för
+RTRG: regeln i §6.3 är att en parameter svarar på ratten den sitter ovanför, vilket lägger
+RTRG på [E], medan meningen i §12.2 pekar ut ratten [A]. Vrid på ratten under parametern.
 :::
 
 ## Step: Putta clapen sent
@@ -137,7 +136,7 @@ i stora hopp, [UP] och [DOWN] flyttar den lite i taget — och släpp [TRIG 7] f
 
 :::checkpoint
 screen: { menu: "MICRO TIMING", items: [+25%] }
-hear: Clapen på 7 landar en aning efter steget den sitter på, och takten lutar hårdare in i nästa. Avläsningen är ritad här puttad sent; hur långt ett tryck tar den är enhetens sak att berätta.
+hear: Clapen på 7 landar en aning efter steget den sitter på, och takten lutar hårdare in i nästa.
 recover: Öppnades ingenting? Rutan vill ha trig-tangenten hållen först och pilen sedan, och ett steg utan trig har ingenting att tajma. Puttad för långt: [LEFT] går tillbaka, och förskjutningen sparas med patternet, så den överlever sparningen på slutet (§10.5).
 :::
 
@@ -160,9 +159,8 @@ recover: Lyste [RECORD] fast i stället för att blinka? Då gick [PLAY] ner fö
 :::note
 [PLAY] betyder två olika saker runt det här steget. Tryckt en andra gång medan [RECORD]
 fortfarande hålls nere slår den på och av automatisk kvantisering för det du är på väg att
-spela in (§10.4); låt det vara av, eftersom nästa steg gör det jobbet för hand och det finns
-inget att dra om maskinen redan har dragit det. Tryckt när [RECORD] har släppts lämnar den
-live-inspelningen och patternet fortsätter gå.
+spela in (§10.4); låt det vara av, eftersom nästa steg kvantiserar för hand. Tryckt när
+[RECORD] har släppts lämnar den live-inspelningen och patternet fortsätter gå.
 :::
 
 ## Step: Kvantisera det du spelade
@@ -174,12 +172,12 @@ Håll [FUNC] och tryck på [KEYBOARD G#1] för QUANTIZE-menyn, och tryck på [TR
 rikta den mot spår 1. Vrid DATA ENTRY-ratten [E], TRK, upp lite i taget och stanna i samma
 stund som stämman du spelade sitter tajt: en bit upp är där du vill ha den, och ditt öra
 väljer punkten. Ratten [F], PATTERN, skulle göra samma sak med varje spår i patternet på en
-gång, och den här sessionen låter den vara; [NO] stänger menyn.
+gång; låt den stå på noll. [NO] stänger menyn.
 
 :::checkpoint
 screen: { menu: "QUANTIZE", items: [TRK 0, PATTERN 0] }
-hear: Båda inställningarna börjar på noll. Kicken och snaren rör sig inte, för de skrevs på rutnätet och ligger redan på det. Det TRK drar är allt som inte gör det: stämman du spelade för hand, och clapen du puttade sent två steg tillbaka (§10.8) — och det är därför du slutar klättra så snart tagningen sitter.
-recover: Öppnades inte menyn? Prova [FUNC] + [TRIG] i stället, kombinationen §10.4 ger för samma meny där §10.8 ger [FUNC] + [KEYBOARD G#1]; din enhet får avgöra vilken av de två den tar. Gick du hela vägen och tappade den sena clapen? Gå tillbaka till clapens subtrack, håll [TRIG 7] och tryck på [RIGHT] för att putta ut den igen (§10.5); kvantisering avrundar till närmaste steg, och för en mikrotajmad trig behöver det inte vara steget den skrevs på (§10.8). Och låter tagningen ändå inte som det du spelade, inbillar du dig inte: [en ägare rapporterar samma sak](https://www.elektronauts.com/t/tonverk-user-thread/238631/1812), utan svar i tråden.
+hear: Båda inställningarna börjar på noll. Kicken och snaren rör sig inte, för de skrevs på rutnätet och ligger redan på det. Det TRK drar är allt som inte gör det: stämman du spelade för hand, och clapen du puttade sent två steg tillbaka (§10.8).
+recover: Öppnades inte menyn? Prova [FUNC] + [TRIG] i stället, kombinationen §10.4 ger för samma meny där §10.8 ger [FUNC] + [KEYBOARD G#1]. Gick du hela vägen och tappade den sena clapen? Gå tillbaka till clapens subtrack, håll [TRIG 7] och tryck på [RIGHT] för att putta ut den igen (§10.5); kvantisering avrundar till närmaste steg, och för en mikrotajmad trig behöver det inte vara steget den skrevs på (§10.8). Låter tagningen ändå inte som det du spelade, [en ägare rapporterar samma sak](https://www.elektronauts.com/t/tonverk-user-thread/238631/1812), utan svar i tråden.
 :::
 
 ## Step: Se lockarna för sig
@@ -196,8 +194,8 @@ den valda. Sätt tillbaka den på NOTES + P-LOCKS innan du lämnar, och tryck se
 :::checkpoint
 screen: { bank: "A01", name: "P-LOCKS", tempo: 92, track: 1, type: "SUBTRACKS" }
 keys16: { 1: red, 3: red, 5: red, 7: red, 9: red, 11: red, 13: red, 15: red }
-hear: Inget i ljudet ändras. Lanens namn skrivs ut tvärs över displayens överkant bredvid patternsidorna, och varje hi-hat blir svagt röd — alla åtta, 1, 5 och 13 rena och 3, 7, 9, 11 och 15 med sina lockar. Ingenting blinkar: §10.3.2 sorterar den här lanen efter typen av trig, inte efter vad som är lockat på den, och en note-trig som bär en lock är fortfarande en note-trig (§10.2.1), så alla åtta är samma sorts trig här. Blinkar 3, 7, 9, 11 och 15 i stället läser din enhet en lockad ton som båda sorterna — en sak för kolofonen, och ingenting är trasigt i något av fallen.
-recover: [UP] och [DOWN] vandrar genom de tre lanerna som en enda lista, så vilken du än trycker på: fortsätt tills P-LOCKS är den valda och lämna den på NOTES + P-LOCKS efteråt. Är hi-hatsen helröda i stället för svaga, står du fortfarande på NOTES, där note-trigs är röda och lock-trigs svagt gula (§10.3.2) — fortsätt vandra i listan. Elektrons egen presentatör fick en lock-trig att se ut att gå att ta bort från NOTES-läget, [vilket manualen säger inte kan hända](https://www.youtube.com/watch?v=7lFFSUOsXsA); din enhet får avgöra det också.
+hear: Inget i ljudet ändras. Lanens namn skrivs ut tvärs över displayens överkant bredvid patternsidorna, och varje hi-hat blir svagt röd — alla åtta, 1, 5 och 13 rena och 3, 7, 9, 11 och 15 med sina lockar. Ingenting blinkar: §10.3.2 sorterar den här lanen efter typen av trig, inte efter vad som är lockat på den, och en note-trig som bär en lock är fortfarande en note-trig (§10.2.1), så alla åtta är samma sorts trig här.
+recover: [UP] och [DOWN] vandrar genom de tre lanerna som en enda lista, så vilken du än trycker på: fortsätt tills P-LOCKS är den valda och lämna den på NOTES + P-LOCKS efteråt. Är hi-hatsen helröda i stället för svaga, står du fortfarande på NOTES, där note-trigs är röda och lock-trigs svagt gula (§10.3.2) — fortsätt vandra i listan. Elektrons egen presentatör fick en lock-trig att se ut att gå att ta bort från NOTES-läget, [vilket manualen säger inte kan hända](https://www.youtube.com/watch?v=7lFFSUOsXsA).
 :::
 
 ## Step: Spara
@@ -207,8 +205,7 @@ mode: grid-recording
 
 Håll [FUNC] och tryck på [SETTINGS]: sparat, i tystnad, så som varje sparning här går till.
 Håll sedan [TRK] och tryck på [KEYBOARD D1], den andra SUBTRACKS-tangenten, och titta på
-snaren en sista gång — 5 och 13, med 13 blinkande för rollen på den. Den bilden är den här
-sessionens vinjett.
+snaren en sista gång — 5 och 13, med 13 blinkande för rollen på den.
 
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
@@ -251,5 +248,5 @@ sluta upprepa sig själv. Session 5 är byggd på den idén.
 
 Session 5 får patternet att sluta upprepa sig: trig-villkor på kitet du har, en kick som
 kommer varannan loop, chans på samma ghost notes, och en fill-takt du håller nere — allt
-inuti A01, utan att något nytt laddas. Simulatorn på den sidan svarar på den enda fråga som
-villkor alltid väcker, nämligen varför en trig inte spelade.
+inuti A01, utan att något nytt laddas. Simulatorn på den sidan visar varför en trig inte
+spelade.

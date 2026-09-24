@@ -105,13 +105,13 @@ cuarta tecla SUBTRACKS, para que el clap sea el sonido en el que estás.
 [FUNC] + [KEYBOARD F1] abre el navegador de samples en la tarjeta SD, apuntando a esa sola
 subtrack: [UP]/[DOWN] recorre la tarjeta, [YES] abre una carpeta y [YES] sobre un sample lo
 carga en el pool de samples del proyecto y en la subtrack (§5.2.6), y [NO] sube un nivel.
-Elige un sonido corto que te guste en lugar del clap — de las cuatro voces, es con la que la
-pieza es menos exigente — y luego [FUNC] + [NO] para salir del navegador (§6.13.1).
+Elige un sonido corto que te guste en lugar del clap, y luego [FUNC] + [NO] para salir del
+navegador (§6.13.1).
 
 :::checkpoint
 screen: { menu: "SAMPLE BROWSER", items: [SD CARD, SAMPLE BANKS, WAVETABLES], sel: 0 }
 hear: Tu propio sample en los pasos 7 y 15, en lugar del clap del kit, con el resto del beat sin cambios.
-recover: Si un [YES] añade el sample pero la subtrack no lo toca, el navegador quiere su menú OPERATIONS: pulsa [RIGHT], elige LOAD SAMPLES y pulsa [YES] (§6.13.1). Si este camino necesita una pulsación o dos es una pregunta para la unidad — el manual describe las dos, en páginas distintas.
+recover: Si un [YES] añade el sample pero la subtrack no lo toca, el navegador quiere su menú OPERATIONS: pulsa [RIGHT], elige LOAD SAMPLES y pulsa [YES] (§6.13.1).
 :::
 
 :::note
@@ -146,8 +146,7 @@ Un lock puesto aquí mueve las ocho subtracks a la vez, lo que va mejor con
 [los niveles de send también se comparten aquí](https://www.elektronauts.com/t/tonverk-subtrack-drum-strategies/243084),
 en vez de ajustarse por subtrack, y por eso mezclar un kit voz por voz pasa por la
 supertrack. El presentador de Elektron en ese vídeo llama a la marca de la pantalla tres
-puntos en vez de tres rectángulos, así que su aspecto merece un segundo vistazo en tu propia
-unidad.
+puntos en vez de tres rectángulos.
 :::
 
 ## Step: Guarda
@@ -157,8 +156,7 @@ mode: grid-recording
 
 Mantén pulsado [FUNC] y pulsa [SETTINGS]: guardado, en silencio, como va todo guardado aquí.
 Luego pulsa [RECORD] si está apagado, mantén pulsado [TRK] y pulsa [KEYBOARD A1], la tecla del
-hi-hat cerrado, y míralo por última vez — todos los pasos impares en rojo. Esa imagen es la
-cabecera de esta sesión.
+hi-hat cerrado, y míralo por última vez — todos los pasos impares en rojo.
 
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }

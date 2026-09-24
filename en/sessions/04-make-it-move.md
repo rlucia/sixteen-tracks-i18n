@@ -42,7 +42,7 @@ VEL, down to around 60.
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS", params: [NOTE —, VEL 60, LEN 1/16, PROB 100%, RTRG OFF, RTIM 1/16, RVEL 0, COND —], invert: [1] }
 keys16: { 1: red, 3: red, 5: red, 7: red, 9: red, 11: red, 13: red, 15: red }
 hear: The hats on the beat stand where they were and the four between them sit back behind them. VEL is the one box on the page drawn inverted, and the four keys you held are blinking red while the other four hold steady.
-recover: If all eight hats went quiet, nothing was held and the turn moved the whole subtrack's VEL: turn it back up, hold the four keys, then turn again. Expect NOTE to read as a dash — §12.2 says only that it is not available on a Subtracks track — and expect the other seven readings to differ from the drawing, which is made from that section rather than off a unit.
+recover: If all eight hats went quiet, nothing was held and the turn moved the whole subtrack's VEL: turn it back up, hold the four keys, then turn again. NOTE reads as a dash: §12.2 says it is not available on a Subtracks track.
 :::
 
 :::note
@@ -65,7 +65,7 @@ and press [YES] for the hat on the beat beside it.
 
 :::checkpoint
 hear: Two hats, one after the other, at the two volumes you just set, over the loop that keeps running underneath.
-recover: If the two sound identical, the lock never landed — go back a step, hold the four keys and watch VEL turn inverted as you turn the knob. Whether this preview sounds the held trig's own subtrack or the subtrack you have selected is not settled anywhere we could find; your unit will settle that.
+recover: If the two sound identical, the lock never landed — go back a step, hold the four keys and watch VEL turn inverted as you turn the knob.
 :::
 
 ## Step: A filter lock
@@ -80,7 +80,7 @@ knob [E], FREQ, down until that one hat goes dull.
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS", params: [ATK, DEC, SUS, REL, FREQ 42, RESO, TYPE, ENV], invert: [4] }
 hear: Seven hats as they were, and one on beat three with the top taken off it. Step 9 is blinking now, alongside the four ghost notes.
-recover: If every hat dulled at once, [TRIG 9] was not down when you turned: hold it first. Your unit fills all eight boxes on this page with readings; the drawing gives one only to the box you changed.
+recover: If every hat dulled at once, [TRIG 9] was not down when you turned: hold it first.
 :::
 
 ## Step: Take a lock off
@@ -94,7 +94,7 @@ worked piece keeps this one.
 
 :::checkpoint
 hear: The hat on beat three comes back bright, and goes dull again when you put the lock back.
-recover: If the hat disappeared altogether, that was a quick press rather than a hold, which removes the trig — press [TRIG 9] once more to write it back, and know that every lock it carried went with it (§10.10.1), so this step is worth doing twice.
+recover: If the hat disappeared altogether, that was a quick press rather than a hold, which removes the trig — press [TRIG 9] once more to write it back, and every lock it carried went with it (§10.10.1).
 :::
 
 ## Step: The snare roll
@@ -106,22 +106,20 @@ mode: grid-recording
 Hold [TRK] and press [KEYBOARD D1], the second SUBTRACKS key, for the snare. Hold [TRIG 13]
 and press [TRIG] for TRIG PAGE 1, and keep it held: turn [E] to switch RTRG on, [F] to set
 RTIM to 1/32, and [G] to take RVEL up towards 1, so the repeats grow rather than fall away.
-Those are a starting point and not the only answer.
 
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS", params: [NOTE —, VEL 100, LEN 1/16, PROB 100%, RTRG ON, RTIM 1/32, RVEL 0.5, COND —], invert: [4, 5, 6] }
 keys16: { 5: red, 13: red }
-hear: The snare on beat four comes as a short roll: the repeats run for the trig's own LEN and stop inside step 13, a pickup into the next bar rather than a fill across it. The snare on 5 is untouched, and on the page — drawn here, not read off a unit — the three you turned are the inverted ones. Step 13 is blinking now, 5 is steady.
-recover: A roll you cannot hear is usually RTRG still off — hold [TRIG 13] and watch that readout change before you go near RTIM. If both snares roll, [TRIG 13] was let go before you turned and the setting went on the whole subtrack instead of that one trig: turn RTRG back off with nothing held, then start again holding the key. Too busy? [F] back to 1/16 gives one repeat per step, 1/12 gives triplets. Nobody has published numbers for this; your unit will settle the tidiest ones.
+hear: The snare on beat four comes as a short roll: the repeats run for the trig's own LEN and stop inside step 13, a pickup into the next bar rather than a fill across it. The snare on 5 is untouched, and on the page the three you turned are the inverted ones. Step 13 is blinking now, 5 is steady.
+recover: A roll you cannot hear is usually RTRG still off — hold [TRIG 13] and watch that readout change before you go near RTIM. If both snares roll, [TRIG 13] was let go before you turned and the setting went on the whole subtrack instead of that one trig: turn RTRG back off with nothing held, then start again holding the key. Too busy? [F] back to 1/16 gives one repeat per step, 1/12 gives triplets.
 :::
 
 :::note
 Two things on this page catch people. There is no RLEN: the fourth of the retrig parameters
 is COND, a trig condition, which is session 5's subject — what shapes a roll is RVEL, and it
-works against the trig's own VEL. And the manual is of two minds about which knob switches
-RTRG on: §6.3's rule is that a parameter answers to the knob it sits above, which puts RTRG
-on [E], while §12.2's own sentence names knob [A]. Turn the knob under the parameter, and if
-your unit says otherwise, your unit is right.
+works against the trig's own VEL. And the manual names two knobs for RTRG: §6.3's rule is
+that a parameter answers to the knob it sits above, which puts RTRG on [E], while §12.2's
+sentence names knob [A]. Turn the knob under the parameter.
 :::
 
 ## Step: Push the clap late
@@ -136,7 +134,7 @@ and [DOWN] move it a little at a time — and release [TRIG 7] to leave.
 
 :::checkpoint
 screen: { menu: "MICRO TIMING", items: [+25%] }
-hear: The clap on 7 lands a shade after the step it sits on, and the bar leans harder into the next one. The reading is drawn here pushed late; how far one press takes it is the unit's to tell you.
+hear: The clap on 7 lands a shade after the step it sits on, and the bar leans harder into the next one.
 recover: Nothing opened? The pop-up wants the trig key held first and the arrow second, and a step with no trig on it has nothing to time. Pushed too far: [LEFT] walks it back, and the offset is stored with the pattern, so it survives the save at the end (§10.5).
 :::
 
@@ -158,8 +156,8 @@ recover: If [RECORD] lit steady instead of flashing, [PLAY] went down before [RE
 :::note
 [PLAY] means two different things around this step. Pressed a second time while [RECORD] is
 still held, it turns automatic quantisation on and off for what you are about to record
-(§10.4); leave it off, because the next step does that job by hand and there is nothing to
-pull if the machine has already pulled it. Pressed once [RECORD] is released, it leaves live
+(§10.4); leave it off, because the next step quantises by hand. Pressed once [RECORD] is
+released, it leaves live
 recording and the pattern keeps running.
 :::
 
@@ -171,13 +169,13 @@ mode: menu:QUANTIZE
 Hold [FUNC] and press [KEYBOARD G#1] for the QUANTIZE menu, and press [TRIG 1] to aim it at
 track 1. Turn DATA ENTRY knob [E], TRK, up a little at a time and stop the moment the part
 you played sits tight: part way up is where you want it, and your ear picks the spot.
-Knob [F], PATTERN, would do the same to every track in the pattern at once, and this session
-leaves it alone; [NO] closes the menu.
+Knob [F], PATTERN, would do the same to every track in the pattern at once; leave it at zero.
+[NO] closes the menu.
 
 :::checkpoint
 screen: { menu: "QUANTIZE", items: [TRK 0, PATTERN 0] }
-hear: Both settings start at zero. The kick and the snare do not move, because they were written on the grid and are on it already. What TRK pulls is everything that is not: the part you played by hand, and the clap you pushed late two steps ago (§10.8) — which is why you stop climbing as soon as the take is tight.
-recover: Menu did not open? Try [FUNC] + [TRIG] instead, the combination §10.4 gives for this same menu where §10.8 gives [FUNC] + [KEYBOARD G#1]; your unit will settle which of the two it takes. Gone all the way and lost the late clap? Go back to the clap's subtrack, hold [TRIG 7] and press [RIGHT] to push it out again (§10.5); quantising rounds to the nearest step, and for a micro-timed trig that need not be the step it was written on (§10.8). And if the take still does not sound like what you played, you are not imagining it: [one owner reports the same](https://www.elektronauts.com/t/tonverk-user-thread/238631/1812), with no answer in the thread.
+hear: Both settings start at zero. The kick and the snare do not move, because they were written on the grid and are on it already. What TRK pulls is everything that is not: the part you played by hand, and the clap you pushed late two steps ago (§10.8).
+recover: Menu did not open? Try [FUNC] + [TRIG] instead, the combination §10.4 gives for this same menu where §10.8 gives [FUNC] + [KEYBOARD G#1]. Gone all the way and lost the late clap? Go back to the clap's subtrack, hold [TRIG 7] and press [RIGHT] to push it out again (§10.5); quantising rounds to the nearest step, and for a micro-timed trig that need not be the step it was written on (§10.8). If the take still does not sound like what you played, [one owner reports the same](https://www.elektronauts.com/t/tonverk-user-thread/238631/1812), with no answer in the thread.
 :::
 
 ## Step: See the locks alone
@@ -194,8 +192,8 @@ before you leave, then press [NO].
 :::checkpoint
 screen: { bank: "A01", name: "P-LOCKS", tempo: 92, track: 1, type: "SUBTRACKS" }
 keys16: { 1: red, 3: red, 5: red, 7: red, 9: red, 11: red, 13: red, 15: red }
-hear: Nothing in the sound changes. The lane's name prints across the top of the screen beside the pattern pages, and every hat goes faint red — all eight, 1, 5 and 13 plain and 3, 7, 9, 11 and 15 carrying their locks. Nothing blinks: §10.3.2 sorts this lane by the type of trig, not by what is locked on it, and a note trig carrying a lock is still a note trig (§10.2.1), so all eight are the same kind of trig here. If 3, 7, 9, 11 and 15 blink instead, your unit reads a locked note as both kinds — one for the colophon, and nothing is broken either way.
-recover: [UP] and [DOWN] walk the three lanes as one list, so whichever you press, keep going until P-LOCKS is the one chosen and leave it on NOTES + P-LOCKS afterwards. If the hats are full red rather than faint, you are still on NOTES, where note trigs are red and lock trigs faint yellow (§10.3.2) — keep walking the list. Elektron's own presenter found a lock trig seemingly removable from NOTES mode, [which the manual says cannot happen](https://www.youtube.com/watch?v=7lFFSUOsXsA); your unit will settle that too.
+hear: Nothing in the sound changes. The lane's name prints across the top of the screen beside the pattern pages, and every hat goes faint red — all eight, 1, 5 and 13 plain and 3, 7, 9, 11 and 15 carrying their locks. Nothing blinks: §10.3.2 sorts this lane by the type of trig, not by what is locked on it, and a note trig carrying a lock is still a note trig (§10.2.1), so all eight are the same kind of trig here.
+recover: [UP] and [DOWN] walk the three lanes as one list, so whichever you press, keep going until P-LOCKS is the one chosen and leave it on NOTES + P-LOCKS afterwards. If the hats are full red rather than faint, you are still on NOTES, where note trigs are red and lock trigs faint yellow (§10.3.2) — keep walking the list. Elektron's own presenter found a lock trig seemingly removable from NOTES mode, [which the manual says cannot happen](https://www.youtube.com/watch?v=7lFFSUOsXsA).
 :::
 
 ## Step: Save
@@ -205,7 +203,7 @@ mode: grid-recording
 
 Hold [FUNC] and press [SETTINGS]: saved, in silence, the way every save here goes. Then hold
 [TRK] and press [KEYBOARD D1], the second SUBTRACKS key, and look at the snare one last time
-— 5 and 13, with 13 blinking for the roll on it. That picture is this session's masthead.
+— 5 and 13, with 13 blinking for the roll on it.
 
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
@@ -248,5 +246,5 @@ built on that idea.
 
 Session 5 stops the pattern repeating: trig conditions on the kit you have, a kick that
 arrives every other loop, chance on these same ghost notes, and a fill bar you hold down —
-all of it inside A01, with nothing new loaded. The simulator on that page answers the one
-question conditions always raise, which is why a trig did not play.
+all of it inside A01, with nothing new loaded. The simulator on that page shows why a trig
+did not play.

@@ -96,15 +96,15 @@ recover: The screen's bottom-left corner is the readout to trust: it says T1. A 
 
 :::note
 Three parts of the manual spell this key three ways — [TRK] in §5.3.7, TRACK in §10.3, and
-§9.1.4's own preset procedure asks for [FUNC] and a trig key instead. The panel in front of
-you prints TRK, so that is what this course says.
-[Owners settle it the same way](https://www.elektronauts.com/t/tonverk-technical-q-a/238273/1088):
+§9.1.4's own preset procedure asks for [FUNC] and a trig key instead. The panel prints TRK,
+and [owners confirm](https://www.elektronauts.com/t/tonverk-technical-q-a/238273/1088) that
 [TRK] and a trig key is the silent select.
 :::
 
 ## Step: Load a kit
 keys: [PRESET, LEFT, RIGHT, UP, DOWN, LEVEL/DATA, YES]
 source: manual §7.1, §9.1.4
+checked: yes
 mode: menu:LOAD PRESET
 
 Press [PRESET]. The LOAD PRESET menu opens on the active track. [LEFT]/[RIGHT] move between
@@ -144,6 +144,7 @@ the map on [Before you start](/before-you-start/) shows the rest.
 keys: [KEYBOARD C1, KEYBOARD D1, KEYBOARD E1, KEYBOARD F1, KEYBOARD G1, KEYBOARD A1, KEYBOARD B1, KEYBOARD C2, TRIG 1]
 leds: { KEYBOARD C1: red }
 source: manual §3.1, §A.2.3
+checked: yes
 mode: any
 
 Press the bottom row of the keyboard one key at a time, from [KEYBOARD C1] to
@@ -192,8 +193,7 @@ checked: yes
 mode: playback
 
 Hold [FUNC] and press [KEYBOARD F#1] — its mint legend says Metronome. Press [PLAY]: a
-click at your tempo. Play the kick on [KEYBOARD C1] against it for a minute; that is the
-exercise, and it is the whole reason the tempo came before the beat. Press [STOP], then
+click at your tempo. Play the kick on [KEYBOARD C1] against it for a minute. Press [STOP], then
 [FUNC] + [KEYBOARD F#1] again to silence the click.
 
 :::checkpoint
@@ -237,14 +237,13 @@ recover: If a menu of settings opened instead, you pressed [SETTINGS] without [F
 
 :::note
 The absence of a prompt is the trap. Owners press [FUNC] + [SETTINGS], see no naming screen,
-and conclude that nothing was saved —
-[the thread this step is drawn from](https://www.elektronauts.com/t/create-new-empty-project-no-samples-inside-my-own-name-how/238370)
-is owners working that out. §9.1.1 gives the combination a single job — it writes whatever
-you are working on back to the slot it came from — and naming is SAVE AS, which you have
-already done. You may see a short banner while the card is written; owners on this OS
-[have asked for it to go](https://www.elektronauts.com/t/os-upgrade-tonverk-os-1-4-0/254824),
-though §9.1.1 never mentions one, so take it as something that may flicker past rather than
-something to wait for. Your unit will settle that.
+and conclude that nothing was saved
+([a thread of owners working that out](https://www.elektronauts.com/t/create-new-empty-project-no-samples-inside-my-own-name-how/238370)).
+§9.1.1 gives the combination a single job — it writes whatever you are working on back to the
+slot it came from — and naming is SAVE AS, which you have already done. You may see a short
+banner while the card is written; §9.1.1 never mentions one, and owners on this OS
+[have asked for it to go](https://www.elektronauts.com/t/os-upgrade-tonverk-os-1-4-0/254824).
+Do not wait for it.
 :::
 
 :::note
@@ -301,4 +300,4 @@ quietens things.
 Session 2 writes the one-bar beat that the whole piece stands on, on this one track, a sound
 of the kit at a time. Before that, ten minutes on
 [Before you start](/before-you-start/) explains the five containers a save touches and the
-four kinds of track: it is the page every later session leans on.
+four kinds of track.

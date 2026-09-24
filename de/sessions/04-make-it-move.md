@@ -43,7 +43,7 @@ dreh DATA-ENTRY-Regler [B], VEL, herunter auf etwa 60.
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS", params: [NOTE —, VEL 60, LEN 1/16, PROB 100%, RTRG OFF, RTIM 1/16, RVEL 0, COND —], invert: [1] }
 keys16: { 1: red, 3: red, 5: red, 7: red, 9: red, 11: red, 13: red, 15: red }
 hear: Die Hi-Hats auf den Zählzeiten stehen, wo sie waren, und die vier dazwischen treten hinter sie zurück. VEL ist das eine Feld auf der Seite, das invertiert gezeichnet ist, und die vier Tasten, die du gehalten hast, blinken rot, während die anderen vier dauerhaft leuchten.
-recover: Sind alle acht Hi-Hats leise geworden, war nichts gehalten, und die Drehung hat die VEL des ganzen Subtracks bewegt: dreh sie wieder hoch, halte die vier Tasten, dann dreh noch einmal. Rechne damit, dass NOTE als Strich erscheint — §12.2 sagt nur, dass es auf einer Subtracks-Spur nicht verfügbar ist — und damit, dass die anderen sieben Werte von der Zeichnung abweichen, die aus diesem Abschnitt gemacht ist und nicht von einem Gerät abgelesen.
+recover: Sind alle acht Hi-Hats leise geworden, war nichts gehalten, und die Drehung hat die VEL des ganzen Subtracks bewegt: dreh sie wieder hoch, halte die vier Tasten, dann dreh noch einmal. NOTE erscheint als Strich: §12.2 sagt, dass es auf einer Subtracks-Spur nicht verfügbar ist.
 :::
 
 :::note
@@ -67,7 +67,7 @@ Halte [TRIG 1] und drücke [YES] für die Hi-Hat auf der Zählzeit daneben.
 
 :::checkpoint
 hear: Zwei Hi-Hats, eine nach der anderen, in den zwei Lautstärken, die du gerade gesetzt hast, über dem Loop, der darunter weiterläuft.
-recover: Klingen die beiden gleich, ist der Lock nie gelandet — geh einen Schritt zurück, halte die vier Tasten und sieh zu, wie VEL beim Drehen invertiert wird. Ob diese Vorschau den eigenen Subtrack des gehaltenen Trigs erklingen lässt oder den Subtrack, den du gewählt hast, ist nirgends geklärt, wo sich nachsehen ließ; das klärt dein Gerät.
+recover: Klingen die beiden gleich, ist der Lock nie gelandet — geh einen Schritt zurück, halte die vier Tasten und sieh zu, wie VEL beim Drehen invertiert wird.
 :::
 
 ## Step: Ein Filter-Lock
@@ -82,7 +82,7 @@ DATA-ENTRY-Regler [E], FREQ, herunter, bis diese eine Hi-Hat dumpf wird.
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS", params: [ATK, DEC, SUS, REL, FREQ 42, RESO, TYPE, ENV], invert: [4] }
 hear: Sieben Hi-Hats wie gehabt, und eine auf Zählzeit drei, der die Höhen genommen sind. Schritt 9 blinkt jetzt, neben den vier Ghost Notes.
-recover: Sind alle Hi-Hats auf einmal dumpf geworden, war [TRIG 9] beim Drehen nicht unten: halte sie zuerst. Dein Gerät füllt alle acht Felder auf dieser Seite mit Werten; die Zeichnung gibt nur dem Feld einen, das du geändert hast.
+recover: Sind alle Hi-Hats auf einmal dumpf geworden, war [TRIG 9] beim Drehen nicht unten: halte sie zuerst.
 :::
 
 ## Step: Einen Lock entfernen
@@ -96,7 +96,7 @@ herunter: das Beispielstück behält diesen.
 
 :::checkpoint
 hear: Die Hi-Hat auf Zählzeit drei kommt hell zurück und wird wieder dumpf, wenn du den Lock zurücksetzt.
-recover: Ist die Hi-Hat ganz verschwunden, war das ein kurzer Druck statt eines Haltens, und der entfernt den Trig — drücke [TRIG 9] noch einmal, um ihn zurückzuschreiben, und wisse, dass jeder Lock, den er trug, mit ihm gegangen ist (§10.10.1), dieser Schritt ist es also wert, zweimal gemacht zu werden.
+recover: Ist die Hi-Hat ganz verschwunden, war das ein kurzer Druck statt eines Haltens, und der entfernt den Trig — drücke [TRIG 9] noch einmal, um ihn zurückzuschreiben, und jeder Lock, den er trug, ist mit ihm gegangen (§10.10.1).
 :::
 
 ## Step: Der Snare-Roll
@@ -108,24 +108,22 @@ mode: grid-recording
 Halte [TRK] und drücke [KEYBOARD D1], die zweite SUBTRACKS-Taste, für die Snare. Halte
 [TRIG 13] und drücke [TRIG] für TRIG PAGE 1, und halte weiter: dreh [E], um RTRG einzuschalten,
 [F], um RTIM auf 1/32 zu setzen, und [G], um RVEL Richtung 1 hochzunehmen, damit die
-Wiederholungen anwachsen, statt abzufallen. Das ist ein Ausgangspunkt und nicht die einzige
-Antwort.
+Wiederholungen anwachsen, statt abzufallen.
 
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS", params: [NOTE —, VEL 100, LEN 1/16, PROB 100%, RTRG ON, RTIM 1/32, RVEL 0.5, COND —], invert: [4, 5, 6] }
 keys16: { 5: red, 13: red }
-hear: Die Snare auf Zählzeit vier kommt als kurzer Roll: die Wiederholungen laufen für die eigene LEN des Trigs und enden innerhalb von Schritt 13, ein Auftakt in den nächsten Takt statt ein Fill quer darüber. Die Snare auf 5 ist unberührt, und auf der Seite — hier gezeichnet, nicht von einem Gerät abgelesen — sind die drei, die du gedreht hast, die invertierten. Schritt 13 blinkt jetzt, 5 leuchtet dauerhaft.
-recover: Ein Roll, den du nicht hörst, ist meistens RTRG, das noch aus ist — halte [TRIG 13] und sieh zu, wie sich dieser Wert ändert, bevor du RTIM anfasst. Rollen beide Snares, wurde [TRIG 13] vor dem Drehen losgelassen, und die Einstellung ging auf den ganzen Subtrack statt auf diesen einen Trig: schalte RTRG aus, ohne etwas zu halten, und fang noch einmal mit gehaltener Taste an. Zu voll? [F] zurück auf 1/16 gibt eine Wiederholung pro Schritt, 1/12 gibt Triolen. Niemand hat Zahlen dafür veröffentlicht; welche am saubersten sind, klärt dein Gerät.
+hear: Die Snare auf Zählzeit vier kommt als kurzer Roll: die Wiederholungen laufen für die eigene LEN des Trigs und enden innerhalb von Schritt 13, ein Auftakt in den nächsten Takt statt ein Fill quer darüber. Die Snare auf 5 ist unberührt, und auf der Seite sind die drei, die du gedreht hast, die invertierten. Schritt 13 blinkt jetzt, 5 leuchtet dauerhaft.
+recover: Ein Roll, den du nicht hörst, ist meistens RTRG, das noch aus ist — halte [TRIG 13] und sieh zu, wie sich dieser Wert ändert, bevor du RTIM anfasst. Rollen beide Snares, wurde [TRIG 13] vor dem Drehen losgelassen, und die Einstellung ging auf den ganzen Subtrack statt auf diesen einen Trig: schalte RTRG aus, ohne etwas zu halten, und fang noch einmal mit gehaltener Taste an. Zu voll? [F] zurück auf 1/16 gibt eine Wiederholung pro Schritt, 1/12 gibt Triolen.
 :::
 
 :::note
 Zwei Dinge auf dieser Seite erwischen Leute. Es gibt kein RLEN: der vierte der
 Retrig-Parameter ist COND, eine Trig-Bedingung, das Thema von Session 5 — was einen Roll
-formt, ist RVEL, und es arbeitet gegen die eigene VEL des Trigs. Und das Handbuch ist sich
-uneins, welcher Regler RTRG einschaltet: die Regel in §6.3 lautet, dass ein Parameter auf den
-Regler hört, über dem er sitzt, was RTRG auf [E] legt, während der Satz in §12.2 selbst
-Regler [A] nennt. Dreh den Regler unter dem Parameter, und sagt dein Gerät etwas anderes, hat
-dein Gerät recht.
+formt, ist RVEL, und es arbeitet gegen die eigene VEL des Trigs. Und das Handbuch nennt zwei
+Regler für RTRG: die Regel in §6.3 lautet, dass ein Parameter auf den Regler hört, über dem er
+sitzt, was RTRG auf [E] legt, während der Satz in §12.2 Regler [A] nennt. Dreh den Regler unter
+dem Parameter.
 :::
 
 ## Step: Den Clap nach hinten schieben
@@ -141,7 +139,7 @@ großen Sprüngen weiter, [UP] und [DOWN] bewegen ihn ein Stück nach dem andere
 
 :::checkpoint
 screen: { menu: "MICRO TIMING", items: [+25%] }
-hear: Der Clap auf 7 landet einen Hauch nach dem Schritt, auf dem er sitzt, und der Takt lehnt sich stärker in den nächsten. Der Wert ist hier nach hinten geschoben gezeichnet; wie weit ihn ein Druck bringt, sagt dir das Gerät.
+hear: Der Clap auf 7 landet einen Hauch nach dem Schritt, auf dem er sitzt, und der Takt lehnt sich stärker in den nächsten.
 recover: Nichts hat sich geöffnet? Das Pop-up will zuerst die gehaltene Trig-Taste und dann den Pfeil, und ein Schritt ohne Trig hat nichts zu timen. Zu weit geschoben: [LEFT] geht zurück, und der Versatz wird mit dem Pattern gespeichert, er überlebt also das Speichern am Ende (§10.5).
 :::
 
@@ -164,9 +162,8 @@ recover: Hat [RECORD] dauerhaft geleuchtet statt zu blinken, ging [PLAY] vor [RE
 :::note
 [PLAY] bedeutet rund um diesen Schritt zwei verschiedene Dinge. Ein zweites Mal gedrückt,
 während [RECORD] noch gehalten wird, schaltet es die automatische Quantisierung für das, was
-du gleich aufnimmst, ein und aus (§10.4); lass sie aus, denn der nächste Schritt erledigt
-diese Aufgabe von Hand, und es gibt nichts zu ziehen, wenn das Gerät es schon gezogen hat.
-Einmal gedrückt, nachdem [RECORD] losgelassen ist, verlässt es die Live-Aufnahme, und das
+du gleich aufnimmst, ein und aus (§10.4); lass sie aus, denn der nächste Schritt quantisiert
+von Hand. Einmal gedrückt, nachdem [RECORD] losgelassen ist, verlässt es die Live-Aufnahme, und das
 Pattern läuft weiter.
 :::
 
@@ -179,12 +176,12 @@ Halte [FUNC] und drücke [KEYBOARD G#1] für das QUANTIZE-Menü, und drücke [TR
 Spur 1 zu richten. Dreh DATA-ENTRY-Regler [E], TRK, ein Stück nach dem anderen hoch und halt in
 dem Moment an, in dem der Part, den du gespielt hast, eng sitzt: auf halbem Weg nach oben liegt
 die Stelle, die du suchst, und dein Ohr findet sie. Regler [F], PATTERN, täte dasselbe mit jeder Spur
-im Pattern auf einmal, und diese Session lässt ihn in Ruhe; [NO] schließt das Menü.
+im Pattern auf einmal; lass ihn auf null. [NO] schließt das Menü.
 
 :::checkpoint
 screen: { menu: "QUANTIZE", items: [TRK 0, PATTERN 0] }
-hear: Beide Einstellungen beginnen bei null. Kick und Snare bewegen sich nicht, denn sie wurden auf dem Raster geschrieben und sitzen schon darauf. Was TRK zieht, ist alles, was nicht darauf sitzt: der Part, den du von Hand gespielt hast, und der Clap, den du zwei Schritte zuvor nach hinten geschoben hast (§10.8) — darum hörst du auf zu drehen, sobald die Aufnahme eng sitzt.
-recover: Menü nicht aufgegangen? Probier stattdessen [FUNC] + [TRIG], die Kombination, die §10.4 für dasselbe Menü gibt, wo §10.8 [FUNC] + [KEYBOARD G#1] gibt; welche der beiden es annimmt, klärt dein Gerät. Ganz hochgedreht und den späten Clap verloren? Geh zurück auf den Subtrack des Claps, halte [TRIG 7] und drücke [RIGHT], um ihn wieder herauszuschieben (§10.5); Quantisieren rundet auf den nächsten Schritt, und für einen Trig mit Micro-Timing muss das nicht der Schritt sein, auf dem er geschrieben wurde (§10.8). Und klingt die Aufnahme immer noch nicht wie das, was du gespielt hast, bildest du dir das nicht ein: [ein Besitzer berichtet dasselbe](https://www.elektronauts.com/t/tonverk-user-thread/238631/1812), ohne Antwort im Thread.
+hear: Beide Einstellungen beginnen bei null. Kick und Snare bewegen sich nicht, denn sie wurden auf dem Raster geschrieben und sitzen schon darauf. Was TRK zieht, ist alles, was nicht darauf sitzt: der Part, den du von Hand gespielt hast, und der Clap, den du zwei Schritte zuvor nach hinten geschoben hast (§10.8).
+recover: Menü nicht aufgegangen? Probier stattdessen [FUNC] + [TRIG], die Kombination, die §10.4 für dasselbe Menü gibt, wo §10.8 [FUNC] + [KEYBOARD G#1] gibt. Ganz hochgedreht und den späten Clap verloren? Geh zurück auf den Subtrack des Claps, halte [TRIG 7] und drücke [RIGHT], um ihn wieder herauszuschieben (§10.5); Quantisieren rundet auf den nächsten Schritt, und für einen Trig mit Micro-Timing muss das nicht der Schritt sein, auf dem er geschrieben wurde (§10.8). Klingt die Aufnahme immer noch nicht wie das, was du gespielt hast: [ein Besitzer berichtet dasselbe](https://www.elektronauts.com/t/tonverk-user-thread/238631/1812), ohne Antwort im Thread.
 :::
 
 ## Step: Nur die Locks sehen
@@ -201,8 +198,8 @@ NOTES + P-LOCKS, bevor du gehst, dann drücke [NO].
 :::checkpoint
 screen: { bank: "A01", name: "P-LOCKS", tempo: 92, track: 1, type: "SUBTRACKS" }
 keys16: { 1: red, 3: red, 5: red, 7: red, 9: red, 11: red, 13: red, 15: red }
-hear: Am Klang ändert sich nichts. Der Name der Lane steht oben auf dem Display neben den Pattern-Seiten, und jede Hi-Hat wird blassrot — alle acht, 1, 5 und 13 schlicht und 3, 7, 9, 11 und 15 mit ihren Locks. Nichts blinkt: §10.3.2 sortiert diese Lane nach der Art des Trigs, nicht nach dem, was darauf gelockt ist, und ein Noten-Trig mit einem Lock ist immer noch ein Noten-Trig (§10.2.1), hier sind also alle acht dieselbe Art von Trig. Blinken 3, 7, 9, 11 und 15 stattdessen, liest dein Gerät eine gelockte Note als beide Arten — eins fürs Kolophon, und kaputt ist so oder so nichts.
-recover: [UP] und [DOWN] gehen die drei Lanes als eine Liste durch, egal welche du also drückst, mach weiter, bis P-LOCKS die gewählte ist, und lass es danach auf NOTES + P-LOCKS. Sind die Hi-Hats vollrot statt blass, bist du noch auf NOTES, wo Noten-Trigs rot sind und Lock-Trigs blassgelb (§10.3.2) — geh die Liste weiter durch. Elektrons eigener Präsentator fand einen Lock-Trig, der sich im NOTES-Modus scheinbar entfernen ließ, [was das Handbuch für unmöglich erklärt](https://www.youtube.com/watch?v=7lFFSUOsXsA); auch das klärt dein Gerät.
+hear: Am Klang ändert sich nichts. Der Name der Lane steht oben auf dem Display neben den Pattern-Seiten, und jede Hi-Hat wird blassrot — alle acht, 1, 5 und 13 schlicht und 3, 7, 9, 11 und 15 mit ihren Locks. Nichts blinkt: §10.3.2 sortiert diese Lane nach der Art des Trigs, nicht nach dem, was darauf gelockt ist, und ein Noten-Trig mit einem Lock ist immer noch ein Noten-Trig (§10.2.1), hier sind also alle acht dieselbe Art von Trig.
+recover: [UP] und [DOWN] gehen die drei Lanes als eine Liste durch, egal welche du also drückst, mach weiter, bis P-LOCKS die gewählte ist, und lass es danach auf NOTES + P-LOCKS. Sind die Hi-Hats vollrot statt blass, bist du noch auf NOTES, wo Noten-Trigs rot sind und Lock-Trigs blassgelb (§10.3.2) — geh die Liste weiter durch. Elektrons eigener Präsentator fand einen Lock-Trig, der sich im NOTES-Modus scheinbar entfernen ließ, [was das Handbuch für unmöglich erklärt](https://www.youtube.com/watch?v=7lFFSUOsXsA).
 :::
 
 ## Step: Speichern
@@ -212,8 +209,7 @@ mode: grid-recording
 
 Halte [FUNC] und drücke [SETTINGS]: gespeichert, in Stille, wie jedes Speichern hier abläuft.
 Dann halte [TRK] und drücke [KEYBOARD D1], die zweite SUBTRACKS-Taste, und sieh dir die Snare
-ein letztes Mal an — 5 und 13, mit 13 blinkend für den Roll darauf. Dieses Bild ist das
-Titelbild dieser Session.
+ein letztes Mal an — 5 und 13, mit 13 blinkend für den Roll darauf.
 
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
@@ -258,5 +254,5 @@ und hör zu, wie der Takt aufhört, sich zu wiederholen. Session 5 ist auf diese
 Session 5 bringt das Pattern dazu, sich nicht mehr zu wiederholen: Trig-Bedingungen auf dem
 Kit, das du hast, eine Kick, die jeden zweiten Loop kommt, Wahrscheinlichkeit auf ebendiesen
 Ghost Notes und ein Fill-Takt, den du gedrückt hältst — alles innerhalb von A01, ohne dass
-etwas Neues geladen wird. Der Simulator auf dieser Seite beantwortet die eine Frage, die
-Bedingungen immer aufwerfen: warum ein Trig nicht gespielt hat.
+etwas Neues geladen wird. Der Simulator auf dieser Seite zeigt, warum ein Trig nicht
+gespielt hat.

@@ -103,14 +103,13 @@ Hold [TRK] and press [KEYBOARD F1], the fourth
 SUBTRACKS key, so the clap is the sound you are on. [FUNC] + [KEYBOARD F1] opens the
 Sample browser on the SD card, aimed at that one subtrack: [UP]/[DOWN] scrolls the card, [YES]
 opens a folder and [YES] on a sample loads it into the project's sample pool and onto the
-subtrack (§5.2.6), and [NO] steps back up a level. Pick a short sound you like in the clap's place —
-of the four voices, it is the one the piece is least fussy about — then [FUNC] + [NO] to leave
-the browser (§6.13.1).
+subtrack (§5.2.6), and [NO] steps back up a level. Pick a short sound you like in the clap's
+place, then [FUNC] + [NO] to leave the browser (§6.13.1).
 
 :::checkpoint
 screen: { menu: "SAMPLE BROWSER", items: [SD CARD, SAMPLE BANKS, WAVETABLES], sel: 0 }
 hear: Your own sample on steps 7 and 15, in place of the kit's clap, with the rest of the beat unchanged.
-recover: If one [YES] adds the sample but the subtrack will not play it, the browser wants its OPERATIONS menu: press [RIGHT], choose LOAD SAMPLES and press [YES] (§6.13.1). Whether this route needs one press or two is a question for the unit — the manual describes both, on different pages.
+recover: If one [YES] adds the sample but the subtrack will not play it, the browser wants its OPERATIONS menu: press [RIGHT], choose LOAD SAMPLES and press [YES] (§6.13.1).
 :::
 
 :::note
@@ -144,8 +143,7 @@ A lock placed here moves all eight subtracks at once, which suits
 [send levels are shared here too](https://www.elektronauts.com/t/tonverk-subtrack-drum-strategies/243084),
 rather than set per subtrack, which is why mixing a kit voice by voice goes through the
 supertrack. Elektron's presenter in that video
-calls the screen mark three dots rather than three rectangles, so what it looks like is worth a
-second glance on your own unit.
+calls the screen mark three dots rather than three rectangles.
 :::
 
 ## Step: Save
@@ -155,7 +153,7 @@ mode: grid-recording
 
 Hold [FUNC] and press [SETTINGS]: saved, in silence, the way every save here goes. Then press
 [RECORD] if it is dark, hold [TRK] and press [KEYBOARD A1], the closed hat's key, and look at
-it one last time — every odd step red. That picture is this session's masthead.
+it one last time — every odd step red.
 
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }

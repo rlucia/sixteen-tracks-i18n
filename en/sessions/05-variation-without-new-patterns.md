@@ -43,7 +43,7 @@ reads 1:2.
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS", params: [NOTE —, VEL 100, LEN 1/16, PROB 100%, RTRG OFF, RTIM 1/16, RVEL 0, COND 1:2], invert: [7] }
 keys16: { 1: red, 5: red, 9: red, 13: red, 15: red }
 hear: The pickup arrives, sits out the next time round, and comes back on the one after — A:B counts how many times the pattern has played, not where you are in the bar (§10.10.2). Step 15 blinks against the four steady kicks, the way any trig carrying a lock does, and COND is the one inverted box on the page.
-recover: If the pickup comes every loop, COND is still on the dash: hold [TRIG 15] down and watch that reading change as you turn [H], rather than watching the keys. If it never comes at all, you have gone past 1:2 — the conditions are one list on one knob, and its neighbour 2:2 plays on exactly the loops 1:2 sits out, though §10.10.2 gives those two only as examples and not as an order to count on. The other seven readings on the drawing come from §12.2, not from a unit.
+recover: If the pickup comes every loop, COND is still on the dash: hold [TRIG 15] down and watch that reading change as you turn [H], rather than watching the keys. If it never comes at all, you have gone past 1:2 — the conditions are one list on one knob, and 2:2 plays on exactly the loops 1:2 sits out.
 :::
 
 ## Step: Chance on the ghosts
@@ -76,16 +76,14 @@ sounded too (§10.10.2).
 :::checkpoint
 keys16: { 1: red, 3: red, 5: red, 7: red, 9: red, 11: red, 13: red, 15: red, 16: red }
 hear: The last two steps of the bar arrive as a pair or not at all — when the ghost on 15 wins its coin flip, 16 answers it; when 15 sits out, 16 sits out with it. Both keys blink, 15 for its chance and 16 for its condition.
-recover: If 16 plays on every loop, COND is still on the dash: hold [TRIG 16] and turn [H] a click at a time, past the FILL pair, until PRE is the reading. And if you are tempted to stack a second PRE on top of this one, it would still be asking about 15 — a PRE trig is skipped when a later PRE looks back (§10.10.2). One thing §10.10.2 settles for a track and not for a kit: whether the trig 16 looks back to is the one before it on this subtrack or the one before it anywhere on track 1. Your unit will settle that; this pair is written for the first reading.
+recover: If 16 plays on every loop, COND is still on the dash: hold [TRIG 16] and turn [H] a click at a time, past the FILL pair, until PRE is the reading. And if you are tempted to stack a second PRE on top of this one, it would still be asking about 15 — a PRE trig is skipped when a later PRE looks back (§10.10.2). §10.10.2 describes PRE on a track, not in a kit: it does not say whether 16 looks back to the trig before it on this subtrack or anywhere on track 1.
 :::
 
 :::note
 A ghost that loses its coin flip counts, as far as 16 is concerned, as a ghost that was never
-there. That is worth saying out loud because it has not always been so: Elektron's own release
-notes list [a PROB lock left out of the PRE and NEI
-reckoning](https://www.elektron.se/release-notes/tonverk-os-release-notes) among the bugs OS
-1.4.0 fixed, and 1.4.0 is the version this course is written against. On an older OS the pair
-comes apart.
+there. Before OS 1.4.0 it was not: Elektron's release notes list [a PROB lock left out of the
+PRE and NEI reckoning](https://www.elektron.se/release-notes/tonverk-os-release-notes) among
+the bugs 1.4.0 fixed, and on an older OS the pair comes apart.
 :::
 
 ## Step: Why did step 16 not play?
@@ -102,7 +100,7 @@ on 16 — and gives every step a reason rather than a sound.
 
 :::checkpoint
 hear: Press Next loop four or five times and the log's rows show the pair on 15 and 16 arriving together and missing together. Click step 16 on the hats row and the line under the editor gives that step's fate for the loop you are on — the trig it looked back to, and whether that one played; the discs in the log carry the same sentence under the pointer. Set 15's chance to 100 and 16 stops missing.
-recover: Nothing here is a hearing test — the simulator draws the rule, not the kit, and its one sound is a click. One thing it has to take a side on: whether a plain trig, with no condition and no chance on it, is the trig PRE looks back to. It reads §10.10.2's sentence literally and looks back at the last trig it evaluated, while owner threads on other Elektron boxes running this same rule say a bare trig is never evaluated at all. Your unit will settle that.
+recover: The simulator counts a plain trig, with no condition and no chance on it, as one PRE can look back to, as §10.10.2's sentence reads; owners of other Elektron boxes running this same rule say a bare trig is never evaluated at all.
 :::
 
 ## Step: A fill bar
@@ -122,7 +120,7 @@ close it, and hold [FILL] down through the last beat of the bar.
 screen: { menu: "FILL EDIT", items: [MOMENTARY, LATCHING], sel: 0 }
 keys16: { 5: red, 13: red, 14: red, 15: red, 16: red }
 hear: With [FILL] held, the bar ends in a run of three snares into the next one; let go and those three steps are silent again, loop after loop, while 5 and 13 carry on as they always did. Five keys on the strip now, the three new ones blinking for the condition on them.
-recover: If the run plays with nothing held, either the three trigs are still on the dash instead of FILL, or LATCHING is the chosen option and an earlier tap left FILL mode switched on — press [FILL] once and listen again. Whether the [FILL] key itself lights while it is held, and in what colour, is not in the manual and nowhere we could find; your unit will settle that.
+recover: If the run plays with nothing held, either the three trigs are still on the dash instead of FILL, or LATCHING is the chosen option and an earlier tap left FILL mode switched on — press [FILL] once and listen again.
 :::
 
 ## Step: A restore point, then a risk
@@ -138,7 +136,7 @@ VELOCITY RANDOMIZE and press [YES]; [NO] closes the menu. Listen for a loop or t
 :::checkpoint
 screen: { menu: "TRANSFORM", items: [VELOCITY UNLOCK, VELOCITY RANDOMIZE, VELOCITY RAMP UP, VELOCITY RAMP DOWN, PLACEMENT RANDOMIZE, PLACEMENT REVERSE], sel: 1 }
 hear: Every velocity on the track lands somewhere new at once — hats loud where they were quiet, ghosts that are no longer ghosts, the snare roll's fade rebuilt — and after the recall the velocities are back where session 4 left them, the four ghosts sitting behind the beat again. What recall puts back is the pattern you memorised a moment ago — conditions, chance and fill trigs included — not session 4's.
-recover: If nothing changed, the [YES] did not land on the highlighted line: open the menu again and watch which action is picked out before you press. Whether recall puts the old velocities back exactly or merely close to them is the one part of this nobody has written down; your unit will settle that, and until it does, the save from step 1 is the real floor.
+recover: If nothing changed, the [YES] did not land on the highlighted line: open the menu again and watch which action is picked out before you press. If recall does not bring the velocities back, the save from step 1 still has them.
 :::
 
 :::note
@@ -146,14 +144,13 @@ A transform does not stay on the subtrack you are looking at. §10.6 draws its b
 track, and on a Subtracks track that reads as the whole kit in one pass: the pickup kick gets a
 new velocity along with the hats, and so does every snare. Velocity and nothing else — VELOCITY
 RANDOMIZE writes VEL locks, so the pickup keeps its 1:2 and the three new snares keep their
-FILL. That the eight subtracks really do go together is owners' reporting rather than the
-manual's: they have asked for a way to aim a transform at one subtrack and
+FILL. Owners confirm that the eight subtracks go together: they have asked for a way to aim a
+transform at one subtrack and
 [there is none yet](https://www.elektronauts.com/t/tonverk-feature-requests/238027/2057), and
 another report has PLACEMENT RANDOMIZE
 [moving lock trigs that play nothing](https://www.elektronauts.com/t/tonverk-feature-requests/238027/1559)
-along with the notes — your unit will settle it. Either way the memorise comes first, and
-VELOCITY UNLOCK is a heavier hammer than its name suggests: it takes every VEL lock off the
-track, session 4's four included.
+along with the notes. VELOCITY UNLOCK is a heavier hammer than its name suggests: it takes
+every VEL lock off the track, session 4's four included.
 :::
 
 ## Step: PERFORM mode
@@ -162,14 +159,14 @@ leds: { TRK: green }
 source: manual §10.12, §A.2.3
 mode: grid-recording
 
-Hold [FUNC] and press [SETTINGS] first; the save matters more here than anywhere else in this
-session. Now hold [FUNC] and press [TRK]: PERFORM mode is on, and [TRK] turns green while it is
+Hold [FUNC] and press [SETTINGS] first: leaving PERFORM mode returns the pattern to its last
+saved state (§10.12). Now hold [FUNC] and press [TRK]: PERFORM mode is on, and [TRK] turns green while it is
 (§10.12). Press [FLTR] and turn knob [E], FREQ, well down while the loop runs, then hold
 [FUNC] and press [TRK] again to leave.
 
 :::checkpoint
 hear: The snare goes dull under your hand — the filter belongs to the subtrack you are on (§A.2.3), so the kick and the hats ring on as they were — and it stays dull for as long as PERFORM mode is on. The moment you leave, the snare is bright again and the green light is out: the tweak is gone, and saving while you were in there would not have kept it either (§10.12).
-recover: If the snare stayed dull after you left, [FUNC] was not down for the second press; the green light is the thing to watch. If nothing changed at all as you turned, [FLTR] is showing some other subtrack's page — hold [TRK] and press [KEYBOARD D1] for the snare and try again. The step saves first on purpose: §10.12 promises the pattern comes back to a saved state and says no more, and what happens to edits made after the last save and before PERFORM mode was entered is written down nowhere. Your unit will settle that; saving first makes the question moot.
+recover: If the snare stayed dull after you left, [FUNC] was not down for the second press; the green light is the thing to watch. If nothing changed at all as you turned, [FLTR] is showing some other subtrack's page — hold [TRK] and press [KEYBOARD D1] for the snare and try again.
 :::
 
 ## Step: Save
@@ -183,7 +180,7 @@ that play on every loop and three that wait for your thumb.
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
 keys16: { 5: red, 13: red, 14: red, 15: red, 16: red }
-hear: The same bar you started the session with, and no two loops of it alike — a pickup kick every other time round, half the ghosts, an answering hat that comes only when its question did, and a fill under your thumb. That strip of five keys is this session's masthead.
+hear: The same bar you started the session with, and no two loops of it alike — a pickup kick every other time round, half the ghosts, an answering hat that comes only when its question did, and a fill under your thumb.
 recover: Five keys, and 14, 15 and 16 blinking. If those three are dark, the fill trigs went onto another subtrack: hold [TRK] and press [KEYBOARD D1] and look again — and if they are missing there too, step 6 is three presses and one knob from the top.
 :::
 
@@ -224,8 +221,7 @@ itself and then gets on with it.
 ### NEI, in the simulator rather than on the kit
 NEI looks sideways: it asks how the last condition turned out on the track next door — the
 one numbered before the one you are on — and plays, or does not, on that answer (§10.10.2). The simulator's two tracks are exactly that
-pair, which is why NEI belongs there: what a Subtracks subtrack's own NEI reads is not stated
-anywhere we could find, and only your unit can say.
+pair. What NEI reads for a subtrack inside a kit, the manual does not say.
 
 ### PROB with nothing held
 Turn [D] with no trig key down and PROB becomes the subtrack's own setting rather than one

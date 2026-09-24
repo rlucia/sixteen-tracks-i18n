@@ -105,13 +105,12 @@ tasto SUBTRACKS, così il clap è il suono su cui sei. [FUNC] + [KEYBOARD F1] ap
 dei sample sulla scheda SD, puntato su quella sola subtrack: [UP]/[DOWN] scorre la scheda,
 [YES] apre una cartella e [YES] su un sample lo carica nel pool di sample del progetto e sulla
 subtrack (§5.2.6), e [NO] risale di un livello. Scegli un suono corto che ti piace al posto
-del clap — delle quattro voci, è quella su cui il pezzo è meno esigente — poi [FUNC] + [NO]
-per uscire dal browser (§6.13.1).
+del clap, poi [FUNC] + [NO] per uscire dal browser (§6.13.1).
 
 :::checkpoint
 screen: { menu: "SAMPLE BROWSER", items: [SD CARD, SAMPLE BANKS, WAVETABLES], sel: 0 }
 hear: Il tuo sample sui passi 7 e 15, al posto del clap del kit, con il resto del beat invariato.
-recover: Se un [YES] aggiunge il sample ma la subtrack non lo suona, il browser vuole il suo menu OPERATIONS: premi [RIGHT], scegli LOAD SAMPLES e premi [YES] (§6.13.1). Se questa strada richieda una pressione o due è una domanda per l'unità — il manuale le descrive entrambe, su pagine diverse.
+recover: Se un [YES] aggiunge il sample ma la subtrack non lo suona, il browser vuole il suo menu OPERATIONS: premi [RIGHT], scegli LOAD SAMPLES e premi [YES] (§6.13.1).
 :::
 
 :::note
@@ -145,8 +144,7 @@ Un lock messo qui muove tutte e otto le subtrack insieme, il che si addice
 [anche i livelli di send sono condivisi qui](https://www.elektronauts.com/t/tonverk-subtrack-drum-strategies/243084),
 invece di essere impostati per subtrack, ed è per questo che mixare un kit voce per voce
 passa dalla supertrack. Il presentatore di Elektron in quel video chiama il segno sul display
-tre puntini invece di tre rettangoli, quindi il suo aspetto merita una seconda occhiata sulla
-tua unità.
+tre puntini invece di tre rettangoli.
 :::
 
 ## Step: Salva
@@ -156,8 +154,7 @@ mode: grid-recording
 
 Tieni premuto [FUNC] e premi [SETTINGS]: salvato, in silenzio, come va ogni salvataggio qui.
 Poi premi [RECORD] se è spento, tieni premuto [TRK] e premi [KEYBOARD A1], il tasto
-dell'hi-hat chiuso, e guardalo un'ultima volta — ogni passo dispari rosso. Quell'immagine è
-la testata di questa sessione.
+dell'hi-hat chiuso, e guardalo un'ultima volta — ogni passo dispari rosso.
 
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }

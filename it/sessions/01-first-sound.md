@@ -98,15 +98,15 @@ recover: L'angolo in basso a sinistra del display è l'indicazione di cui fidart
 
 :::note
 Tre parti del manuale scrivono questo tasto in tre modi — [TRK] nel §5.3.7, TRACK nel §10.3,
-e la procedura per i preset del §9.1.4 chiede invece [FUNC] e un tasto trig. Il pannello che
-hai davanti stampa TRK, quindi è così che lo chiama questo corso.
-[I proprietari la risolvono allo stesso modo](https://www.elektronauts.com/t/tonverk-technical-q-a/238273/1088):
-[TRK] e un tasto trig è la selezione silenziosa.
+e la procedura per i preset del §9.1.4 chiede invece [FUNC] e un tasto trig. Il pannello
+stampa TRK, e [i proprietari confermano](https://www.elektronauts.com/t/tonverk-technical-q-a/238273/1088)
+che [TRK] più un tasto trig è la selezione silenziosa.
 :::
 
 ## Step: Carica un kit
 keys: [PRESET, LEFT, RIGHT, UP, DOWN, LEVEL/DATA, YES]
 source: manual §7.1, §9.1.4
+checked: yes
 mode: menu:LOAD PRESET
 
 Premi [PRESET]. Il menu LOAD PRESET si apre sulla traccia attiva. [LEFT]/[RIGHT] spostano tra
@@ -146,6 +146,7 @@ contenitori; la mappa in [Prima di cominciare](/before-you-start/) mostra le alt
 keys: [KEYBOARD C1, KEYBOARD D1, KEYBOARD E1, KEYBOARD F1, KEYBOARD G1, KEYBOARD A1, KEYBOARD B1, KEYBOARD C2, TRIG 1]
 leds: { KEYBOARD C1: red }
 source: manual §3.1, §A.2.3
+checked: yes
 mode: any
 
 Premi la fila in basso della tastiera un tasto alla volta, da [KEYBOARD C1] a
@@ -195,8 +196,7 @@ checked: yes
 mode: playback
 
 Tieni premuto [FUNC] e premi [KEYBOARD F#1] — la sua scritta menta dice Metronome. Premi
-[PLAY]: un click al tuo tempo. Suonaci sopra il kick su [KEYBOARD C1] per un minuto;
-l'esercizio è questo, ed è tutta la ragione per cui il tempo è venuto prima del beat. Premi
+[PLAY]: un click al tuo tempo. Suonaci sopra il kick su [KEYBOARD C1] per un minuto. Premi
 [STOP], poi di nuovo [FUNC] + [KEYBOARD F#1] per zittire il click.
 
 :::checkpoint
@@ -241,15 +241,13 @@ recover: Se invece si è aperto un menu di impostazioni, hai premuto [SETTINGS] 
 
 :::note
 La trappola è l'assenza di una richiesta. I proprietari premono [FUNC] + [SETTINGS], non
-vedono nessuna schermata del nome e concludono che non è stato salvato niente —
-[il thread da cui è tratto questo passo](https://www.elektronauts.com/t/create-new-empty-project-no-samples-inside-my-own-name-how/238370)
-sono proprietari che se ne rendono conto. Il §9.1.1 dà alla combinazione un solo compito —
-riscrive quello su cui stai lavorando nello slot da cui viene — e il nome è SAVE AS, che hai
-già fatto. Potresti vedere un breve banner mentre la scheda viene scritta; i proprietari su
-questo OS
-[hanno chiesto di toglierlo](https://www.elektronauts.com/t/os-upgrade-tonverk-os-1-4-0/254824),
-anche se il §9.1.1 non ne parla mai, quindi prendilo come qualcosa che può passare in un
-lampo e non come qualcosa da aspettare. Sarà la tua unità a dirlo.
+vedono nessuna schermata del nome e concludono che non è stato salvato niente
+([un thread di proprietari che se ne rendono conto](https://www.elektronauts.com/t/create-new-empty-project-no-samples-inside-my-own-name-how/238370)).
+Il §9.1.1 dà alla combinazione un solo compito — riscrive quello su cui stai lavorando nello
+slot da cui viene — e il nome è SAVE AS, che hai già fatto. Potresti vedere un breve banner
+mentre la scheda viene scritta; il §9.1.1 non ne parla mai, e i proprietari su questo OS
+[hanno chiesto di toglierlo](https://www.elektronauts.com/t/os-upgrade-tonverk-os-1-4-0/254824).
+Non aspettarlo.
 :::
 
 :::note
@@ -307,4 +305,4 @@ abbassa le cose.
 La sessione 2 scrive il beat di una battuta su cui poggia tutto il pezzo, su questa sola
 traccia, un suono del kit alla volta. Prima, dieci minuti su
 [Prima di cominciare](/before-you-start/) spiegano i cinque contenitori che un salvataggio
-tocca e i quattro tipi di traccia: è la pagina su cui ogni sessione successiva si appoggia.
+tocca e i quattro tipi di traccia.

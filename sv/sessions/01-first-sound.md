@@ -98,15 +98,15 @@ recover: Det är displayens nedre vänstra hörn som gäller: där står T1. Ett
 
 :::note
 Tre ställen i manualen stavar den här tangenten på tre sätt — [TRK] i §5.3.7, TRACK i §10.3,
-och preset-proceduren i §9.1.4 ber i stället om [FUNC] och en trig-tangent. Panelen framför
-dig har TRK tryckt på sig, så det är vad den här kursen säger.
-[Ägare gör samma bedömning](https://www.elektronauts.com/t/tonverk-technical-q-a/238273/1088):
-[TRK] och en trig-tangent är det tysta valet.
+och preset-proceduren i §9.1.4 ber i stället om [FUNC] och en trig-tangent. Panelen har TRK
+tryckt på sig, och [ägare bekräftar](https://www.elektronauts.com/t/tonverk-technical-q-a/238273/1088)
+att [TRK] och en trig-tangent är det tysta valet.
 :::
 
 ## Step: Ladda ett kit
 keys: [PRESET, LEFT, RIGHT, UP, DOWN, LEVEL/DATA, YES]
 source: manual §7.1, §9.1.4
+checked: yes
 mode: menu:LOAD PRESET
 
 Tryck på [PRESET]. LOAD PRESET-menyn öppnas på det aktiva spåret. [LEFT]/[RIGHT] flyttar
@@ -146,6 +146,7 @@ behållarreglerna; kartan på [Innan du börjar](/before-you-start/) visar reste
 keys: [KEYBOARD C1, KEYBOARD D1, KEYBOARD E1, KEYBOARD F1, KEYBOARD G1, KEYBOARD A1, KEYBOARD B1, KEYBOARD C2, TRIG 1]
 leds: { KEYBOARD C1: red }
 source: manual §3.1, §A.2.3
+checked: yes
 mode: any
 
 Tryck på klaviaturens nedre rad en tangent i taget, från [KEYBOARD C1] till [KEYBOARD C2].
@@ -195,8 +196,8 @@ checked: yes
 mode: playback
 
 Håll [FUNC] och tryck på [KEYBOARD F#1] — dess mintgröna text säger Metronome. Tryck på
-[PLAY]: ett klick i ditt tempo. Spela kicken på [KEYBOARD C1] mot det en minut; det är
-övningen, och det är hela skälet till att tempot kom före beatet. Tryck på [STOP], sedan
+[PLAY]: ett klick i ditt tempo. Spela kicken på [KEYBOARD C1] mot det en minut. Tryck på
+[STOP], sedan
 [FUNC] + [KEYBOARD F#1] igen för att tysta klicket.
 
 :::checkpoint
@@ -241,14 +242,14 @@ recover: Öppnades en meny med inställningar i stället? Då tryckte du på [SE
 
 :::note
 Frånvaron av en fråga är fällan. Ägare trycker [FUNC] + [SETTINGS], ser ingen namnskärm och
-drar slutsatsen att inget sparades —
-[tråden det här steget är hämtat ur](https://www.elektronauts.com/t/create-new-empty-project-no-samples-inside-my-own-name-how/238370)
-är ägare som reder ut just det. §9.1.1 ger kombinationen ett enda jobb — den skriver det du
+drar slutsatsen att inget sparades
+([en tråd där ägare reder ut just det](https://www.elektronauts.com/t/create-new-empty-project-no-samples-inside-my-own-name-how/238370)).
+§9.1.1 ger kombinationen ett enda jobb — den skriver det du
 håller på med tillbaka till platsen det kom ifrån — och att döpa är SAVE AS, som du redan
-har gjort. Du kan få se en kort banner medan kortet skrivs; ägare på det här OS:et
-[har bett om att den ska bort](https://www.elektronauts.com/t/os-upgrade-tonverk-os-1-4-0/254824),
-fast §9.1.1 aldrig nämner någon, så ta den som något som kan blinka förbi snarare än något
-att vänta på. Din enhet får avgöra det.
+har gjort. Du kan få se en kort banner medan kortet skrivs; §9.1.1 nämner aldrig någon, och
+ägare på det här OS:et
+[har bett om att den ska bort](https://www.elektronauts.com/t/os-upgrade-tonverk-os-1-4-0/254824).
+Vänta inte på den.
 :::
 
 :::note
@@ -304,4 +305,4 @@ du vrider. Nu när du vet vad den gör slutar den vara ratten som mystiskt tysta
 Session 2 skriver det beat på en takt som hela stycket står på, på det här enda spåret, ett
 av kitets ljud i taget. Innan dess förklarar tio minuter på
 [Innan du börjar](/before-you-start/) de fem behållarna en sparning rör vid och de fyra
-sorternas spår: det är sidan varje senare session lutar sig mot.
+sorternas spår.

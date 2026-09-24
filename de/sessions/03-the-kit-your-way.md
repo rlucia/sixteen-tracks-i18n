@@ -106,14 +106,13 @@ vierte SUBTRACKS-Taste, damit der Clap der Sound ist, auf dem du bist. [FUNC] + 
 öffnet den Sample-Browser auf der SD-Karte, gerichtet auf diesen einen Subtrack: [UP]/[DOWN]
 scrollt durch die Karte, [YES] öffnet einen Ordner, und [YES] auf einem Sample lädt es in den
 Sample-Pool des Projekts und auf den Subtrack (§5.2.6), und [NO] geht eine Ebene zurück nach
-oben. Such dir anstelle des Claps einen kurzen Sound, der dir gefällt — von den vier Stimmen
-ist es die, bei der das Stück am wenigsten wählerisch ist — dann [FUNC] + [NO], um den Browser
-zu verlassen (§6.13.1).
+oben. Such dir anstelle des Claps einen kurzen Sound, der dir gefällt, dann [FUNC] + [NO], um den
+Browser zu verlassen (§6.13.1).
 
 :::checkpoint
 screen: { menu: "SAMPLE BROWSER", items: [SD CARD, SAMPLE BANKS, WAVETABLES], sel: 0 }
 hear: Dein eigenes Sample auf den Schritten 7 und 15, anstelle des Claps des Kits, und der Rest des Beats unverändert.
-recover: Fügt ein [YES] das Sample hinzu, aber der Subtrack spielt es nicht, will der Browser sein OPERATIONS-Menü: drücke [RIGHT], wähle LOAD SAMPLES und drücke [YES] (§6.13.1). Ob dieser Weg einen Druck braucht oder zwei, ist eine Frage an das Gerät — das Handbuch beschreibt beides, auf verschiedenen Seiten.
+recover: Fügt ein [YES] das Sample hinzu, aber der Subtrack spielt es nicht, will der Browser sein OPERATIONS-Menü: drücke [RIGHT], wähle LOAD SAMPLES und drücke [YES] (§6.13.1).
 :::
 
 :::note
@@ -147,8 +146,7 @@ Ein Lock, der hier gesetzt wird, bewegt alle acht Subtracks auf einmal, was
 [die Send-Pegel sind hier ebenfalls gemeinsam](https://www.elektronauts.com/t/tonverk-subtrack-drum-strategies/243084),
 statt pro Subtrack gesetzt, und darum läuft das Mischen eines Kits Stimme für Stimme über den
 Supertrack. Elektrons Präsentator in diesem Video nennt die Markierung auf dem Display drei
-Punkte statt drei Rechtecke, ihr Aussehen ist auf deinem eigenen Gerät also einen zweiten
-Blick wert.
+Punkte statt drei Rechtecke.
 :::
 
 ## Step: Speichern
@@ -158,8 +156,7 @@ mode: grid-recording
 
 Halte [FUNC] und drücke [SETTINGS]: gespeichert, in Stille, wie jedes Speichern hier abläuft.
 Dann drücke [RECORD], falls es dunkel ist, halte [TRK] und drücke [KEYBOARD A1], die Taste der
-geschlossenen Hi-Hat, und sieh sie dir ein letztes Mal an — jeder ungerade Schritt rot. Dieses
-Bild ist das Titelbild dieser Session.
+geschlossenen Hi-Hat, und sieh sie dir ein letztes Mal an — jeder ungerade Schritt rot.
 
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }

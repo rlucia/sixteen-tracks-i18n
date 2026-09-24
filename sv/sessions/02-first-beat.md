@@ -123,9 +123,8 @@ source: manual §10.3
 mode: grid-recording
 
 Håll [TRK] och tryck på [KEYBOARD A1], den stängda hi-haten. Tryck nu på varje udda tangent från [TRIG 1] till [TRIG 15]: åtta
-hi-hats, en på varje åttondel. Vill du hellre ha en på varje steg? Tryck på allihop —
-exempelstycket håller sig till åtta, och kontrollpunkterna härifrån och framåt bryr sig
-inte om vilket du valde.
+hi-hats, en på varje åttondel. Vill du hellre ha en på varje steg? Tryck på allihop;
+exempelstycket håller sig till åtta.
 
 :::checkpoint
 keys16: { 1: red, 3: red, 5: red, 7: red, 9: red, 11: red, 13: red, 15: red }
@@ -155,7 +154,7 @@ leds: { RECORD: red }
 source: manual §10.3, §19
 mode: grid-recording
 
-Välj ett slag du är osäker på — vi tar clapen på steg 7. Håll [TRIG 7] och tryck
+Välj ett slag du är osäker på, till exempel clapen på steg 7. Håll [TRIG 7] och tryck
 på [YES]: just den trigen låter, ensam, med det som är satt på den. Ett snabbt tryck på
 [TRIG 7] tar bort den; tryck igen för att lägga tillbaka den.
 
@@ -182,9 +181,8 @@ recover: Råkade du flytta LENGTH: vrid tillbaka ratten [E] till 16 före [NO]. 
 
 :::note
 Två saker här ställer till det senare. Den här menyn sätter en längd för *varje* spår tills
-du trycker [FUNC] + [YES], som byter till längder per spår. Och manualen kan inte bestämma
-sig för vad menyn heter — rubriken i §10.9 och panelens text säger PAGE SETUP, brödtexten i §10.9 säger
-SCALE. Det är samma meny.
+du trycker [FUNC] + [YES], som byter till längder per spår. Och rubriken i §10.9 och panelens
+text kallar menyn PAGE SETUP, medan brödtexten i §10.9 kallar den SCALE: det är samma meny.
 :::
 
 ## Step: Mutea ett ljud
@@ -206,11 +204,9 @@ recover: Lämnade du något mutat? [MUTE] själv glöder svagt, grönt eller mag
 :::
 
 :::note
-Gå efter §8.6 för de här färgerna, inte snabbstarten. §7.4 ger en regel — släckt är mutat,
-grönt hörs — och nämner aldrig att grönt hör specifikt till det globala läget, så den som
-lär sig det där har halva regeln.
-[Ägare listar ut de två lägena genom analogi med andra Elektron-lådor](https://www.elektronauts.com/t/global-mute-mode/242420),
-vilket är vad som händer när en manual svarar på samma fråga två gånger.
+§8.6 har hela regeln för de här färgerna. Snabbstartens §7.4 ger bara halva — släckt är
+mutat, grönt hörs — och säger aldrig att grönt hör till det globala läget.
+[Ägare listar ut de två lägena genom analogi med andra Elektron-lådor](https://www.elektronauts.com/t/global-mute-mode/242420).
 :::
 
 ## Step: Kopiera patternet till A02
@@ -234,13 +230,11 @@ recover: Kommer A02 runt och är tyst, skedde inklistringen före bytet. Vänta 
 :::
 
 :::note
-Att stanna inom bank A är den här sessionens val, inte en vägg. För att nå en annan bank
-trycker du på [PTN], väljer banken på den nedre raden av [KEYBOARD] och trycker sedan på en
-trig-tangent för patternet (§10.1.1). Den raden svarar på tre namn i den här manualen — den
-nedre raden av [KEYBOARD], [SUBTRACKS]-tangenterna, tangenten märkt [KEYBOARD C1] för bank A
-— och panellistan i §3.1, punkt 21, trycker två av dem på samma rad, eftersom de är en enda
-rad tangenter. Inne i banken du redan är i är [PTN] och en trig-tangent hela gesten, och det
-är allt dagens session behöver.
+För att nå en annan bank: tryck på [PTN], välj banken på den nedre raden av [KEYBOARD] och
+tryck sedan på en trig-tangent för patternet (§10.1.1). Manualen kallar den raden tre saker —
+den nedre raden av [KEYBOARD], [SUBTRACKS]-tangenterna, och [KEYBOARD C1] för bank A:s
+tangent — och panellistan i §3.1, punkt 21, trycker två av dem på samma rad: de är en enda
+rad tangenter. Inne i banken du är i räcker [PTN] och en trig-tangent.
 :::
 
 ## Step: Rensa, och ångra
@@ -255,7 +249,7 @@ Undo. Beatet är tillbaka. Gör det här med flit en gång.
 
 :::checkpoint
 hear: En takt tystnad, sedan beatet igen.
-recover: Gör Undo ingenting: klistra in igen — kopian ligger kvar i urklippet. Ångra når en inklistring eller en rensning på varje nivå där sequencern har en: ett helt pattern, ett spårs sekvens, en enda sida, en sida med parametrar, ett spårs ljud. Den stannar vid exakt en sak, och §10.10.5 säger det rakt ut: rensa ett spårs preset och det är borta.
+recover: Gör Undo ingenting: klistra in igen — kopian ligger kvar i urklippet. Ångra når en inklistring eller en rensning på varje nivå där sequencern har en: ett helt pattern, ett spårs sekvens, en enda sida, en sida med parametrar, ett spårs ljud. Det enda den inte når är ett rensat spår-preset (§10.10.5): det är borta.
 :::
 
 ## Step: Tillbaka till A01, och spara
@@ -266,7 +260,7 @@ mode: playback
 
 Håll [PTN] och tryck på [TRIG 1] för att komma tillbaka till A01. Håll [FUNC] och tryck på
 [SETTINGS]: sparat, båda patterns, ingen fråga. Tryck sedan på [RECORD] en gång till, håll
-[TRK] och tryck på [KEYBOARD C1], och titta på kicken en sista gång — steg 1, 5, 9 och 13, röda. Den bilden är den här sessionens vinjett.
+[TRK] och tryck på [KEYBOARD C1], och titta på kicken en sista gång — steg 1, 5, 9 och 13, röda.
 
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }

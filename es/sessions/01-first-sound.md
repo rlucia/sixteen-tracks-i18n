@@ -98,14 +98,15 @@ recover: La esquina inferior izquierda de la pantalla es la indicación de fiar:
 :::note
 Tres partes del manual escriben esta tecla de tres maneras — [TRK] en el §5.3.7, TRACK en
 el §10.3, y el procedimiento de presets del §9.1.4 pide [FUNC] y una tecla trig en su lugar.
-El panel que tienes delante imprime TRK, así que eso es lo que dice este curso.
-[Los propietarios lo resuelven igual](https://www.elektronauts.com/t/tonverk-technical-q-a/238273/1088):
+El panel imprime TRK, y
+[los propietarios confirman](https://www.elektronauts.com/t/tonverk-technical-q-a/238273/1088) que
 [TRK] y una tecla trig es la selección silenciosa.
 :::
 
 ## Step: Carga un kit
 keys: [PRESET, LEFT, RIGHT, UP, DOWN, LEVEL/DATA, YES]
 source: manual §7.1, §9.1.4
+checked: yes
 mode: menu:LOAD PRESET
 
 Pulsa [PRESET]. El menú LOAD PRESET se abre sobre la pista activa. [LEFT]/[RIGHT] se mueven
@@ -145,6 +146,7 @@ de los contenedores; el mapa de [Antes de empezar](/before-you-start/) muestra l
 keys: [KEYBOARD C1, KEYBOARD D1, KEYBOARD E1, KEYBOARD F1, KEYBOARD G1, KEYBOARD A1, KEYBOARD B1, KEYBOARD C2, TRIG 1]
 leds: { KEYBOARD C1: red }
 source: manual §3.1, §A.2.3
+checked: yes
 mode: any
 
 Pulsa la fila de abajo del teclado tecla a tecla, de [KEYBOARD C1] a [KEYBOARD C2]. Cada tecla
@@ -194,8 +196,7 @@ checked: yes
 mode: playback
 
 Mantén pulsado [FUNC] y pulsa [KEYBOARD F#1] — su rótulo menta dice Metronome. Pulsa [PLAY]:
-un clic a tu tempo. Toca el kick en [KEYBOARD C1] encima durante un minuto; ese es el
-ejercicio, y es toda la razón por la que el tempo ha venido antes que el beat. Pulsa [STOP] y
+un clic a tu tempo. Toca el kick en [KEYBOARD C1] encima durante un minuto. Pulsa [STOP] y
 luego [FUNC] + [KEYBOARD F#1] otra vez para callar el clic.
 
 :::checkpoint
@@ -240,15 +241,14 @@ recover: Si en cambio se abrió un menú de ajustes, pulsaste [SETTINGS] sin [FU
 
 :::note
 La trampa es la ausencia de aviso. Los propietarios pulsan [FUNC] + [SETTINGS], no ven
-ninguna pantalla de nombre y concluyen que no se guardó nada —
-[el hilo del que sale este paso](https://www.elektronauts.com/t/create-new-empty-project-no-samples-inside-my-own-name-how/238370)
-son propietarios dándose cuenta. El §9.1.1 le da a la combinación una sola tarea — escribe lo
-que estés trabajando de vuelta al slot del que vino — y el nombre es cosa de SAVE AS, que ya
-has hecho. Puede que veas un breve aviso en pantalla mientras se escribe la tarjeta; los propietarios
-con este OS
-[han pedido que desaparezca](https://www.elektronauts.com/t/os-upgrade-tonverk-os-1-4-0/254824),
-aunque el §9.1.1 nunca lo menciona, así que tómalo como algo que puede pasar en un
-parpadeo y no como algo que esperar. Tu unidad lo dirá.
+ninguna pantalla de nombre y concluyen que no se guardó nada
+([un hilo de propietarios dándose cuenta](https://www.elektronauts.com/t/create-new-empty-project-no-samples-inside-my-own-name-how/238370)).
+El §9.1.1 le da a la combinación una sola tarea — escribe lo que estés trabajando de vuelta al
+slot del que vino — y el nombre es cosa de SAVE AS, que ya has hecho. Puede que veas un breve
+aviso en pantalla mientras se escribe la tarjeta; el §9.1.1 nunca lo menciona, y los
+propietarios con este OS
+[han pedido que desaparezca](https://www.elektronauts.com/t/os-upgrade-tonverk-os-1-4-0/254824).
+No lo esperes.
 :::
 
 :::note
@@ -306,4 +306,4 @@ las cosas.
 La sesión 2 escribe el beat de un compás sobre el que se apoya toda la pieza, en esta misma
 pista, un sonido del kit cada vez. Antes, diez minutos en
 [Antes de empezar](/before-you-start/) explican los cinco contenedores que toca un guardado y
-los cuatro tipos de pista: es la página en la que se apoya cada sesión posterior.
+los cuatro tipos de pista.

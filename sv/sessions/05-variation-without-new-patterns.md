@@ -43,7 +43,7 @@ ENTRY-ratten [H], COND, tills den visar 1:2.
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS", params: [NOTE —, VEL 100, LEN 1/16, PROB 100%, RTRG OFF, RTIM 1/16, RVEL 0, COND 1:2], invert: [7] }
 keys16: { 1: red, 5: red, 9: red, 13: red, 15: red }
 hear: Pickupen kommer, sitter över nästa varv och är tillbaka på varvet därpå — A:B räknar hur många gånger patternet har spelat, inte var du är i takten (§10.10.2). Steg 15 blinkar mot de fyra fasta kickarna, så som varje trig som bär en lock gör, och COND är den enda inverterade rutan på sidan.
-recover: Kommer pickupen varje loop, står COND fortfarande på strecket: håll [TRIG 15] nere och se den avläsningen ändra sig medan du vrider på [H], i stället för att titta på tangenterna. Kommer den aldrig alls, har du gått förbi 1:2 — villkoren är en enda lista på en enda ratt, och grannen 2:2 spelar på exakt de loopar som 1:2 sitter över, även om §10.10.2 ger de två bara som exempel och inte som en ordning att räkna med. De andra sju avläsningarna på teckningen kommer från §12.2, inte från en enhet.
+recover: Kommer pickupen varje loop, står COND fortfarande på strecket: håll [TRIG 15] nere och se den avläsningen ändra sig medan du vrider på [H], i stället för att titta på tangenterna. Kommer den aldrig alls, har du gått förbi 1:2 — villkoren är en enda lista på en enda ratt, och 2:2 spelar på exakt de loopar som 1:2 sitter över.
 :::
 
 ## Step: Chans på ghost notes
@@ -76,16 +76,15 @@ vägde före den också lät (§10.10.2).
 :::checkpoint
 keys16: { 1: red, 3: red, 5: red, 7: red, 9: red, 11: red, 13: red, 15: red, 16: red }
 hear: Taktens två sista steg kommer som ett par eller inte alls — när ghost noten på 15 vinner sitt myntkast svarar 16 på den; när 15 sitter över sitter 16 över med den. Båda tangenterna blinkar, 15 för sin chans och 16 för sitt villkor.
-recover: Spelar 16 på varje loop, står COND fortfarande på strecket: håll [TRIG 16] och vrid [H] ett klick i taget, förbi FILL-paret, tills PRE är avläsningen. Och frestas du att stapla en andra PRE ovanpå den här, skulle den fortfarande fråga om 15 — en PRE-trig hoppas över när en senare PRE tittar bakåt (§10.10.2). En sak som §10.10.2 avgör för ett spår men inte för ett kit: om trigen som 16 tittar tillbaka på är den närmast före på det här subtracket eller den närmast före var som helst på spår 1. Din enhet får avgöra det; det här paret är skrivet efter den första läsningen.
+recover: Spelar 16 på varje loop, står COND fortfarande på strecket: håll [TRIG 16] och vrid [H] ett klick i taget, förbi FILL-paret, tills PRE är avläsningen. Och frestas du att stapla en andra PRE ovanpå den här, skulle den fortfarande fråga om 15 — en PRE-trig hoppas över när en senare PRE tittar bakåt (§10.10.2). §10.10.2 beskriver PRE på ett spår, inte i ett kit: den säger inte om 16 tittar tillbaka på trigen närmast före på det här subtracket eller var som helst på spår 1.
 :::
 
 :::note
 En ghost note som förlorar sitt myntkast räknas, så långt 16 är berörd, som en ghost note som
-aldrig fanns där. Det är värt att säga högt, för så har det inte alltid varit: Elektrons egna
-release notes listar [en PROB-lock som lämnades utanför PRE- och
+aldrig fanns där. Före OS 1.4.0 gjorde den inte det: Elektrons release notes listar [en
+PROB-lock som lämnades utanför PRE- och
 NEI-räkningen](https://www.elektron.se/release-notes/tonverk-os-release-notes) bland de
-buggar OS 1.4.0 rättade, och 1.4.0 är versionen den här kursen är skriven mot. På ett äldre
-OS faller paret isär.
+buggar 1.4.0 rättade, och på ett äldre OS faller paret isär.
 :::
 
 ## Step: Varför spelade inte steg 16?
@@ -102,7 +101,7 @@ PRE på 16 — och ger varje steg ett skäl i stället för ett ljud.
 
 :::checkpoint
 hear: Tryck på Nästa loop fyra eller fem gånger så visar loggens rader att paret på 15 och 16 kommer tillsammans och uteblir tillsammans. Klicka på steg 16 på hi-hat-raden så ger raden under editorn det stegets öde för loopen du är på — trigen den tittade tillbaka på, och om den spelade; skivorna i loggen bär samma mening under pekaren. Sätt chansen på 15 till 100 och 16 slutar utebli.
-recover: Ingenting här är ett hörselprov — simulatorn ritar regeln, inte kitet, och dess enda ljud är ett klick. En sak måste den ta ställning i: om en vanlig trig, utan villkor och utan chans på sig, är den trig PRE tittar tillbaka på. Den läser meningen i §10.10.2 bokstavligt och tittar tillbaka på den senaste trig den utvärderade, medan ägartrådar om andra Elektron-lådor med samma regel säger att en naken trig aldrig utvärderas alls. Din enhet får avgöra det.
+recover: Simulatorn räknar en vanlig trig, utan villkor och utan chans på sig, som en trig PRE kan titta tillbaka på, så som meningen i §10.10.2 lyder; ägare av andra Elektron-lådor med samma regel säger att en naken trig aldrig utvärderas alls.
 :::
 
 ## Step: En fill-takt
@@ -122,7 +121,7 @@ att stänga den, och håll [FILL] nere genom taktens sista slag.
 screen: { menu: "FILL EDIT", items: [MOMENTARY, LATCHING], sel: 0 }
 keys16: { 5: red, 13: red, 14: red, 15: red, 16: red }
 hear: Med [FILL] hållen slutar takten i en räcka om tre snares in i nästa; släpp och de tre stegen är tysta igen, loop efter loop, medan 5 och 13 fortsätter som de alltid har gjort. Fem tangenter på remsan nu, de tre nya blinkande för villkoret på dem.
-recover: Spelar räckan utan att något hålls nere, står antingen de tre trigsen fortfarande på strecket i stället för på FILL, eller så är LATCHING det valda alternativet och ett tidigare tryck lämnade FILL-läget påslaget — tryck en gång på [FILL] och lyssna igen. Om [FILL]-tangenten själv lyser medan den hålls nere, och i vilken färg, står inte i manualen och ingen annanstans vi har kunnat hitta; din enhet får avgöra det.
+recover: Spelar räckan utan att något hålls nere, står antingen de tre trigsen fortfarande på strecket i stället för på FILL, eller så är LATCHING det valda alternativet och ett tidigare tryck lämnade FILL-läget påslaget — tryck en gång på [FILL] och lyssna igen.
 :::
 
 ## Step: En återställningspunkt, sedan en risk
@@ -139,7 +138,7 @@ memorerade.
 :::checkpoint
 screen: { menu: "TRANSFORM", items: [VELOCITY UNLOCK, VELOCITY RANDOMIZE, VELOCITY RAMP UP, VELOCITY RAMP DOWN, PLACEMENT RANDOMIZE, PLACEMENT REVERSE], sel: 1 }
 hear: Varje velocity på spåret landar någon annanstans på en gång — hi-hats starka där de var svaga, ghost notes som inte längre är ghost notes, snare-rollens uttoning ombyggd — och efter återkallningen är velocityn tillbaka där session 4 lämnade den, de fyra ghost notes sitter bakom slagen igen. Det återkallningen lägger tillbaka är patternet du memorerade för en stund sedan — villkor, chans och fill-trigs inräknade — inte session 4:s.
-recover: Ändrades ingenting? Då landade inte [YES] på den markerade raden: öppna menyn igen och se vilken åtgärd som är utpekad innan du trycker. Om återkallningen lägger tillbaka de gamla velocityvärdena exakt eller bara ungefär är den enda delen av det här som ingen har skrivit ner; din enhet får avgöra det, och tills den gör det är sparningen från steg 1 det riktiga golvet.
+recover: Ändrades ingenting? Då landade inte [YES] på den markerade raden: öppna menyn igen och se vilken åtgärd som är utpekad innan du trycker. Tar återkallningen inte tillbaka velocityvärdena, har sparningen från steg 1 kvar dem.
 :::
 
 :::note
@@ -147,14 +146,13 @@ En transform stannar inte på subtracket du tittar på. §10.6 drar sin gräns v
 ett Subtracks-spår läses det som hela kitet i en enda sväng: pickup-kicken får en ny velocity
 tillsammans med hi-hatsen, och det gör varje snare också. Velocity och ingenting annat —
 VELOCITY RANDOMIZE skriver VEL-lockar, så pickupen behåller sin 1:2 och de tre nya snarerna
-behåller sitt FILL. Att de åtta subtracken verkligen följs åt är ägares rapportering och inte
-manualens: de har bett om ett sätt att rikta en transform mot ett enda subtrack och
+behåller sitt FILL. Ägare bekräftar att de åtta subtracken följs åt: de har bett om ett sätt
+att rikta en transform mot ett enda subtrack och
 [det finns inget ännu](https://www.elektronauts.com/t/tonverk-feature-requests/238027/2057),
 och en annan rapport har PLACEMENT RANDOMIZE som
 [flyttar lock-trigs som inte spelar något](https://www.elektronauts.com/t/tonverk-feature-requests/238027/1559)
-tillsammans med tonerna — din enhet får avgöra det. Hur som helst kommer memoreringen först,
-och VELOCITY UNLOCK är en tyngre hammare än namnet antyder: den tar varenda VEL-lock av
-spåret, session 4:s fyra inräknade.
+tillsammans med tonerna. VELOCITY UNLOCK är en tyngre hammare än namnet antyder: den tar
+varenda VEL-lock av spåret, session 4:s fyra inräknade.
 :::
 
 ## Step: PERFORM-läget
@@ -163,14 +161,14 @@ leds: { TRK: green }
 source: manual §10.12, §A.2.3
 mode: grid-recording
 
-Håll [FUNC] och tryck på [SETTINGS] först; sparningen betyder mer här än någon annanstans i
-den här sessionen. Håll nu [FUNC] och tryck på [TRK]: PERFORM-läget är på, och [TRK] lyser
+Håll [FUNC] och tryck på [SETTINGS] först: att lämna PERFORM-läget tar patternet tillbaka till
+dess senast sparade tillstånd (§10.12). Håll nu [FUNC] och tryck på [TRK]: PERFORM-läget är på, och [TRK] lyser
 grönt så länge det är (§10.12). Tryck på [FLTR] och vrid ratten [E], FREQ, ordentligt ner
 medan loopen går, håll sedan [FUNC] och tryck på [TRK] igen för att lämna.
 
 :::checkpoint
 hear: Snaren blir matt under din hand — filtret hör till subtracket du står på (§A.2.3), så kicken och hi-hatsen klingar vidare som de var — och den förblir matt så länge PERFORM-läget är på. I samma stund som du lämnar är snaren ljus igen och den gröna lampan släckt: ändringen är borta, och att spara medan du var där inne hade inte behållit den heller (§10.12).
-recover: Förblev snaren matt efter att du lämnade, var [FUNC] inte nere vid det andra trycket; den gröna lampan är det att hålla ögonen på. Ändrades ingenting alls medan du vred, visar [FLTR] något annat subtracks sida — håll [TRK] och tryck på [KEYBOARD D1] för snaren och prova igen. Steget sparar först med avsikt: §10.12 lovar att patternet kommer tillbaka till ett sparat tillstånd och säger inte mer, och vad som händer med ändringar gjorda efter den senaste sparningen och innan PERFORM-läget slogs på står ingenstans. Din enhet får avgöra det; att spara först gör frågan betydelselös.
+recover: Förblev snaren matt efter att du lämnade, var [FUNC] inte nere vid det andra trycket; den gröna lampan är det att hålla ögonen på. Ändrades ingenting alls medan du vred, visar [FLTR] något annat subtracks sida — håll [TRK] och tryck på [KEYBOARD D1] för snaren och prova igen.
 :::
 
 ## Step: Spara
@@ -184,7 +182,7 @@ snarens: två som spelar på varje loop och tre som väntar på din tumme.
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }
 keys16: { 5: red, 13: red, 14: red, 15: red, 16: red }
-hear: Samma takt som du började sessionen med, och inga två loopar av den lika — en pickup-kick varannan gång runt, hälften av ghost notes, en svarande hi-hat som kommer bara när dess fråga kom, och ett fill under din tumme. Den remsan med fem tangenter är den här sessionens vinjett.
+hear: Samma takt som du började sessionen med, och inga två loopar av den lika — en pickup-kick varannan gång runt, hälften av ghost notes, en svarande hi-hat som kommer bara när dess fråga kom, och ett fill under din tumme.
 recover: Fem tangenter, och 14, 15 och 16 blinkande. Är de tre mörka, hamnade fill-trigsen på ett annat subtrack: håll [TRK] och tryck på [KEYBOARD D1] och titta igen — och saknas de där också, är steg 6 tre tryck och en ratt bort.
 :::
 
@@ -225,9 +223,8 @@ vidare.
 ### NEI, i simulatorn i stället för på kitet
 NEI tittar åt sidan: den frågar hur det senaste villkoret gick på spåret bredvid — det som är
 numrerat före det du står på — och spelar, eller spelar inte, på det svaret (§10.10.2).
-Simulatorns två spår är exakt det paret, och det är därför NEI hör hemma där: vad en
-Subtracks-subtracks egen NEI läser står inte någonstans vi har kunnat hitta, och bara din
-enhet kan säga det.
+Simulatorns två spår är exakt det paret. Vad NEI läser för ett subtrack inuti ett kit säger
+manualen inte.
 
 ### PROB utan att hålla något
 Vrid på [D] utan någon trig-tangent nere och PROB blir subtrackets egen inställning i stället

@@ -124,8 +124,7 @@ mode: grid-recording
 
 Mantén pulsado [TRK] y pulsa [KEYBOARD A1], el hi-hat cerrado. Ahora pulsa todas las teclas impares
 de [TRIG 1] a [TRIG 15]: ocho hi-hats, uno cada corchea. ¿Prefieres uno en cada paso?
-Púlsalas todas — la pieza de ejemplo se queda con ocho, y a los puntos de control de aquí en
-adelante no les importa cuál elegiste.
+Púlsalas todas; la pieza de ejemplo se queda con ocho.
 
 :::checkpoint
 keys16: { 1: red, 3: red, 5: red, 7: red, 9: red, 11: red, 13: red, 15: red }
@@ -155,7 +154,7 @@ leds: { RECORD: red }
 source: manual §10.3, §19
 mode: grid-recording
 
-Elige un golpe del que no estés seguro — aquí usamos el clap del paso 7. Mantén
+Elige un golpe del que no estés seguro, como el clap del paso 7. Mantén
 pulsado [TRIG 7] y pulsa [YES]: ese trig suena, solo, con lo que tenga ajustado. Una
 pulsación corta de [TRIG 7] lo quita; pulsa otra vez para volver a ponerlo.
 
@@ -183,9 +182,9 @@ recover: Si moviste LENGTH sin querer, devuelve el mando [E] a 16 antes de [NO].
 
 :::note
 Dos cosas de aquí pasan factura más tarde. Este menú fija una sola longitud para *todas* las
-pistas hasta que pulsas [FUNC] + [YES], que lo cambia a longitudes por pista. Y el manual no
-se decide sobre cómo se llama este menú — el encabezado del §10.9 y el rótulo del panel
-dicen PAGE SETUP, el propio texto del §10.9 dice SCALE. Son el mismo menú.
+pistas hasta que pulsas [FUNC] + [YES], que lo cambia a longitudes por pista. Y el encabezado
+del §10.9 y el rótulo del panel llaman a este menú PAGE SETUP, mientras que el texto del §10.9
+lo llama SCALE: son el mismo menú.
 :::
 
 ## Step: Pon un sonido en mute
@@ -207,11 +206,9 @@ recover: ¿Te dejaste algo en mute? El propio [MUTE] brilla tenue, verde o magen
 :::
 
 :::note
-Para estos colores, guíate por el §8.6, no por la guía rápida. El §7.4 da una sola regla —
-apagado está en mute, verde es audible — y nunca menciona que el verde es propio del modo
-global, así que quien lo aprende ahí tiene media regla.
-[Los propietarios deducen los dos modos por analogía con otras cajas de Elektron](https://www.elektronauts.com/t/global-mute-mode/242420),
-que es lo que pasa cuando un manual responde dos veces a la misma pregunta.
+El §8.6 tiene la regla completa de estos colores. El §7.4 de la guía rápida da solo la mitad —
+apagado está en mute, verde es audible — y nunca dice que el verde es propio del modo global.
+[Los propietarios deducen los dos modos por analogía con otras cajas de Elektron](https://www.elektronauts.com/t/global-mute-mode/242420).
 :::
 
 ## Step: Copia el pattern a A02
@@ -235,13 +232,12 @@ recover: Si A02 llega en silencio, el pegado ocurrió antes que el cambio. Esper
 :::
 
 :::note
-Quedarse dentro del banco A es la elección de esta sesión, no un muro. Para llegar a otro
-banco pulsas [PTN], eliges el banco en la fila inferior del [KEYBOARD] y luego pulsas una
-tecla trig para el pattern (§10.1.1). Esa fila responde a tres nombres en este manual — fila
-inferior del [KEYBOARD], las teclas [SUBTRACKS], la tecla marcada [KEYBOARD C1] para el
-banco A — y la lista del panel del §3.1, punto 21, imprime dos de ellos en una misma línea,
-porque son una sola fila de teclas. Dentro del banco en el que ya estás, [PTN] y una tecla
-trig es todo el gesto, que es todo lo que hoy hace falta.
+Para llegar a otro banco, pulsa [PTN], elige el banco en la fila inferior del [KEYBOARD] y
+luego pulsa una tecla trig para el pattern (§10.1.1). El manual llama a esa fila de tres
+maneras — la fila inferior del [KEYBOARD], las teclas [SUBTRACKS], y [KEYBOARD C1] para la
+tecla del banco A — y la lista del panel del §3.1, punto 21, imprime dos de ellos en una misma
+línea: son una sola fila de teclas. Dentro del banco en el que estás, [PTN] y una tecla trig
+bastan.
 :::
 
 ## Step: Borra, y deshaz
@@ -256,7 +252,7 @@ pulsado [FUNC] y pulsa [NO], rótulo menta Undo. El beat ha vuelto. Hazlo a prop
 
 :::checkpoint
 hear: Un compás de silencio, y luego el beat otra vez.
-recover: Si deshacer no hace nada, pega otra vez — la copia sigue en el portapapeles. Deshacer alcanza un pegado o un borrado en cada nivel en el que el secuenciador guarda uno: un pattern entero, la secuencia de una pista, una sola página, una página de parámetros, el sonido de una pista. Se detiene en exactamente una cosa, y el §10.10.5 lo dice sin rodeos: borra el preset de una pista y ya no está.
+recover: Si deshacer no hace nada, pega otra vez — la copia sigue en el portapapeles. Deshacer alcanza un pegado o un borrado en cada nivel en el que el secuenciador guarda uno: un pattern entero, la secuencia de una pista, una sola página, una página de parámetros, el sonido de una pista. Lo único que no alcanza es el preset de una pista borrado (§10.10.5): ese ya no está.
 :::
 
 ## Step: Vuelta a A01, y guarda
@@ -268,7 +264,7 @@ mode: playback
 Mantén pulsado [PTN] y pulsa [TRIG 1] para volver a A01. Mantén pulsado [FUNC] y pulsa
 [SETTINGS]: guardado, los dos patterns, sin aviso. Luego pulsa [RECORD] una vez más, mantén
 pulsado [TRK] y pulsa [KEYBOARD C1], y mira el kick por última vez — pasos 1, 5, 9 y 13, en
-rojo. Esa imagen es la cabecera de esta sesión.
+rojo.
 
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }

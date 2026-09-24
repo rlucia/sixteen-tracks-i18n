@@ -123,8 +123,7 @@ mode: grid-recording
 
 Tieni premuto [TRK] e premi [KEYBOARD A1], l'hi-hat chiuso. Ora premi tutti i tasti dispari
 da [TRIG 1] a [TRIG 15]: otto hi-hat, uno ogni ottavo. Preferisci uno su ogni passo? Premili
-tutti — il pezzo d'esempio ne tiene otto, e da qui in poi ai punti di controllo non importa
-cosa hai scelto.
+tutti; il pezzo d'esempio ne tiene otto.
 
 :::checkpoint
 keys16: { 1: red, 3: red, 5: red, 7: red, 9: red, 11: red, 13: red, 15: red }
@@ -154,7 +153,7 @@ leds: { RECORD: red }
 source: manual §10.3, §19
 mode: grid-recording
 
-Scegli un colpo di cui non sei sicuro — qui l'esempio usa il clap sul passo 7. Tieni
+Scegli un colpo di cui non sei sicuro, per esempio il clap sul passo 7. Tieni
 premuto [TRIG 7] e premi [YES]: quel trig suona, da solo, con quello che ha impostato sopra.
 Una pressione breve di [TRIG 7] lo toglie; premi ancora per rimetterlo.
 
@@ -182,9 +181,9 @@ recover: Se hai mosso LENGTH per sbaglio, riporta la manopola [E] a 16 prima di 
 
 :::note
 Due cose qui mordono più tardi. Questo menu imposta una sola lunghezza per *ogni* traccia
-finché non premi [FUNC] + [YES], che lo passa a lunghezze per traccia. E il manuale non sa
-decidere come si chiama questo menu — il titolo del §10.9 e la scritta sul pannello dicono
-PAGE SETUP, il testo dello stesso §10.9 dice SCALE. Sono lo stesso menu.
+finché non premi [FUNC] + [YES], che lo passa a lunghezze per traccia. E il titolo del §10.9
+e la scritta sul pannello chiamano questo menu PAGE SETUP, mentre il testo del §10.9 lo
+chiama SCALE: sono lo stesso menu.
 :::
 
 ## Step: Metti in mute un suono
@@ -206,11 +205,10 @@ recover: Hai lasciato qualcosa in mute? [MUTE] stesso brilla debolmente, verde o
 :::
 
 :::note
-Per questi colori fidati del §8.6, non della guida rapida. Il §7.4 dà una regola sola —
-spento è in mute, verde si sente — e non dice mai che il verde è specifico della modalità
-globale, così chi lo impara lì ha mezza regola.
-[I proprietari ricostruiscono le due modalità per analogia con le altre macchine Elektron](https://www.elektronauts.com/t/global-mute-mode/242420),
-che è quello che succede quando un manuale risponde due volte alla stessa domanda.
+Il §8.6 ha la regola intera per questi colori. Il §7.4 della guida rapida ne dà solo metà —
+spento è in mute, verde si sente — e non dice mai che il verde appartiene alla modalità
+globale.
+[I proprietari ricostruiscono le due modalità per analogia con le altre macchine Elektron](https://www.elektronauts.com/t/global-mute-mode/242420).
 :::
 
 ## Step: Copia il pattern in A02
@@ -234,13 +232,11 @@ recover: Se A02 arriva in silenzio, l'incolla è avvenuto prima del cambio. Aspe
 :::
 
 :::note
-Restare dentro il banco A è una scelta di questa sessione, non un muro. Per raggiungere un
-altro banco premi [PTN], scegli il banco sulla fila [KEYBOARD] in basso, poi premi un tasto
-trig per il pattern (§10.1.1). Quella fila risponde a tre nomi in questo manuale — fila
-[KEYBOARD] in basso, i tasti [SUBTRACKS], il tasto segnato [KEYBOARD C1] per il banco A — e
-la lista del pannello del §3.1, voce 21, ne stampa due sulla stessa riga, perché sono una
-sola fila di tasti. Dentro il banco in cui sei già, [PTN] e un tasto trig è tutto il gesto,
-ed è tutto quello che serve oggi.
+Per raggiungere un altro banco premi [PTN], scegli il banco sulla fila [KEYBOARD] in basso,
+poi premi un tasto trig per il pattern (§10.1.1). Il manuale chiama quella fila in tre modi —
+la fila [KEYBOARD] in basso, i tasti [SUBTRACKS], e [KEYBOARD C1] per il tasto del banco A — e
+la lista del pannello del §3.1, voce 21, ne stampa due sulla stessa riga: sono una sola fila
+di tasti. Dentro il banco in cui sei, bastano [PTN] e un tasto trig.
 :::
 
 ## Step: Cancella, e annulla
@@ -255,7 +251,7 @@ scritta menta Undo. Il beat è tornato. Fallo apposta, una volta.
 
 :::checkpoint
 hear: Una battuta di silenzio, poi di nuovo il beat.
-recover: Se l'undo non fa niente, incolla di nuovo — la copia è ancora negli appunti. L'undo arriva a un incolla o a una cancellazione a ogni livello in cui il sequencer ne tiene uno: un pattern intero, la sequenza di una traccia, una singola pagina, una pagina di parametri, il suono di una traccia. Si ferma davanti a una cosa sola, e il §10.10.5 lo dice chiaro: cancella il preset di una traccia ed è andato.
+recover: Se l'undo non fa niente, incolla di nuovo — la copia è ancora negli appunti. L'undo arriva a un incolla o a una cancellazione a ogni livello in cui il sequencer ne tiene uno: un pattern intero, la sequenza di una traccia, una singola pagina, una pagina di parametri, il suono di una traccia. L'unica cosa a cui non arriva è il preset di una traccia cancellato (§10.10.5): quello è andato.
 :::
 
 ## Step: Torna ad A01, e salva
@@ -267,7 +263,7 @@ mode: playback
 Tieni premuto [PTN] e premi [TRIG 1] per tornare ad A01. Tieni premuto [FUNC] e premi
 [SETTINGS]: salvati, entrambi i pattern, nessuna richiesta. Poi premi [RECORD] ancora una
 volta, tieni premuto [TRK] e premi [KEYBOARD C1], e guarda il kick un'ultima volta — passi 1, 5,
-9 e 13, rossi. Quell'immagine è la testata di questa sessione.
+9 e 13, rossi.
 
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }

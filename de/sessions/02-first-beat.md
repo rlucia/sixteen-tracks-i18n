@@ -122,8 +122,8 @@ source: manual §10.3
 mode: grid-recording
 
 Halte [TRK] und drücke [KEYBOARD A1], die geschlossene Hi-Hat. Jetzt drücke jede ungerade Taste von [TRIG 1] bis [TRIG 15]:
-acht Hi-Hats, eine auf jeder Achtel. Lieber eine auf jedem Schritt? Drücke sie alle — das
-Beispielstück bleibt bei acht, und den Kontrollpunkten ab hier ist egal, was du gewählt hast.
+acht Hi-Hats, eine auf jeder Achtel. Lieber eine auf jedem Schritt? Drücke sie alle; das
+Beispielstück bleibt bei acht.
 
 :::checkpoint
 keys16: { 1: red, 3: red, 5: red, 7: red, 9: red, 11: red, 13: red, 15: red }
@@ -153,7 +153,7 @@ leds: { RECORD: red }
 source: manual §10.3, §19
 mode: grid-recording
 
-Such dir einen Schlag, bei dem du nicht sicher bist — der Kurs nimmt den Clap auf
+Such dir einen Schlag, bei dem du nicht sicher bist, etwa den Clap auf
 Schritt 7. Halte [TRIG 7] und drücke [YES]: dieser eine Trig klingt, allein, mit allem, was
 auf ihm eingestellt ist. Ein kurzer Druck auf [TRIG 7] entfernt ihn; drücke noch einmal, um
 ihn zurückzusetzen.
@@ -182,9 +182,9 @@ recover: Hast du LENGTH aus Versehen bewegt, dreh Regler [E] vor [NO] auf 16 zur
 
 :::note
 Zwei Dinge hier beißen später. Dieses Menü setzt eine Länge für *jede* Spur, bis du
-[FUNC] + [YES] drückst, was auf Längen pro Spur umschaltet. Und das Handbuch kann sich nicht
-entscheiden, wie dieses Menü heißt — die Überschrift von §10.9 und die Beschriftung auf dem
-Bedienfeld sagen PAGE SETUP, der Text von §10.9 selbst sagt SCALE. Es ist dasselbe Menü.
+[FUNC] + [YES] drückst, was auf Längen pro Spur umschaltet. Und die Überschrift von §10.9 und
+die Beschriftung auf dem Bedienfeld nennen dieses Menü PAGE SETUP, der Text von §10.9 nennt es
+SCALE: es ist dasselbe Menü.
 :::
 
 ## Step: Einen Sound stummschalten
@@ -207,11 +207,9 @@ recover: Etwas stumm gelassen? [MUTE] selbst glimmt schwach, grün oder magenta,
 :::
 
 :::note
-Halte dich bei diesen Farben an §8.6, nicht an die Kurzanleitung. §7.4 gibt eine Regel —
-dunkel ist stumm, grün ist hörbar — und erwähnt nie, dass Grün nur für den globalen Modus gilt,
-wer es also dort lernt, hat eine halbe Regel.
-[Besitzer erschließen sich die beiden Modi im Vergleich mit anderen Elektron-Geräten](https://www.elektronauts.com/t/global-mute-mode/242420),
-und so geht es, wenn ein Handbuch dieselbe Frage zweimal beantwortet.
+§8.6 hat die ganze Regel für diese Farben. §7.4 in der Kurzanleitung gibt nur die Hälfte —
+dunkel ist stumm, grün ist hörbar — und sagt nie, dass Grün zum globalen Modus gehört.
+[Besitzer erschließen sich die beiden Modi im Vergleich mit anderen Elektron-Geräten](https://www.elektronauts.com/t/global-mute-mode/242420).
 :::
 
 ## Step: Das Pattern nach A02 kopieren
@@ -235,13 +233,12 @@ recover: Kommt A02 still herum, ist das Einfügen vor dem Wechsel passiert. Wart
 :::
 
 :::note
-In Bank A zu bleiben ist die Wahl dieser Session, keine Mauer. Um eine andere Bank zu
-erreichen, drückst du [PTN], wählst die Bank auf der unteren [KEYBOARD]-Reihe und drückst dann
-eine Trig-Taste für das Pattern (§10.1.1). Diese Reihe hört in diesem Handbuch auf drei Namen
-— untere [KEYBOARD]-Reihe, die [SUBTRACKS]-Tasten, die Taste mit der Aufschrift [KEYBOARD C1]
-für Bank A — und die Bedienfeld-Liste in §3.1, Punkt 21, druckt zwei davon in eine Zeile, weil
-es eine Reihe von Tasten ist. Innerhalb der Bank, in der du schon bist, ist [PTN] und eine
-Trig-Taste die ganze Geste, und mehr braucht der heutige Tag nicht.
+Um eine andere Bank zu erreichen, drücke [PTN], wähle die Bank auf der unteren
+[KEYBOARD]-Reihe und drücke dann eine Trig-Taste für das Pattern (§10.1.1). Das Handbuch nennt
+diese Reihe dreierlei — die untere [KEYBOARD]-Reihe, die [SUBTRACKS]-Tasten und [KEYBOARD C1]
+als Taste für Bank A — und die Bedienfeld-Liste in §3.1, Punkt 21, druckt zwei davon in eine
+Zeile: es ist eine Reihe von Tasten. Innerhalb der Bank, in der du bist, genügen [PTN] und eine
+Trig-Taste.
 :::
 
 ## Step: Löschen, und rückgängig
@@ -256,7 +253,7 @@ Jeder Trig in A02 ist weg, und der nächste Loop ist Stille. Jetzt halte [FUNC] 
 
 :::checkpoint
 hear: Ein Takt Stille, dann wieder der Beat.
-recover: Tut Undo nichts, füge noch einmal ein — die Kopie liegt noch in der Zwischenablage. Undo erreicht ein Einfügen oder ein Löschen auf jeder Ebene, auf der der Sequenzer eines behält: ein ganzes Pattern, die Sequenz einer Spur, eine einzelne Seite, eine Seite Parameter, den Sound einer Spur. Es hält bei genau einer Sache, und §10.10.5 sagt es unumwunden: lösche ein Spur-Preset, und es ist weg.
+recover: Tut Undo nichts, füge noch einmal ein — die Kopie liegt noch in der Zwischenablage. Undo erreicht ein Einfügen oder ein Löschen auf jeder Ebene, auf der der Sequenzer eines behält: ein ganzes Pattern, die Sequenz einer Spur, eine einzelne Seite, eine Seite Parameter, den Sound einer Spur. Das eine, was es nicht erreicht, ist ein gelöschtes Spur-Preset (§10.10.5): das ist weg.
 :::
 
 ## Step: Zurück zu A01, und speichern
@@ -268,7 +265,7 @@ mode: playback
 Halte [PTN] und drücke [TRIG 1], um zu A01 zurückzukehren. Halte [FUNC] und drücke
 [SETTINGS]: gespeichert, beide Patterns, keine Rückfrage. Dann drücke noch einmal [RECORD],
 halte [TRK] und drücke [KEYBOARD C1], und sieh dir die Kick ein letztes Mal an — Schritte 1, 5, 9
-und 13, rot. Dieses Bild ist das Titelbild dieser Session.
+und 13, rot.
 
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }

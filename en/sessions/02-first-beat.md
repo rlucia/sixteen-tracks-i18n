@@ -122,8 +122,8 @@ source: manual §10.3
 mode: grid-recording
 
 Hold [TRK] and press [KEYBOARD A1], the closed hat. Now press every odd key from [TRIG 1] to [TRIG 15]: eight
-hats, one every eighth note. Prefer one on every step? Press them all — the worked piece
-keeps eight, and the checkpoints from here on do not care which you chose.
+hats, one every eighth note. Prefer one on every step? Press them all; the worked piece
+keeps eight.
 
 :::checkpoint
 keys16: { 1: red, 3: red, 5: red, 7: red, 9: red, 11: red, 13: red, 15: red }
@@ -153,7 +153,7 @@ leds: { RECORD: red }
 source: manual §10.3, §19
 mode: grid-recording
 
-Choose a hit you are not sure about — we use the clap on step 7. Hold [TRIG 7] and press
+Choose a hit you are not sure about, such as the clap on step 7. Hold [TRIG 7] and press
 [YES]: that one trig sounds, alone, with whatever is set on it. A quick press of [TRIG 7]
 removes it; press again to put it back.
 
@@ -180,9 +180,8 @@ recover: If you moved LENGTH by accident, turn knob [E] back to 16 before [NO]. 
 
 :::note
 Two things here bite later. This menu sets one length for *every* track until you press
-[FUNC] + [YES], which switches it to per-track lengths. And the manual cannot decide what
-this menu is called — §10.9's heading and the panel
-legend say PAGE SETUP, §10.9's own text says SCALE. They are the same menu.
+[FUNC] + [YES], which switches it to per-track lengths. And §10.9's heading and the panel
+legend call this menu PAGE SETUP, while §10.9's text calls it SCALE: they are the same menu.
 :::
 
 ## Step: Mute one sound
@@ -204,11 +203,9 @@ recover: Left something muted? [MUTE] itself glows dimly, green or magenta, when
 :::
 
 :::note
-Go by §8.6 for these colours, not the quick start. §7.4 gives one rule — dark is muted, green
-is audible — and never mentions that green is specific to global mode, so a reader who
-learns it there has half a rule.
-[Owners work the two modes out by analogy with other Elektron boxes](https://www.elektronauts.com/t/global-mute-mode/242420),
-which is what happens when a manual answers the same question twice.
+§8.6 has the whole rule for these colours. The quick start's §7.4 gives only half of it —
+dark is muted, green is audible — and never says that green belongs to global mode.
+[Owners work the two modes out by analogy with other Elektron boxes](https://www.elektronauts.com/t/global-mute-mode/242420).
 :::
 
 ## Step: Copy the pattern to A02
@@ -231,12 +228,11 @@ recover: If A02 comes round silent, the paste happened before the switch did. Wa
 :::
 
 :::note
-Staying inside bank A is this session's choice, not a wall. To reach another bank you press
-[PTN], pick the bank on the bottom [KEYBOARD] row, then press a trig key for the pattern
-(§10.1.1). That row answers to three names in this manual — bottom [KEYBOARD] row, the
-[SUBTRACKS] keys, the key marked [KEYBOARD C1] for bank A — and §3.1's panel list, item 21,
-prints two of them on one line, because they are one row of keys. Inside the bank you are already in,
-[PTN] and a trig key is the whole gesture, which is all today needs.
+To reach another bank, press [PTN], pick the bank on the bottom [KEYBOARD] row, then press a
+trig key for the pattern (§10.1.1). The manual calls that row three things — the bottom
+[KEYBOARD] row, the [SUBTRACKS] keys, and [KEYBOARD C1] for bank A's key — and §3.1's panel
+list, item 21, prints two of them on one line: they are one row of keys. Inside the bank you
+are in, [PTN] and a trig key is enough.
 :::
 
 ## Step: Clear, and undo
@@ -251,7 +247,7 @@ The beat is back. Do this on purpose once.
 
 :::checkpoint
 hear: A bar of silence, then the beat again.
-recover: If undo does nothing, paste again — the copy is still in the clipboard. Undo reaches a paste or a clear at every level the sequencer keeps one: a whole pattern, one track's sequence, a single page, a page of parameters, a track's sound. It stops at exactly one thing, and §10.10.5 says so outright: clear a track preset and it is gone.
+recover: If undo does nothing, paste again — the copy is still in the clipboard. Undo reaches a paste or a clear at every level the sequencer keeps one: a whole pattern, one track's sequence, a single page, a page of parameters, a track's sound. The one thing it does not reach is a cleared track preset (§10.10.5): that is gone.
 :::
 
 ## Step: Back to A01, and save
@@ -262,7 +258,7 @@ mode: playback
 
 Hold [PTN] and press [TRIG 1] to return to A01. Hold [FUNC] and press [SETTINGS]: saved,
 both patterns, no prompt. Then press [RECORD] once more, hold [TRK] and press
-[KEYBOARD C1], and look at the kick one last time — steps 1, 5, 9 and 13, red. That picture is this session's masthead.
+[KEYBOARD C1], and look at the kick one last time — steps 1, 5, 9 and 13, red.
 
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 1, type: "SUBTRACKS" }

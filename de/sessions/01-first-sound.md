@@ -98,14 +98,15 @@ recover: Die untere linke Ecke des Displays ist die Anzeige, der du trauen kanns
 :::note
 Drei Stellen im Handbuch schreiben diese Taste auf drei Arten — [TRK] in §5.3.7, TRACK in
 §10.3, und die eigene Preset-Anleitung in §9.1.4 verlangt stattdessen [FUNC] und eine
-Trig-Taste. Auf dem Bedienfeld vor dir steht TRK, also sagt dieser Kurs das.
-[Die Besitzer regeln es genauso](https://www.elektronauts.com/t/tonverk-technical-q-a/238273/1088):
-[TRK] und eine Trig-Taste ist die stille Auswahl.
+Trig-Taste. Auf dem Bedienfeld steht TRK, und
+[Besitzer bestätigen](https://www.elektronauts.com/t/tonverk-technical-q-a/238273/1088), dass
+[TRK] und eine Trig-Taste die stille Auswahl ist.
 :::
 
 ## Step: Ein Kit laden
 keys: [PRESET, LEFT, RIGHT, UP, DOWN, LEVEL/DATA, YES]
 source: manual §7.1, §9.1.4
+checked: yes
 mode: menu:LOAD PRESET
 
 Drücke [PRESET]. Das LOAD-PRESET-Menü öffnet sich für die aktive Spur. [LEFT]/[RIGHT] wechseln
@@ -145,6 +146,7 @@ Behälter-Regeln; die Karte auf [Bevor du beginnst](/before-you-start/) zeigt di
 keys: [KEYBOARD C1, KEYBOARD D1, KEYBOARD E1, KEYBOARD F1, KEYBOARD G1, KEYBOARD A1, KEYBOARD B1, KEYBOARD C2, TRIG 1]
 leds: { KEYBOARD C1: red }
 source: manual §3.1, §A.2.3
+checked: yes
 mode: any
 
 Drücke die untere Reihe der Tastatur Taste für Taste, von [KEYBOARD C1] bis [KEYBOARD C2].
@@ -194,9 +196,8 @@ checked: yes
 mode: playback
 
 Halte [FUNC] und drücke [KEYBOARD F#1] — die mintfarbene Beschriftung sagt Metronome. Drücke
-[PLAY]: ein Klick in deinem Tempo. Spiel die Kick auf [KEYBOARD C1] eine Minute lang dagegen;
-das ist die Übung, und der ganze Grund, warum das Tempo vor dem Beat kam. Drücke [STOP], dann
-noch einmal [FUNC] + [KEYBOARD F#1], um den Klick abzustellen.
+[PLAY]: ein Klick in deinem Tempo. Spiel die Kick auf [KEYBOARD C1] eine Minute lang dagegen.
+Drücke [STOP], dann noch einmal [FUNC] + [KEYBOARD F#1], um den Klick abzustellen.
 
 :::checkpoint
 hear: Ein Klick in deinem Tempo, vier pro Takt, und deine Kick darüber.
@@ -241,15 +242,14 @@ recover: Hat sich stattdessen ein Menü mit Einstellungen geöffnet, hast du [SE
 
 :::note
 Das Fehlen einer Rückfrage ist die Falle. Besitzer drücken [FUNC] + [SETTINGS], sehen keine
-NAMING-Ansicht und schließen daraus, dass nichts gespeichert wurde —
-[der Thread, aus dem dieser Schritt stammt](https://www.elektronauts.com/t/create-new-empty-project-no-samples-inside-my-own-name-how/238370),
-besteht aus Besitzern, die genau das herausfinden. §9.1.1 gibt der Kombination eine einzige
-Aufgabe — sie schreibt, woran du gerade arbeitest, zurück auf den Platz, von dem es kam — und
-das Benennen ist SAVE AS, was du schon getan hast. Vielleicht siehst du kurz einen Hinweis,
-während die Karte geschrieben wird; Besitzer auf diesem OS
-[haben darum gebeten, dass er verschwindet](https://www.elektronauts.com/t/os-upgrade-tonverk-os-1-4-0/254824),
-obwohl §9.1.1 keinen erwähnt — nimm ihn also als etwas, das vorbeiflackern kann, nicht als
-etwas, auf das du wartest. Das klärt dein Gerät.
+NAMING-Ansicht und schließen daraus, dass nichts gespeichert wurde
+([ein Thread, in dem Besitzer genau das herausfinden](https://www.elektronauts.com/t/create-new-empty-project-no-samples-inside-my-own-name-how/238370)).
+§9.1.1 gibt der Kombination eine einzige Aufgabe — sie schreibt, woran du gerade arbeitest,
+zurück auf den Platz, von dem es kam — und das Benennen ist SAVE AS, was du schon getan hast.
+Vielleicht siehst du kurz einen Hinweis, während die Karte geschrieben wird; §9.1.1 erwähnt
+keinen, und Besitzer auf diesem OS
+[haben darum gebeten, dass er verschwindet](https://www.elektronauts.com/t/os-upgrade-tonverk-os-1-4-0/254824).
+Warte nicht darauf.
 :::
 
 :::note
@@ -308,4 +308,4 @@ rätselhafte Weise Dinge leiser macht.
 Session 2 schreibt den eintaktigen Beat, auf dem das ganze Stück steht, auf dieser einen
 Spur, ein Sound des Kits nach dem anderen. Davor erklären zehn Minuten auf
 [Bevor du beginnst](/before-you-start/) die fünf Behälter, die ein Speichern berührt, und die
-vier Arten von Spuren: es ist die Seite, auf die sich jede spätere Session stützt.
+vier Arten von Spuren.
