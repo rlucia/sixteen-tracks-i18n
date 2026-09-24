@@ -2,14 +2,14 @@
   "chapters.json": "06e879a1f4b690ba6f5fee4d33efa6f8a362434e",
   "key-colours.json": "06e879a1f4b690ba6f5fee4d33efa6f8a362434e",
   "pages/404.html": "40c9c3c72ffc9abafd9a9e03e6e07d414f76dc6d",
-  "pages/before-you-start.html": "40c9c3c72ffc9abafd9a9e03e6e07d414f76dc6d",
+  "pages/before-you-start.html": "83b67428b4c4819aecbb8d3302cc6d72f40ded9f",
   "pages/colophon.html": "06e879a1f4b690ba6f5fee4d33efa6f8a362434e",
   "pages/index.html": "06e879a1f4b690ba6f5fee4d33efa6f8a362434e",
   "pages/privacy.html": "40c9c3c72ffc9abafd9a9e03e6e07d414f76dc6d",
-  "sessions/01-first-sound.md": "0db931c70dd499eb104ea66a757b926e1b6de805",
-  "sessions/02-first-beat.md": "0db931c70dd499eb104ea66a757b926e1b6de805",
-  "sessions/03-the-kit-your-way.md": "0db931c70dd499eb104ea66a757b926e1b6de805",
-  "sessions/04-make-it-move.md": "a8c20e68c383e9c58d96fd698adf94e941149b90",
-  "sessions/05-variation-without-new-patterns.md": "0db931c70dd499eb104ea66a757b926e1b6de805",
-  "strings.json": "00b6926df32be0250fdb65c881b24bd35085f706"
+  "sessions/01-first-sound.md": "83b67428b4c4819aecbb8d3302cc6d72f40ded9f",
+  "sessions/02-first-beat.md": "83b67428b4c4819aecbb8d3302cc6d72f40ded9f",
+  "sessions/03-the-kit-your-way.md": "83b67428b4c4819aecbb8d3302cc6d72f40ded9f",
+  "sessions/04-make-it-move.md": "83b67428b4c4819aecbb8d3302cc6d72f40ded9f",
+  "sessions/05-variation-without-new-patterns.md": "83b67428b4c4819aecbb8d3302cc6d72f40ded9f",
+  "strings.json": "83b67428b4c4819aecbb8d3302cc6d72f40ded9f"
 }
