@@ -13,6 +13,7 @@ ends: { keys16: { 1: red, 5: red, 9: red, 13: red } }
 ## Step: Var du är
 keys: [FUNC, PRESET, UP, DOWN, RIGHT, YES]
 source: manual §9.1.1
+checked: yes
 mode: menu:FILE
 
 Är inte SIXTEEN-projektet på displayen, så ladda det: [FUNC] + [PRESET] öppnar FILE-menyn,
@@ -36,6 +37,7 @@ och du har spelat under tiden: spara innan du laddar något — arbetsläget du 
 keys: [TRK, KEYBOARD D1, KEYBOARD A1, KEYBOARD F1, KEYBOARD C1]
 leds: { KEYBOARD C1: red }
 source: manual §A.2.3
+checked: yes
 mode: any
 
 Håll [TRK] och tryck på [KEYBOARD D1]. Nu är snaren det valda ljudet, och ingenting spelade:
@@ -53,6 +55,7 @@ recover: Ett ljud som spelade betyder att [TRK] inte var nere först — håll d
 keys: [RECORD]
 leds: { RECORD: red }
 source: manual §10.3
+checked: yes
 mode: playback
 
 Tryck på [RECORD]. Tangenten lyser rött, och det röda är GRID RECORDING. De sexton
@@ -74,6 +77,7 @@ trigs medan den går eller medan den står stilla — det du tycker är lättast
 keys: [TRK, KEYBOARD C1, TRIG 1, TRIG 5, TRIG 9, TRIG 13]
 leds: { RECORD: red, TRIG 1: red, TRIG 5: red, TRIG 9: red, TRIG 13: red }
 source: manual §10.3, §10.2.1
+checked: yes
 mode: grid-recording
 
 Håll [TRK] och tryck på [KEYBOARD C1] så att kicken blir ljudet du skriver. Tryck sedan på
@@ -90,6 +94,7 @@ recover: En tangent som slocknade när du tryckte höll redan en trig och du tog
 keys: [PLAY, MAIN VOLUME]
 leds: { RECORD: red }
 source: manual §10.1.2
+checked: yes
 mode: grid-recording
 
 Tryck på [PLAY]. Fyra kickar per takt i ditt tempo, och ett ljus som löper längs de sexton
@@ -105,6 +110,7 @@ recover: Tystnad medan ljuset fortfarande löper beror oftast på en av två sak
 keys: [TRK, KEYBOARD D1, TRIG 5, TRIG 13]
 leds: { RECORD: red, TRIG 5: red, TRIG 13: red }
 source: manual §10.3
+checked: yes
 mode: grid-recording
 
 Håll [TRK] och tryck på [KEYBOARD D1]. De sexton tangenterna töms: de visar snarens steg nu,
@@ -120,6 +126,7 @@ recover: Lyser kickens fyra tangenter fortfarande, lämnade du aldrig kicken. H�
 keys: [TRK, KEYBOARD A1, TRIG 1, TRIG 3, TRIG 5, TRIG 7, TRIG 9, TRIG 11, TRIG 13, TRIG 15]
 leds: { RECORD: red, TRIG 1: red, TRIG 3: red, TRIG 5: red, TRIG 7: red, TRIG 9: red, TRIG 11: red, TRIG 13: red, TRIG 15: red }
 source: manual §10.3
+checked: yes
 mode: grid-recording
 
 Håll [TRK] och tryck på [KEYBOARD A1], den stängda hi-haten. Tryck nu på varje udda tangent från [TRIG 1] till [TRIG 15]: åtta
@@ -136,6 +143,7 @@ recover: För plottrigt: tryck på de tangenter du vill ha släckta. Ett snabbt 
 keys: [TRK, KEYBOARD F1, TRIG 7, TRIG 15]
 leds: { RECORD: red, TRIG 7: red, TRIG 15: red }
 source: manual §10.3
+checked: yes
 mode: grid-recording
 
 Håll [TRK] och tryck på [KEYBOARD F1], clapen. Lägg den på [TRIG 7] och [TRIG 15]:
@@ -152,6 +160,7 @@ recover: Hamnar den ovanpå snaren och grumlar den: flytta den, tryck på tangen
 keys: [TRIG 7, YES, LEFT, RIGHT]
 leds: { RECORD: red }
 source: manual §10.3, §19
+checked: yes
 mode: grid-recording
 
 Välj ett slag du är osäker på, till exempel clapen på steg 7. Håll [TRIG 7] och tryck
@@ -167,6 +176,7 @@ recover: En hållen trig öppnas för redigering, den raderas inte, så att hål
 keys: [FUNC, PAGE, E, NO]
 leds: { RECORD: red }
 source: manual §10.9, §10.9.1
+checked: yes
 mode: menu:PAGE SETUP
 
 Håll [FUNC] och tryck på [PAGE]. LENGTH, på DATA ENTRY-ratten [E], visar 16 — en sida, en
@@ -189,6 +199,7 @@ text kallar menyn PAGE SETUP, medan brödtexten i §10.9 kallar den SCALE: det �
 keys: [MUTE, KEYBOARD D1, UP, DOWN]
 leds: { KEYBOARD C1: green, KEYBOARD E1: green, KEYBOARD F1: green, KEYBOARD G1: green, KEYBOARD A1: green, KEYBOARD B1: green, KEYBOARD C2: green }
 source: manual §8.6
+checked: yes
 mode: playback
 
 Tryck på [MUTE] medan spår 1 fortfarande är det aktiva spåret — kitets ljud erbjuds bara för
@@ -213,6 +224,7 @@ mutat, grönt hörs — och säger aldrig att grönt hör till det globala läge
 keys: [RECORD, FUNC, PTN, TRIG 2, STOP]
 leds: { TRIG 1: white, TRIG 2: red }
 source: manual §6.6, §10.10.4, §10.1.1
+checked: yes
 mode: playback
 
 Tryck på [RECORD] för att lämna GRID RECORDING — en pattern-kopiering går inte medan det är
@@ -241,6 +253,7 @@ rad tangenter. Inne i banken du är i räcker [PTN] och en trig-tangent.
 keys: [FUNC, PLAY, YES, NO]
 leds: { TRIG 2: red }
 source: manual §6.6, §10.10.4, §10.10.5
+checked: yes
 mode: playback
 
 Håll [FUNC] och tryck på [PLAY] — mintgrön text Clear — sedan [YES] på frågan. Varje trig i
@@ -256,6 +269,7 @@ recover: Gör Undo ingenting: klistra in igen — kopian ligger kvar i urklippet
 keys: [PTN, TRIG 1, FUNC, SETTINGS, RECORD, TRK, KEYBOARD C1]
 leds: { RECORD: red, TRIG 1: red, TRIG 5: red, TRIG 9: red, TRIG 13: red }
 source: manual §10.1.1, §9.1.1
+checked: yes
 mode: playback
 
 Håll [PTN] och tryck på [TRIG 1] för att komma tillbaka till A01. Håll [FUNC] och tryck på

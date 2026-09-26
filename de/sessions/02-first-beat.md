@@ -13,6 +13,7 @@ ends: { keys16: { 1: red, 5: red, 9: red, 13: red } }
 ## Step: Wo du stehst
 keys: [FUNC, PRESET, UP, DOWN, RIGHT, YES]
 source: manual §9.1.1
+checked: yes
 mode: menu:FILE
 
 Ist SIXTEEN nicht das Projekt auf dem Display, lade es: [FUNC] + [PRESET] öffnet das FILE-Menü,
@@ -36,6 +37,7 @@ aufgibst, wird nicht von allein in dein Projekt zurückgeschrieben.
 keys: [TRK, KEYBOARD D1, KEYBOARD A1, KEYBOARD F1, KEYBOARD C1]
 leds: { KEYBOARD C1: red }
 source: manual §A.2.3
+checked: yes
 mode: any
 
 Halte [TRK] und drücke [KEYBOARD D1]. Die Snare ist jetzt der gewählte Sound, und nichts hat
@@ -53,6 +55,7 @@ recover: Ein Sound, der gespielt hat, heißt, [TRK] war nicht zuerst unten — h
 keys: [RECORD]
 leds: { RECORD: red }
 source: manual §10.3
+checked: yes
 mode: playback
 
 Drücke [RECORD]. Die Taste leuchtet rot, und dieses Rot ist GRID RECORDING. Die sechzehn
@@ -74,6 +77,7 @@ schreiben, während er läuft oder während er steht — je nachdem, was dir lei
 keys: [TRK, KEYBOARD C1, TRIG 1, TRIG 5, TRIG 9, TRIG 13]
 leds: { RECORD: red, TRIG 1: red, TRIG 5: red, TRIG 9: red, TRIG 13: red }
 source: manual §10.3, §10.2.1
+checked: yes
 mode: grid-recording
 
 Halte [TRK] und drücke [KEYBOARD C1], damit die Kick der Sound ist, den du schreibst. Dann
@@ -89,6 +93,7 @@ recover: Eine Taste, die beim Drücken dunkel wurde, hatte schon einen Trig, und
 keys: [PLAY, MAIN VOLUME]
 leds: { RECORD: red }
 source: manual §10.1.2
+checked: yes
 mode: grid-recording
 
 Drücke [PLAY]. Vier Kicks pro Takt in deinem Tempo, und ein Licht, das über die sechzehn
@@ -104,6 +109,7 @@ recover: Stille, während das Licht noch läuft, ist meistens eins von zwei Ding
 keys: [TRK, KEYBOARD D1, TRIG 5, TRIG 13]
 leds: { RECORD: red, TRIG 5: red, TRIG 13: red }
 source: manual §10.3
+checked: yes
 mode: grid-recording
 
 Halte [TRK] und drücke [KEYBOARD D1]. Die sechzehn Tasten leeren sich: sie zeigen jetzt die
@@ -119,6 +125,7 @@ recover: Leuchten die vier Tasten der Kick noch, hast du die Kick nie verlassen.
 keys: [TRK, KEYBOARD A1, TRIG 1, TRIG 3, TRIG 5, TRIG 7, TRIG 9, TRIG 11, TRIG 13, TRIG 15]
 leds: { RECORD: red, TRIG 1: red, TRIG 3: red, TRIG 5: red, TRIG 7: red, TRIG 9: red, TRIG 11: red, TRIG 13: red, TRIG 15: red }
 source: manual §10.3
+checked: yes
 mode: grid-recording
 
 Halte [TRK] und drücke [KEYBOARD A1], die geschlossene Hi-Hat. Jetzt drücke jede ungerade Taste von [TRIG 1] bis [TRIG 15]:
@@ -135,6 +142,7 @@ recover: Zu voll: drücke die Tasten, die dunkel werden sollen. Ein kurzer Druck
 keys: [TRK, KEYBOARD F1, TRIG 7, TRIG 15]
 leds: { RECORD: red, TRIG 7: red, TRIG 15: red }
 source: manual §10.3
+checked: yes
 mode: grid-recording
 
 Halte [TRK] und drücke [KEYBOARD F1], den Clap. Leg ihn auf [TRIG 7] und [TRIG 15]: das
@@ -151,6 +159,7 @@ recover: Landet er auf der Snare und verwischt sie, verschieb ihn: drücke die T
 keys: [TRIG 7, YES, LEFT, RIGHT]
 leds: { RECORD: red }
 source: manual §10.3, §19
+checked: yes
 mode: grid-recording
 
 Such dir einen Schlag, bei dem du nicht sicher bist, etwa den Clap auf
@@ -167,6 +176,7 @@ recover: Ein gehaltener Trig wird zum Bearbeiten geöffnet, nicht gelöscht, hal
 keys: [FUNC, PAGE, E, NO]
 leds: { RECORD: red }
 source: manual §10.9, §10.9.1
+checked: yes
 mode: menu:PAGE SETUP
 
 Halte [FUNC] und drücke [PAGE]. LENGTH, auf DATA-ENTRY-Regler [E], steht auf 16 — eine Seite,
@@ -191,6 +201,7 @@ SCALE: es ist dasselbe Menü.
 keys: [MUTE, KEYBOARD D1, UP, DOWN]
 leds: { KEYBOARD C1: green, KEYBOARD E1: green, KEYBOARD F1: green, KEYBOARD G1: green, KEYBOARD A1: green, KEYBOARD B1: green, KEYBOARD C2: green }
 source: manual §8.6
+checked: yes
 mode: playback
 
 Drücke [MUTE], während Spur 1 noch die aktive Spur ist — die Sounds des Kits werden nur für
@@ -216,6 +227,7 @@ dunkel ist stumm, grün ist hörbar — und sagt nie, dass Grün zum globalen Mo
 keys: [RECORD, FUNC, PTN, TRIG 2, STOP]
 leds: { TRIG 1: white, TRIG 2: red }
 source: manual §6.6, §10.10.4, §10.1.1
+checked: yes
 mode: playback
 
 Drücke [RECORD], um das GRID RECORDING zu verlassen — eine Pattern-Kopie läuft nicht, solange
@@ -245,6 +257,7 @@ Trig-Taste.
 keys: [FUNC, PLAY, YES, NO]
 leds: { TRIG 2: red }
 source: manual §6.6, §10.10.4, §10.10.5
+checked: yes
 mode: playback
 
 Halte [FUNC] und drücke [PLAY] — mintfarbene Beschriftung Clear — dann [YES] auf die Rückfrage.
@@ -260,6 +273,7 @@ recover: Tut Undo nichts, füge noch einmal ein — die Kopie liegt noch in der 
 keys: [PTN, TRIG 1, FUNC, SETTINGS, RECORD, TRK, KEYBOARD C1]
 leds: { RECORD: red, TRIG 1: red, TRIG 5: red, TRIG 9: red, TRIG 13: red }
 source: manual §10.1.1, §9.1.1
+checked: yes
 mode: playback
 
 Halte [PTN] und drücke [TRIG 1], um zu A01 zurückzukehren. Halte [FUNC] und drücke

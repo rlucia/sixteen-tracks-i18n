@@ -13,6 +13,7 @@ ends: { keys16: { 1: red, 5: red, 9: red, 13: red } }
 ## Step: Where you are
 keys: [FUNC, PRESET, UP, DOWN, RIGHT, YES]
 source: manual §9.1.1
+checked: yes
 mode: menu:FILE
 
 If SIXTEEN is not the project on the screen, load it: [FUNC] + [PRESET] opens the FILE menu,
@@ -35,6 +36,7 @@ are about to abandon is not written back to your project on its own.
 keys: [TRK, KEYBOARD D1, KEYBOARD A1, KEYBOARD F1, KEYBOARD C1]
 leds: { KEYBOARD C1: red }
 source: manual §A.2.3
+checked: yes
 mode: any
 
 Hold [TRK] and press [KEYBOARD D1]. The snare is now the chosen sound and nothing played:
@@ -52,6 +54,7 @@ recover: A sound that played means [TRK] was not down first — hold it, then pr
 keys: [RECORD]
 leds: { RECORD: red }
 source: manual §10.3
+checked: yes
 mode: playback
 
 Press [RECORD]. The key lights red, and that red is GRID RECORDING. The sixteen trig keys
@@ -73,6 +76,7 @@ write trigs while it runs or while it is stopped — whichever you find easier.
 keys: [TRK, KEYBOARD C1, TRIG 1, TRIG 5, TRIG 9, TRIG 13]
 leds: { RECORD: red, TRIG 1: red, TRIG 5: red, TRIG 9: red, TRIG 13: red }
 source: manual §10.3, §10.2.1
+checked: yes
 mode: grid-recording
 
 Hold [TRK] and press [KEYBOARD C1] to make the kick the sound you are writing. Then press
@@ -89,6 +93,7 @@ recover: A key that went dark when you pressed it already held a trig and you re
 keys: [PLAY, MAIN VOLUME]
 leds: { RECORD: red }
 source: manual §10.1.2
+checked: yes
 mode: grid-recording
 
 Press [PLAY]. Four kicks to the bar at your tempo, and a light running along the sixteen
@@ -104,6 +109,7 @@ recover: Silence while the light still runs is usually one of two things: [MAIN 
 keys: [TRK, KEYBOARD D1, TRIG 5, TRIG 13]
 leds: { RECORD: red, TRIG 5: red, TRIG 13: red }
 source: manual §10.3
+checked: yes
 mode: grid-recording
 
 Hold [TRK] and press [KEYBOARD D1]. The sixteen keys empty out: they are showing the
@@ -119,6 +125,7 @@ recover: If the kick's four keys are still lit you never left the kick. Hold [TR
 keys: [TRK, KEYBOARD A1, TRIG 1, TRIG 3, TRIG 5, TRIG 7, TRIG 9, TRIG 11, TRIG 13, TRIG 15]
 leds: { RECORD: red, TRIG 1: red, TRIG 3: red, TRIG 5: red, TRIG 7: red, TRIG 9: red, TRIG 11: red, TRIG 13: red, TRIG 15: red }
 source: manual §10.3
+checked: yes
 mode: grid-recording
 
 Hold [TRK] and press [KEYBOARD A1], the closed hat. Now press every odd key from [TRIG 1] to [TRIG 15]: eight
@@ -135,6 +142,7 @@ recover: Too busy: press the keys you want dark. Quick press removes; a held pre
 keys: [TRK, KEYBOARD F1, TRIG 7, TRIG 15]
 leds: { RECORD: red, TRIG 7: red, TRIG 15: red }
 source: manual §10.3
+checked: yes
 mode: grid-recording
 
 Hold [TRK] and press [KEYBOARD F1], the clap. Put it on [TRIG 7] and [TRIG 15]: the "and"
@@ -151,6 +159,7 @@ recover: If it lands on top of the snare and blurs it, move it: press the key to
 keys: [TRIG 7, YES, LEFT, RIGHT]
 leds: { RECORD: red }
 source: manual §10.3, §19
+checked: yes
 mode: grid-recording
 
 Choose a hit you are not sure about, such as the clap on step 7. Hold [TRIG 7] and press
@@ -166,6 +175,7 @@ recover: A held trig is opened for editing, not deleted, so holding one costs yo
 keys: [FUNC, PAGE, E, NO]
 leds: { RECORD: red }
 source: manual §10.9, §10.9.1
+checked: yes
 mode: menu:PAGE SETUP
 
 Hold [FUNC] and press [PAGE]. LENGTH, on DATA ENTRY knob [E], reads 16 — one page, one bar,
@@ -188,6 +198,7 @@ legend call this menu PAGE SETUP, while §10.9's text calls it SCALE: they are t
 keys: [MUTE, KEYBOARD D1, UP, DOWN]
 leds: { KEYBOARD C1: green, KEYBOARD E1: green, KEYBOARD F1: green, KEYBOARD G1: green, KEYBOARD A1: green, KEYBOARD B1: green, KEYBOARD C2: green }
 source: manual §8.6
+checked: yes
 mode: playback
 
 Press [MUTE] with track 1 still the active track — the kit's sounds are offered only for the
@@ -212,6 +223,7 @@ dark is muted, green is audible — and never says that green belongs to global 
 keys: [RECORD, FUNC, PTN, TRIG 2, STOP]
 leds: { TRIG 1: white, TRIG 2: red }
 source: manual §6.6, §10.10.4, §10.1.1
+checked: yes
 mode: playback
 
 Press [RECORD] to leave GRID RECORDING — a pattern copy will not run while it is on. Hold
@@ -239,6 +251,7 @@ are in, [PTN] and a trig key is enough.
 keys: [FUNC, PLAY, YES, NO]
 leds: { TRIG 2: red }
 source: manual §6.6, §10.10.4, §10.10.5
+checked: yes
 mode: playback
 
 Hold [FUNC] and press [PLAY] — mint legend Clear — then [YES] at the prompt. Every trig in
@@ -254,6 +267,7 @@ recover: If undo does nothing, paste again — the copy is still in the clipboar
 keys: [PTN, TRIG 1, FUNC, SETTINGS, RECORD, TRK, KEYBOARD C1]
 leds: { RECORD: red, TRIG 1: red, TRIG 5: red, TRIG 9: red, TRIG 13: red }
 source: manual §10.1.1, §9.1.1
+checked: yes
 mode: playback
 
 Hold [PTN] and press [TRIG 1] to return to A01. Hold [FUNC] and press [SETTINGS]: saved,
