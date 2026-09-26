@@ -13,6 +13,7 @@ ends: { keys16: { 1: red, 3: red, 5: red, 7: red, 9: red, 11: red, 13: red, 15: 
 ## Step: Dónde estás
 keys: [FUNC, PRESET, UP, DOWN, RIGHT, YES, PLAY]
 source: manual §9.1.1, §10.1.2
+checked: yes
 mode: playback
 
 Si SIXTEEN no es el proyecto que hay en la pantalla, cárgalo: [FUNC] + [PRESET] abre el menú
@@ -29,6 +30,7 @@ recover: Si has estado tocando desde entonces y quieres recuperar el estado guar
 keys: [TRK, PTN, RECORD]
 leds: { TRIG 1: white, RECORD: red }
 source: manual §5.3.7, §10.1.1, §10.2.1
+checked: yes
 mode: playback
 
 Con el beat en marcha, mantén pulsado [TRK]: las dieciséis teclas son las dieciséis pistas, y
@@ -49,6 +51,7 @@ recover: Si tu primera pulsación de [RECORD] apagó su luz en vez de encenderla
 ## Step: Guarda primero
 keys: [FUNC, SETTINGS]
 source: manual §9.1.1
+checked: yes
 mode: any
 
 Mantén pulsado [FUNC] y pulsa [SETTINGS]. Nada te pregunta nada y nada en la pantalla dice
@@ -65,6 +68,7 @@ recover: Si se abrió un menú de ajustes, [FUNC] no estaba pulsado primero. Pul
 keys: [STEP EDIT, TRIG 1, TRIG 7, KEYBOARD F1]
 leds: { TRIG 1: green }
 source: manual §10.3.1
+checked: yes
 mode: step-edit
 
 Pulsa [STEP EDIT] y luego [TRIG 1]. La tecla se pone verde, y la fila de abajo muestra ahora
@@ -82,6 +86,7 @@ recover: STEP EDIT forma parte de GRID RECORDING (§10.3.1), así que [RECORD] s
 ## Step: Reafina un sonido
 keys: [TRK, KEYBOARD D1, SRC, A]
 source: manual §A.2.3
+checked: yes
 mode: any
 
 Mantén pulsado [TRK] y pulsa [KEYBOARD D1]: el sonido elegido es el snare. Pulsa [SRC] para
@@ -98,6 +103,7 @@ recover: Si se movió otro sonido, la tecla roja estaba en otro sitio cuando gir
 ## Step: Cambia un sample
 keys: [TRK, KEYBOARD F1, FUNC, UP, DOWN, YES, NO]
 source: manual §A.2.3, §6.13
+checked: yes
 mode: menu:SAMPLE BROWSER
 
 Mantén pulsado [TRK] y pulsa [KEYBOARD F1], la
@@ -125,6 +131,7 @@ de la RAM (§6.13). Pregunta en el foro por "el pool de samples" y
 ## Step: La supertrack, vista una vez
 keys: [TRK, TRIG 1, KEYBOARD C1]
 source: manual §A.2.3
+checked: yes
 mode: any
 
 Mantén pulsado [TRK] y pulsa [TRIG 1] dos veces: la primera selecciona la pista 1, la
@@ -152,6 +159,7 @@ puntos en vez de tres rectángulos.
 ## Step: Guarda
 keys: [FUNC, SETTINGS, RECORD, TRK, KEYBOARD A1]
 source: manual §9.1.1
+checked: yes
 mode: grid-recording
 
 Mantén pulsado [FUNC] y pulsa [SETTINGS]: guardado, en silencio, como va todo guardado aquí.

@@ -13,6 +13,7 @@ ends: { keys16: { 1: red, 3: red, 5: red, 7: red, 9: red, 11: red, 13: red, 15: 
 ## Step: Where you are
 keys: [FUNC, PRESET, UP, DOWN, RIGHT, YES, PLAY]
 source: manual §9.1.1, §10.1.2
+checked: yes
 mode: playback
 
 If SIXTEEN is not the project on the screen, load it: [FUNC] + [PRESET] opens the FILE menu,
@@ -29,6 +30,7 @@ recover: If you have been playing since and want the saved state back, highlight
 keys: [TRK, PTN, RECORD]
 leds: { TRIG 1: white, RECORD: red }
 source: manual §5.3.7, §10.1.1, §10.2.1
+checked: yes
 mode: playback
 
 With the beat running, hold [TRK]: the sixteen keys are the sixteen tracks, and the white one
@@ -49,6 +51,7 @@ recover: If your first press of [RECORD] put its light out rather than on, sessi
 ## Step: Save first
 keys: [FUNC, SETTINGS]
 source: manual §9.1.1
+checked: yes
 mode: any
 
 Hold [FUNC] and press [SETTINGS]. Nothing asks you anything and nothing on screen says it
@@ -65,6 +68,7 @@ recover: If a menu of settings opened, [FUNC] was not down first. Press [NO], ho
 keys: [STEP EDIT, TRIG 1, TRIG 7, KEYBOARD F1]
 leds: { TRIG 1: green }
 source: manual §10.3.1
+checked: yes
 mode: step-edit
 
 Press [STEP EDIT], then [TRIG 1]. The key turns green, and the bottom row now shows the
@@ -81,6 +85,7 @@ recover: STEP EDIT is part of GRID RECORDING (§10.3.1), so [RECORD] lights with
 ## Step: Tune one sound
 keys: [TRK, KEYBOARD D1, SRC, A]
 source: manual §A.2.3
+checked: yes
 mode: any
 
 Hold [TRK] and press [KEYBOARD D1]: the snare is the chosen sound. Press [SRC] for its
@@ -97,6 +102,7 @@ recover: If another sound moved, the red key was elsewhere when you turned: hold
 ## Step: Swap one sample
 keys: [TRK, KEYBOARD F1, FUNC, UP, DOWN, YES, NO]
 source: manual §A.2.3, §6.13
+checked: yes
 mode: menu:SAMPLE BROWSER
 
 Hold [TRK] and press [KEYBOARD F1], the fourth
@@ -123,6 +129,7 @@ the browser shows what it has cost, in megabytes and as a percentage of the RAM
 ## Step: The supertrack, seen once
 keys: [TRK, TRIG 1, KEYBOARD C1]
 source: manual §A.2.3
+checked: yes
 mode: any
 
 Hold [TRK] and press [TRIG 1] twice: once selects track 1, again selects its supertrack, and
@@ -149,6 +156,7 @@ calls the screen mark three dots rather than three rectangles.
 ## Step: Save
 keys: [FUNC, SETTINGS, RECORD, TRK, KEYBOARD A1]
 source: manual §9.1.1
+checked: yes
 mode: grid-recording
 
 Hold [FUNC] and press [SETTINGS]: saved, in silence, the way every save here goes. Then press

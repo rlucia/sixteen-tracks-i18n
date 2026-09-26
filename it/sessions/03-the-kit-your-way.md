@@ -13,6 +13,7 @@ ends: { keys16: { 1: red, 3: red, 5: red, 7: red, 9: red, 11: red, 13: red, 15: 
 ## Step: Dove sei
 keys: [FUNC, PRESET, UP, DOWN, RIGHT, YES, PLAY]
 source: manual §9.1.1, §10.1.2
+checked: yes
 mode: playback
 
 Se SIXTEEN non è il progetto sul display, caricalo: [FUNC] + [PRESET] apre il menu FILE, poi
@@ -29,6 +30,7 @@ recover: Se nel frattempo hai suonato e vuoi tornare allo stato salvato, evidenz
 keys: [TRK, PTN, RECORD]
 leds: { TRIG 1: white, RECORD: red }
 source: manual §5.3.7, §10.1.1, §10.2.1
+checked: yes
 mode: playback
 
 Con il beat che gira, tieni premuto [TRK]: i sedici tasti sono le sedici tracce, e quello
@@ -49,6 +51,7 @@ recover: Se la tua prima pressione di [RECORD] ha spento la sua luce invece di a
 ## Step: Prima salva
 keys: [FUNC, SETTINGS]
 source: manual §9.1.1
+checked: yes
 mode: any
 
 Tieni premuto [FUNC] e premi [SETTINGS]. Niente ti chiede niente e niente sul display dice
@@ -65,6 +68,7 @@ recover: Se si è aperto un menu di impostazioni, [FUNC] non era premuto prima. 
 keys: [STEP EDIT, TRIG 1, TRIG 7, KEYBOARD F1]
 leds: { TRIG 1: green }
 source: manual §10.3.1
+checked: yes
 mode: step-edit
 
 Premi [STEP EDIT], poi [TRIG 1]. Il tasto diventa verde, e la fila in basso ora mostra i
@@ -82,6 +86,7 @@ recover: STEP EDIT fa parte del GRID RECORDING (§10.3.1), quindi [RECORD] si ac
 ## Step: Riaccorda un suono
 keys: [TRK, KEYBOARD D1, SRC, A]
 source: manual §A.2.3
+checked: yes
 mode: any
 
 Tieni premuto [TRK] e premi [KEYBOARD D1]: il suono scelto è lo snare. Premi [SRC] per la
@@ -98,6 +103,7 @@ recover: Se si è mosso un altro suono, il tasto rosso era altrove quando hai gi
 ## Step: Sostituisci un sample
 keys: [TRK, KEYBOARD F1, FUNC, UP, DOWN, YES, NO]
 source: manual §A.2.3, §6.13
+checked: yes
 mode: menu:SAMPLE BROWSER
 
 Tieni premuto [TRK] e premi [KEYBOARD F1], il quarto
@@ -124,6 +130,7 @@ della RAM (§6.13). Chiedi al forum del "pool di sample" e
 ## Step: La supertrack, vista una volta
 keys: [TRK, TRIG 1, KEYBOARD C1]
 source: manual §A.2.3
+checked: yes
 mode: any
 
 Tieni premuto [TRK] e premi [TRIG 1] due volte: la prima seleziona la traccia 1, la seconda
@@ -150,6 +157,7 @@ tre puntini invece di tre rettangoli.
 ## Step: Salva
 keys: [FUNC, SETTINGS, RECORD, TRK, KEYBOARD A1]
 source: manual §9.1.1
+checked: yes
 mode: grid-recording
 
 Tieni premuto [FUNC] e premi [SETTINGS]: salvato, in silenzio, come va ogni salvataggio qui.

@@ -13,6 +13,7 @@ ends: { keys16: { 1: red, 3: red, 5: red, 7: red, 9: red, 11: red, 13: red, 15: 
 ## Step: Wo du stehst
 keys: [FUNC, PRESET, UP, DOWN, RIGHT, YES, PLAY]
 source: manual §9.1.1, §10.1.2
+checked: yes
 mode: playback
 
 Ist SIXTEEN nicht das Projekt auf dem Display, lade es: [FUNC] + [PRESET] öffnet das FILE-Menü,
@@ -29,6 +30,7 @@ recover: Hast du seither gespielt und willst den gespeicherten Stand zurück, ma
 keys: [TRK, PTN, RECORD]
 leds: { TRIG 1: white, RECORD: red }
 source: manual §5.3.7, §10.1.1, §10.2.1
+checked: yes
 mode: playback
 
 Halte bei laufendem Beat [TRK]: die sechzehn Tasten sind die sechzehn Spuren, und die weiße ist
@@ -49,6 +51,7 @@ recover: Hat dein erster Druck auf [RECORD] sein Licht aus- statt eingeschaltet,
 ## Step: Erst speichern
 keys: [FUNC, SETTINGS]
 source: manual §9.1.1
+checked: yes
 mode: any
 
 Halte [FUNC] und drücke [SETTINGS]. Nichts fragt dich irgendetwas, und nichts auf dem Display
@@ -66,6 +69,7 @@ recover: Hat sich ein Menü mit Einstellungen geöffnet, war [FUNC] nicht zuerst
 keys: [STEP EDIT, TRIG 1, TRIG 7, KEYBOARD F1]
 leds: { TRIG 1: green }
 source: manual §10.3.1
+checked: yes
 mode: step-edit
 
 Drücke [STEP EDIT], dann [TRIG 1]. Die Taste wird grün, und die untere Reihe zeigt jetzt die
@@ -83,6 +87,7 @@ recover: STEP EDIT gehört zum GRID RECORDING (§10.3.1), also leuchtet [RECORD]
 ## Step: Einen Sound umstimmen
 keys: [TRK, KEYBOARD D1, SRC, A]
 source: manual §A.2.3
+checked: yes
 mode: any
 
 Halte [TRK] und drücke [KEYBOARD D1]: die Snare ist der gewählte Sound. Drücke [SRC] für ihre
@@ -99,6 +104,7 @@ recover: Hat sich ein anderer Sound bewegt, war die rote Taste woanders, als du 
 ## Step: Ein Sample tauschen
 keys: [TRK, KEYBOARD F1, FUNC, UP, DOWN, YES, NO]
 source: manual §A.2.3, §6.13
+checked: yes
 mode: menu:SAMPLE BROWSER
 
 Halte [TRK] und drücke [KEYBOARD F1], die
@@ -126,6 +132,7 @@ Projekt in den RAM geladen hat, und du siehst ihn über SAMPLE BANKS in ebendies
 ## Step: Der Supertrack, einmal gesehen
 keys: [TRK, TRIG 1, KEYBOARD C1]
 source: manual §A.2.3
+checked: yes
 mode: any
 
 Halte [TRK] und drücke [TRIG 1] zweimal: einmal wählt Spur 1, noch einmal wählt ihren
@@ -152,6 +159,7 @@ Punkte statt drei Rechtecke.
 ## Step: Speichern
 keys: [FUNC, SETTINGS, RECORD, TRK, KEYBOARD A1]
 source: manual §9.1.1
+checked: yes
 mode: grid-recording
 
 Halte [FUNC] und drücke [SETTINGS]: gespeichert, in Stille, wie jedes Speichern hier abläuft.

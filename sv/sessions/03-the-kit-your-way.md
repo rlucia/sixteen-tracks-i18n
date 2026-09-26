@@ -13,6 +13,7 @@ ends: { keys16: { 1: red, 3: red, 5: red, 7: red, 9: red, 11: red, 13: red, 15: 
 ## Step: Var du är
 keys: [FUNC, PRESET, UP, DOWN, RIGHT, YES, PLAY]
 source: manual §9.1.1, §10.1.2
+checked: yes
 mode: playback
 
 Är inte SIXTEEN-projektet på displayen, så ladda det: [FUNC] + [PRESET] öppnar FILE-menyn,
@@ -29,6 +30,7 @@ recover: Har du spelat sedan dess och vill ha tillbaka det sparade läget: marke
 keys: [TRK, PTN, RECORD]
 leds: { TRIG 1: white, RECORD: red }
 source: manual §5.3.7, §10.1.1, §10.2.1
+checked: yes
 mode: playback
 
 Med beatet igång, håll [TRK]: de sexton tangenterna är de sexton spåren, och den vita är
@@ -48,6 +50,7 @@ recover: Släckte ditt första tryck på [RECORD] ljuset i stället för att tä
 ## Step: Spara först
 keys: [FUNC, SETTINGS]
 source: manual §9.1.1
+checked: yes
 mode: any
 
 Håll [FUNC] och tryck på [SETTINGS]. Ingenting frågar dig något och inget på displayen säger
@@ -64,6 +67,7 @@ recover: Öppnades en meny med inställningar, var [FUNC] inte nere först. Tryc
 keys: [STEP EDIT, TRIG 1, TRIG 7, KEYBOARD F1]
 leds: { TRIG 1: green }
 source: manual §10.3.1
+checked: yes
 mode: step-edit
 
 Tryck på [STEP EDIT] och sedan på [TRIG 1]. Tangenten blir grön, och den nedre raden visar nu
@@ -80,6 +84,7 @@ recover: STEP EDIT hör till GRID RECORDING (§10.3.1), så [RECORD] tänds med.
 ## Step: Stäm om ett ljud
 keys: [TRK, KEYBOARD D1, SRC, A]
 source: manual §A.2.3
+checked: yes
 mode: any
 
 Håll [TRK] och tryck på [KEYBOARD D1]: snaren är det valda ljudet. Tryck på [SRC] för dess
@@ -96,6 +101,7 @@ recover: Flyttade sig ett annat ljud, låg den röda tangenten någon annanstans
 ## Step: Byt ut ett sample
 keys: [TRK, KEYBOARD F1, FUNC, UP, DOWN, YES, NO]
 source: manual §A.2.3, §6.13
+checked: yes
 mode: menu:SAMPLE BROWSER
 
 Håll [TRK] och tryck på
@@ -123,6 +129,7 @@ bläddraren visar vad den har kostat, i megabyte och som andel av RAM-minnet
 ## Step: Supertracket, sett en gång
 keys: [TRK, TRIG 1, KEYBOARD C1]
 source: manual §A.2.3
+checked: yes
 mode: any
 
 Håll [TRK] och tryck på [TRIG 1] två gånger: första trycket väljer spår 1, det andra väljer
@@ -149,6 +156,7 @@ punkter snarare än tre rektanglar.
 ## Step: Spara
 keys: [FUNC, SETTINGS, RECORD, TRK, KEYBOARD A1]
 source: manual §9.1.1
+checked: yes
 mode: grid-recording
 
 Håll [FUNC] och tryck på [SETTINGS]: sparat, i tystnad, så som varje sparning här går till.
