@@ -3,7 +3,7 @@
 <head>
   {{> head }}
   <title>Innan du börjar — Sixteen Tracks</title>
-  <meta name="description" content="De fyra sorternas spår, de fem behållarna en sparning rör vid, uppdateringen till OS 1.4.0 och säkerhetskopian du tar först. Läs en gång före session 1 av Sixteen Tracks.">
+  <meta name="description" content="De fyra sorternas spår, de fem behållarna en sparning rör vid, uppdateringen till OS {{ OS }} och säkerhetskopian du tar först. Läs en gång före session 1 av Sixteen Tracks.">
   <link rel="canonical" href="{{PAGE_URL}}">
   <meta property="og:title" content="Innan du börjar — Sixteen Tracks">
   <meta property="og:description" content="De fyra sorternas spår och de fem behållarna, med behållarkartan.">
@@ -21,7 +21,7 @@
 <body class="doc on-before">
   {{> nav }}
 <main class="wrap">
-  <p class="eyebrow">läs en gång · Tonverk OS 1.4.0</p>
+  <p class="eyebrow">läs en gång · Tonverk OS {{ OS }}</p>
   <h1>Innan du börjar</h1>
   <p class="lede">Två tankar som varje session lutar sig mot, en karta över vad en sparning sparar, och tre saker att göra före session 1. Tio minuter.</p>
 
@@ -51,8 +51,8 @@
     <div class="sim-mount"></div>
   </div>
 
-  <h2 id="update">Uppdatera till OS 1.4.0</h2>
-  <p>Den här sajten beskriver OS 1.4.0 och ingenting annat. Kolla ditt: SETTINGS › SYSTEM › DEVICE INFO. För att uppdatera (§6.12): ladda ner OS-filen från Elektrons supportsidor, anslut Tonverk till en dator, SETTINGS › USB DISK MODE › <kbd class="key" data-key="YES">YES</kbd>, kopiera OS-filen till kortets rot, mata ut, <kbd class="key" data-key="NO">NO</kbd> för att lämna disk-läget, sedan SETTINGS › SYSTEM › OS UPGRADE › <kbd class="key" data-key="YES">YES</kbd>.</p>
+  <h2 id="update">Uppdatera till OS {{ OS }}</h2>
+  <p>Den här sajten beskriver OS {{ OS }} och ingenting annat. Kolla ditt: SETTINGS › SYSTEM › DEVICE INFO. För att uppdatera (§6.12): ladda ner OS-filen från Elektrons supportsidor, anslut Tonverk till en dator, SETTINGS › USB DISK MODE › <kbd class="key" data-key="YES">YES</kbd>, kopiera OS-filen till kortets rot, mata ut, <kbd class="key" data-key="NO">NO</kbd> för att lämna disk-läget, sedan SETTINGS › SYSTEM › OS UPGRADE › <kbd class="key" data-key="YES">YES</kbd>.</p>
 
   <h2 id="backup">Säkerhetskopiera först</h2>
   <p>Före session 1: kopiera kortets <code>USER</code>-mapp till en dator på samma sätt (§6.11): USB DISK MODE, kopiera mappen, mata ut, <kbd class="key" data-key="NO">NO</kbd>. Allt du gör — projekt, presets, instrument, inspelningar, tillagda samples — bor i den mappen. En säkerhetskopia är det som gör varje experiment gratis.</p>

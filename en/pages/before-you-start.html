@@ -3,7 +3,7 @@
 <head>
   {{> head }}
   <title>Before you start — Sixteen Tracks</title>
-  <meta name="description" content="The four kinds of track, the five containers a save touches, updating to OS 1.4.0, and backing up first. Read once before session 1 of Sixteen Tracks.">
+  <meta name="description" content="The four kinds of track, the five containers a save touches, updating to OS {{ OS }}, and backing up first. Read once before session 1 of Sixteen Tracks.">
   <link rel="canonical" href="{{PAGE_URL}}">
   <meta property="og:title" content="Before you start — Sixteen Tracks">
   <meta property="og:description" content="The four kinds of track and the five containers, with the containers map.">
@@ -21,7 +21,7 @@
 <body class="doc on-before">
   {{> nav }}
 <main class="wrap">
-  <p class="eyebrow">read once · Tonverk OS 1.4.0</p>
+  <p class="eyebrow">read once · Tonverk OS {{ OS }}</p>
   <h1>Before you start</h1>
   <p class="lede">Two ideas every session leans on, a map of what a save saves, and three things to do before session 1. Ten minutes.</p>
 
@@ -51,8 +51,8 @@
     <div class="sim-mount"></div>
   </div>
 
-  <h2 id="update">Update to OS 1.4.0</h2>
-  <p>This site describes OS 1.4.0 and nothing else. Check yours: SETTINGS › SYSTEM › DEVICE INFO. To update (§6.12): download the OS file from Elektron's support pages, connect the Tonverk to a computer, SETTINGS › USB DISK MODE › <kbd class="key" data-key="YES">YES</kbd>, copy the OS file to the root of the card, eject, <kbd class="key" data-key="NO">NO</kbd> to leave disk mode, then SETTINGS › SYSTEM › OS UPGRADE › <kbd class="key" data-key="YES">YES</kbd>.</p>
+  <h2 id="update">Update to OS {{ OS }}</h2>
+  <p>This site describes OS {{ OS }} and nothing else. Check yours: SETTINGS › SYSTEM › DEVICE INFO. To update (§6.12): download the OS file from Elektron's support pages, connect the Tonverk to a computer, SETTINGS › USB DISK MODE › <kbd class="key" data-key="YES">YES</kbd>, copy the OS file to the root of the card, eject, <kbd class="key" data-key="NO">NO</kbd> to leave disk mode, then SETTINGS › SYSTEM › OS UPGRADE › <kbd class="key" data-key="YES">YES</kbd>.</p>
 
   <h2 id="backup">Back up first</h2>
   <p>Before session 1, copy the card's <code>USER</code> folder to a computer the same way (§6.11): USB DISK MODE, copy the folder, eject, <kbd class="key" data-key="NO">NO</kbd>. Everything you make — projects, presets, instruments, recordings, added samples — lives in that folder. A backup is what makes every experiment free.</p>

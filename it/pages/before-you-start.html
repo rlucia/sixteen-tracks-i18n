@@ -3,7 +3,7 @@
 <head>
   {{> head }}
   <title>Prima di cominciare — Sixteen Tracks</title>
-  <meta name="description" content="I quattro tipi di traccia, i cinque contenitori che un salvataggio tocca, l'aggiornamento all'OS 1.4.0 e il backup da fare prima. Da leggere una volta, prima della sessione 1 di Sixteen Tracks.">
+  <meta name="description" content="I quattro tipi di traccia, i cinque contenitori che un salvataggio tocca, l'aggiornamento all'OS {{ OS }} e il backup da fare prima. Da leggere una volta, prima della sessione 1 di Sixteen Tracks.">
   <link rel="canonical" href="{{PAGE_URL}}">
   <meta property="og:title" content="Prima di cominciare — Sixteen Tracks">
   <meta property="og:description" content="I quattro tipi di traccia e i cinque contenitori, con la mappa dei contenitori.">
@@ -21,7 +21,7 @@
 <body class="doc on-before">
   {{> nav }}
 <main class="wrap">
-  <p class="eyebrow">da leggere una volta · Tonverk OS 1.4.0</p>
+  <p class="eyebrow">da leggere una volta · Tonverk OS {{ OS }}</p>
   <h1>Prima di cominciare</h1>
   <p class="lede">Due idee su cui ogni sessione si appoggia, una mappa di quello che un salvataggio salva, e tre cose da fare prima della sessione 1. Dieci minuti.</p>
 
@@ -51,8 +51,8 @@
     <div class="sim-mount"></div>
   </div>
 
-  <h2 id="update">Aggiorna all'OS 1.4.0</h2>
-  <p>Questo sito descrive l'OS 1.4.0 e nient'altro. Controlla il tuo: SETTINGS › SYSTEM › DEVICE INFO. Per aggiornare (§6.12): scarica il file dell'OS dalle pagine di supporto di Elektron, collega il Tonverk a un computer, SETTINGS › USB DISK MODE › <kbd class="key" data-key="YES">YES</kbd>, copia il file dell'OS nella radice della scheda, espelli, <kbd class="key" data-key="NO">NO</kbd> per uscire dalla modalità disco, poi SETTINGS › SYSTEM › OS UPGRADE › <kbd class="key" data-key="YES">YES</kbd>.</p>
+  <h2 id="update">Aggiorna all'OS {{ OS }}</h2>
+  <p>Questo sito descrive l'OS {{ OS }} e nient'altro. Controlla il tuo: SETTINGS › SYSTEM › DEVICE INFO. Per aggiornare (§6.12): scarica il file dell'OS dalle pagine di supporto di Elektron, collega il Tonverk a un computer, SETTINGS › USB DISK MODE › <kbd class="key" data-key="YES">YES</kbd>, copia il file dell'OS nella radice della scheda, espelli, <kbd class="key" data-key="NO">NO</kbd> per uscire dalla modalità disco, poi SETTINGS › SYSTEM › OS UPGRADE › <kbd class="key" data-key="YES">YES</kbd>.</p>
 
   <h2 id="backup">Prima fai un backup</h2>
   <p>Prima della sessione 1, copia la cartella <code>USER</code> della scheda su un computer nello stesso modo (§6.11): USB DISK MODE, copia la cartella, espelli, <kbd class="key" data-key="NO">NO</kbd>. Tutto quello che fai — progetti, preset, instrument, registrazioni, sample aggiunti — vive in quella cartella. Un backup è quello che rende gratis ogni esperimento.</p>
