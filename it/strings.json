@@ -123,6 +123,7 @@
   "sim.routing.hpOn": "HP.MON alzato",
   "sim.routing.hpOff": "HP.MON a 0",
   "sim.routing.how.route": "ROUTING ([FUNC] + [MUTE]): tieni premuto [{hold}], premi [{press}]",
+  "sim.routing.how.routeBus": "ROUTING ([FUNC] + [MUTE]), [DOWN] fino ai bus: tieni premuto [{hold}], premi [{press}]",
   "sim.routing.how.send": "pagina FX 1: SND1–3",
   "sim.routing.how.swap": "[FUNC] + [FX], SWAP FX1/FX2 · un bus va a MIX AB, OUT CD o OUT EF, mai a un altro bus",
   "sim.routing.how.hp": "traccia mix ([TRK] + [TRIG 16]), pagina FLTR: HP.MON",

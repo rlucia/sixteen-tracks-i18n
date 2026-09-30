@@ -123,6 +123,7 @@
   "sim.routing.hpOn": "HP.MON uppskruvad",
   "sim.routing.hpOff": "HP.MON på 0",
   "sim.routing.how.route": "ROUTING ([FUNC] + [MUTE]): håll [{hold}] och tryck på [{press}]",
+  "sim.routing.how.routeBus": "ROUTING ([FUNC] + [MUTE]), [DOWN] till bussarna: håll [{hold}] och tryck på [{press}]",
   "sim.routing.how.send": "FX-sida 1: SND1–3",
   "sim.routing.how.swap": "[FUNC] + [FX], SWAP FX1/FX2 · en buss når MIX AB, OUT CD eller OUT EF, aldrig en annan buss",
   "sim.routing.how.hp": "mixspåret ([TRK] + [TRIG 16]), FLTR-sidan: HP.MON",
