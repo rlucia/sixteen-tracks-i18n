@@ -1,15 +1,15 @@
 {
   "chapters.json": "ce71a6d06839d4b7cb829d4793b6ab5a1130f843",
   "key-colours.json": "ce71a6d06839d4b7cb829d4793b6ab5a1130f843",
-  "pages/404.html": "40c9c3c72ffc9abafd9a9e03e6e07d414f76dc6d",
-  "pages/before-you-start.html": "83b67428b4c4819aecbb8d3302cc6d72f40ded9f",
-  "pages/colophon.html": "ce71a6d06839d4b7cb829d4793b6ab5a1130f843",
-  "pages/index.html": "ce71a6d06839d4b7cb829d4793b6ab5a1130f843",
+  "pages/404.html": "9ad5bd84356561a9c8f81342b8e193a0fbfc31e0",
+  "pages/before-you-start.html": "9ad5bd84356561a9c8f81342b8e193a0fbfc31e0",
+  "pages/colophon.html": "9ad5bd84356561a9c8f81342b8e193a0fbfc31e0",
+  "pages/index.html": "9ad5bd84356561a9c8f81342b8e193a0fbfc31e0",
   "pages/privacy.html": "40c9c3c72ffc9abafd9a9e03e6e07d414f76dc6d",
   "sessions/01-first-sound.md": "83b67428b4c4819aecbb8d3302cc6d72f40ded9f",
   "sessions/02-first-beat.md": "ce78654179d6824971037fecb8e123c9a67d94fb",
   "sessions/03-the-kit-your-way.md": "50b1fec87b5351f6332425d80cb0e367aaf45f4d",
   "sessions/04-make-it-move.md": "22e3ed88f58860fba214af08f21b19311f3092ba",
   "sessions/05-variation-without-new-patterns.md": "83b67428b4c4819aecbb8d3302cc6d72f40ded9f",
-  "strings.json": "83b67428b4c4819aecbb8d3302cc6d72f40ded9f"
+  "strings.json": "9ad5bd84356561a9c8f81342b8e193a0fbfc31e0"
 }
