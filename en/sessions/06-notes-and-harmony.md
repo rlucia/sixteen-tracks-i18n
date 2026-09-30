@@ -80,7 +80,7 @@ track 2 has four to fill.
 :::checkpoint
 screen: { menu: "PAGE SETUP", items: [PER TRACK, "LENGTH 64", "SPEED 1"], sel: 1 }
 hear: Nothing new yet: the length only makes room. On the main screen, four small squares for track 2's four pages.
-recover: If the kit has four squares as well, the menu was still PER PATTERN when LENGTH moved: [FUNC] + [PAGE], [FUNC] + [YES] for PER TRACK, then with track 1 active ([TRK] + [TRIG 1]) turn LENGTH back to 16. LENGTH creeping one step at a time means [FUNC] is not held while [E] turns.
+recover: If the kit has four squares as well, the menu was still PER PATTERN when LENGTH moved: [FUNC] + [PAGE], [FUNC] + [YES] for PER TRACK, then with track 1 active ([TRK] + [TRIG 1]) turn LENGTH back to 16. LENGTH creeping one step at a time means [FUNC] is not held while [E] turns. Four bars that start over after one: RESET, in the menu's PATTERN column, is below 64 — turn it to INF (§10.9.2). Before step 6, [TRK] + [TRIG 2]: track 2 is the one to play.
 :::
 
 ## Step: Give the pattern a key
@@ -113,7 +113,7 @@ a count of four — then [KEYBOARD F1] for the second bar, [KEYBOARD C1] for the
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 2 }
 hear: Under the beat, four long low notes, one a bar: A, F, C, G, and round again.
-recover: A note that stops before its bar is over was let go early. A note played in keeps the length it was held for, and turning LEN on its trig does not change it ([owners found](https://www.elektronauts.com/t/trig-len-not-working/249623/8)): hold [FUNC], press [NO] to undo, and play the four again. The first note belongs with the [PLAY] press, not a beat after it.
+recover: A note that stops before its bar is over was let go early. A note played in keeps the length it was held for, and turning LEN on its trig does not change it ([owners found](https://www.elektronauts.com/t/trig-len-not-working/249623/8)). To play the four again, clear them first: [RECORD] for GRID RECORDING, then [FUNC] + [PLAY] — track 2's trigs go, the kit's stay (§10.10.4) — [RECORD] again, and start this step over. The first note belongs with the [PLAY] press, not a beat after it.
 :::
 
 ## Step: The arp writes the line
@@ -155,24 +155,24 @@ is still PER TRACK, and each track keeps its own length.
 :::checkpoint
 screen: { menu: "PAGE SETUP", items: [PER TRACK, "LENGTH 64", "SPEED 1"], sel: 1 }
 hear: A bottom-row key holds one note of the new sound for as long as it is held; the bassline and the beat go on.
-recover: LENGTH reads 16 after [NO]: track 2 was still active when the menu opened — [TRK] + [TRIG 3], then [FUNC] + [PAGE] again.
+recover: LENGTH already read 64 when the menu opened: that is track 2's — [TRK] + [TRIG 3], then [FUNC] + [PAGE] again. The menu reads PER PATTERN: [FUNC] + [YES] for PER TRACK first, or every track goes to 64.
 :::
 
 ## Step: One key, one chord
-keys: [CHORD, NO, FUNC, KEYBOARD A1]
+keys: [CHORD, NO, KEYBOARD A1, KEYBOARD F1, KEYBOARD C1, KEYBOARD G1]
 leds: { CHORD: cyan }
 source: manual §8.5.1
 mode: menu:CHORD/SCALE SETUP
 
-Press [CHORD], set SHAPE to 1-3-5 with the knob under it, and press [NO]. Hold [FUNC] and press
-[CHORD]: chord mode is on, [CHORD] lit cyan. Press [KEYBOARD A1]: three notes at once, A minor.
-Each key plays the chord of A minor that starts on it — [KEYBOARD F1] F major, [KEYBOARD C1] C
-major, [KEYBOARD G1] G major (§8.5.1).
+Press [CHORD] and, with the knobs under them, set SHAPE to 1-3-5 and CHORD to ON, then press
+[NO]: chord mode is on, [CHORD] lit cyan ([FUNC] + [CHORD] does the same from anywhere). Press
+[KEYBOARD A1]: three notes at once, A minor. Each key plays the chord of the A minor scale that
+starts on it — [KEYBOARD F1] F major, [KEYBOARD C1] C major, [KEYBOARD G1] G major (§8.5.1).
 
 :::checkpoint
 screen: { menu: "CHORD/SCALE SETUP", items: ["ROOT A", "SCALE AEOLIAN (MINOR)", "GUIDE LIGHT", "CHORD ON", "SHAPE 1-3-5"], sel: 4 }
 hear: One key, three notes: A minor, then F, C and G major from the other three keys.
-recover: One note from each key: chord mode is off, [CHORD] dark. F sounds minor: SCALE is on CHROMATIC, where one chord type is stamped on every key — set it back to AEOLIAN (MINOR).
+recover: One note from each key: chord mode is off, [CHORD] dark. F sounds minor: SCALE is on CHROMATIC, where one chord type is stamped on every key — set it back to AEOLIAN (MINOR). Several drums from one key: track 1 is the active one — [TRK] + [TRIG 3].
 :::
 
 ## Step: Four chords, played in
@@ -188,7 +188,7 @@ The gesture of step 6, on track 3: press [STOP], hold [RECORD] and press [PLAY],
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 3 }
 hear: A minor, F, C, G, a chord a bar, over the bassline.
-recover: A chord cut short was let go early; as in step 6, hold [FUNC] and press [NO] to undo, and play the four again — each chord lasts as long as its key was held. Its notes are written on the trig as plain notes, so what you hear is what is kept.
+recover: A chord cut short was let go early: as in step 6, [RECORD] for GRID RECORDING, then [FUNC] + [PLAY] clears track 3's trigs, [RECORD] again, and play the four again — each chord lasts as long as its key was held. One bar of chords going round instead of four: track 3 is still 16 steps long — LENGTH 64 as in step 8, clear, and play them again. The notes of a chord are written on the trig as plain notes, so what you hear is what is kept.
 :::
 
 ## Step: Chord mode off
@@ -212,7 +212,7 @@ source: manual §10.10.8
 mode: playback
 
 Hold [PTN], press [+] three times, and let go of [PTN]: the bassline and the chords move three
-semitones up, to C minor, and the kit stays where it was (§10.10.8). Listen for a few bars. Then
+semitones up, to C minor (§10.10.8), and the kit stays where it was. Listen for a few bars. Then
 hold [PTN], press [-] three times and let go: home, in A minor. The notes on the trigs never
 changed; the transpose sits on top of them.
 
@@ -249,8 +249,8 @@ A minor again, and all of it is saved.
 ## Explore further
 
 ### A bass that glides
-In the same TRACK SETUP page, set PLAY MODE to MONO LEG and switch PORTAMENTO on (§11.1.1,
-§11.1.5); its time is on TRIG PAGE 2 (§12.3). Two notes glide into each other when the first
+In the same TRACK SETUP page, set PLAY MODE to MONO LEG and PORTAMENTO to MONO LEG (§11.1.1,
+§11.1.5), then switch PORT on TRIG PAGE 2 on and give it a short PTIM (§12.3). Two notes glide into each other when the first
 lasts past the start of the second; notes with a gap between them still start clean.
 
 ### Dice for the arp
@@ -270,7 +270,7 @@ on the keyboard: a lit key taken off removes that note, an unlit one pressed add
 
 ### The kit with chord mode on
 Switch chord mode back on, select track 1 and press a key of the kit: several of its sounds fire
-from the one key. [FUNC] + [CHORD] again before saving.
+from the one key. [FUNC] + [CHORD] again, then save.
 
 ## Next
 

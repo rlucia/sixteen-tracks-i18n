@@ -81,7 +81,7 @@ herum, während Spur 2 vier zu füllen hat.
 :::checkpoint
 screen: { menu: "PAGE SETUP", items: [PER TRACK, "LENGTH 64", "SPEED 1"], sel: 1 }
 hear: Noch nichts Neues: Die Länge schafft nur Platz. Auf dem Hauptbildschirm vier kleine Quadrate für die vier Seiten von Spur 2.
-recover: Hat das Kit auch vier Quadrate, stand das Menü noch auf PER PATTERN, als LENGTH sich bewegte: [FUNC] + [PAGE], [FUNC] + [YES] für PER TRACK, dann mit Spur 1 aktiv ([TRK] + [TRIG 1]) LENGTH zurück auf 16. Kriecht LENGTH Schritt für Schritt, ist [FUNC] nicht gedrückt, während [E] sich dreht.
+recover: Hat das Kit auch vier Quadrate, stand das Menü noch auf PER PATTERN, als LENGTH sich bewegte: [FUNC] + [PAGE], [FUNC] + [YES] für PER TRACK, dann mit Spur 1 aktiv ([TRK] + [TRIG 1]) LENGTH zurück auf 16. Kriecht LENGTH Schritt für Schritt, ist [FUNC] nicht gedrückt, während [E] sich dreht. Vier Takte, die nach einem von vorn beginnen: RESET in der PATTERN-Spalte des Menüs steht unter 64 — dreh es auf INF (§10.9.2). Vor Schritt 6 [TRK] + [TRIG 2]: Spur 2 ist die, die gespielt wird.
 :::
 
 ## Step: Gib dem Pattern eine Tonart
@@ -115,7 +115,7 @@ um es zu hören.
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 2 }
 hear: Unter dem Beat vier lange tiefe Töne, einer pro Takt: A, F, C, G, und wieder von vorn.
-recover: Ein Ton, der vor dem Ende seines Takts aufhört, wurde zu früh losgelassen. Ein eingespielter Ton behält die Länge, die er gehalten wurde, und LEN auf seinem Trig zu drehen ändert daran nichts ([Besitzer haben es gefunden](https://www.elektronauts.com/t/trig-len-not-working/249623/8)): halte [FUNC], drücke [NO] zum Rückgängigmachen und spiel die vier noch einmal. Der erste Ton gehört zum Druck auf [PLAY], nicht einen Schlag danach.
+recover: Ein Ton, der vor dem Ende seines Takts aufhört, wurde zu früh losgelassen. Ein eingespielter Ton behält die Länge, die er gehalten wurde, und LEN auf seinem Trig zu drehen ändert daran nichts ([Besitzer haben es gefunden](https://www.elektronauts.com/t/trig-len-not-working/249623/8)). Um die vier noch einmal zu spielen, lösch sie zuerst: [RECORD] für GRID RECORDING, dann [FUNC] + [PLAY] — die Trigs von Spur 2 gehen, die des Kits bleiben (§10.10.4) —, wieder [RECORD], und fang diesen Schritt von vorn an. Der erste Ton gehört zum Druck auf [PLAY], nicht einen Schlag danach.
 :::
 
 ## Step: Der Arp schreibt die Linie
@@ -158,24 +158,24 @@ drücke [NO]. Das Menü steht noch auf PER TRACK, und jede Spur behält ihre eig
 :::checkpoint
 screen: { menu: "PAGE SETUP", items: [PER TRACK, "LENGTH 64", "SPEED 1"], sel: 1 }
 hear: Eine Taste der unteren Reihe hält einen Ton des neuen Sounds, so lange sie gehalten wird; Bassline und Beat laufen weiter.
-recover: LENGTH zeigt nach [NO] 16: Spur 2 war noch aktiv, als das Menü aufging — [TRK] + [TRIG 3], dann noch einmal [FUNC] + [PAGE].
+recover: LENGTH zeigte schon 64, als das Menü aufging: Das ist die von Spur 2 — [TRK] + [TRIG 3], dann noch einmal [FUNC] + [PAGE]. Das Menü zeigt PER PATTERN: zuerst [FUNC] + [YES] für PER TRACK, sonst gehen alle Spuren auf 64.
 :::
 
 ## Step: Eine Taste, ein Akkord
-keys: [CHORD, NO, FUNC, KEYBOARD A1]
+keys: [CHORD, NO, KEYBOARD A1, KEYBOARD F1, KEYBOARD C1, KEYBOARD G1]
 leds: { CHORD: cyan }
 source: manual §8.5.1
 mode: menu:CHORD/SCALE SETUP
 
-Drücke [CHORD], stell SHAPE mit dem Regler darunter auf 1-3-5 und drücke [NO]. Halte [FUNC] und
-drücke [CHORD]: Der Akkordmodus ist an, [CHORD] leuchtet cyan. Drücke [KEYBOARD A1]: drei Töne
-zugleich, a-Moll. Jede Taste spielt den Akkord aus a-Moll, der auf ihr beginnt — [KEYBOARD F1]
-F-Dur, [KEYBOARD C1] C-Dur, [KEYBOARD G1] G-Dur (§8.5.1).
+Drücke [CHORD], stell mit den Reglern darunter SHAPE auf 1-3-5 und CHORD auf ON, dann drücke
+[NO]: Der Akkordmodus ist an, [CHORD] leuchtet cyan ([FUNC] + [CHORD] macht dasselbe von überall).
+Drücke [KEYBOARD A1]: drei Töne zugleich, a-Moll. Jede Taste spielt den Akkord der a-Moll-Tonleiter,
+der auf ihr beginnt — [KEYBOARD F1] F-Dur, [KEYBOARD C1] C-Dur, [KEYBOARD G1] G-Dur (§8.5.1).
 
 :::checkpoint
 screen: { menu: "CHORD/SCALE SETUP", items: ["ROOT A", "SCALE AEOLIAN (MINOR)", "GUIDE LIGHT", "CHORD ON", "SHAPE 1-3-5"], sel: 4 }
 hear: Eine Taste, drei Töne: a-Moll, dann F-, C- und G-Dur von den anderen drei Tasten.
-recover: Aus jeder Taste nur ein Ton: Der Akkordmodus ist aus, [CHORD] dunkel. F klingt nach Moll: SCALE steht auf CHROMATIC, wo jeder Taste dieselbe Akkordart aufgestempelt wird — stell sie zurück auf AEOLIAN (MINOR).
+recover: Aus jeder Taste nur ein Ton: Der Akkordmodus ist aus, [CHORD] dunkel. F klingt nach Moll: SCALE steht auf CHROMATIC, wo jeder Taste dieselbe Akkordart aufgestempelt wird — stell sie zurück auf AEOLIAN (MINOR). Mehrere Drums aus einer Taste: Spur 1 ist die aktive — [TRK] + [TRIG 3].
 :::
 
 ## Step: Vier Akkorde, eingespielt
@@ -191,7 +191,7 @@ Schlag an. [STOP], wenn der vierte Takt endet, dann [PLAY].
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 3 }
 hear: a-Moll, F, C, G, ein Akkord pro Takt, über der Bassline.
-recover: Ein zu kurzer Akkord wurde zu früh losgelassen; wie in Schritt 6 halte [FUNC] und drücke [NO] zum Rückgängigmachen, und spiel die vier noch einmal — jeder Akkord dauert so lange, wie seine Taste gehalten wurde. Seine Töne stehen als einfache Töne auf dem Trig, also bleibt, was du hörst.
+recover: Ein zu kurzer Akkord wurde zu früh losgelassen: wie in Schritt 6 [RECORD] für GRID RECORDING, dann löscht [FUNC] + [PLAY] die Trigs von Spur 3, wieder [RECORD], und spiel die vier noch einmal — jeder Akkord dauert so lange, wie seine Taste gehalten wurde. Ein Takt Akkorde, der herumläuft, statt vier: Spur 3 ist noch 16 Schritte lang — LENGTH 64 wie in Schritt 8, löschen und noch einmal spielen. Seine Töne stehen als einfache Töne auf dem Trig, also bleibt, was du hörst.
 :::
 
 ## Step: Akkordmodus aus
@@ -215,7 +215,7 @@ source: manual §10.10.8
 mode: playback
 
 Halte [PTN], drücke dreimal [+] und lass [PTN] los: Bassline und Akkorde rücken drei Halbtöne
-nach oben, nach c-Moll, und das Kit bleibt, wo es war (§10.10.8). Hör ein paar Takte zu. Dann
+nach oben, nach c-Moll (§10.10.8), und das Kit bleibt, wo es war. Hör ein paar Takte zu. Dann
 halte [PTN], drücke dreimal [-] und lass los: zu Hause, in a-Moll. Die Töne auf den Trigs haben
 sich nie geändert; die Transposition liegt oben auf ihnen.
 
@@ -252,8 +252,8 @@ Harmonie, das Pattern steht wieder in a-Moll, und alles ist gespeichert.
 ## Explore further
 
 ### Ein Bass, der gleitet
-Stell auf derselben TRACK-SETUP-Seite PLAY MODE auf MONO LEG und schalte PORTAMENTO ein (§11.1.1,
-§11.1.5); seine Zeit liegt auf TRIG PAGE 2 (§12.3). Zwei Töne gleiten ineinander, wenn der erste
+Stell auf derselben TRACK-SETUP-Seite PLAY MODE auf MONO LEG und PORTAMENTO auf MONO LEG (§11.1.1,
+§11.1.5), dann schalte PORT auf TRIG PAGE 2 ein und gib ihm eine kurze PTIM (§12.3). Zwei Töne gleiten ineinander, wenn der erste
 über den Beginn des zweiten hinaus dauert; Töne mit einer Lücke dazwischen setzen weiter sauber
 ein.
 
@@ -276,7 +276,7 @@ eine dunkle gedrückt fügt ihn hinzu, und [+] und [-] erreichen die Oktave dar�
 
 ### Das Kit mit Akkordmodus
 Schalte den Akkordmodus wieder ein, wähle Spur 1 und drück eine Taste des Kits: Mehrere seiner
-Sounds feuern aus der einen Taste. Vor dem Speichern wieder [FUNC] + [CHORD].
+Sounds feuern aus der einen Taste. Wieder [FUNC] + [CHORD], dann speichern.
 
 ## Next
 

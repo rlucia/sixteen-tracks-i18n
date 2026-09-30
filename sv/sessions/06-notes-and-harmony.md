@@ -81,7 +81,7 @@ fylla.
 :::checkpoint
 screen: { menu: "PAGE SETUP", items: [PER TRACK, "LENGTH 64", "SPEED 1"], sel: 1 }
 hear: Inget nytt än: längden gör bara plats. På huvudskärmen fyra små rutor för spår 2:s fyra sidor.
-recover: Har kitet också fyra rutor stod menyn fortfarande på PER PATTERN när LENGTH flyttades: [FUNC] + [PAGE], [FUNC] + [YES] för PER TRACK, och sedan med spår 1 aktivt ([TRK] + [TRIG 1]) LENGTH tillbaka till 16. Kryper LENGTH ett steg i taget är [FUNC] inte nere medan [E] vrids.
+recover: Har kitet också fyra rutor stod menyn fortfarande på PER PATTERN när LENGTH flyttades: [FUNC] + [PAGE], [FUNC] + [YES] för PER TRACK, och sedan med spår 1 aktivt ([TRK] + [TRIG 1]) LENGTH tillbaka till 16. Kryper LENGTH ett steg i taget är [FUNC] inte nere medan [E] vrids. Fyra takter som börjar om efter en: RESET, i menyns PATTERN-kolumn, står under 64 — vrid den till INF (§10.9.2). Före steg 6, [TRK] + [TRIG 2]: det är spår 2 som ska spelas.
 :::
 
 ## Step: Ge patternet en tonart
@@ -114,7 +114,7 @@ för den fjärde. Tryck på [STOP] när den fjärde takten tar slut, och sedan p
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 2 }
 hear: Under beatet fyra långa djupa toner, en per takt: A, F, C, G, och runt igen.
-recover: En ton som slutar innan dess takt är slut släpptes för tidigt. En inspelad ton behåller längden den hölls, och att vrida LEN på dess trig ändrar inte den ([ägare upptäckte det](https://www.elektronauts.com/t/trig-len-not-working/249623/8)): håll [FUNC], tryck på [NO] för att ångra och spela de fyra igen. Den första tonen hör ihop med trycket på [PLAY], inte ett slag efter.
+recover: En ton som slutar innan dess takt är slut släpptes för tidigt. En inspelad ton behåller längden den hölls, och att vrida LEN på dess trig ändrar inte den ([ägare upptäckte det](https://www.elektronauts.com/t/trig-len-not-working/249623/8)). För att spela de fyra igen, rensa dem först: [RECORD] för GRID RECORDING, sedan [FUNC] + [PLAY] — spår 2:s trigs försvinner, kitets stannar (§10.10.4) —, [RECORD] igen, och börja om det här steget. Den första tonen hör ihop med trycket på [PLAY], inte ett slag efter.
 :::
 
 ## Step: Arpen skriver linjen
@@ -156,24 +156,25 @@ och tryck på [NO]. Menyn står fortfarande på PER TRACK, och varje spår behå
 :::checkpoint
 screen: { menu: "PAGE SETUP", items: [PER TRACK, "LENGTH 64", "SPEED 1"], sel: 1 }
 hear: En tangent i den nedre raden håller en ton av det nya ljudet så länge den hålls; basslinen och beatet fortsätter.
-recover: LENGTH visar 16 efter [NO]: spår 2 var fortfarande aktivt när menyn öppnades — [TRK] + [TRIG 3], och sedan [FUNC] + [PAGE] igen.
+recover: LENGTH visade redan 64 när menyn öppnades: det är spår 2:s — [TRK] + [TRIG 3], och sedan [FUNC] + [PAGE] igen. Menyn visar PER PATTERN: först [FUNC] + [YES] för PER TRACK, annars går alla spår till 64.
 :::
 
 ## Step: En tangent, ett ackord
-keys: [CHORD, NO, FUNC, KEYBOARD A1]
+keys: [CHORD, NO, KEYBOARD A1, KEYBOARD F1, KEYBOARD C1, KEYBOARD G1]
 leds: { CHORD: cyan }
 source: manual §8.5.1
 mode: menu:CHORD/SCALE SETUP
 
-Tryck på [CHORD], ställ SHAPE på 1-3-5 med ratten under den, och tryck på [NO]. Håll [FUNC] och
-tryck på [CHORD]: ackordläget är på, [CHORD] tänd i cyan. Tryck på [KEYBOARD A1]: tre toner på en
-gång, a-moll. Varje tangent spelar det ackord i a-moll som börjar på den — [KEYBOARD F1] F-dur,
-[KEYBOARD C1] C-dur, [KEYBOARD G1] G-dur (§8.5.1).
+Tryck på [CHORD] och ställ med rattarna under dem SHAPE på 1-3-5 och CHORD på ON, tryck sedan på
+[NO]: ackordläget är på, [CHORD] tänd i cyan ([FUNC] + [CHORD] gör samma sak varifrån som helst).
+Tryck på [KEYBOARD A1]: tre toner på en gång, a-moll. Varje tangent spelar det ackord ur
+a-moll-skalan som börjar på den — [KEYBOARD F1] F-dur, [KEYBOARD C1] C-dur, [KEYBOARD G1] G-dur
+(§8.5.1).
 
 :::checkpoint
 screen: { menu: "CHORD/SCALE SETUP", items: ["ROOT A", "SCALE AEOLIAN (MINOR)", "GUIDE LIGHT", "CHORD ON", "SHAPE 1-3-5"], sel: 4 }
 hear: En tangent, tre toner: a-moll, och sedan F-, C- och G-dur från de tre andra tangenterna.
-recover: Bara en ton från varje tangent: ackordläget är av, [CHORD] släckt. F låter moll: SCALE står på CHROMATIC, där samma ackordtyp stämplas på varje tangent — ställ tillbaka den på AEOLIAN (MINOR).
+recover: Bara en ton från varje tangent: ackordläget är av, [CHORD] släckt. F låter moll: SCALE står på CHROMATIC, där samma ackordtyp stämplas på varje tangent — ställ tillbaka den på AEOLIAN (MINOR). Flera trumljud från en tangent: spår 1 är det aktiva — [TRK] + [TRIG 3].
 :::
 
 ## Step: Fyra ackord, inspelade
@@ -189,7 +190,7 @@ sedan [KEYBOARD A1], [KEYBOARD F1], [KEYBOARD C1] och [KEYBOARD G1], en takt var
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 3 }
 hear: a-moll, F, C, G, ett ackord per takt, över basslinen.
-recover: Ett avhugget ackord släpptes för tidigt; som i steg 6, håll [FUNC] och tryck på [NO] för att ångra, och spela de fyra igen — varje ackord varar så länge dess tangent hölls. Dess toner står på triggen som vanliga toner, så det du hör är det som sparas.
+recover: Ett avhugget ackord släpptes för tidigt: som i steg 6, [RECORD] för GRID RECORDING, sedan rensar [FUNC] + [PLAY] spår 3:s trigs, [RECORD] igen, och spela de fyra igen — varje ackord varar så länge dess tangent hölls. En takt ackord som går runt i stället för fyra: spår 3 är fortfarande 16 steg långt — LENGTH 64 som i steg 8, rensa och spela dem igen. Dess toner står på triggen som vanliga toner, så det du hör är det som sparas.
 :::
 
 ## Step: Ackordläget av
@@ -213,7 +214,7 @@ source: manual §10.10.8
 mode: playback
 
 Håll [PTN], tryck tre gånger på [+] och släpp [PTN]: basslinen och ackorden flyttar tre halvtoner
-upp, till c-moll, och kitet stannar där det var (§10.10.8). Lyssna några takter. Håll sedan [PTN],
+upp, till c-moll (§10.10.8), och kitet stannar där det var. Lyssna några takter. Håll sedan [PTN],
 tryck tre gånger på [-] och släpp: hemma igen, i a-moll. Tonerna på triggarna ändrades aldrig;
 transponeringen ligger ovanpå dem.
 
@@ -250,8 +251,8 @@ står i a-moll igen, och allt är sparat.
 ## Explore further
 
 ### En bas som glider
-På samma TRACK SETUP-sida, ställ PLAY MODE på MONO LEG och slå på PORTAMENTO (§11.1.1, §11.1.5);
-dess tid ligger på TRIG PAGE 2 (§12.3). Två toner glider in i varandra när den första varar förbi
+På samma TRACK SETUP-sida, ställ PLAY MODE på MONO LEG och PORTAMENTO på MONO LEG (§11.1.1,
+§11.1.5), slå sedan på PORT på TRIG PAGE 2 och ge den en kort PTIM (§12.3). Två toner glider in i varandra när den första varar förbi
 början av den andra; toner med ett mellanrum emellan börjar fortfarande rent.
 
 ### Tärningar för arpen
@@ -272,7 +273,7 @@ till den, och [+] och [-] når oktaven över eller under (§10.3.1).
 
 ### Kitet med ackordläget på
 Slå på ackordläget igen, välj spår 1 och tryck på en tangent i kitet: flera av dess ljud avfyras
-från den enda tangenten. Innan du sparar, [FUNC] + [CHORD] igen.
+från den enda tangenten. [FUNC] + [CHORD] igen, och spara sedan.
 
 ## Next
 

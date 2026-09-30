@@ -80,7 +80,7 @@ così il kit fa il giro a ogni battuta mentre la traccia 2 ne ha quattro da riem
 :::checkpoint
 screen: { menu: "PAGE SETUP", items: [PER TRACK, "LENGTH 64", "SPEED 1"], sel: 1 }
 hear: Ancora niente di nuovo: la lunghezza fa solo spazio. Sulla schermata principale, quattro quadratini per le quattro pagine della traccia 2.
-recover: Se anche il kit ha quattro quadratini, il menu era ancora su PER PATTERN quando LENGTH si è mosso: [FUNC] + [PAGE], [FUNC] + [YES] per PER TRACK, poi con la traccia 1 attiva ([TRK] + [TRIG 1]) riporta LENGTH a 16. Se LENGTH avanza un passo alla volta, [FUNC] non è premuto mentre giri [E].
+recover: Se anche il kit ha quattro quadratini, il menu era ancora su PER PATTERN quando LENGTH si è mosso: [FUNC] + [PAGE], [FUNC] + [YES] per PER TRACK, poi con la traccia 1 attiva ([TRK] + [TRIG 1]) riporta LENGTH a 16. Se LENGTH avanza un passo alla volta, [FUNC] non è premuto mentre giri [E]. Quattro battute che ripartono dopo una: RESET, nella colonna PATTERN del menu, è sotto 64 — giralo su INF (§10.9.2). Prima del passo 6, [TRK] + [TRIG 2]: è la traccia 2 quella da suonare.
 :::
 
 ## Step: Dai una tonalità al pattern
@@ -115,7 +115,7 @@ battuta, poi [PLAY] per ascoltare.
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 2 }
 hear: Sotto il beat, quattro note lunghe e gravi, una per battuta: La, Fa, Do, Sol, e di nuovo da capo.
-recover: Una nota che si ferma prima della fine della sua battuta è stata lasciata troppo presto. Una nota suonata dal vivo tiene la durata per cui è stata tenuta, e girare LEN sul suo trig non la cambia ([l'hanno scoperto dei possessori](https://www.elektronauts.com/t/trig-len-not-working/249623/8)): tieni [FUNC], premi [NO] per annullare e suona di nuovo le quattro. La prima nota va insieme alla pressione di [PLAY], non un battito dopo.
+recover: Una nota che si ferma prima della fine della sua battuta è stata lasciata troppo presto. Una nota suonata dal vivo tiene la durata per cui è stata tenuta, e girare LEN sul suo trig non la cambia ([l'hanno scoperto dei possessori](https://www.elektronauts.com/t/trig-len-not-working/249623/8)). Per suonare di nuovo le quattro, prima cancellale: [RECORD] per GRID RECORDING, poi [FUNC] + [PLAY] — se ne vanno i trig della traccia 2, quelli del kit restano (§10.10.4) —, di nuovo [RECORD], e ricomincia questo passo da capo. La prima nota va insieme alla pressione di [PLAY], non un battito dopo.
 :::
 
 ## Step: L'arp scrive la linea
@@ -157,24 +157,25 @@ Poi tieni [FUNC], premi [PAGE], tieni [FUNC] e gira [E] fino a LENGTH 64 per la 
 :::checkpoint
 screen: { menu: "PAGE SETUP", items: [PER TRACK, "LENGTH 64", "SPEED 1"], sel: 1 }
 hear: Un tasto della fila in basso tiene una nota del nuovo suono finché lo tieni premuto; la bassline e il beat vanno avanti.
-recover: LENGTH dice 16 dopo [NO]: quando il menu si è aperto era ancora attiva la traccia 2 — [TRK] + [TRIG 3], poi di nuovo [FUNC] + [PAGE].
+recover: LENGTH diceva già 64 quando il menu si è aperto: è quella della traccia 2 — [TRK] + [TRIG 3], poi di nuovo [FUNC] + [PAGE]. Il menu dice PER PATTERN: prima [FUNC] + [YES] per PER TRACK, altrimenti tutte le tracce vanno a 64.
 :::
 
 ## Step: Un tasto, un accordo
-keys: [CHORD, NO, FUNC, KEYBOARD A1]
+keys: [CHORD, NO, KEYBOARD A1, KEYBOARD F1, KEYBOARD C1, KEYBOARD G1]
 leds: { CHORD: cyan }
 source: manual §8.5.1
 mode: menu:CHORD/SCALE SETUP
 
-Premi [CHORD], metti SHAPE su 1-3-5 con la manopola sotto, e premi [NO]. Tieni [FUNC] e premi
-[CHORD]: la modalità accordi è attiva, [CHORD] acceso in ciano. Premi [KEYBOARD A1]: tre note
-insieme, La minore. Ogni tasto suona l'accordo di La minore che parte da lui — [KEYBOARD F1] Fa
-maggiore, [KEYBOARD C1] Do maggiore, [KEYBOARD G1] Sol maggiore (§8.5.1).
+Premi [CHORD] e, con le manopole sotto, metti SHAPE su 1-3-5 e CHORD su ON, poi premi [NO]: la
+modalità accordi è attiva, [CHORD] acceso in ciano ([FUNC] + [CHORD] fa lo stesso da ovunque).
+Premi [KEYBOARD A1]: tre note insieme, La minore. Ogni tasto suona l'accordo della scala di La
+minore che parte da lui — [KEYBOARD F1] Fa maggiore, [KEYBOARD C1] Do maggiore, [KEYBOARD G1] Sol
+maggiore (§8.5.1).
 
 :::checkpoint
 screen: { menu: "CHORD/SCALE SETUP", items: ["ROOT A", "SCALE AEOLIAN (MINOR)", "GUIDE LIGHT", "CHORD ON", "SHAPE 1-3-5"], sel: 4 }
 hear: Un tasto, tre note: La minore, poi Fa, Do e Sol maggiore dagli altri tre tasti.
-recover: Una sola nota da ogni tasto: la modalità accordi è spenta, [CHORD] spento. Il Fa suona minore: SCALE è su CHROMATIC, dove lo stesso tipo di accordo viene stampato su ogni tasto — rimettila su AEOLIAN (MINOR).
+recover: Una sola nota da ogni tasto: la modalità accordi è spenta, [CHORD] spento. Il Fa suona minore: SCALE è su CHROMATIC, dove lo stesso tipo di accordo viene stampato su ogni tasto — rimettila su AEOLIAN (MINOR). Diversi suoni della batteria da un tasto: la traccia attiva è la 1 — [TRK] + [TRIG 3].
 :::
 
 ## Step: Quattro accordi, suonati dal vivo
@@ -190,7 +191,7 @@ battito. [STOP] alla fine della quarta battuta, poi [PLAY].
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 3 }
 hear: La minore, Fa, Do, Sol, un accordo per battuta, sopra la bassline.
-recover: Un accordo troncato è stato lasciato troppo presto; come al passo 6, tieni [FUNC] e premi [NO] per annullare, e suona di nuovo i quattro — ogni accordo dura quanto è stato tenuto il suo tasto. Le sue note sono scritte sul trig come note semplici, quindi resta quello che senti.
+recover: Un accordo troncato è stato lasciato troppo presto: come al passo 6, [RECORD] per GRID RECORDING, poi [FUNC] + [PLAY] cancella i trig della traccia 3, di nuovo [RECORD], e suona di nuovo i quattro — ogni accordo dura quanto è stato tenuto il suo tasto. Una battuta di accordi che gira invece di quattro: la traccia 3 è ancora lunga 16 passi — LENGTH 64 come al passo 8, cancella e suonali di nuovo. Le sue note sono scritte sul trig come note semplici, quindi resta quello che senti.
 :::
 
 ## Step: Modalità accordi spenta
@@ -214,7 +215,7 @@ source: manual §10.10.8
 mode: playback
 
 Tieni [PTN], premi [+] tre volte e lascia [PTN]: la bassline e gli accordi salgono di tre
-semitoni, in Do minore, e il kit resta dov'era (§10.10.8). Ascolta per qualche battuta. Poi tieni
+semitoni, in Do minore (§10.10.8), e il kit resta dov'era. Ascolta per qualche battuta. Poi tieni
 [PTN], premi [-] tre volte e lascia: a casa, in La minore. Le note sui trig non sono mai cambiate;
 la trasposizione sta sopra di loro.
 
@@ -251,8 +252,8 @@ battuta sotto quattro battute di armonia, il pattern è di nuovo in La minore, e
 ## Explore further
 
 ### Un basso che scivola
-Nella stessa pagina di TRACK SETUP, metti PLAY MODE su MONO LEG e accendi PORTAMENTO (§11.1.1,
-§11.1.5); il suo tempo è su TRIG PAGE 2 (§12.3). Due note scivolano l'una nell'altra quando la
+Nella stessa pagina di TRACK SETUP, metti PLAY MODE su MONO LEG e PORTAMENTO su MONO LEG (§11.1.1,
+§11.1.5), poi accendi PORT su TRIG PAGE 2 e dagli un PTIM breve (§12.3). Due note scivolano l'una nell'altra quando la
 prima dura oltre l'inizio della seconda; le note separate da una pausa attaccano ancora pulite.
 
 ### I dadi per l'arp
@@ -273,7 +274,7 @@ premuto la aggiunge, e [+] e [-] raggiungono l'ottava sopra o sotto (§10.3.1).
 
 ### Il kit con la modalità accordi
 Riaccendi la modalità accordi, seleziona la traccia 1 e premi un tasto del kit: diversi suoi suoni
-partono dal solo tasto. Prima di salvare, di nuovo [FUNC] + [CHORD].
+partono dal solo tasto. Di nuovo [FUNC] + [CHORD], poi salva.
 
 ## Next
 

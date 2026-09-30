@@ -80,7 +80,7 @@ así que el kit da la vuelta en cada compás mientras la pista 2 tiene cuatro po
 :::checkpoint
 screen: { menu: "PAGE SETUP", items: [PER TRACK, "LENGTH 64", "SPEED 1"], sel: 1 }
 hear: Nada nuevo todavía: la longitud solo hace sitio. En la pantalla principal, cuatro cuadraditos para las cuatro páginas de la pista 2.
-recover: Si el kit también tiene cuatro cuadraditos, el menú seguía en PER PATTERN cuando LENGTH se movió: [FUNC] + [PAGE], [FUNC] + [YES] para PER TRACK, y luego con la pista 1 activa ([TRK] + [TRIG 1]) devuelve LENGTH a 16. Si LENGTH avanza paso a paso, [FUNC] no está pulsado mientras giras [E].
+recover: Si el kit también tiene cuatro cuadraditos, el menú seguía en PER PATTERN cuando LENGTH se movió: [FUNC] + [PAGE], [FUNC] + [YES] para PER TRACK, y luego con la pista 1 activa ([TRK] + [TRIG 1]) devuelve LENGTH a 16. Si LENGTH avanza paso a paso, [FUNC] no está pulsado mientras giras [E]. Cuatro compases que vuelven a empezar tras uno: RESET, en la columna PATTERN del menú, está por debajo de 64 — gíralo a INF (§10.9.2). Antes del paso 6, [TRK] + [TRIG 2]: la pista 2 es la que hay que tocar.
 :::
 
 ## Step: Dale una tonalidad al pattern
@@ -114,7 +114,7 @@ cuarto compás, y luego [PLAY] para escucharlo.
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 2 }
 hear: Bajo el beat, cuatro notas largas y graves, una por compás: La, Fa, Do, Sol, y otra vez desde el principio.
-recover: Una nota que se corta antes de acabar su compás se soltó demasiado pronto. Una nota tocada en directo conserva la duración con que se mantuvo, y girar LEN en su trig no la cambia ([lo descubrieron unos propietarios](https://www.elektronauts.com/t/trig-len-not-working/249623/8)): mantén [FUNC], pulsa [NO] para deshacer y toca otra vez las cuatro. La primera nota va con la pulsación de [PLAY], no un pulso después.
+recover: Una nota que se corta antes de acabar su compás se soltó demasiado pronto. Una nota tocada en directo conserva la duración con que se mantuvo, y girar LEN en su trig no la cambia ([lo descubrieron unos propietarios](https://www.elektronauts.com/t/trig-len-not-working/249623/8)). Para tocar otra vez las cuatro, bórralas primero: [RECORD] para GRID RECORDING, luego [FUNC] + [PLAY] — se van los trigs de la pista 2, los del kit se quedan (§10.10.4) —, otra vez [RECORD], y empieza este paso de nuevo. La primera nota va con la pulsación de [PLAY], no un pulso después.
 :::
 
 ## Step: El arp escribe la línea
@@ -156,24 +156,25 @@ pulsada. Luego mantén [FUNC], pulsa [PAGE], mantén [FUNC] y gira [E] hasta LEN
 :::checkpoint
 screen: { menu: "PAGE SETUP", items: [PER TRACK, "LENGTH 64", "SPEED 1"], sel: 1 }
 hear: Una tecla de la fila de abajo mantiene una nota del nuevo sonido mientras la mantienes; la bassline y el beat siguen.
-recover: LENGTH dice 16 después de [NO]: la pista 2 seguía activa cuando se abrió el menú — [TRK] + [TRIG 3], y luego otra vez [FUNC] + [PAGE].
+recover: LENGTH ya decía 64 cuando se abrió el menú: es la de la pista 2 — [TRK] + [TRIG 3], y luego otra vez [FUNC] + [PAGE]. El menú dice PER PATTERN: primero [FUNC] + [YES] para PER TRACK, o todas las pistas pasan a 64.
 :::
 
 ## Step: Una tecla, un acorde
-keys: [CHORD, NO, FUNC, KEYBOARD A1]
+keys: [CHORD, NO, KEYBOARD A1, KEYBOARD F1, KEYBOARD C1, KEYBOARD G1]
 leds: { CHORD: cyan }
 source: manual §8.5.1
 mode: menu:CHORD/SCALE SETUP
 
-Pulsa [CHORD], pon SHAPE en 1-3-5 con el mando de debajo, y pulsa [NO]. Mantén [FUNC] y pulsa
-[CHORD]: el modo acordes está activado, [CHORD] encendido en cian. Pulsa [KEYBOARD A1]: tres notas a
-la vez, La menor. Cada tecla toca el acorde de La menor que empieza en ella — [KEYBOARD F1] Fa
-mayor, [KEYBOARD C1] Do mayor, [KEYBOARD G1] Sol mayor (§8.5.1).
+Pulsa [CHORD] y, con los mandos de debajo, pon SHAPE en 1-3-5 y CHORD en ON, luego pulsa [NO]: el
+modo acordes está activado, [CHORD] encendido en cian ([FUNC] + [CHORD] hace lo mismo desde
+cualquier sitio). Pulsa [KEYBOARD A1]: tres notas a la vez, La menor. Cada tecla toca el acorde de
+la escala de La menor que empieza en ella — [KEYBOARD F1] Fa mayor, [KEYBOARD C1] Do mayor,
+[KEYBOARD G1] Sol mayor (§8.5.1).
 
 :::checkpoint
 screen: { menu: "CHORD/SCALE SETUP", items: ["ROOT A", "SCALE AEOLIAN (MINOR)", "GUIDE LIGHT", "CHORD ON", "SHAPE 1-3-5"], sel: 4 }
 hear: Una tecla, tres notas: La menor, y luego Fa, Do y Sol mayor desde las otras tres teclas.
-recover: Una sola nota por tecla: el modo acordes está apagado, [CHORD] oscuro. El Fa suena menor: SCALE está en CHROMATIC, donde el mismo tipo de acorde se estampa en cada tecla — vuelve a ponerla en AEOLIAN (MINOR).
+recover: Una sola nota por tecla: el modo acordes está apagado, [CHORD] oscuro. El Fa suena menor: SCALE está en CHROMATIC, donde el mismo tipo de acorde se estampa en cada tecla — vuelve a ponerla en AEOLIAN (MINOR). Varios sonidos de batería desde una tecla: la pista activa es la 1 — [TRK] + [TRIG 3].
 :::
 
 ## Step: Cuatro acordes, tocados en directo
@@ -189,7 +190,7 @@ pulso. [STOP] al terminar el cuarto compás, y luego [PLAY].
 :::checkpoint
 screen: { bank: "A01", tempo: 92, track: 3 }
 hear: La menor, Fa, Do, Sol, un acorde por compás, sobre la bassline.
-recover: Un acorde cortado se soltó demasiado pronto; como en el paso 6, mantén [FUNC] y pulsa [NO] para deshacer, y toca otra vez los cuatro — cada acorde dura lo que se mantuvo su tecla. Sus notas quedan escritas en el trig como notas simples, así que se conserva lo que oyes.
+recover: Un acorde cortado se soltó demasiado pronto: como en el paso 6, [RECORD] para GRID RECORDING, luego [FUNC] + [PLAY] borra los trigs de la pista 3, otra vez [RECORD], y toca otra vez los cuatro — cada acorde dura lo que se mantuvo su tecla. Un compás de acordes dando vueltas en lugar de cuatro: la pista 3 sigue teniendo 16 pasos — LENGTH 64 como en el paso 8, borra y tócalos otra vez. Sus notas quedan escritas en el trig como notas simples, así que se conserva lo que oyes.
 :::
 
 ## Step: Modo acordes apagado
@@ -213,7 +214,7 @@ source: manual §10.10.8
 mode: playback
 
 Mantén [PTN], pulsa [+] tres veces y suelta [PTN]: la bassline y los acordes suben tres
-semitonos, a Do menor, y el kit se queda donde estaba (§10.10.8). Escucha unos compases. Luego
+semitonos, a Do menor (§10.10.8), y el kit se queda donde estaba. Escucha unos compases. Luego
 mantén [PTN], pulsa [-] tres veces y suelta: de vuelta en casa, en La menor. Las notas de los trigs
 nunca cambiaron; la transposición va por encima de ellas.
 
@@ -251,8 +252,8 @@ guardado.
 ## Explore further
 
 ### Un bajo que se desliza
-En la misma página de TRACK SETUP, pon PLAY MODE en MONO LEG y activa PORTAMENTO (§11.1.1,
-§11.1.5); su tiempo está en TRIG PAGE 2 (§12.3). Dos notas se deslizan una en otra cuando la primera
+En la misma página de TRACK SETUP, pon PLAY MODE en MONO LEG y PORTAMENTO en MONO LEG (§11.1.1,
+§11.1.5), luego activa PORT en TRIG PAGE 2 y dale un PTIM corto (§12.3). Dos notas se deslizan una en otra cuando la primera
 dura más allá del inicio de la segunda; las notas separadas por un hueco siguen atacando limpias.
 
 ### Dados para el arp
@@ -273,7 +274,7 @@ pulsada la añade, y [+] y [-] alcanzan la octava de arriba o de abajo (§10.3.1
 
 ### El kit con el modo acordes
 Vuelve a encender el modo acordes, selecciona la pista 1 y pulsa una tecla del kit: varios de sus
-sonidos salen de la misma tecla. Antes de guardar, otra vez [FUNC] + [CHORD].
+sonidos salen de la misma tecla. Otra vez [FUNC] + [CHORD], y luego guarda.
 
 ## Next
 
