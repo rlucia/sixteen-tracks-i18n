@@ -1,6 +1,6 @@
 # Sixteen Tracks — Übersetzungen
 
-[Sixteen Tracks](https://www.iscanet.com/music/sixteen-tracks/) ist ein Praxiskurs für den Elektron Tonverk, OS 1.4.0: elf Sessions, die ein Stück bauen, jeder Schritt mit einer Zeichnung des Bedienfelds, das er benutzt. Er ist auf Englisch geschrieben. Dieses Repository ist der Ort, an dem er zu anderen Sprachen wird, ein Pull Request nach dem anderen.
+[Sixteen Tracks](https://www.iscanet.com/music/sixteen-tracks/) ist ein Praxiskurs für den Elektron Tonverk, OS 1.4.1: elf Sessions, die ein Stück bauen, jeder Schritt mit einer Zeichnung des Bedienfelds, das er benutzt. Er ist auf Englisch geschrieben. Dieses Repository ist der Ort, an dem er zu anderen Sprachen wird, ein Pull Request nach dem anderen.
 
 Die Website ist in fünf Sprachen online: English, Deutsch, Italiano, Español und Svenska. Die vier Übersetzungen sind **erste Entwürfe**, mit einer KI geschrieben und einmal von einem Lektor gelesen, noch nicht von einem Muttersprachler der jeweiligen Sprache — das Nützlichste, was du heute tun kannst, ist deshalb nicht, eine Sprache bei null anzufangen, sondern eine zu korrigieren. Siehe „Wenn deine Sprache schon einen Entwurf hat“ weiter unten.
 
