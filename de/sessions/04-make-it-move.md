@@ -199,7 +199,7 @@ NOTES + P-LOCKS, bevor du gehst, dann drücke [NO].
 screen: { bank: "A01", name: "P-LOCKS", tempo: 92, track: 1, type: "SUBTRACKS" }
 keys16: { 1: red, 3: red, 5: red, 7: red, 9: red, 11: red, 13: red, 15: red }
 hear: Am Klang ändert sich nichts. Der Name der Lane steht oben auf dem Display neben den Pattern-Seiten, und jede Hi-Hat wird blassrot — alle acht, 1, 5 und 13 schlicht und 3, 7, 9, 11 und 15 mit ihren Locks. Nichts blinkt: §10.3.2 sortiert diese Lane nach der Art des Trigs, nicht nach dem, was darauf gelockt ist, und ein Noten-Trig mit einem Lock ist immer noch ein Noten-Trig (§10.2.1), hier sind also alle acht dieselbe Art von Trig.
-recover: [UP] und [DOWN] gehen die drei Lanes als eine Liste durch, egal welche du also drückst, mach weiter, bis P-LOCKS die gewählte ist, und lass es danach auf NOTES + P-LOCKS. Sind die Hi-Hats vollrot statt blass, bist du noch auf NOTES, wo Noten-Trigs rot sind und Lock-Trigs blassgelb (§10.3.2) — geh die Liste weiter durch. Elektrons eigener Präsentator fand einen Lock-Trig, der sich im NOTES-Modus scheinbar entfernen ließ, [was das Handbuch für unmöglich erklärt](https://www.youtube.com/watch?v=7lFFSUOsXsA).
+recover: [UP] und [DOWN] gehen die drei Lanes als eine Liste durch, egal welche du also drückst, mach weiter, bis P-LOCKS die gewählte ist, und lass es danach auf NOTES + P-LOCKS. Sind die Hi-Hats vollrot statt blass, bist du noch auf NOTES, wo Noten-Trigs rot sind und Lock-Trigs blassgelb (§10.3.2) — geh die Liste weiter durch. Ein Präsentator von Simply Synths fand einen Lock-Trig, der sich im NOTES-Modus scheinbar entfernen ließ, [was das Handbuch für unmöglich erklärt](https://www.youtube.com/watch?v=7lFFSUOsXsA).
 :::
 
 ## Step: Speichern

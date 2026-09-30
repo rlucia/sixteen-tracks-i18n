@@ -195,7 +195,7 @@ den valda. Sätt tillbaka den på NOTES + P-LOCKS innan du lämnar, och tryck se
 screen: { bank: "A01", name: "P-LOCKS", tempo: 92, track: 1, type: "SUBTRACKS" }
 keys16: { 1: red, 3: red, 5: red, 7: red, 9: red, 11: red, 13: red, 15: red }
 hear: Inget i ljudet ändras. Lanens namn skrivs ut tvärs över displayens överkant bredvid patternsidorna, och varje hi-hat blir svagt röd — alla åtta, 1, 5 och 13 rena och 3, 7, 9, 11 och 15 med sina lockar. Ingenting blinkar: §10.3.2 sorterar den här lanen efter typen av trig, inte efter vad som är lockat på den, och en note-trig som bär en lock är fortfarande en note-trig (§10.2.1), så alla åtta är samma sorts trig här.
-recover: [UP] och [DOWN] vandrar genom de tre lanerna som en enda lista, så vilken du än trycker på: fortsätt tills P-LOCKS är den valda och lämna den på NOTES + P-LOCKS efteråt. Är hi-hatsen helröda i stället för svaga, står du fortfarande på NOTES, där note-trigs är röda och lock-trigs svagt gula (§10.3.2) — fortsätt vandra i listan. Elektrons egen presentatör fick en lock-trig att se ut att gå att ta bort från NOTES-läget, [vilket manualen säger inte kan hända](https://www.youtube.com/watch?v=7lFFSUOsXsA).
+recover: [UP] och [DOWN] vandrar genom de tre lanerna som en enda lista, så vilken du än trycker på: fortsätt tills P-LOCKS är den valda och lämna den på NOTES + P-LOCKS efteråt. Är hi-hatsen helröda i stället för svaga, står du fortfarande på NOTES, där note-trigs är röda och lock-trigs svagt gula (§10.3.2) — fortsätt vandra i listan. En presentatör från Simply Synths fick en lock-trig att se ut att gå att ta bort från NOTES-läget, [vilket manualen säger inte kan hända](https://www.youtube.com/watch?v=7lFFSUOsXsA).
 :::
 
 ## Step: Spara

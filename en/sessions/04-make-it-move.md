@@ -193,7 +193,7 @@ before you leave, then press [NO].
 screen: { bank: "A01", name: "P-LOCKS", tempo: 92, track: 1, type: "SUBTRACKS" }
 keys16: { 1: red, 3: red, 5: red, 7: red, 9: red, 11: red, 13: red, 15: red }
 hear: Nothing in the sound changes. The lane's name prints across the top of the screen beside the pattern pages, and every hat goes faint red — all eight, 1, 5 and 13 plain and 3, 7, 9, 11 and 15 carrying their locks. Nothing blinks: §10.3.2 sorts this lane by the type of trig, not by what is locked on it, and a note trig carrying a lock is still a note trig (§10.2.1), so all eight are the same kind of trig here.
-recover: [UP] and [DOWN] walk the three lanes as one list, so whichever you press, keep going until P-LOCKS is the one chosen and leave it on NOTES + P-LOCKS afterwards. If the hats are full red rather than faint, you are still on NOTES, where note trigs are red and lock trigs faint yellow (§10.3.2) — keep walking the list. Elektron's own presenter found a lock trig seemingly removable from NOTES mode, [which the manual says cannot happen](https://www.youtube.com/watch?v=7lFFSUOsXsA).
+recover: [UP] and [DOWN] walk the three lanes as one list, so whichever you press, keep going until P-LOCKS is the one chosen and leave it on NOTES + P-LOCKS afterwards. If the hats are full red rather than faint, you are still on NOTES, where note trigs are red and lock trigs faint yellow (§10.3.2) — keep walking the list. A Simply Synths presenter found a lock trig seemingly removable from NOTES mode, [which the manual says cannot happen](https://www.youtube.com/watch?v=7lFFSUOsXsA).
 :::
 
 ## Step: Save
