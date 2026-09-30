@@ -34,7 +34,7 @@ source: manual §5.3.7, §9.1.4, §7.3
 mode: menu:LOAD PRESET
 
 Hold [TRK] and press [TRIG 2]: track 2 is the active track. Press [PRESET], [RIGHT] to KEYS,
-[UP]/[DOWN] to ⟨bass preset⟩, and [YES] to load it — or any KEYS preset whose lowest notes are
+[UP]/[DOWN] to 035 SHORT LONG BASS, and [YES] to load it — or any KEYS preset whose lowest notes are
 round and short. Then play the bottom row. On track 1 those keys were the kit's eight sounds;
 here each one plays the same sound at another pitch, and the top row, silent on the kit, plays
 the notes in between (§7.3).
@@ -147,7 +147,7 @@ leds: { TRIG 3: white }
 source: manual §9.1.4, §10.9.2
 mode: menu:LOAD PRESET
 
-Hold [TRK] and press [TRIG 3]. Press [PRESET], [RIGHT] to KEYS, [UP]/[DOWN] to ⟨chord preset⟩,
+Hold [TRK] and press [TRIG 3]. Press [PRESET], [RIGHT] to KEYS, [UP]/[DOWN] to 088 GLITCHY PIANO,
 and [YES] — or any KEYS sound that holds its note for as long as the key is down. Then hold
 [FUNC], press [PAGE], hold [FUNC] and turn [E] to LENGTH 64 for track 3, and press [NO]. The menu
 is still PER TRACK, and each track keeps its own length.

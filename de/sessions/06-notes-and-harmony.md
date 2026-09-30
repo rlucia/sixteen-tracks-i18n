@@ -34,7 +34,7 @@ source: manual §5.3.7, §9.1.4, §7.3
 mode: menu:LOAD PRESET
 
 Halte [TRK] gedrückt und drücke [TRIG 2]: Spur 2 ist die aktive Spur. Drücke [PRESET], mit
-[RIGHT] zu KEYS, mit [UP]/[DOWN] zu ⟨bass preset⟩, und [YES] lädt es — oder jedes KEYS-Preset,
+[RIGHT] zu KEYS, mit [UP]/[DOWN] zu 035 SHORT LONG BASS, und [YES] lädt es — oder jedes KEYS-Preset,
 dessen tiefste Töne rund und kurz sind. Dann spiel die untere Reihe. Auf Spur 1 waren diese Tasten
 die acht Sounds des Kits; hier spielt jede denselben Sound in einer anderen Tonhöhe, und die obere
 Reihe, auf dem Kit stumm, spielt die Töne dazwischen (§7.3).
@@ -151,7 +151,7 @@ source: manual §9.1.4, §10.9.2
 mode: menu:LOAD PRESET
 
 Halte [TRK] gedrückt und drücke [TRIG 3]. Drücke [PRESET], mit [RIGHT] zu KEYS, mit [UP]/[DOWN] zu
-⟨chord preset⟩, und [YES] — oder jeder KEYS-Sound, der seinen Ton hält, solange die Taste unten
+088 GLITCHY PIANO, und [YES] — oder jeder KEYS-Sound, der seinen Ton hält, solange die Taste unten
 ist. Dann halte [FUNC], drücke [PAGE], halte [FUNC] und dreh [E] auf LENGTH 64 für Spur 3, und
 drücke [NO]. Das Menü steht noch auf PER TRACK, und jede Spur behält ihre eigene Länge.
 

@@ -34,7 +34,7 @@ source: manual §5.3.7, §9.1.4, §7.3
 mode: menu:LOAD PRESET
 
 Tieni premuto [TRK] e premi [TRIG 2]: la traccia 2 è la traccia attiva. Premi [PRESET], [RIGHT]
-fino a KEYS, [UP]/[DOWN] fino a ⟨bass preset⟩, e [YES] per caricarlo — oppure qualsiasi preset
+fino a KEYS, [UP]/[DOWN] fino a 035 SHORT LONG BASS, e [YES] per caricarlo — oppure qualsiasi preset
 KEYS con le note più basse rotonde e corte. Poi suona la fila in basso. Sulla traccia 1 quei tasti
 erano gli otto suoni del kit; qui ognuno suona lo stesso suono a un'altra altezza, e la fila in
 alto, muta sul kit, suona le note di mezzo (§7.3).
@@ -150,7 +150,7 @@ source: manual §9.1.4, §10.9.2
 mode: menu:LOAD PRESET
 
 Tieni premuto [TRK] e premi [TRIG 3]. Premi [PRESET], [RIGHT] fino a KEYS, [UP]/[DOWN] fino a
-⟨chord preset⟩, e [YES] — oppure qualsiasi suono KEYS che tiene la nota finché il tasto è premuto.
+088 GLITCHY PIANO, e [YES] — oppure qualsiasi suono KEYS che tiene la nota finché il tasto è premuto.
 Poi tieni [FUNC], premi [PAGE], tieni [FUNC] e gira [E] fino a LENGTH 64 per la traccia 3, e premi
 [NO]. Il menu è ancora su PER TRACK, e ogni traccia tiene la sua lunghezza.
 

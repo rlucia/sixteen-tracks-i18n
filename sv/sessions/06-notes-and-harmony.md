@@ -34,7 +34,7 @@ source: manual §5.3.7, §9.1.4, §7.3
 mode: menu:LOAD PRESET
 
 Håll [TRK] nere och tryck på [TRIG 2]: spår 2 är det aktiva spåret. Tryck på [PRESET], [RIGHT]
-till KEYS, [UP]/[DOWN] till ⟨bass preset⟩, och [YES] för att ladda det — eller vilket KEYS-preset
+till KEYS, [UP]/[DOWN] till 035 SHORT LONG BASS, och [YES] för att ladda det — eller vilket KEYS-preset
 som helst vars djupaste toner är runda och korta. Spela sedan den nedre raden. På spår 1 var de
 tangenterna kitets åtta ljud; här spelar var och en samma ljud på en annan tonhöjd, och den övre
 raden, tyst på kitet, spelar tonerna emellan (§7.3).
@@ -149,7 +149,7 @@ source: manual §9.1.4, §10.9.2
 mode: menu:LOAD PRESET
 
 Håll [TRK] nere och tryck på [TRIG 3]. Tryck på [PRESET], [RIGHT] till KEYS, [UP]/[DOWN] till
-⟨chord preset⟩, och [YES] — eller vilket KEYS-ljud som helst som håller sin ton så länge tangenten
+088 GLITCHY PIANO, och [YES] — eller vilket KEYS-ljud som helst som håller sin ton så länge tangenten
 är nere. Håll sedan [FUNC], tryck på [PAGE], håll [FUNC] och vrid [E] till LENGTH 64 för spår 3,
 och tryck på [NO]. Menyn står fortfarande på PER TRACK, och varje spår behåller sin egen längd.
 
