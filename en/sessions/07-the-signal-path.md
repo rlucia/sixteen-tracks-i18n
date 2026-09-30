@@ -200,5 +200,5 @@ order.
 
 ## Next
 
-Session 8 adds a pad on track 4 that moves by itself: LFOs and a modulation envelope on the
-sound, and nothing played by hand.
+Session 8 adds a pad on track 4 that moves by itself, with LFOs and a modulation envelope on
+the sound.
