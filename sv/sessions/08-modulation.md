@@ -69,23 +69,24 @@ varar ackordet hela patternet. En ton kan vara upp till 128 steg lång
 :::checkpoint
 keys16: { 1: red }
 hear: E och A tillsammans, från första slaget i takt 1 tills loopen går runt, över alla fyra ackorden och rena mot vart och ett av dem.
-recover: Padden morrar under ackorden, eller skaver mot det andra: den ligger en oktav för lågt — [+] tills pricken står på 0, sedan [RECORD], håll [TRIG 1] och tryck på de två tangenterna igen. En ton i stället för två: tangenterna trycktes utan att [TRIG 1] hölls. Den andra vägen in: [STEP EDIT], [TRIG 1], de två tangenterna, [STEP EDIT] (§10.3). Ett ackord som varar ett enda steg fast LEN visar 64: en ägare råkade ut för det på 1.4.1 ([rapporten](https://www.elektronauts.com/t/tonverk-bug-reports/238306/2588)) — vrid ner LEN och upp till 64 igen.
+recover: Padden morrar under ackorden, eller skaver mot det andra: den ligger en oktav för lågt — [+] tills pricken står på 0, sedan [RECORD], håll [TRIG 1] och tryck på de två tangenterna igen. En ton i stället för två: tangenterna trycktes utan att [TRIG 1] hölls. Den andra vägen in, från uppspelning: [STEP EDIT], sedan [TRIG 1], som blir grön; där lägger en släckt tangent till sin ton och en tänd tar bort den, så tryck tills bara [KEYBOARD E1] och [KEYBOARD A1] lyser, och sedan [STEP EDIT] igen (§10.3.1). Ett ackord som varar ett enda steg fast LEN visar 64: en ägare råkade ut för det på 1.4.1 ([rapporten](https://www.elektronauts.com/t/tonverk-bug-reports/238306/2588)) — vrid ner LEN och upp till 64 igen.
 :::
 
 ## Step: LFO 1, på gehör
-keys: [FLTR, MOD, H, D, YES]
+keys: [FLTR, MOD, E, H, D, YES]
 source: manual §12.12
 mode: playback
 
 Tryck på [FLTR] och vrid FREQ, med ratten under den, till ungefär hälften: en LFO lägger sitt djup
-runt parameterns eget värde, så filtret behöver plats åt båda hållen. Tryck på [MOD]: LFO 1:s sida
-(§12.12). Vrid [H], DEP, till ungefär 40. Vrid sedan [D], DEST: en lista öppnas över sidan, och
-varje rad hörs så länge den är markerad. Gå långsamt nedåt och lyssna på vad LFO:n gör med varje
-parameter. Stanna på FLTR:Frequency och tryck på [YES].
+runt parameterns eget värde, så filtret behöver plats åt båda hållen. Tryck på [MOD] tills sidan
+är LFO 1:s (§12.12). Vrid [E], WAVE, till TRI, triangeln, och [H], DEP, till ungefär 40. Vrid sedan
+[D], DEST: en lista öppnas över sidan, och varje rad hörs så länge den är markerad. Gå långsamt
+nedåt och lyssna på vad LFO:n gör med varje parameter. Stanna på FLTR:Frequency och tryck på
+[YES].
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 4, params: [SPD, MULT, FADE, "DEST FLTR FREQ", WAVE, SPH, MODE, "DEP 40"], invert: [3] }
-hear: Padden ljusnar och mörknar av sig själv, i en takt som inte har något med takterna att göra.
+screen: { bank: "A01", tempo: 92, track: 4, params: [SPD, MULT, FADE, "DEST FLTR FREQ", "WAVE TRI", SPH, MODE, "DEP 40"], invert: [3, 4] }
+hear: Padden ljusnar och mörknar av sig själv, i ett tempo som inte har något med takterna att göra.
 recover: Halva varje sweep gör ingenting: FREQ står i ena änden — [FLTR], och FREQ till hälften. Ingenting rör sig: DEP står på 0, eller så stängdes listan med [NO], som behåller destinationen den hade.
 :::
 
@@ -101,9 +102,9 @@ står still
 ([en testare om det](https://www.elektronauts.com/t/experiencing-some-massive-lfo-confusion/256117/9)).
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 4, params: ["SPD 8", "MULT BPM 4", FADE, "DEST FLTR FREQ", WAVE, SPH, "MODE FREE", "DEP 40"], invert: [0, 1] }
+screen: { bank: "A01", tempo: 92, track: 4, params: ["SPD 8", "MULT BPM 4", FADE, "DEST FLTR FREQ", "WAVE TRI", SPH, "MODE FREE", "DEP 40"], invert: [0, 1] }
 hear: En uppgång och en nedgång varar nu de fyra ackorden, och sweepen börjar på ett nytt ställe vid varje [PLAY].
-recover: En sweep ungefär dubbelt så lång som de fyra takterna: på 1.4.1 kan en multiplikator som ställs in för första gången gå för långsamt tills man lämnar patternet och går in i det igen ([rapporten](https://www.elektronauts.com/t/tonverk-bug-reports/238306/2636)) — håll [PTN] och tryck på [TRIG 2], håll sedan [PTN] och tryck på [TRIG 1]. Sweepen börjar redan på samma ställe varje gång: MODE står inte på FREE, och steg 6 ställer in det.
+recover: En sweep ungefär dubbelt så lång som de fyra takterna: på 1.4.1 kan en multiplikator som ställs in för första gången gå för långsamt tills man lämnar patternet och går in i det igen ([rapporten](https://www.elektronauts.com/t/tonverk-bug-reports/238306/2636)) — håll [PTN] och tryck på [TRIG 2], vänta tills A02 spelar, håll sedan [PTN] och tryck på [TRIG 1]. Sweepen börjar redan på samma ställe varje gång: MODE står inte på FREE, och steg 6 ställer in det.
 :::
 
 ## Step: Från början
@@ -164,21 +165,22 @@ recover: Padden ligger för lågt genom hela ackordet: SUS står över 0. Den ko
 :::
 
 ## Step: Rummet på sin egen klocka
-keys: [FX, MOD, D, YES, A, B, H]
+keys: [FX, MOD, D, YES, E, A, B, H]
 source: manual §12.8, §12.15
 mode: playback
 
 Tryck på [FX] för FX-sida 1 och vrid upp SND3 med ratten under den, ungefär till hälften, som på
 ackorden i session 7 (§12.8): padden når reverben på spår 15. Tryck på [MOD] tills sidan är FX
 LFO 1:s (§12.15). Vrid [D], DEST, till Send 3 Amount och tryck på [YES]: en FX LFO når spårets
-effekter och dess sends, inte rösten (manualens Appendix B räknar upp dem). Vrid [A], SPD, till 6,
-[B], MULT, till BPM 4 och [H], DEP, till ungefär 30, och låt MODE stå på FREE. En cykel är
-2048 ÷ 24 = 85⅓ steg: längre än patternet, och ingenting startar om den.
+effekter och dess sends, inte rösten (manualens Appendix B räknar upp dem). Vrid [E], WAVE, till
+TRI, [A], SPD, till 6, [B], MULT, till BPM 4 och [H], DEP, till ungefär 30, och se efter att MODE
+står på FREE. En cykel är 2048 ÷ 24 = 85⅓ steg: längre än patternet, och ingenting startar om
+den.
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 4, params: ["SPD 6", "MULT BPM 4", FADE, DEST, WAVE, SPH, "MODE FREE", "DEP 30"], invert: [0, 1, 7] }
-hear: Padden driver in i rummet och ut ur det igen, långsammare än filtret och aldrig i takt med det.
-recover: Ingen Send 3 Amount i listan: sidan är LFO 1:s, LFO 2:s eller envelopens, och de når bara rösten — [MOD] tills FX LFO 1 kommer. Inget rum alls: SND3 gick upp på ett annat spår ([TRK] + [TRIG 4] först), eller så har spår 15 något annat i det här patternet.
+screen: { bank: "A01", tempo: 92, track: 4, params: ["SPD 6", "MULT BPM 4", FADE, DEST, "WAVE TRI", SPH, "MODE FREE", "DEP 30"], invert: [0, 1, 4, 7] }
+hear: Padden driver in i rummet och ut ur det igen, långsammare än filtret och aldrig i fas med det.
+recover: Ingen Send 3 Amount i listan: sidan är LFO 1:s, LFO 2:s eller envelopens, och de når bara rösten — [MOD] tills FX LFO 1 kommer. Inget rum alls: SND3 gick upp på ett annat spår ([TRK] + [TRIG 4] först), eller så har spår 15 något annat i det här patternet. Rummet tar ungefär dubbelt så lång tid på sig att gå runt: multiplikatorfelet från steg 5, med samma väg ut.
 :::
 
 ## Step: Sexton takter, händerna borta

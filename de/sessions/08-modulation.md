@@ -70,23 +70,23 @@ um GRID RECORDING zu verlassen.
 :::checkpoint
 keys16: { 1: red }
 hear: E und A zusammen, von der ersten Zählzeit von Takt 1, bis der Loop herum ist, über allen vier Akkorden und zu jedem von ihnen stimmig.
-recover: Das Pad brummt unter den Akkorden oder reibt sich am zweiten: Es liegt eine Oktave zu tief — [+], bis der Punkt auf 0 steht, dann [RECORD], [TRIG 1] halten und die beiden Tasten noch einmal drücken. Ein Ton statt zwei: Die Tasten kamen, ohne dass [TRIG 1] gehalten war. Der andere Weg hinein: [STEP EDIT], [TRIG 1], die beiden Tasten, [STEP EDIT] (§10.3). Ein Akkord, der nur einen Schritt dauert, obwohl LEN 64 zeigt: Das ist einem Besitzer auf 1.4.1 begegnet ([der Bericht](https://www.elektronauts.com/t/tonverk-bug-reports/238306/2588)) — dreh LEN herunter und wieder auf 64.
+recover: Das Pad brummt unter den Akkorden oder reibt sich am zweiten: Es liegt eine Oktave zu tief — [+], bis der Punkt auf 0 steht, dann [RECORD], [TRIG 1] halten und die beiden Tasten noch einmal drücken. Ein Ton statt zwei: Die Tasten kamen, ohne dass [TRIG 1] gehalten war. Der andere Weg hinein, aus der Wiedergabe: [STEP EDIT], dann [TRIG 1], das grün wird; dort fügt eine dunkle Taste ihren Ton hinzu, und eine leuchtende nimmt ihn weg, also drücke, bis nur [KEYBOARD E1] und [KEYBOARD A1] leuchten, dann wieder [STEP EDIT] (§10.3.1). Ein Akkord, der nur einen Schritt dauert, obwohl LEN 64 zeigt: Das ist einem Besitzer auf 1.4.1 begegnet ([der Bericht](https://www.elektronauts.com/t/tonverk-bug-reports/238306/2588)) — dreh LEN herunter und wieder auf 64.
 :::
 
 ## Step: LFO 1, nach Gehör
-keys: [FLTR, MOD, H, D, YES]
+keys: [FLTR, MOD, E, H, D, YES]
 source: manual §12.12
 mode: playback
 
 Drücke [FLTR] und dreh FREQ mit dem Regler darunter etwa auf die Hälfte: Ein LFO legt seine Tiefe
 um den eigenen Wert des Parameters, also braucht der Filter Platz nach beiden Seiten. Drücke
-[MOD]: die Seite von LFO 1 (§12.12). Dreh [H], DEP, auf etwa 40. Dann dreh [D], DEST: Über der
-Seite öffnet sich eine Liste, und jede Zeile ist zu hören, solange sie markiert ist. Geh sie
-langsam hinunter und hör, was der LFO mit jedem Parameter macht. Bleib auf FLTR:Frequency stehen
-und drücke [YES].
+[MOD], bis die Seite die von LFO 1 ist (§12.12). Dreh [E], WAVE, auf TRI, das Dreieck, und [H],
+DEP, auf etwa 40. Dann dreh [D], DEST: Über der Seite öffnet sich eine Liste, und jede Zeile ist
+zu hören, solange sie markiert ist. Geh sie langsam hinunter und hör, was der LFO mit jedem
+Parameter macht. Bleib auf FLTR:Frequency stehen und drücke [YES].
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 4, params: [SPD, MULT, FADE, "DEST FLTR FREQ", WAVE, SPH, MODE, "DEP 40"], invert: [3] }
+screen: { bank: "A01", tempo: 92, track: 4, params: [SPD, MULT, FADE, "DEST FLTR FREQ", "WAVE TRI", SPH, MODE, "DEP 40"], invert: [3, 4] }
 hear: Das Pad wird von selbst heller und dunkler, in einem Tempo, das mit den Takten nichts zu tun hat.
 recover: Die Hälfte jedes Sweeps tut nichts: FREQ steht an einem Ende — [FLTR], und FREQ auf die Hälfte. Nichts bewegt sich: DEP steht auf 0, oder die Liste wurde mit [NO] geschlossen, und dann bleibt das Ziel, das vorher da war.
 :::
@@ -103,9 +103,9 @@ während der Sequencer steht
 ([ein Tester dazu](https://www.elektronauts.com/t/experiencing-some-massive-lfo-confusion/256117/9)).
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 4, params: ["SPD 8", "MULT BPM 4", FADE, "DEST FLTR FREQ", WAVE, SPH, "MODE FREE", "DEP 40"], invert: [0, 1] }
+screen: { bank: "A01", tempo: 92, track: 4, params: ["SPD 8", "MULT BPM 4", FADE, "DEST FLTR FREQ", "WAVE TRI", SPH, "MODE FREE", "DEP 40"], invert: [0, 1] }
 hear: Ein Anstieg und ein Abfall dauern jetzt die vier Akkorde, und der Sweep beginnt bei jedem [PLAY] woanders.
-recover: Ein Sweep, der etwa doppelt so lang ist wie die vier Takte: Auf 1.4.1 kann ein Multiplikator, der zum ersten Mal gesetzt wird, zu langsam laufen, bis das Pattern verlassen und wieder betreten wird ([der Bericht](https://www.elektronauts.com/t/tonverk-bug-reports/238306/2636)) — halte [PTN] und drücke [TRIG 2], dann halte [PTN] und drücke [TRIG 1]. Der Sweep beginnt schon jedes Mal an derselben Stelle: MODE steht nicht auf FREE, und Schritt 6 stellt es ein.
+recover: Ein Sweep, der etwa doppelt so lang ist wie die vier Takte: Auf 1.4.1 kann ein Multiplikator, der zum ersten Mal gesetzt wird, zu langsam laufen, bis das Pattern verlassen und wieder betreten wird ([der Bericht](https://www.elektronauts.com/t/tonverk-bug-reports/238306/2636)) — halte [PTN] und drücke [TRIG 2], warte, bis A02 spielt, dann halte [PTN] und drücke [TRIG 1]. Der Sweep beginnt schon jedes Mal an derselben Stelle: MODE steht nicht auf FREE, und Schritt 6 stellt es ein.
 :::
 
 ## Step: Von vorn
@@ -167,7 +167,7 @@ recover: Das Pad bleibt den ganzen Akkord lang zu tief: SUS steht über 0. Es ko
 :::
 
 ## Step: Der Raum auf eigener Uhr
-keys: [FX, MOD, D, YES, A, B, H]
+keys: [FX, MOD, D, YES, E, A, B, H]
 source: manual §12.8, §12.15
 mode: playback
 
@@ -175,13 +175,14 @@ Drücke [FX] für die FX-Seite 1 und dreh SND3 mit dem Regler darunter etwa zur 
 den Akkorden in Session 7 (§12.8): Das Pad erreicht den Hall auf Spur 15. Drücke [MOD], bis die
 Seite die von FX LFO 1 ist (§12.15). Dreh [D], DEST, auf Send 3 Amount und drücke [YES]: Ein FX LFO
 erreicht die Effekte der Spur und ihre Sends, nicht die Stimme (Anhang B des Handbuchs listet sie
-auf). Dreh [A], SPD, auf 6, [B], MULT, auf BPM 4 und [H], DEP, auf etwa 30, und lass MODE auf FREE.
-Ein Zyklus sind 2048 ÷ 24 = 85⅓ Schritte: länger als das Pattern, und nichts startet ihn neu.
+auf). Dreh [E], WAVE, auf TRI, [A], SPD, auf 6, [B], MULT, auf BPM 4 und [H], DEP, auf etwa 30,
+und sieh nach, dass MODE auf FREE steht. Ein Zyklus sind 2048 ÷ 24 = 85⅓ Schritte: länger als das
+Pattern, und nichts startet ihn neu.
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 4, params: ["SPD 6", "MULT BPM 4", FADE, DEST, WAVE, SPH, "MODE FREE", "DEP 30"], invert: [0, 1, 7] }
+screen: { bank: "A01", tempo: 92, track: 4, params: ["SPD 6", "MULT BPM 4", FADE, DEST, "WAVE TRI", SPH, "MODE FREE", "DEP 30"], invert: [0, 1, 4, 7] }
 hear: Das Pad treibt in den Raum hinein und wieder heraus, langsamer als der Filter und nie im Gleichschritt mit ihm.
-recover: Kein Send 3 Amount in der Liste: Die Seite ist die von LFO 1, LFO 2 oder der Hüllkurve, und die erreichen nur die Stimme — [MOD], bis FX LFO 1 kommt. Gar kein Raum: SND3 ist auf einer anderen Spur hochgegangen (zuerst [TRK] + [TRIG 4]), oder Spur 15 hat in diesem Pattern etwas anderes.
+recover: Kein Send 3 Amount in der Liste: Die Seite ist die von LFO 1, LFO 2 oder der Hüllkurve, und die erreichen nur die Stimme — [MOD], bis FX LFO 1 kommt. Gar kein Raum: SND3 ist auf einer anderen Spur hochgegangen (zuerst [TRK] + [TRIG 4]), oder Spur 15 hat in diesem Pattern etwas anderes. Der Raum braucht etwa doppelt so lang, bis er herum ist: der Multiplikator-Fehler aus Schritt 5, mit demselben Ausweg.
 :::
 
 ## Step: Sechzehn Takte, Hände weg

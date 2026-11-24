@@ -69,22 +69,23 @@ to leave GRID RECORDING.
 :::checkpoint
 keys16: { 1: red }
 hear: E and A together from the first beat of bar 1 until the loop comes round, above all four chords and in tune with each of them.
-recover: The pad growls under the chords, or rubs against the second one: it is an octave low — [+] until the dot is on 0, then [RECORD], hold [TRIG 1] and press the two keys again. One note instead of two: the keys went in without [TRIG 1] held. The other way in: [STEP EDIT], [TRIG 1], the two keys, [STEP EDIT] (§10.3). A chord one step long although LEN reads 64: an owner met that on 1.4.1 ([the report](https://www.elektronauts.com/t/tonverk-bug-reports/238306/2588)) — turn LEN down and back up to 64.
+recover: The pad growls under the chords, or rubs against the second one: it is an octave low — [+] until the dot is on 0, then [RECORD], hold [TRIG 1] and press the two keys again. One note instead of two: the keys went in without [TRIG 1] held. The other way in, from playback: [STEP EDIT], then [TRIG 1], which turns green; there a dark key adds its note and a lit one takes it away, so press until only [KEYBOARD E1] and [KEYBOARD A1] are lit, then [STEP EDIT] again (§10.3.1). A chord one step long although LEN reads 64: an owner met that on 1.4.1 ([the report](https://www.elektronauts.com/t/tonverk-bug-reports/238306/2588)) — turn LEN down and back up to 64.
 :::
 
 ## Step: LFO 1, by ear
-keys: [FLTR, MOD, H, D, YES]
+keys: [FLTR, MOD, E, H, D, YES]
 source: manual §12.12
 mode: playback
 
 Press [FLTR] and turn FREQ, with the knob under it, to about half-way: an LFO adds its depth
-around the parameter's own value, so the filter needs room both ways. Press [MOD]: LFO 1's page
-(§12.12). Turn [H], DEP, to about 40. Then turn [D], DEST: a list opens over the page, and each
-line is heard for as long as it is highlighted. Go down it slowly and listen to what the LFO
-does to each parameter. Stop on FLTR:Frequency and press [YES].
+around the parameter's own value, so the filter needs room both ways. Press [MOD] until the page
+is LFO 1's (§12.12). Turn [E], WAVE, to TRI, the triangle, and [H], DEP, to about 40. Then turn
+[D], DEST: a list opens over the page, and each line is heard for as long as it is highlighted.
+Go down it slowly and listen to what the LFO does to each parameter. Stop on FLTR:Frequency and
+press [YES].
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 4, params: [SPD, MULT, FADE, "DEST FLTR FREQ", WAVE, SPH, MODE, "DEP 40"], invert: [3] }
+screen: { bank: "A01", tempo: 92, track: 4, params: [SPD, MULT, FADE, "DEST FLTR FREQ", "WAVE TRI", SPH, MODE, "DEP 40"], invert: [3, 4] }
 hear: The pad brightens and darkens by itself, at a rate that has nothing to do with the bars.
 recover: Half of every sweep does nothing: FREQ is parked at one end — [FLTR], and FREQ half-way. Nothing moves: DEP is at 0, or the list was closed with [NO], which keeps the destination it had.
 :::
@@ -101,9 +102,9 @@ sequencer stands still
 ([a tester on it](https://www.elektronauts.com/t/experiencing-some-massive-lfo-confusion/256117/9)).
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 4, params: ["SPD 8", "MULT BPM 4", FADE, "DEST FLTR FREQ", WAVE, SPH, "MODE FREE", "DEP 40"], invert: [0, 1] }
+screen: { bank: "A01", tempo: 92, track: 4, params: ["SPD 8", "MULT BPM 4", FADE, "DEST FLTR FREQ", "WAVE TRI", SPH, "MODE FREE", "DEP 40"], invert: [0, 1] }
 hear: One rise and one fall now last the four chords, and the sweep starts somewhere else at every [PLAY].
-recover: A sweep about twice as long as the four bars: on 1.4.1 a multiplier set for the first time can run slow until the pattern is left and entered again ([the report](https://www.elektronauts.com/t/tonverk-bug-reports/238306/2636)) — hold [PTN] and press [TRIG 2], then hold [PTN] and press [TRIG 1]. The sweep already starts at the same point every time: MODE is not on FREE, and step 6 sets it.
+recover: A sweep about twice as long as the four bars: on 1.4.1 a multiplier set for the first time can run slow until the pattern is left and entered again ([the report](https://www.elektronauts.com/t/tonverk-bug-reports/238306/2636)) — hold [PTN] and press [TRIG 2], wait until A02 plays, then hold [PTN] and press [TRIG 1]. The sweep already starts at the same point every time: MODE is not on FREE, and step 6 sets it.
 :::
 
 ## Step: From the top
@@ -164,21 +165,22 @@ recover: The pad stays flat for the whole chord: SUS is above 0. It comes in sha
 :::
 
 ## Step: The room on its own clock
-keys: [FX, MOD, D, YES, A, B, H]
+keys: [FX, MOD, D, YES, E, A, B, H]
 source: manual §12.8, §12.15
 mode: playback
 
 Press [FX] for FX page 1 and turn SND3 up to about half with the knob under it, as on the chords
 in session 7 (§12.8): the pad reaches the reverb on track 15. Press [MOD] until the page is FX
 LFO 1's (§12.15). Turn [D], DEST, to Send 3 Amount and press [YES]: an FX LFO reaches the
-track's effects and its sends, not the voice (the manual's Appendix B lists them). Turn [A],
-SPD, to 6, [B], MULT, to BPM 4 and [H], DEP, to about 30, and leave MODE on FREE. One cycle is
-2048 ÷ 24 = 85⅓ steps: longer than the pattern, and nothing restarts it.
+track's effects and its sends, not the voice (the manual's Appendix B lists them). Turn [E],
+WAVE, to TRI, [A], SPD, to 6, [B], MULT, to BPM 4 and [H], DEP, to about 30, and check that MODE
+reads FREE. One cycle is 2048 ÷ 24 = 85⅓ steps: longer than the pattern, and nothing restarts
+it.
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 4, params: ["SPD 6", "MULT BPM 4", FADE, DEST, WAVE, SPH, "MODE FREE", "DEP 30"], invert: [0, 1, 7] }
+screen: { bank: "A01", tempo: 92, track: 4, params: ["SPD 6", "MULT BPM 4", FADE, DEST, "WAVE TRI", SPH, "MODE FREE", "DEP 30"], invert: [0, 1, 4, 7] }
 hear: The pad drifts back into the room and out of it again, slower than the filter and never in step with it.
-recover: No Send 3 Amount in the list: the page is LFO 1's, LFO 2's or the envelope's, and those reach the voice only — [MOD] until FX LFO 1. No room at all: SND3 went up on another track ([TRK] + [TRIG 4] first), or track 15 holds something else in this pattern.
+recover: No Send 3 Amount in the list: the page is LFO 1's, LFO 2's or the envelope's, and those reach the voice only — [MOD] until FX LFO 1. No room at all: SND3 went up on another track ([TRK] + [TRIG 4] first), or track 15 holds something else in this pattern. The room takes about twice as long to come round: the multiplier fault of step 5, with the same way out.
 :::
 
 ## Step: Sixteen bars, hands off

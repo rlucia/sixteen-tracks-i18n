@@ -69,22 +69,23 @@ Pulsa [RECORD] para salir de GRID RECORDING.
 :::checkpoint
 keys16: { 1: red }
 hear: Mi y La juntos, desde el primer tiempo del compás 1 hasta que el loop da la vuelta, por encima de los cuatro acordes y afinados con cada uno.
-recover: El pad gruñe debajo de los acordes, o roza con el segundo: está una octava abajo — [+] hasta que el punto esté en 0, luego [RECORD], mantén [TRIG 1] y pulsa otra vez las dos teclas. Una nota en lugar de dos: las teclas entraron sin [TRIG 1] mantenido. El otro camino: [STEP EDIT], [TRIG 1], las dos teclas, [STEP EDIT] (§10.3). Un acorde de un solo paso aunque LEN diga 64: le pasó a un propietario en 1.4.1 ([el informe](https://www.elektronauts.com/t/tonverk-bug-reports/238306/2588)) — baja LEN y vuelve a subirlo a 64.
+recover: El pad gruñe debajo de los acordes, o roza con el segundo: está una octava abajo — [+] hasta que el punto esté en 0, luego [RECORD], mantén [TRIG 1] y pulsa otra vez las dos teclas. Una nota en lugar de dos: las teclas entraron sin [TRIG 1] mantenido. El otro camino, desde la reproducción: [STEP EDIT], luego [TRIG 1], que se pone verde; ahí una tecla apagada añade su nota y una encendida la quita, así que pulsa hasta que solo estén encendidas [KEYBOARD E1] y [KEYBOARD A1], y luego otra vez [STEP EDIT] (§10.3.1). Un acorde de un solo paso aunque LEN diga 64: le pasó a un propietario en 1.4.1 ([el informe](https://www.elektronauts.com/t/tonverk-bug-reports/238306/2588)) — baja LEN y vuelve a subirlo a 64.
 :::
 
 ## Step: LFO 1, de oído
-keys: [FLTR, MOD, H, D, YES]
+keys: [FLTR, MOD, E, H, D, YES]
 source: manual §12.12
 mode: playback
 
 Pulsa [FLTR] y lleva FREQ, con el mando que tiene debajo, más o menos a la mitad: un LFO suma su
 profundidad alrededor del valor propio del parámetro, así que el filtro necesita sitio hacia los
-dos lados. Pulsa [MOD]: la página del LFO 1 (§12.12). Gira [H], DEP, hasta unos 40. Luego gira
-[D], DEST: se abre una lista sobre la página, y cada línea se oye mientras está resaltada. Baja
-despacio y escucha lo que el LFO le hace a cada parámetro. Párate en FLTR:Frequency y pulsa [YES].
+dos lados. Pulsa [MOD] hasta que la página sea la del LFO 1 (§12.12). Gira [E], WAVE, hasta TRI,
+el triángulo, y [H], DEP, hasta unos 40. Luego gira [D], DEST: se abre una lista sobre la página, y
+cada línea se oye mientras está resaltada. Baja despacio y escucha lo que el LFO le hace a cada
+parámetro. Párate en FLTR:Frequency y pulsa [YES].
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 4, params: [SPD, MULT, FADE, "DEST FLTR FREQ", WAVE, SPH, MODE, "DEP 40"], invert: [3] }
+screen: { bank: "A01", tempo: 92, track: 4, params: [SPD, MULT, FADE, "DEST FLTR FREQ", "WAVE TRI", SPH, MODE, "DEP 40"], invert: [3, 4] }
 hear: El pad se aclara y se oscurece solo, a un ritmo que no tiene nada que ver con los compases.
 recover: La mitad de cada sweep no hace nada: FREQ está en un extremo — [FLTR], y FREQ a la mitad. No se mueve nada: DEP está en 0, o la lista se cerró con [NO], que deja el destino que había.
 :::
@@ -101,9 +102,9 @@ corriendo mientras el secuenciador está parado
 ([lo cuenta un tester](https://www.elektronauts.com/t/experiencing-some-massive-lfo-confusion/256117/9)).
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 4, params: ["SPD 8", "MULT BPM 4", FADE, "DEST FLTR FREQ", WAVE, SPH, "MODE FREE", "DEP 40"], invert: [0, 1] }
+screen: { bank: "A01", tempo: 92, track: 4, params: ["SPD 8", "MULT BPM 4", FADE, "DEST FLTR FREQ", "WAVE TRI", SPH, "MODE FREE", "DEP 40"], invert: [0, 1] }
 hear: Una subida y una bajada duran ahora los cuatro acordes, y el sweep empieza en otro punto en cada [PLAY].
-recover: Un sweep más o menos el doble de largo que los cuatro compases: en 1.4.1 un multiplicador puesto por primera vez puede ir lento hasta que se sale del pattern y se vuelve a entrar ([el informe](https://www.elektronauts.com/t/tonverk-bug-reports/238306/2636)) — mantén [PTN] y pulsa [TRIG 2], luego mantén [PTN] y pulsa [TRIG 1]. El sweep ya empieza siempre en el mismo punto: MODE no está en FREE, y el paso 6 lo pone.
+recover: Un sweep más o menos el doble de largo que los cuatro compases: en 1.4.1 un multiplicador puesto por primera vez puede ir lento hasta que se sale del pattern y se vuelve a entrar ([el informe](https://www.elektronauts.com/t/tonverk-bug-reports/238306/2636)) — mantén [PTN] y pulsa [TRIG 2], espera a que suene A02, luego mantén [PTN] y pulsa [TRIG 1]. El sweep ya empieza siempre en el mismo punto: MODE no está en FREE, y el paso 6 lo pone.
 :::
 
 ## Step: Desde el principio
@@ -164,7 +165,7 @@ recover: El pad se queda bajo durante todo el acorde: SUS está por encima de 0.
 :::
 
 ## Step: La sala con su propio reloj
-keys: [FX, MOD, D, YES, A, B, H]
+keys: [FX, MOD, D, YES, E, A, B, H]
 source: manual §12.8, §12.15
 mode: playback
 
@@ -172,14 +173,14 @@ Pulsa [FX] para la página FX 1 y sube SND3 con el mando que tiene debajo, hasta
 menos, como en los acordes de la sesión 7 (§12.8): el pad llega a la reverb de la pista 15. Pulsa
 [MOD] hasta que la página sea la del FX LFO 1 (§12.15). Gira [D], DEST, hasta Send 3 Amount y
 pulsa [YES]: un FX LFO llega a los efectos de la pista y a sus envíos, no a la voz (el Apéndice B
-del manual los enumera). Gira [A], SPD, hasta 6, [B], MULT, hasta BPM 4 y [H], DEP, hasta unos 30,
-y deja MODE en FREE. Un ciclo son 2048 ÷ 24 = 85⅓ pasos: más largo que el pattern, y nada lo
-reinicia.
+del manual los enumera). Gira [E], WAVE, hasta TRI, [A], SPD, hasta 6, [B], MULT, hasta BPM 4 y
+[H], DEP, hasta unos 30, y comprueba que MODE diga FREE. Un ciclo son 2048 ÷ 24 = 85⅓ pasos: más
+largo que el pattern, y nada lo reinicia.
 
 :::checkpoint
-screen: { bank: "A01", tempo: 92, track: 4, params: ["SPD 6", "MULT BPM 4", FADE, DEST, WAVE, SPH, "MODE FREE", "DEP 30"], invert: [0, 1, 7] }
-hear: El pad se va metiendo en la sala y vuelve a salir, más lento que el filtro y nunca al paso con él.
-recover: Ningún Send 3 Amount en la lista: la página es la del LFO 1, la del LFO 2 o la de la envolvente, y esos solo llegan a la voz — [MOD] hasta que salga el FX LFO 1. Ninguna sala: SND3 subió en otra pista (primero [TRK] + [TRIG 4]), o la pista 15 tiene otra cosa en este pattern.
+screen: { bank: "A01", tempo: 92, track: 4, params: ["SPD 6", "MULT BPM 4", FADE, DEST, "WAVE TRI", SPH, "MODE FREE", "DEP 30"], invert: [0, 1, 4, 7] }
+hear: El pad se va metiendo en la sala y vuelve a salir, más lento que el filtro y nunca acompasado con él.
+recover: Ningún Send 3 Amount en la lista: la página es la del LFO 1, la del LFO 2 o la de la envolvente, y esos solo llegan a la voz — [MOD] hasta que salga el FX LFO 1. Ninguna sala: SND3 subió en otra pista (primero [TRK] + [TRIG 4]), o la pista 15 tiene otra cosa en este pattern. La sala tarda más o menos el doble en dar la vuelta: el fallo del multiplicador del paso 5, con la misma salida.
 :::
 
 ## Step: Dieciséis compases, manos fuera
