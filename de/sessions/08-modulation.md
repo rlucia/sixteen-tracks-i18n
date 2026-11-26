@@ -34,7 +34,7 @@ source: manual §9.1.4, §10.9.2
 mode: menu:LOAD PRESET
 
 Halte [TRK] gedrückt und drücke [TRIG 4]. Drücke [PRESET], mit [RIGHT] zu KEYS, mit [UP]/[DOWN] zu
-⟨pad preset⟩, und [YES] — oder jeder KEYS-Sound, der hält, solange seine Taste unten ist, und dabei
+063 OXY GEN, und [YES] — oder jeder KEYS-Sound, der hält, solange seine Taste unten ist, und dabei
 stillsteht. Dann halte [FUNC], drücke [PAGE], halte [FUNC] und dreh [E] auf LENGTH 64 für Spur 4,
 und drücke [NO]. Das Menü steht noch auf PER TRACK, also behält das Kit seinen einen Takt
 (§10.9.2). Halte eine Taste der unteren Reihe vier Takte lang und hör ihr zu.

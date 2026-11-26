@@ -33,7 +33,7 @@ leds: { TRIG 4: white }
 source: manual §9.1.4, §10.9.2
 mode: menu:LOAD PRESET
 
-Hold [TRK] and press [TRIG 4]. Press [PRESET], [RIGHT] to KEYS, [UP]/[DOWN] to ⟨pad preset⟩, and
+Hold [TRK] and press [TRIG 4]. Press [PRESET], [RIGHT] to KEYS, [UP]/[DOWN] to 063 OXY GEN, and
 [YES] — or any KEYS sound that holds for as long as its key is down and stands still while it
 does. Then hold [FUNC], press [PAGE], hold [FUNC] and turn [E] to LENGTH 64 for track 4, and
 press [NO]. The menu is still PER TRACK, so the kit keeps its one bar (§10.9.2). Hold one key of

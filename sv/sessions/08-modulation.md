@@ -34,7 +34,7 @@ source: manual §9.1.4, §10.9.2
 mode: menu:LOAD PRESET
 
 Håll [TRK] nere och tryck på [TRIG 4]. Tryck på [PRESET], [RIGHT] till KEYS, [UP]/[DOWN] till
-⟨pad preset⟩, och [YES] — eller vilket KEYS-ljud som helst som håller så länge dess tangent är nere
+063 OXY GEN, och [YES] — eller vilket KEYS-ljud som helst som håller så länge dess tangent är nere
 och står stilla under tiden. Håll sedan [FUNC], tryck på [PAGE], håll [FUNC] och vrid [E] till
 LENGTH 64 för spår 4, och tryck på [NO]. Menyn står fortfarande på PER TRACK, så kitet behåller
 sin enda takt (§10.9.2). Håll en tangent i den nedre raden i fyra takter och lyssna på den.

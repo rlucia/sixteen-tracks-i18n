@@ -34,7 +34,7 @@ source: manual §9.1.4, §10.9.2
 mode: menu:LOAD PRESET
 
 Tieni premuto [TRK] e premi [TRIG 4]. Premi [PRESET], [RIGHT] fino a KEYS, [UP]/[DOWN] fino a
-⟨pad preset⟩, e [YES] — oppure qualsiasi suono KEYS che tiene finché il suo tasto è premuto, e
+063 OXY GEN, e [YES] — oppure qualsiasi suono KEYS che tiene finché il suo tasto è premuto, e
 intanto sta fermo. Poi tieni [FUNC], premi [PAGE], tieni [FUNC] e gira [E] fino a LENGTH 64 per la
 traccia 4, e premi [NO]. Il menu è ancora su PER TRACK, quindi il kit tiene la sua unica battuta
 (§10.9.2). Tieni premuto un tasto della fila in basso per quattro battute e ascoltalo.
